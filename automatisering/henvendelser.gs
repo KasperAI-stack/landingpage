@@ -72,7 +72,18 @@ function doPost(e) {
     return svar_('ugyldig data');
   }
 
-  return behandl_(data);
+  // Svar altid Netlify med "OK", så webhooken ikke bliver slået fra. Fejl kan ses under Udførelser.
+  try {
+    return behandl_(data);
+  } catch (fejl) {
+    console.error('Fejl under behandling: ' + fejl + '. Har du kørt opsaet() og givet tilladelse?');
+    return svar_('fejl');
+  }
+}
+
+/** Åbn webapp-URL'en i en browser for at tjekke, at den kan nås. */
+function doGet() {
+  return ContentService.createTextOutput('Scriptet kører og kan nås udefra.');
 }
 
 /**
