@@ -80,6 +80,16 @@ Det kræver, at siden allerede er deployet på Netlify.
 
 Virker det ikke, så åbn scriptet og kig under **Udførelser** i menuen til venstre. Der står, om Netlify har ramt scriptet, og hvad der eventuelt gik galt.
 
+## Fejlfinding: jeg får ingen mails
+
+Tag trinene i rækkefølge, og stop, når du finder fejlen.
+
+1. **Virker scriptet i sig selv?** Åbn scriptet, vælg funktionen **testHenvendelse** i menuen øverst, og klik **Kør**. Du bør få to mails og en ny række i arket. Kommer der ingen mails, så tjek spam-mappen i Gmail.
+2. **Er notifikationen lavet det rigtige sted?** I Netlify skal den ligge under **Form submission notifications**, ikke under **Deploy notifications**. Eventet skal være **New form submission**, og formularen skal være **kontakt**.
+3. **Rammer Netlify scriptet?** Åbn scriptet, og klik **Udførelser** i menuen til venstre. Står der ingen kørsler af **doPost**, når du sender formularen, så når Netlify slet ikke frem. Tjek URL'en i Netlify, og tjek, at webappen har **Hvem har adgang: Alle**.
+4. **Bliver henvendelsen afvist?** Står der "Afvist: nøglen i URL'en passer ikke" under Udførelser, så er teksten efter `?token=` i Netlify ikke den samme som `HEMMELIG_NOEGLE` i koden.
+5. **Har du ændret i koden efter implementeringen?** Webappen kører den version, du implementerede. Vælg **Implementer**, derefter **Administrer implementeringer**, klik på blyanten, vælg **Ny version** og klik **Implementer**.
+
 ## I hverdagen
 
 - Svar på henvendelser direkte fra mailen "Ny henvendelse". Svaret går til kunden.

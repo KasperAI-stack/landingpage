@@ -58,6 +58,7 @@ function opsaet() {
 /** Netlify kalder denne funktion, hver gang nogen sender formularen. */
 function doPost(e) {
   if (!e || !e.parameter || e.parameter.token !== INDSTILLINGER.HEMMELIG_NOEGLE) {
+    console.warn('Afvist: nøglen i URL\'en passer ikke med HEMMELIG_NOEGLE. Tjek "?token=" i Netlify, og husk at lave en ny version af implementeringen, når du ændrer koden.');
     return svar_('afvist');
   }
 
@@ -67,9 +68,30 @@ function doPost(e) {
     data = payload.data || {};
     data.modtaget = payload.created_at ? new Date(payload.created_at) : new Date();
   } catch (fejl) {
+    console.error('Kunne ikke læse data fra Netlify: ' + fejl);
     return svar_('ugyldig data');
   }
 
+  return behandl_(data);
+}
+
+/**
+ * Kør denne funktion fra editoren for at teste uden Netlify.
+ * Den opretter en testhenvendelse med din egen e-mail, så du får begge mails og en ny række i arket.
+ */
+function testHenvendelse() {
+  const status = behandl_({
+    modtaget: new Date(),
+    navn: 'Test Testesen',
+    virksomhed: 'Testfirma',
+    email: minEmail_(),
+    telefon: '',
+    besked: 'Dette er en test fra script.google.com.',
+  });
+  Logger.log('Resultat: ' + status.getContent());
+}
+
+function behandl_(data) {
   const henvendelse = {
     modtaget: data.modtaget,
     navn: tekst_(data.navn),
@@ -79,6 +101,7 @@ function doPost(e) {
     besked: tekst_(data.besked),
   };
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(henvendelse.email)) {
+    console.warn('Afvist: henvendelsen har ingen gyldig e-mail.');
     return svar_('mangler e-mail');
   }
 
@@ -92,6 +115,7 @@ function doPost(e) {
 
   sendBeskedTilMig_(henvendelse);
   sendAutosvar_(henvendelse);
+  console.log('Modtaget og sendt videre: ' + henvendelse.navn + ' (' + henvendelse.email + ')');
   return svar_('ok');
 }
 
