@@ -8,6 +8,12 @@ Overskrift: AI og marketing uden raketvidenskab.
 Undertekst: Jeg bygger en gratis prototype på jeres egne data, så I kan se, hvad AI kan gøre for jer, før I beslutter noget som helst.
 Knap: Book en snak på 30 minutter
 
+## Chatvinduet i hero
+
+Afsender: Kasper Schrøder Asmussen (med foto)
+Besked: Hey Otto, byg mig en Landing Page med fokus på [indsæt produkt]
+Svar: Otto (med sit ikon) er ved at skrive, vist som tre prikker.
+
 ## Problemet
 
 Overskrift: I ved godt, at AI kan spare jer tid
@@ -61,7 +67,7 @@ Skift mellem to muligheder: Send en forespørgsel, Book en tid
 
 Send en forespørgsel
 Tekst: Skriv lidt om jer, så vender jeg tilbage inden for en arbejdsdag.
-Felter: Navn, Virksomhed, E-mail, Telefon (valgfrit), Hvad tager mest tid i jeres marketing lige nu?
+Felter: Navn, Virksomhed, E-mail, Telefon (valgfrit), Hey Otto, byg mig en Landing Page med fokus på … (hjælpetekst i feltet: [indsæt produkt])
 Knap: Send
 
 Book en tid
@@ -84,4 +90,4 @@ Link: Tilbage til forsiden
 
 ## Footer
 
-Kasper Schrøder Asmussen, [e-mail], [telefon], CVR [indsæt], LinkedIn
+Hey Otto v/ Kasper Schrøder Asmussen, [e-mail], [telefon], CVR [indsæt], LinkedIn

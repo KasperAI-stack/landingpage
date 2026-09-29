@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kasper Schrøder Asmussen | AI og marketing uden raketvidenskab</title>
+  <title>Hey Otto | AI og marketing uden raketvidenskab</title>
   <meta name="description" content="Jeg bygger en gratis prototype på jeres egne data, så I kan se, hvad AI kan gøre for jer, før I beslutter noget som helst.">
   <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0F0E13" media="(prefers-color-scheme: dark)">
   <script>try { var t = localStorage.getItem("tema"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
-  <meta property="og:title" content="AI og marketing uden raketvidenskab">
+  <meta property="og:title" content="Hey Otto | AI og marketing uden raketvidenskab">
   <meta property="og:description" content="Jeg bygger en gratis prototype på jeres egne data, så I kan se, hvad AI kan gøre for jer, før I beslutter noget som helst.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="da_DK">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Geist:wght@400;500;600;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -23,9 +23,9 @@
 
   <div class="page">
   <header class="topbar">
-    <a class="brand" href="/">
+    <a class="brand" href="/" aria-label="Hey Otto, til forsiden">
       <img class="brand-mark" src="/assets/favicon.svg" alt="" width="28" height="28">
-      <span>Kasper Schrøder Asmussen</span>
+      <span class="wordmark"><span class="wm-hey">hey</span><span class="wm-otto">Otto</span></span>
     </a>
     <div class="top-actions">
       <button class="theme-toggle" type="button" data-theme-toggle hidden aria-label="Skift tema">
@@ -44,7 +44,7 @@
       <a class="btn" href="#book">Book en snak på 30 minutter</a>
 
       <div class="showcase">
-        <img class="mascot" src="/assets/robot.svg" alt="Venlig hvid robot med antenne" width="240" height="270">
+        <img class="mascot" src="/assets/robot.svg" alt="Otto, en venlig hvid robot med antenne" width="240" height="270">
         <div class="frame frame-hero">
           <nav class="pills" aria-label="Det kan jeg bygge">
             <a class="pill" href="#produkter">Analyse og rapportering</a>
@@ -57,15 +57,16 @@
               <img class="avatar" src="/assets/kasper.jpg" alt="" width="44" height="44">
               <div class="chat-body">
                 <p class="chat-name">Kasper Schrøder Asmussen</p>
-                <p class="chat-text">Hvad tager mest tid i jeres marketing lige nu?</p>
+                <p class="chat-text">Hey Otto, byg mig en Landing Page med fokus på <span class="prompt-slot">[indsæt produkt]</span></p>
               </div>
             </div>
-            <a class="reply" href="#book" data-focus="besked">
-              <span>Skriv jeres svar her</span>
-              <span class="reply-send" aria-hidden="true">
-                <svg viewBox="0 0 16 16" width="16" height="16"><path d="M3 8h9M8 3.5 12.5 8 8 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-            </a>
+            <div class="chat chat-otto">
+              <img class="avatar" src="/assets/favicon.svg" alt="" width="44" height="44">
+              <div class="chat-body">
+                <p class="chat-name otto-name">Otto</p>
+                <span class="typing" aria-hidden="true"><i></i><i></i><i></i></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -250,7 +251,7 @@
             <label for="email">E-mail<input id="email" type="email" name="email" autocomplete="email" required></label>
             <label for="telefon">Telefon (valgfrit)<input id="telefon" type="tel" name="telefon" autocomplete="tel"></label>
           </div>
-          <label for="besked">Hvad tager mest tid i jeres marketing lige nu?<textarea id="besked" name="besked" rows="4"></textarea></label>
+          <label for="besked">Hey Otto, byg mig en Landing Page med fokus på …<textarea id="besked" name="besked" rows="4" placeholder="[indsæt produkt]"></textarea></label>
           <button class="btn" type="submit">Send</button>
         </form>
         </div>
@@ -275,7 +276,7 @@
 
   <!-- 8. Footer -->
   <footer class="footer">
-    <p class="footer-name">Kasper Schrøder Asmussen</p>
+    <p class="footer-name"><span class="wordmark"><span class="wm-hey">hey</span><span class="wm-otto">Otto</span></span> <span class="footer-by">v/ Kasper Schrøder Asmussen</span></p>
     <p>[e-mail], [telefon], CVR [indsæt], <a href="[linkedin-url]">LinkedIn</a></p>
   </footer>
   </div>

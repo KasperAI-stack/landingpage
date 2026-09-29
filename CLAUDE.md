@@ -1,17 +1,18 @@
-# Landingpage: Kasper Schrøder Asmussen
+# Landingpage: Hey Otto
 
 Denne fil er din brief. Læs den helt, før du laver noget i projektet.
 
 ## Hvad projektet er
 
-En enkelt landingpage for Kasper Schrøder Asmussen, der hjælper virksomheder med at få AI til at løse konkrete marketingopgaver. Sidens eneste mål er, at den besøgende booker et gratis afklaringsmøde på 30 minutter via formularen.
+En enkelt landingpage for Hey Otto, som drives af Kasper Schrøder Asmussen, der hjælper virksomheder med at få AI til at løse konkrete marketingopgaver. Sidens eneste mål er, at den besøgende booker et gratis afklaringsmøde på 30 minutter via formularen.
 
 ## Brand
 
-- Navn: Kasper Schrøder Asmussen
+- Navn: Hey Otto. Skrives "Hey Otto" i tekst. Personen bag er Kasper Schrøder Asmussen, som skriver siden som "jeg".
+- Logo: "hey" i Quicksand (let afrundet, almindelig vægt) og "Otto" i Fredoka (rund og kurvet, halvfed), begge fra Google Fonts. Står ved siden af Ottos hoved i toppen og i footeren med "v/ Kasper Schrøder Asmussen".
 - Tagline: AI og marketing uden raketvidenskab.
 - Koncept: En moderne konsulentside i sort, grå og lilla, med lyst og mørkt tema. Ordene er jordnære, og alt, hvad der står, er let at forstå.
-- Maskot: En venlig, hvid rumrobot med antenne og mørkt visir (site/assets/robot.svg). Den bruges i hero og på tak-siden. Et rigtigt foto af Kasper bruges i "Om mig" og i chatvinduet i hero.
+- Maskot: Otto, en venlig, hvid rumrobot med antenne og mørkt visir (site/assets/robot.svg). Den bruges i hero og på tak-siden, og hans hoved (site/assets/favicon.svg) er ikon. Et rigtigt foto af Kasper bruges i "Om mig" og i chatvinduet i hero, hvor Kasper spørger Otto: "Hey Otto, byg mig en Landing Page med fokus på [indsæt produkt]", og Otto er ved at svare.
 
 ## Sprog og tone
 
@@ -65,7 +66,7 @@ Lilla accenter:
 
 Regler:
 
-- Skrift: Geist fra Google Fonts til både overskrifter og brødtekst. Store overskrifter med stram afstand mellem bogstaverne.
+- Skrift: Geist fra Google Fonts til både overskrifter og brødtekst. Quicksand og Fredoka bruges kun i logoet og i Ottos navn. Store overskrifter med stram afstand mellem bogstaverne.
 - Grid: Siden står i en ramme af tynde lodrette linjer, og sektionerne er adskilt af vandrette linjer med små plus-mærker, hvor linjerne mødes. De fire trin står i kolonner adskilt af gridlinjer, hver med et lille lysende ikon og en titel, hvor trinnets navn er fedt og prisen dæmpet.
 - Produkterne vises som tre faner over et farvet panel med et app-vindue. Den valgte fane er udfyldt med lilla gradient, og vinduet skifter illustration efter fanen. Illustrationerne er abstrakte, uden tal eller tekst.
 - Sort, grå og hvid bærer siden. Knapper, valgte faner og vælgere er i tekstfarven (sort i lyst tema, lys i mørkt tema) og helt runde i enderne. Lilla er en accent, der kun bruges i rammen om chatvinduet i toppen, i produktpanelet, i ikonerne ved de fire trin og i figuren i værktøjssektionen.

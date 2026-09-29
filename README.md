@@ -1,4 +1,4 @@
-# Landingpage: Kasper Schrøder Asmussen
+# Landingpage: Hey Otto
 
 En enkel landingpage i ren HTML og CSS, der publiceres gratis via Netlify.
 

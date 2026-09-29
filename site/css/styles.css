@@ -118,9 +118,10 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-weight: 600; letter-spacing: -.01em; }
 .brand-mark { width: 28px; height: 28px; flex: none; }
-@media (max-width: 26rem) {
-  .brand span { display: none; }
-}
+/* Logo: "hey" i en let afrundet skrift og "Otto" i en rund, kurvet skrift */
+.wordmark { display: inline-flex; align-items: baseline; gap: .12em; font-size: 1.35rem; line-height: 1; letter-spacing: 0; color: var(--ink); }
+.wm-hey { font-family: "Quicksand", var(--font); font-weight: 500; }
+.wm-otto { font-family: "Fredoka", var(--font); font-weight: 600; font-size: 1.12em; }
 
 /* Knapper */
 .btn {
@@ -132,8 +133,16 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 }
 .btn:hover { color: var(--bg); background: var(--btn-hover); transform: translateY(-1px); }
 .btn:disabled { opacity: .6; cursor: progress; transform: none; }
-.btn-small { font-size: .9rem; padding: .6rem 1.1rem; }
-.top-actions { display: flex; align-items: center; gap: .6rem; }
+.btn-small { font-size: .9rem; padding: .6rem 1.1rem; white-space: nowrap; }
+.top-actions { display: flex; align-items: center; gap: .5rem; }
+@media (max-width: 26rem) {
+  .wordmark { font-size: 1.15rem; }
+  .brand-mark { width: 24px; height: 24px; }
+  .btn-small { font-size: .85rem; padding: .55rem .85rem; }
+}
+@media (max-width: 22rem) {
+  .brand .wordmark { display: none; }
+}
 /* Temakontakt: sol og måne side om side, det aktive tema er markeret */
 .theme-toggle {
   display: flex; align-items: center; gap: 2px; padding: 3px; cursor: pointer;
@@ -189,21 +198,23 @@ h1 {
 .window { background: var(--soft); border-radius: 14px; overflow: hidden; }
 .window-bar { display: flex; gap: .4rem; padding: .8rem 1rem; border-bottom: 1px solid var(--line); }
 .window-bar span { width: .65rem; height: .65rem; border-radius: 50%; background: var(--line); }
-.chat { display: flex; gap: .85rem; padding: 1.5rem 1.25rem .5rem; }
+/* Samtale i toppen: Kasper spørger Otto, og Otto er ved at svare */
+.chat { display: flex; gap: .85rem; padding: 1.25rem 1.25rem 0; }
+.chat-otto { padding-bottom: 1.5rem; }
 .avatar { width: 44px; height: 44px; border-radius: 10px; object-fit: cover; flex: none; }
 .chat-body { min-width: 0; }
 .chat-name { font-weight: 600; font-size: .95rem; margin: 0 0 .15rem; }
-.chat-text { margin: 0; font-size: 1.05rem; }
-.reply {
-  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-  margin: 1rem 1.25rem 1.25rem; padding: .7rem .7rem .7rem 1rem;
-  border: 1.5px solid var(--line); border-radius: 12px;
-  color: var(--muted); text-decoration: none; transition: border-color .15s;
+.otto-name { font-family: "Fredoka", var(--font); font-size: 1.05rem; }
+.chat-text { margin: 0; font-size: clamp(1rem, 2.4vw, 1.15rem); line-height: 1.5; }
+.typing {
+  display: inline-flex; gap: .3rem; margin-top: .35rem; padding: .6rem .75rem;
+  background: var(--soft); border: 1px solid var(--line); border-radius: 12px 12px 12px 4px;
 }
-.reply:hover { border-color: var(--accent); }
-.reply-send {
-  display: grid; place-items: center; width: 2.1rem; height: 2.1rem; flex: none;
-  border-radius: 8px; background: var(--ink); color: var(--bg);
+.typing i { width: .45rem; height: .45rem; border-radius: 50%; background: var(--plus); }
+.typing i:nth-child(2) { opacity: .7; } .typing i:nth-child(3) { opacity: .45; }
+.prompt-slot {
+  color: var(--muted); background: var(--soft); border: 1px dashed var(--plus);
+  border-radius: 6px; padding: .05rem .35rem; white-space: nowrap;
 }
 
 /* Sektioner */
@@ -436,7 +447,8 @@ h1 {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem;
 }
 .footer p { margin: 0; }
-.footer-name { color: var(--ink); font-weight: 600; }
+.footer-name { color: var(--ink); font-weight: 600; display: flex; align-items: baseline; flex-wrap: wrap; gap: .25rem .6rem; }
+.footer-by { font-weight: 400; color: var(--muted); }
 
 /* Tak-siden */
 .thanks { min-height: 75vh; justify-content: center; padding-bottom: 5rem; }
