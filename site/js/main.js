@@ -58,3 +58,30 @@ if (toggle) {
     render();
   });
 }
+
+// Kontakt: skift mellem forespørgsel og booking. Uden JavaScript vises begge dele under hinanden.
+var contactSwitch = document.querySelector("[data-contact-switch]");
+var setContactMode = function () {};
+if (contactSwitch) {
+  var modeButtons = contactSwitch.querySelectorAll("[data-mode]");
+  var panels = document.querySelectorAll(".contact-mode[data-panel]");
+  setContactMode = function (mode) {
+    modeButtons.forEach(function (btn) {
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-mode") === mode ? "true" : "false");
+    });
+    panels.forEach(function (panel) {
+      panel.hidden = panel.getAttribute("data-panel") !== mode;
+    });
+  };
+  modeButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () { setContactMode(btn.getAttribute("data-mode")); });
+  });
+  contactSwitch.hidden = false;
+  document.getElementById("book").classList.add("js-switch");
+  setContactMode("forespoergsel");
+}
+
+// Svarfeltet i toppen skal altid åbne formularen, også hvis booking er valgt.
+document.querySelectorAll("[data-focus]").forEach(function (link) {
+  link.addEventListener("click", function () { setContactMode("forespoergsel"); });
+});

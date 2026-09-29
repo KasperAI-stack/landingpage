@@ -345,6 +345,34 @@ h1 {
 .form input:focus-visible, .form textarea:focus-visible { border-color: var(--accent); outline: 3px solid rgb(244 114 182 / .3); outline-offset: 0; }
 .form .btn { justify-self: start; margin-top: .25rem; }
 
+/* Skift mellem forespørgsel og booking */
+.switch {
+  display: flex; width: fit-content; max-width: 100%; margin: 0 auto 1.75rem; padding: .3rem; gap: .25rem;
+  background: var(--soft); border: 1px solid var(--line); border-radius: 999px;
+}
+.switch-btn {
+  font: inherit; font-weight: 600; font-size: .95rem; color: var(--muted); cursor: pointer;
+  background: transparent; border: 0; border-radius: 999px; padding: .6rem 1.1rem;
+  transition: background-color .15s, color .15s;
+}
+.switch-btn:hover { color: var(--ink); }
+.switch-btn[aria-pressed="true"] { background: var(--p-violet); color: #fff; }
+.contact-mode + .contact-mode { margin-top: 3rem; }
+.js-switch .contact-mode + .contact-mode { margin-top: 0; }
+
+.booking {
+  background: var(--bg); border-radius: 14px; padding: 2.5rem 1.5rem;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+}
+.booking-icon {
+  display: grid; place-items: center; width: 3.25rem; height: 3.25rem; margin-bottom: 1.25rem;
+  border-radius: 14px; color: var(--accent); background: color-mix(in srgb, var(--p-violet) 14%, transparent);
+}
+.booking h3 { font-size: 1.35rem; margin-bottom: .5rem; }
+.booking p { color: var(--muted); max-width: 30rem; }
+.booking .btn { margin-top: .5rem; }
+.booking .booking-note { font-size: .9rem; margin: 1rem 0 0; }
+
 /* Footer */
 .footer {
   padding: 2rem var(--gutter) 3rem;

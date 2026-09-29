@@ -51,9 +51,24 @@ Tekst: Jeg holder workshops for teams og giver individuel oplæring, så I kan k
 ## Book et møde
 
 Overskrift: Lad os tage en snak
+Skift mellem to muligheder: Send en forespørgsel, Book en tid
+
+Send en forespørgsel
 Tekst: Skriv lidt om jer, så vender jeg tilbage inden for en arbejdsdag.
 Felter: Navn, Virksomhed, E-mail, Telefon (valgfrit), Hvad tager mest tid i jeres marketing lige nu?
 Knap: Send
+
+Book en tid
+Tekst: Vælg selv et tidspunkt i min kalender, så har vi en aftale med det samme.
+Overskrift i boksen: Et møde på 30 minutter
+Tekst i boksen: Når I har valgt et tidspunkt, får I en bekræftelse på mail, og mødet ligger i begge vores kalendere.
+Knap: Åbn min kalender
+Lille tekst: Kalenderen åbner i en ny fane hos Google.
+
+## Automatisk svar på forespørgsler
+
+Emne: Tak for jeres henvendelse
+Tekst: Hej [fornavn]. Tak for jeres besked. Jeg har modtaget den og vender tilbage inden for en arbejdsdag. Hvis I hellere vil finde et tidspunkt med det samme, kan I booke et møde på 30 minutter direkte i min kalender her: [booking-link]. Venlig hilsen Kasper Schrøder Asmussen
 
 ## Tak-siden
 

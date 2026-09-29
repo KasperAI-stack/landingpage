@@ -8,6 +8,8 @@ En enkel landingpage i ren HTML og CSS, der publiceres gratis via Netlify.
 - docs/tilbud.md: produkter, proces og priser.
 - docs/copy.md: teksten til hver sektion.
 - site/: selve hjemmesiden. Det er kun denne mappe, der kommer online.
+- docs/automatisering.md: sådan sætter du booking og automatiske svar op (gratis).
+- automatisering/: scriptet til Google Apps Script. Kommer ikke online.
 - netlify.toml: fortæller Netlify, at site/ skal publiceres.
 - .claude/commands/copy-review.md: kommandoen /copy-review, der tjekker teksten mod dine regler.
 

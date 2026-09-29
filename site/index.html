@@ -211,8 +211,15 @@
     <!-- 7. Book et møde -->
     <section class="section contact" id="book" aria-labelledby="book-titel">
       <h2 class="center big" id="book-titel">Lad os tage en snak</h2>
-      <p class="center lede-small">Skriv lidt om jer, så vender jeg tilbage inden for en arbejdsdag.</p>
-      <div class="frame frame-form">
+
+      <div class="switch" data-contact-switch hidden>
+        <button type="button" class="switch-btn" data-mode="forespoergsel" aria-pressed="true">Send en forespørgsel</button>
+        <button type="button" class="switch-btn" data-mode="booking" aria-pressed="false">Book en tid</button>
+      </div>
+
+      <div class="contact-mode" data-panel="forespoergsel">
+        <p class="center lede-small">Skriv lidt om jer, så vender jeg tilbage inden for en arbejdsdag.</p>
+        <div class="frame frame-form">
         <form class="form" name="kontakt" method="POST" action="/tak.html" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="kontakt">
           <p class="hidden"><label>Udfyld ikke dette felt <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
@@ -227,6 +234,22 @@
           <label for="besked">Hvad tager mest tid i jeres marketing lige nu?<textarea id="besked" name="besked" rows="4"></textarea></label>
           <button class="btn" type="submit">Send</button>
         </form>
+        </div>
+      </div>
+
+      <div class="contact-mode" data-panel="booking">
+        <p class="center lede-small">Vælg selv et tidspunkt i min kalender, så har vi en aftale med det samme.</p>
+        <div class="frame frame-form">
+          <div class="booking">
+            <span class="booking-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M9.5 15l2 2 3.5-3.5"/></svg>
+            </span>
+            <h3>Et møde på 30 minutter</h3>
+            <p>Når I har valgt et tidspunkt, får I en bekræftelse på mail, og mødet ligger i begge vores kalendere.</p>
+            <a class="btn" href="[booking-link]" target="_blank" rel="noopener">Åbn min kalender</a>
+            <p class="booking-note">Kalenderen åbner i en ny fane hos Google.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
