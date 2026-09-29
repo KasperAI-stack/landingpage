@@ -20,3 +20,16 @@ document.querySelectorAll("[data-focus]").forEach(function (link) {
     }
   });
 });
+
+// Produktfanerne skifter illustrationen i det farvede panel.
+var tabs = document.querySelectorAll(".tab[data-show]");
+tabs.forEach(function (tab) {
+  tab.addEventListener("click", function () {
+    tabs.forEach(function (other) {
+      var active = other === tab;
+      other.setAttribute("aria-pressed", active ? "true" : "false");
+      var view = document.getElementById(other.getAttribute("data-show"));
+      if (view) view.hidden = !active;
+    });
+  });
+});

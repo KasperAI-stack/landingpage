@@ -72,49 +72,84 @@
     <!-- 3. Produkterne -->
     <section class="section" id="produkter" aria-labelledby="produkter-titel">
       <h2 class="center" id="produkter-titel">Tre ting, jeg kan bygge for jer</h2>
-      <div class="products">
-        <article class="product">
-          <div class="frame frame-card g1" aria-hidden="true">
-            <div class="mini">
-              <div class="mini-bar"></div>
-              <div class="chart">
-                <span style="--h: 38%"></span><span style="--h: 55%"></span><span style="--h: 46%"></span>
-                <span style="--h: 70%"></span><span style="--h: 62%"></span><span style="--h: 84%"></span>
+
+      <div class="tabs">
+        <button class="tab" type="button" data-show="vis-analyse" aria-pressed="true">
+          <span class="tab-head">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20h16M7 16v-4M12 16V8M17 16v-7"/></svg>
+            Analyse og rapportering
+          </span>
+          <span class="tab-text">En agent, der samler jeres data og fortæller jer, hvad der virker, hvad der ikke gør, og hvor I skal sætte ind.</span>
+        </button>
+        <button class="tab" type="button" data-show="vis-leads" aria-pressed="false">
+          <span class="tab-head">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h4"/></svg>
+            Landingpages og leadforms
+          </span>
+          <span class="tab-text">En side bygget til at konvertere, med automatisering bagved, så leads bliver sorteret og fulgt op uden manuelt arbejde.</span>
+        </button>
+        <button class="tab" type="button" data-show="vis-content" aria-pressed="false">
+          <span class="tab-head">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg>
+            Content-agent
+          </span>
+          <span class="tab-text">Produkttekster, SEO-indhold og opslag skrevet i jeres tone, så I kan producere mere uden at ansætte flere.</span>
+        </button>
+      </div>
+
+      <div class="stage" aria-hidden="true">
+        <!-- Analyse: rapport med graf og nøglekort -->
+        <div class="app" id="vis-analyse">
+          <div class="app-bar"><span></span><span></span><span></span><i></i></div>
+          <div class="app-body">
+            <div class="app-side"><b class="on"></b><b></b><b></b><em></em><b></b><b></b></div>
+            <div class="app-main">
+              <div class="sk-title"></div>
+              <div class="kpis"><div></div><div></div><div></div></div>
+              <div class="bars">
+                <span style="--h: 35%"></span><span style="--h: 52%"></span><span style="--h: 44%"></span><span style="--h: 63%"></span>
+                <span style="--h: 58%"></span><span style="--h: 76%"></span><span style="--h: 70%"></span><span style="--h: 88%"></span>
               </div>
             </div>
           </div>
-          <h3>Analyse og rapportering</h3>
-          <p>En agent, der samler jeres data og fortæller jer, hvad der virker, hvad der ikke gør, og hvor I skal sætte ind.</p>
-        </article>
-        <article class="product">
-          <div class="frame frame-card g2" aria-hidden="true">
-            <div class="mini">
-              <div class="mini-bar"></div>
-              <div class="field"></div>
-              <div class="field"></div>
-              <div class="field short"></div>
-              <div class="mini-btn"></div>
+          <div class="toast"><span class="dot"></span><span class="sk"></span></div>
+        </div>
+        <!-- Landingpages: side med formular og liste over leads -->
+        <div class="app" id="vis-leads" hidden>
+          <div class="app-bar"><span></span><span></span><span></span><i></i></div>
+          <div class="app-body">
+            <div class="app-side"><b></b><b class="on"></b><b></b><em></em><b></b></div>
+            <div class="app-main">
+              <div class="sk-title"></div>
+              <div class="leads">
+                <div class="lead"><span class="av"></span><span class="sk"></span><span class="chip c1"></span></div>
+                <div class="lead"><span class="av"></span><span class="sk"></span><span class="chip c2"></span></div>
+                <div class="lead"><span class="av"></span><span class="sk"></span><span class="chip c1"></span></div>
+                <div class="lead"><span class="av"></span><span class="sk"></span><span class="chip c3"></span></div>
+                <div class="lead"><span class="av"></span><span class="sk"></span><span class="chip c2"></span></div>
+              </div>
             </div>
           </div>
-          <h3>Landingpages og leadforms</h3>
-          <p>En side bygget til at konvertere, med automatisering bagved, så leads bliver sorteret og fulgt op uden manuelt arbejde.</p>
-        </article>
-        <article class="product">
-          <div class="frame frame-card g3" aria-hidden="true">
-            <div class="mini">
-              <div class="mini-bar"></div>
-              <div class="line w90"></div>
-              <div class="line w100"></div>
-              <div class="line w75"></div>
-              <div class="line w100"></div>
-              <div class="line w60"></div>
+          <div class="toast"><span class="dot"></span><span class="sk"></span></div>
+        </div>
+        <!-- Content: tekst under udarbejdelse -->
+        <div class="app" id="vis-content" hidden>
+          <div class="app-bar"><span></span><span></span><span></span><i></i></div>
+          <div class="app-body">
+            <div class="app-side"><b></b><b></b><b class="on"></b><em></em><b></b><b></b></div>
+            <div class="app-main">
+              <div class="sk-title"></div>
+              <div class="doc">
+                <span class="w100"></span><span class="w90"></span><span class="w95"></span><span class="hl w70"></span>
+                <span class="w100"></span><span class="w80"></span><span class="w60 cursor"></span>
+              </div>
             </div>
           </div>
-          <h3>Content-agent</h3>
-          <p>Produkttekster, SEO-indhold og opslag skrevet i jeres tone, så I kan producere mere uden at ansætte flere.</p>
-        </article>
+          <div class="toast"><span class="dot"></span><span class="sk"></span></div>
+        </div>
       </div>
-      <p class="center muted">Ved I ikke, hvad I skal starte med? Det finder vi ud af sammen på det første møde.</p>
+
+      <p class="center muted after-stage">Ved I ikke, hvad I skal starte med? Det finder vi ud af sammen på det første møde.</p>
     </section>
 
     <!-- 4. Sådan foregår det -->
