@@ -183,7 +183,7 @@ h3 { font-family: var(--pixel); font-weight: 700; font-size: 1.05rem; line-heigh
 
 /* Om */
 .about { display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; }
-.photo { border-radius: 50%; object-fit: cover; border: 3px solid var(--cyan); }
+.photo { border-radius: 50%; object-fit: cover; border: 3px solid var(--cyan); background: var(--surface); }
 .about > div { flex: 1 1 20rem; max-width: var(--read); }
 
 /* Workshops */
