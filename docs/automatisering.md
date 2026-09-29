@@ -24,9 +24,9 @@ Du skal igennem tre dele. Tag dem i rækkefølge.
 5. Under **Booket aftale** kan du tilføje **Google Meet**, så mødet automatisk får et videolink.
 6. Klik **Gem**.
 7. Klik på aftaleplanen i kalenderen, og vælg **Del** (eller "Åbn bookingside"). Kopiér linket. Det ligner `https://calendar.app.google/...`.
-8. **Send linket til Claude**, eller indsæt det selv to steder:
-   - i `site/index.html`, hvor der står `[booking-link]`
-   - i `automatisering/henvendelser.gs`, hvor der står `[booking-link]`
+8. Dit bookinglink er allerede sat ind på hjemmesiden og i scriptet:
+   `https://calendar.app.google/h7uCdYSGWCpxRuK57`
+   Laver du en ny bookingside senere, skal linket skiftes i `site/index.html` og i `automatisering/henvendelser.gs`.
 
 ---
 
@@ -37,7 +37,7 @@ Du skal igennem tre dele. Tag dem i rækkefølge.
 3. Slet alt i editoren, og indsæt hele indholdet af filen `automatisering/henvendelser.gs`.
 4. Øverst i koden, under `INDSTILLINGER`:
    - Skift `HEMMELIG_NOEGLE` til en lang, tilfældig tekst, fx 30 tilfældige bogstaver og tal. Skriv den ned, du skal bruge den i del 3.
-   - Indsæt dit bookinglink ved `BOOKING_LINK`.
+   - `BOOKING_LINK` er allerede udfyldt med dit bookinglink.
 5. Klik på diskette-ikonet for at gemme.
 6. Vælg funktionen **opsaet** i menuen øverst, og klik **Kør**.
 7. Google spørger om tilladelser. Vælg din konto. Hvis der står "Google har ikke bekræftet denne app", så klik **Avanceret** og derefter **Gå til Landingpage henvendelser**. Det er dit eget script, så det er trygt. Klik **Tillad**.

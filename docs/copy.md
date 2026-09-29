@@ -68,7 +68,7 @@ Lille tekst: Kalenderen åbner i en ny fane hos Google.
 ## Automatisk svar på forespørgsler
 
 Emne: Tak for jeres henvendelse
-Tekst: Hej [fornavn]. Tak for jeres besked. Jeg har modtaget den og vender tilbage inden for en arbejdsdag. Hvis I hellere vil finde et tidspunkt med det samme, kan I booke et møde på 30 minutter direkte i min kalender her: [booking-link]. Venlig hilsen Kasper Schrøder Asmussen
+Tekst: Hej [fornavn]. Tak for jeres besked. Jeg har modtaget den og vender tilbage inden for en arbejdsdag. Hvis I hellere vil finde et tidspunkt med det samme, kan I booke et møde på 30 minutter direkte i min kalender her: https://calendar.app.google/h7uCdYSGWCpxRuK57. Venlig hilsen Kasper Schrøder Asmussen
 
 ## Tak-siden
 

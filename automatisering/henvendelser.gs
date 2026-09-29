@@ -16,7 +16,7 @@ const INDSTILLINGER = {
   HEMMELIG_NOEGLE: 'SKIFT-MIG-til-en-lang-tilfaeldig-tekst',
 
   // Linket til din bookingside i Google Kalender (samme link som på hjemmesiden).
-  BOOKING_LINK: '[booking-link]',
+  BOOKING_LINK: 'https://calendar.app.google/h7uCdYSGWCpxRuK57',
 
   // Navnet, som står som afsender på det automatiske svar.
   AFSENDER_NAVN: 'Kasper Schrøder Asmussen',
