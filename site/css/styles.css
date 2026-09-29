@@ -5,6 +5,7 @@
   --ink: #0B0B0F;
   --muted: #5B5E6B;
   --line: #E6E6EB;
+  --plus: #A9ABB8;
   --focus: #3B5BFF;
 
   --g-blue: #3B5BFF;
@@ -16,7 +17,7 @@
   --font: "Geist", "Helvetica Neue", Arial, sans-serif;
   --max: 72rem;
   --read: 40rem;
-  --gutter: 1.25rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
   --radius: 22px;
 }
 
@@ -30,6 +31,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 img { max-width: 100%; }
 a { color: inherit; text-underline-offset: 3px; }
@@ -43,6 +45,18 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 .small { font-size: .95rem; }
 .hidden { display: none; }
 
+/* Grid: siden står i en ramme af tynde linjer, med små plus-mærker hvor linjerne mødes */
+.page { max-width: 76rem; margin: 0 auto; border-inline: 1px solid var(--line); min-width: 0; }
+.section, .footer { position: relative; border-top: 1px solid var(--line); }
+.section::before, .section::after, .footer::before, .footer::after {
+  content: ""; position: absolute; top: -6px; width: 11px; height: 11px; pointer-events: none;
+  background:
+    linear-gradient(var(--plus), var(--plus)) center / 1px 100% no-repeat,
+    linear-gradient(var(--plus), var(--plus)) center / 100% 1px no-repeat;
+}
+.section::before, .footer::before { left: -6px; }
+.section::after, .footer::after { right: -6px; }
+
 /* Spring til indhold (kun synlig ved tastatur) */
 .skip {
   position: absolute; left: var(--gutter); top: -4rem; z-index: 10;
@@ -53,7 +67,7 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 /* Top */
 .topbar {
   display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-  max-width: var(--max); margin: 0 auto; padding: 1rem var(--gutter);
+  padding: 1rem var(--gutter); border-bottom: 1px solid var(--line);
 }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-weight: 600; letter-spacing: -.01em; }
 .brand-mark { width: 28px; height: 28px; flex: none; }
@@ -81,7 +95,7 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 
 /* Hero */
 .hero {
-  max-width: var(--max); margin: 0 auto; padding: 3.5rem var(--gutter) 2rem;
+  padding: 3.5rem var(--gutter) 5rem;
   display: flex; flex-direction: column; align-items: center; text-align: center;
 }
 h1 {
@@ -130,7 +144,7 @@ h1 {
 }
 
 /* Sektioner */
-.section { max-width: var(--max); margin: 0 auto; padding: 5rem var(--gutter); }
+.section { padding: 5rem var(--gutter); }
 
 /* Problemet: overskrift og tekst side om side på desktop */
 .split { display: grid; gap: 1rem 4rem; }
@@ -160,21 +174,37 @@ h1 {
 .line.w75 { background: linear-gradient(90deg, var(--g-pink), var(--g-orange)); opacity: .55; }
 .w100 { width: 100%; } .w90 { width: 90%; } .w75 { width: 75%; } .w60 { width: 60%; }
 
-/* Trin */
-.steps { list-style: none; counter-reset: s; padding: 0; margin: 3rem 0 2.5rem; display: grid; gap: 1.25rem; }
+/* Trin: kolonner adskilt af gridlinjer, som går helt ud til rammen */
+.process { padding-bottom: 0; }
+.steps {
+  list-style: none; padding: 0; display: grid;
+  margin: 3rem calc(var(--gutter) * -1) 0; border-top: 1px solid var(--line);
+}
 @media (min-width: 40rem) { .steps { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 64rem) { .steps { grid-template-columns: repeat(4, 1fr); } }
-.steps li {
-  counter-increment: s; background: var(--soft); border-radius: var(--radius); padding: 1.5rem;
-  display: flex; flex-direction: column;
+.steps li { padding: 2.25rem var(--gutter); border-bottom: 1px solid var(--line); min-width: 0; }
+@media (min-width: 40rem) {
+  .steps li { padding: 2.5rem 2rem; }
+  .steps li:nth-child(2n) { border-left: 1px solid var(--line); }
 }
-.steps li::before {
-  content: counter(s); display: grid; place-items: center; width: 2rem; height: 2rem; margin-bottom: 1.25rem;
-  border-radius: 50%; background: var(--ink); color: var(--bg); font-weight: 600; font-size: .9rem;
+@media (min-width: 64rem) {
+  .steps li { border-bottom: 0; }
+  .steps li + li { border-left: 1px solid var(--line); }
 }
-.step-title { font-weight: 600; font-size: 1.15rem; letter-spacing: -.01em; margin: 0; }
-.price { font-weight: 600; margin: .15rem 0 .75rem; color: #6D3FE0; }
+.step-icon {
+  display: grid; place-items: center; width: 2.5rem; height: 2.5rem; margin-bottom: 1.75rem;
+  border-radius: 10px; color: var(--c); background: color-mix(in srgb, var(--c) 9%, transparent);
+  box-shadow: 0 0 22px color-mix(in srgb, var(--c) 35%, transparent);
+}
+.step-icon svg { filter: drop-shadow(0 0 4px color-mix(in srgb, var(--c) 60%, transparent)); }
+.steps li:nth-child(1) { --c: var(--g-blue); }
+.steps li:nth-child(2) { --c: var(--g-violet); }
+.steps li:nth-child(3) { --c: var(--g-pink); }
+.steps li:nth-child(4) { --c: #EA580C; }
+.step-title { font-size: 1.2rem; font-weight: 500; letter-spacing: -.02em; color: var(--muted); margin: 0 0 .75rem; }
+.step-title strong { color: var(--ink); font-weight: 600; }
 .step-text { color: var(--muted); margin: 0; font-size: 1rem; }
+.process-note { margin: 0 calc(var(--gutter) * -1); padding: 1.5rem var(--gutter); border-top: 1px solid var(--line); }
 
 /* Om */
 .about { display: grid; gap: 2.5rem; align-items: center; }
@@ -211,8 +241,8 @@ h1 {
 
 /* Footer */
 .footer {
-  max-width: var(--max); margin: 0 auto; padding: 2rem var(--gutter) 3rem;
-  border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem;
+  padding: 2rem var(--gutter) 3rem;
+  color: var(--muted); font-size: .95rem;
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem;
 }
 .footer p { margin: 0; }
