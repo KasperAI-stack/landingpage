@@ -1,7 +1,5 @@
-Læg billederne her:
+Billederne til siden:
 
-- astronaut.png: pixel-astronauten med AI-kasket (bruges i hero)
-- kasper.jpg: rigtigt foto til "Om mig"
-- favicon.png: 32x32 pixel, fx astronautens hoved
-
-Denne fil kan slettes, når billederne er lagt ind.
+- robot.svg: maskotten, en venlig rumrobot (bruges i hero og på tak-siden)
+- favicon.svg: robottens hoved på gradient, bruges som ikon i fanen og ved navnet i toppen
+- kasper.jpg: rigtigt foto til "Om mig" og i chatvinduet i hero

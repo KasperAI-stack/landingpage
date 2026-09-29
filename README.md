@@ -16,7 +16,7 @@ En enkel landingpage i ren HTML og CSS, der publiceres gratis via Netlify.
 1. Læg mappen et sted på din computer, og åbn en terminal i den.
 2. Start Claude Code med kommandoen `claude`. Den læser CLAUDE.md automatisk.
 3. Se siden lokalt: `npx serve site` og åbn adressen, der vises i terminalen.
-4. Læg dit foto i site/assets/kasper.jpg. Astronauten er klippet ud af dit skærmbillede og kan erstattes af en original fil i bedre kvalitet.
+4. Dit foto ligger i site/assets/kasper.jpg, og maskotten (robotten) ligger i site/assets/robot.svg.
 5. Udfyld pladsholderne i firkantede parenteser, fx resultater, e-mail, telefon, CVR og LinkedIn.
 
 ## Publicér via Netlify
@@ -33,4 +33,4 @@ Hver gang du pusher til main, opdaterer Netlify siden automatisk.
 
 - "Gennemgå siden på mobil og ret det, der ikke ser godt ud."
 - "/copy-review"
-- "Lav en version af hero-sektionen, hvor astronauten er til venstre og teksten til højre på desktop."
+- "Lav en version af hero-sektionen, hvor robotten er til venstre og teksten til højre på desktop."

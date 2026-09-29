@@ -10,8 +10,8 @@ En enkelt landingpage for Kasper Schrøder Asmussen, der hjælper virksomheder m
 
 - Navn: Kasper Schrøder Asmussen
 - Tagline: AI og marketing uden raketvidenskab.
-- Koncept: Det visuelle er rummet med mørk baggrund, stjerner og pixel-art. Ordene er jordnære. Kontrasten er selve brandet: siden ligner raketvidenskab, men alt, hvad der står, er let at forstå.
-- Ansigt: Pixel-astronauten med den grønne AI-kasket er Kasper. Et rigtigt foto af Kasper bruges i sektionen "Om mig".
+- Koncept: En moderne, lys konsulentside med hvid baggrund, sort tekst og farve i gradient-rammer. Ordene er jordnære, og alt, hvad der står, er let at forstå.
+- Maskot: En venlig, hvid rumrobot med antenne og mørkt visir (site/assets/robot.svg). Den bruges i hero og på tak-siden. Et rigtigt foto af Kasper bruges i "Om mig" og i chatvinduet i hero.
 
 ## Sprog og tone
 
@@ -31,7 +31,7 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 
 ## Sidens opbygning
 
-1. Hero: tagline, én sætning om tilbuddet, knap til booking og astronauten.
+1. Hero: tagline, én sætning om tilbuddet, knap til booking og robotten.
 2. Problemet
 3. De tre produkter
 4. Sådan foregår det: de fire trin med priser
@@ -46,21 +46,21 @@ Teksten til hver sektion ligger i docs/copy.md.
 
 Farver (defineret som CSS-variabler i site/css/styles.css):
 
-- Baggrund: #0B0C1E
-- Flade: #14163A
-- Tekst: #E8ECF8
-- Dæmpet tekst: #A7B0CF
-- Cyan (overskrifter, links): #22D3EE
-- Gul (primær knap, fremhævning): #FFC400
-- Lilla (sekundær accent): #B04BDB
+- Baggrund: #FFFFFF
+- Lys flade: #F5F5F7
+- Tekst: #0B0B0F
+- Dæmpet tekst: #5B5E6B
+- Linjer: #E6E6EB
+- Gradient: blå #3B5BFF, lilla #8B5CF6, pink #EC4899, orange #F97316
 
 Regler:
 
-- Pixel-skrift (Silkscreen fra Google Fonts) kun til overskrifter, knapper og små labels. Brødtekst i Space Grotesk, så den er let at læse.
-- Én illustrationsstil: rene pixel-sprites som astronauten. Ingen blandede, detaljerede AI-genererede illustrationer.
-- Pixel-billeder skal have image-rendering: pixelated.
+- Skrift: Geist fra Google Fonts til både overskrifter og brødtekst. Store overskrifter med stram afstand mellem bogstaverne.
+- Knapper er sorte og helt runde i enderne. Farve kommer fra gradient-rammerne om billeder, kort og formularen, ikke fra teksten.
+- Illustrationer er rene vektorgrafikker (SVG) i samme stil som robotten. Ingen pixel-art og ingen detaljerede AI-genererede billeder.
+- Rummet må gerne ses i robotten, men ikke i teksten.
 - Mobil først. Kontrast mindst WCAG AA. Synligt fokus på alle knapper og felter.
-- Stjernebaggrunden må gerne bevæge sig svagt, men højst én animation pr. skærm, og alt slås fra ved prefers-reduced-motion.
+- Hold animation på et minimum, og slå den fra ved prefers-reduced-motion.
 
 ## Teknik
 
