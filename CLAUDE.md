@@ -10,7 +10,7 @@ En enkelt landingpage for Kasper Schrøder Asmussen, der hjælper virksomheder m
 
 - Navn: Kasper Schrøder Asmussen
 - Tagline: AI og marketing uden raketvidenskab.
-- Koncept: En moderne, lys konsulentside med hvid baggrund, sort tekst og farve i gradient-rammer. Ordene er jordnære, og alt, hvad der står, er let at forstå.
+- Koncept: En moderne konsulentside i sort, grå og lilla, med lyst og mørkt tema. Ordene er jordnære, og alt, hvad der står, er let at forstå.
 - Maskot: En venlig, hvid rumrobot med antenne og mørkt visir (site/assets/robot.svg). Den bruges i hero og på tak-siden. Et rigtigt foto af Kasper bruges i "Om mig" og i chatvinduet i hero.
 
 ## Sprog og tone
@@ -44,21 +44,30 @@ Teksten til hver sektion ligger i docs/copy.md.
 
 ## Design
 
-Farver (defineret som CSS-variabler i site/css/styles.css):
+Farver (defineret som CSS-variabler i site/css/styles.css). Siden har et lyst og et mørkt tema. Den følger den besøgendes egen indstilling, og en knap i toppen skifter mellem dem. Valget huskes i browseren (localStorage, ingen cookies).
 
-- Baggrund: #FFFFFF
-- Lys flade: #F5F5F7
-- Tekst: #0B0B0F
-- Dæmpet tekst: #5B5E6B
-- Linjer: #E6E6EB
-- Gradient: blå #3B5BFF, lilla #8B5CF6, pink #EC4899, orange #F97316
+Neutrale:
+
+- Onyx #0F0E13: tekst i lyst tema, baggrund i mørkt tema
+- Grafit #1E1C24: flader i mørkt tema
+- Skifer #3B3845: linjer i mørkt tema
+- Sølvgrå #A7A3B2: dæmpet tekst i mørkt tema
+- Tåge #F4F2F8: flader i lyst tema, tekst i mørkt tema
+- Lyst tema har hvid baggrund og dæmpet tekst i #5E5A6B
+
+Lilla accenter:
+
+- Dyb violet #4C1D95
+- Violet #7C3AED (knapper)
+- Orkidé #C026D3
+- Rosé #F472B6 (kun i mørkt tema, den er for lys på hvid baggrund)
 
 Regler:
 
 - Skrift: Geist fra Google Fonts til både overskrifter og brødtekst. Store overskrifter med stram afstand mellem bogstaverne.
 - Grid: Siden står i en ramme af tynde lodrette linjer, og sektionerne er adskilt af vandrette linjer med små plus-mærker, hvor linjerne mødes. De fire trin står i kolonner adskilt af gridlinjer, hver med et lille lysende ikon og en titel, hvor trinnets navn er fedt og prisen dæmpet.
 - Produkterne vises som tre faner over et farvet panel med et app-vindue. Den valgte fane er udfyldt med lilla gradient, og vinduet skifter illustration efter fanen. Illustrationerne er abstrakte, uden tal eller tekst.
-- Knapper er sorte og helt runde i enderne. Farve kommer fra gradient-rammerne om billeder, kort og formularen, ikke fra teksten.
+- Knapper er violette og helt runde i enderne. Farve kommer fra de lilla gradient-rammer om billeder, kort og formularen, ikke fra teksten.
 - Illustrationer er rene vektorgrafikker (SVG) i samme stil som robotten. Ingen pixel-art og ingen detaljerede AI-genererede billeder.
 - Rummet må gerne ses i robotten, men ikke i teksten.
 - Mobil først. Kontrast mindst WCAG AA. Synligt fokus på alle knapper og felter.

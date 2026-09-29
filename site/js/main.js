@@ -33,3 +33,28 @@ tabs.forEach(function (tab) {
     });
   });
 });
+
+// Knappen i toppen skifter mellem lyst og mørkt tema og husker valget i browseren.
+var toggle = document.querySelector("[data-theme-toggle]");
+if (toggle) {
+  var root = document.documentElement;
+  var prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+  var current = function () {
+    return root.getAttribute("data-theme") || (prefersDark.matches ? "dark" : "light");
+  };
+  var render = function () {
+    var dark = current() === "dark";
+    toggle.querySelector(".i-moon").hidden = dark;
+    toggle.querySelector(".i-sun").hidden = !dark;
+    toggle.setAttribute("aria-label", dark ? "Skift til lyst tema" : "Skift til mørkt tema");
+  };
+  toggle.hidden = false;
+  render();
+  prefersDark.addEventListener("change", render);
+  toggle.addEventListener("click", function () {
+    var next = current() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("tema", next); } catch (e) {}
+    render();
+  });
+}
