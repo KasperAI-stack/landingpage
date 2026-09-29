@@ -10,6 +10,8 @@
   --rail: #D3CFDD;
   --focus: #7C3AED;
   --hover: rgb(15 14 19 / .04);
+  --btn-hover: #2B2932;
+  --tile: #FFFFFF;
   --accent: #7C3AED;
   --s1: #7C3AED; --s2: #9333EA; --s3: #C026D3; --s4: #DB2777;
   color-scheme: light;
@@ -41,6 +43,8 @@
   --rail: #3B3845;
   --focus: #F472B6;
   --hover: rgb(244 242 248 / .05);
+  --btn-hover: #D9D6E2;
+  --tile: #F4F2F8;
   --accent: #F472B6;
   --s1: #8B5CF6; --s2: #A855F7; --s3: #D946EF; --s4: #F472B6;
   color-scheme: dark;
@@ -56,6 +60,8 @@
   --rail: #3B3845;
   --focus: #F472B6;
   --hover: rgb(244 242 248 / .05);
+  --btn-hover: #D9D6E2;
+  --tile: #F4F2F8;
   --accent: #F472B6;
   --s1: #8B5CF6; --s2: #A855F7; --s3: #D946EF; --s4: #F472B6;
   color-scheme: dark;
@@ -101,7 +107,7 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 /* Spring til indhold (kun synlig ved tastatur) */
 .skip {
   position: absolute; left: var(--gutter); top: -4rem; z-index: 10;
-  background: var(--p-violet); color: #fff; padding: .6rem 1rem; border-radius: 999px; text-decoration: none;
+  background: var(--ink); color: var(--bg); padding: .6rem 1rem; border-radius: 999px; text-decoration: none;
 }
 .skip:focus { top: 1rem; }
 
@@ -120,20 +126,29 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
   font: inherit; font-weight: 600; font-size: 1rem; line-height: 1.2;
-  background: var(--p-violet); color: #fff; text-decoration: none;
+  background: var(--ink); color: var(--bg); text-decoration: none;
   padding: .95rem 1.6rem; border: 0; border-radius: 999px; cursor: pointer;
   transition: transform .15s, background-color .15s;
 }
-.btn:hover { background: #6A2BD9; transform: translateY(-1px); box-shadow: 0 8px 24px rgb(124 58 237 / .35); }
+.btn:hover { color: var(--bg); background: var(--btn-hover); transform: translateY(-1px); }
 .btn:disabled { opacity: .6; cursor: progress; transform: none; }
 .btn-small { font-size: .9rem; padding: .6rem 1.1rem; }
 .top-actions { display: flex; align-items: center; gap: .6rem; }
+/* Temakontakt: sol og måne side om side, det aktive tema er markeret */
 .theme-toggle {
-  display: grid; place-items: center; width: 2.4rem; height: 2.4rem; padding: 0; cursor: pointer;
-  color: var(--ink); background: transparent; border: 1px solid var(--rail); border-radius: 50%;
-  transition: background-color .15s, border-color .15s;
+  display: flex; align-items: center; gap: 2px; padding: 3px; cursor: pointer;
+  background: var(--soft); border: 1px solid var(--line); border-radius: 999px;
 }
-.theme-toggle:hover { background: var(--hover); border-color: var(--plus); }
+.theme-toggle[hidden] { display: none; }
+.t-opt {
+  display: grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%;
+  color: var(--muted); transition: background-color .15s, color .15s;
+}
+.theme-toggle:hover .t-opt { color: var(--ink); }
+.theme-toggle[data-active="light"] .t-sun,
+.theme-toggle[data-active="dark"] .t-moon {
+  background: var(--bg); color: var(--ink); box-shadow: 0 1px 3px rgb(15 14 19 / .15);
+}
 
 /* Gradient-rammer */
 .frame { background: var(--gradient); border-radius: var(--radius); padding: .6rem; }
@@ -188,7 +203,7 @@ h1 {
 .reply:hover { border-color: var(--accent); }
 .reply-send {
   display: grid; place-items: center; width: 2.1rem; height: 2.1rem; flex: none;
-  border-radius: 8px; background: var(--p-violet); color: #fff;
+  border-radius: 8px; background: var(--ink); color: var(--bg);
 }
 
 /* Sektioner */
@@ -214,14 +229,14 @@ h1 {
 }
 .tab:hover { background: var(--hover); }
 .tab-head { display: flex; align-items: center; gap: .55rem; color: var(--ink); font-weight: 600; font-size: 1.05rem; letter-spacing: -.01em; }
-.tab-head svg { flex: none; color: var(--accent); }
+.tab-head svg { flex: none; color: var(--muted); }
 .tab-text { font-size: .975rem; line-height: 1.5; }
 .tab[aria-pressed="true"] {
-  background: linear-gradient(140deg, var(--p-deep), var(--p-violet) 55%, #9D3FE6);
-  border-color: transparent; color: rgb(255 255 255 / .88);
-  box-shadow: 0 14px 40px rgb(124 58 237 / .35);
+  background: var(--ink); border-color: var(--ink);
+  color: color-mix(in srgb, var(--bg) 78%, transparent);
+  box-shadow: 0 14px 34px rgb(15 14 19 / .18);
 }
-.tab[aria-pressed="true"] .tab-head, .tab[aria-pressed="true"] .tab-head svg { color: #fff; }
+.tab[aria-pressed="true"] .tab-head, .tab[aria-pressed="true"] .tab-head svg { color: var(--bg); }
 
 .stage {
   position: relative; overflow: hidden; border-radius: 26px;
@@ -314,12 +329,53 @@ h1 {
 
 /* Om */
 .about { display: grid; gap: 2.5rem; align-items: center; }
-.frame-photo { width: min(100%, 22rem); padding: .6rem; }
+.frame-photo { width: min(100%, 22rem); padding: .6rem; background: var(--soft); border: 1px solid var(--line); }
 .photo { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 16px; }
 .about-text { max-width: var(--read); min-width: 0; }
 .about-text p { color: var(--muted); }
 @media (min-width: 52rem) {
   .about { grid-template-columns: 22rem 1fr; gap: 4rem; }
+}
+
+/* Værktøjer: prikket flade med en stablet flise i midten og værktøjerne spredt rundt om */
+.tools-stage {
+  position: relative; margin-top: 2.5rem; border-radius: var(--radius);
+  display: flex; flex-direction: column; align-items: center; gap: 2rem; padding: 2rem 1rem;
+  background-image: radial-gradient(color-mix(in srgb, var(--plus) 55%, transparent) 1px, transparent 1.6px);
+  background-size: 18px 18px;
+}
+.tools-stack { width: min(100%, 240px); height: auto; }
+.tool-list {
+  list-style: none; margin: 0; padding: 0; width: 100%;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem .5rem;
+}
+.tool { display: flex; flex-direction: column; align-items: center; gap: .45rem; min-width: 0; }
+.tool-tile {
+  display: grid; place-items: center; width: 3.6rem; height: 3.6rem; border-radius: 16px;
+  background: var(--tile); border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgb(15 14 19 / .06), 0 8px 20px rgb(15 14 19 / .08);
+  transform: rotate(var(--r, 0deg)); transition: transform .2s;
+}
+.tool-tile img { width: 55%; height: 55%; object-fit: contain; }
+.tool:hover .tool-tile { transform: rotate(0deg) translateY(-3px); }
+.tool-name { font-size: .85rem; font-weight: 500; color: var(--muted); text-align: center; }
+.t1 { --r: -6deg; } .t2 { --r: 5deg; } .t3 { --r: -3deg; } .t4 { --r: 7deg; }
+.t5 { --r: 4deg; } .t6 { --r: -7deg; } .t7 { --r: 6deg; } .t8 { --r: -4deg; }
+
+@media (min-width: 52rem) {
+  .tools-stage { min-height: 32rem; justify-content: center; padding: 3rem 2rem; }
+  .tools-stack { width: 300px; }
+  .tool-list { position: absolute; inset: 0; display: block; }
+  .tool { position: absolute; }
+  .tool-tile { width: 4.25rem; height: 4.25rem; border-radius: 18px; }
+  .t1 { left: 8%;  top: 12%; }
+  .t2 { left: 25%; top: 30%; }
+  .t3 { left: 6%;  top: 56%; }
+  .t4 { left: 23%; top: 72%; }
+  .t5 { right: 8%;  top: 10%; }
+  .t6 { right: 25%; top: 28%; }
+  .t7 { right: 6%;  top: 55%; }
+  .t8 { right: 22%; top: 73%; }
 }
 
 /* Workshops */
@@ -329,7 +385,7 @@ h1 {
 
 /* Kontakt og formular */
 .big { font-size: clamp(2.25rem, 6vw, 3.75rem); }
-.frame-form { max-width: 44rem; margin: 0 auto; padding: .75rem; }
+.frame-form { max-width: 44rem; margin: 0 auto; padding: .6rem; background: var(--soft); border: 1px solid var(--line); }
 .form { display: grid; gap: 1.1rem; background: var(--bg); border-radius: 14px; padding: 1.5rem 1.25rem; }
 @media (min-width: 36rem) { .form { padding: 2rem; } }
 .form-row { display: grid; gap: 1.1rem; }
@@ -356,7 +412,7 @@ h1 {
   transition: background-color .15s, color .15s;
 }
 .switch-btn:hover { color: var(--ink); }
-.switch-btn[aria-pressed="true"] { background: var(--p-violet); color: #fff; }
+.switch-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 .contact-mode + .contact-mode { margin-top: 3rem; }
 .js-switch .contact-mode + .contact-mode { margin-top: 0; }
 
@@ -366,7 +422,7 @@ h1 {
 }
 .booking-icon {
   display: grid; place-items: center; width: 3.25rem; height: 3.25rem; margin-bottom: 1.25rem;
-  border-radius: 14px; color: var(--accent); background: color-mix(in srgb, var(--p-violet) 14%, transparent);
+  border-radius: 14px; color: var(--ink); background: var(--soft); border: 1px solid var(--line);
 }
 .booking h3 { font-size: 1.35rem; margin-bottom: .5rem; }
 .booking p { color: var(--muted); max-width: 30rem; }

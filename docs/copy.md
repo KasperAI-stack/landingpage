@@ -43,6 +43,12 @@ Overskrift: Hvem er jeg?
 Tekst: Jeg hedder Kasper Schrøder Asmussen og har en kandidat i Marketing & Brand Management. Jeg har bygget AI-drevne marketingsystemer, SEO og automatiseringer i både B2B og B2C. [Tilføj ét eller to konkrete resultater.]
 Tekst: Jeg tror på, at AI skal gøre hverdagen lettere og ikke mere kompliceret. Derfor starter jeg altid med noget lille, som I kan se virke.
 
+## Værktøjer
+
+Overskrift: De værktøjer, jeg bygger med
+Tekst: Jeg vælger værktøjerne efter opgaven, og løsningerne bliver oprettet på jeres egne konti, så I ejer det hele.
+Værktøjer: Claude, n8n, VS Code, Lovable, Google Cloud, GitHub, Netlify, Google Sheets
+
 ## Workshops og oplæring
 
 Overskrift: Vil I hellere lære det selv?

@@ -44,8 +44,7 @@ if (toggle) {
   };
   var render = function () {
     var dark = current() === "dark";
-    toggle.querySelector(".i-moon").hidden = dark;
-    toggle.querySelector(".i-sun").hidden = !dark;
+    toggle.setAttribute("data-active", dark ? "dark" : "light");
     toggle.setAttribute("aria-label", dark ? "Skift til lyst tema" : "Skift til mørkt tema");
   };
   toggle.hidden = false;

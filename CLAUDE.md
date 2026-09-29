@@ -36,9 +36,10 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 3. De tre produkter
 4. Sådan foregår det: de fire trin med priser
 5. Om mig
-6. Workshops og oplæring
-7. Book et møde: formularen
-8. Footer: kontakt, CVR og LinkedIn
+6. Værktøjer: de værktøjer, Kasper bygger med
+7. Workshops og oplæring
+8. Book et møde: formularen eller booking
+9. Footer: kontakt, CVR og LinkedIn
 
 Teksten til hver sektion ligger i docs/copy.md.
 
@@ -58,7 +59,7 @@ Neutrale:
 Lilla accenter:
 
 - Dyb violet #4C1D95
-- Violet #7C3AED (knapper)
+- Violet #7C3AED
 - Orkidé #C026D3
 - Rosé #F472B6 (kun i mørkt tema, den er for lys på hvid baggrund)
 
@@ -67,7 +68,9 @@ Regler:
 - Skrift: Geist fra Google Fonts til både overskrifter og brødtekst. Store overskrifter med stram afstand mellem bogstaverne.
 - Grid: Siden står i en ramme af tynde lodrette linjer, og sektionerne er adskilt af vandrette linjer med små plus-mærker, hvor linjerne mødes. De fire trin står i kolonner adskilt af gridlinjer, hver med et lille lysende ikon og en titel, hvor trinnets navn er fedt og prisen dæmpet.
 - Produkterne vises som tre faner over et farvet panel med et app-vindue. Den valgte fane er udfyldt med lilla gradient, og vinduet skifter illustration efter fanen. Illustrationerne er abstrakte, uden tal eller tekst.
-- Knapper er violette og helt runde i enderne. Farve kommer fra de lilla gradient-rammer om billeder, kort og formularen, ikke fra teksten.
+- Sort, grå og hvid bærer siden. Knapper, valgte faner og vælgere er i tekstfarven (sort i lyst tema, lys i mørkt tema) og helt runde i enderne. Lilla er en accent, der kun bruges i rammen om chatvinduet i toppen, i produktpanelet, i ikonerne ved de fire trin og i figuren i værktøjssektionen.
+- Temakontakten i toppen viser sol og måne side om side, og det aktive tema er markeret.
+- Værktøjssektionen er en prikket flade med en stablet flise i midten (site/assets/stack.svg) og værktøjernes logoer i lyse app-ikoner rundt om. Logoerne ligger i site/assets/tools og kommer fra Iconify Logos og Simple Icons (CC0).
 - Illustrationer er rene vektorgrafikker (SVG) i samme stil som robotten. Ingen pixel-art og ingen detaljerede AI-genererede billeder.
 - Rummet må gerne ses i robotten, men ikke i teksten.
 - Mobil først. Kontrast mindst WCAG AA. Synligt fokus på alle knapper og felter.
