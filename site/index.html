@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kasper Schrøder Asmussen | AI og marketing uden raketvidenskab</title>
+  <meta name="description" content="Jeg bygger en gratis prototype på jeres egne data, så I kan se, hvad AI kan gøre for jer, før I beslutter noget som helst.">
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="/">Kasper Schrøder Asmussen</a>
+    <a class="btn btn-small" href="#book">Book en snak</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="astronaut" src="/assets/astronaut.png" alt="Pixel-tegning af Kasper som astronaut med grøn kasket" width="180" height="203">
+      <h1>AI og marketing uden raketvidenskab.</h1>
+      <p class="lede">Jeg bygger en gratis prototype på jeres egne data, så I kan se, hvad AI kan gøre for jer, før I beslutter noget som helst.</p>
+      <a class="btn" href="#book">Book en snak på 30 minutter</a>
+    </section>
+
+    <section class="block">
+      <h2>I ved godt, at AI kan spare jer tid</h2>
+      <p>Men I har ikke folkene til at bygge det, og I har ikke lyst til at binde jer til et stort projekt, der måske er forældet om et år. Derfor bliver de samme opgaver ved med at blive løst i hånden, uge efter uge.</p>
+    </section>
+
+    <section class="block">
+      <h2>Tre ting, jeg kan bygge for jer</h2>
+      <div class="products">
+        <article class="product" style="--accent: var(--cyan)">
+          <h3>Analyse og rapportering</h3>
+          <p>En agent, der samler jeres data og fortæller jer, hvad der virker, hvad der ikke gør, og hvor I skal sætte ind.</p>
+        </article>
+        <article class="product" style="--accent: var(--yellow)">
+          <h3>Landingpages og leadforms</h3>
+          <p>En side bygget til at konvertere, med automatisering bagved, så leads bliver sorteret og fulgt op uden manuelt arbejde.</p>
+        </article>
+        <article class="product" style="--accent: var(--purple)">
+          <h3>Content-agent</h3>
+          <p>Produkttekster, SEO-indhold og opslag skrevet i jeres tone, så I kan producere mere uden at ansætte flere.</p>
+        </article>
+      </div>
+      <p class="muted">Ved I ikke, hvad I skal starte med? Det finder vi ud af sammen på det første møde.</p>
+    </section>
+
+    <section class="block">
+      <h2>Sådan foregår det</h2>
+      <ol class="steps">
+        <li><span class="step-title">Afklaring</span><span class="price">Gratis</span><p>Vi tager en snak på 30 minutter og finder den opgave, hvor AI gør størst forskel hos jer.</p></li>
+        <li><span class="step-title">Prototype</span><span class="price">Gratis</span><p>Jeg bygger en fungerende løsning på en lille del af jeres egne data, så I kan se den virke.</p></li>
+        <li><span class="step-title">Færdiggørelse</span><span class="price">2.500 kr.</span><p>Løsningen bygges færdig og kobles på jeres systemer.</p></li>
+        <li><span class="step-title">Drift</span><span class="price">4.000 kr. om måneden</span><p>Jeg holder løsningen kørende og forbedrer den løbende, og I kan stoppe med en måneds varsel.</p></li>
+      </ol>
+      <p class="muted small">Værktøjerne oprettes på jeres egne konti, så I ejer det hele. Alle priser er ekskl. moms.</p>
+    </section>
+
+    <section class="block about">
+      <img class="photo" src="/assets/kasper.jpg" alt="Kasper Schrøder Asmussen" width="160" height="160" onerror="this.remove()">
+      <div>
+        <h2>Hvem er jeg?</h2>
+        <p>Jeg hedder Kasper Schrøder Asmussen og har en kandidat i Marketing &amp; Brand Management. Jeg har bygget AI-drevne marketingsystemer, SEO og automatiseringer i både B2B og B2C. [Tilføj ét eller to konkrete resultater.]</p>
+        <p>Jeg tror på, at AI skal gøre hverdagen lettere og ikke mere kompliceret. Derfor starter jeg altid med noget lille, som I kan se virke.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Vil I hellere lære det selv?</h2>
+      <p>Jeg holder workshops for teams og giver individuel oplæring, så I kan komme i gang med AI i jeres egen hverdag. Prisen aftaler vi ud fra jeres behov.</p>
+    </section>
+
+    <section class="block" id="book">
+      <h2>Lad os tage en snak</h2>
+      <p>Skriv lidt om jer, så vender jeg tilbage inden for en arbejdsdag.</p>
+      <form class="form" name="kontakt" method="POST" action="/tak.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="kontakt">
+        <p class="hidden"><label>Udfyld ikke dette felt <input name="bot-field"></label></p>
+        <label>Navn<input type="text" name="navn" autocomplete="name" required></label>
+        <label>Virksomhed<input type="text" name="virksomhed" autocomplete="organization" required></label>
+        <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
+        <label>Telefon (valgfrit)<input type="tel" name="telefon" autocomplete="tel"></label>
+        <label>Hvad tager mest tid i jeres marketing lige nu?<textarea name="besked" rows="4"></textarea></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Kasper Schrøder Asmussen</p>
+    <p>[e-mail], [telefon], CVR [indsæt], <a href="[linkedin-url]">LinkedIn</a></p>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
