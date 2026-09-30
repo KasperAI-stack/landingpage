@@ -46,7 +46,7 @@ Lille tekst: Værktøjerne oprettes på jeres egne konti, så I ejer det hele. A
 ## Om mig
 
 Overskrift: Hvem er jeg?
-Tekst: Jeg hedder Kasper Schrøder Asmussen og har en kandidat i Marketing & Brand Management. Jeg har bygget AI-drevne marketingsystemer, SEO og automatiseringer i både B2B og B2C. [Tilføj ét eller to konkrete resultater.]
+Tekst: Jeg hedder Kasper Schrøder Asmussen og har en kandidat i Marketing & Brand Management. Jeg har bygget AI-drevne marketingsystemer, SEO og automatiseringer i både B2B og B2C.
 Tekst: Jeg tror på, at AI skal gøre hverdagen lettere og ikke mere kompliceret. Derfor starter jeg altid med noget lille, som I kan se virke.
 
 ## Værktøjer
@@ -90,7 +90,7 @@ Link: Tilbage til forsiden
 
 ## Footer
 
-Hey Otto v/ Kasper Schrøder Asmussen, [e-mail], [telefon], CVR [indsæt], LinkedIn
+Hey Otto v/ Kasper Schrøder Asmussen, kasper@heyotto.dk, +45 22 46 38 40, LinkedIn (https://www.linkedin.com/in/kasperasmussen/)
 
 ## Meta (vises i Google og ved deling)
 

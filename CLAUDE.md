@@ -40,7 +40,7 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 6. Værktøjer: de værktøjer, Kasper bygger med
 7. Workshops og oplæring
 8. Book et møde: formularen eller booking
-9. Footer: kontakt, CVR og LinkedIn
+9. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40) og LinkedIn. CVR tilføjes, når Kasper har et.
 
 Teksten til hver sektion ligger i docs/copy.md.
 
