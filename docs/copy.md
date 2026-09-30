@@ -91,3 +91,10 @@ Link: Tilbage til forsiden
 ## Footer
 
 Hey Otto v/ Kasper Schrøder Asmussen, [e-mail], [telefon], CVR [indsæt], LinkedIn
+
+## Meta (vises i Google og ved deling)
+
+Forside, titel: Hey Otto | AI og marketing uden raketvidenskab
+Forside, beskrivelse: Hey Otto bygger AI til marketing i mindre og mellemstore virksomheder. I får en gratis prototype på jeres egne data, før I beslutter noget som helst.
+Tak-siden, titel: Tak for din besked | Hey Otto
+Tak-siden, beskrivelse: Tak for jeres besked til Hey Otto. Jeg vender tilbage inden for en arbejdsdag, så vi kan finde et tidspunkt, der passer jer.
