@@ -121,8 +121,8 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-weight: 600; letter-spacing: -.01em; }
 .brand-mark { width: 28px; height: 28px; flex: none; }
-/* Logo: billedfil med gennemsigtig baggrund. I mørkt tema vendes farven, så logoet bliver lyst. */
-.logo { display: block; height: 1.6rem; width: auto; filter: var(--logo-filter); }
+/* Logo: vektorgrafik (SVG) med gennemsigtig baggrund. I mørkt tema vendes farven, så logoet bliver lyst. */
+.logo { display: block; height: 1.8rem; width: auto; filter: var(--logo-filter); }
 .footer-name .logo { height: 1.35rem; }
 
 /* Knapper */
