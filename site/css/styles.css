@@ -12,6 +12,7 @@
   --hover: rgb(15 14 19 / .04);
   --btn-hover: #2B2932;
   --tile: #FFFFFF;
+  --logo-filter: none;
   --accent: #7C3AED;
   --s1: #7C3AED; --s2: #9333EA; --s3: #C026D3; --s4: #DB2777;
   color-scheme: light;
@@ -45,6 +46,7 @@
   --hover: rgb(244 242 248 / .05);
   --btn-hover: #D9D6E2;
   --tile: #F4F2F8;
+  --logo-filter: invert(1);
   --accent: #F472B6;
   --s1: #8B5CF6; --s2: #A855F7; --s3: #D946EF; --s4: #F472B6;
   color-scheme: dark;
@@ -62,6 +64,7 @@
   --hover: rgb(244 242 248 / .05);
   --btn-hover: #D9D6E2;
   --tile: #F4F2F8;
+  --logo-filter: invert(1);
   --accent: #F472B6;
   --s1: #8B5CF6; --s2: #A855F7; --s3: #D946EF; --s4: #F472B6;
   color-scheme: dark;
@@ -118,10 +121,9 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-weight: 600; letter-spacing: -.01em; }
 .brand-mark { width: 28px; height: 28px; flex: none; }
-/* Logo: "hey" i en let afrundet skrift og "Otto" i en rund, kurvet skrift */
-.wordmark { display: inline-flex; align-items: baseline; gap: .12em; font-size: 1.35rem; line-height: 1; letter-spacing: 0; color: var(--ink); }
-.wm-hey { font-family: "Quicksand", var(--font); font-weight: 500; }
-.wm-otto { font-family: "Fredoka", var(--font); font-weight: 600; font-size: 1.12em; }
+/* Logo: billedfil med gennemsigtig baggrund. I mørkt tema vendes farven, så logoet bliver lyst. */
+.logo { display: block; height: 1.6rem; width: auto; filter: var(--logo-filter); }
+.footer-name .logo { height: 1.35rem; }
 
 /* Knapper */
 .btn {
@@ -136,12 +138,12 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 .btn-small { font-size: .9rem; padding: .6rem 1.1rem; white-space: nowrap; }
 .top-actions { display: flex; align-items: center; gap: .5rem; }
 @media (max-width: 26rem) {
-  .wordmark { font-size: 1.15rem; }
+  .brand .logo { height: 1.35rem; }
   .brand-mark { width: 24px; height: 24px; }
   .btn-small { font-size: .85rem; padding: .55rem .85rem; }
 }
 @media (max-width: 22rem) {
-  .brand .wordmark { display: none; }
+  .brand .logo { display: none; }
 }
 /* Temakontakt: sol og måne side om side, det aktive tema er markeret */
 .theme-toggle {
@@ -447,7 +449,7 @@ h1 {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem;
 }
 .footer p { margin: 0; }
-.footer-name { color: var(--ink); font-weight: 600; display: flex; align-items: baseline; flex-wrap: wrap; gap: .25rem .6rem; }
+.footer-name { color: var(--ink); font-weight: 600; display: flex; align-items: center; flex-wrap: wrap; gap: .25rem .6rem; }
 .footer-by { font-weight: 400; color: var(--muted); }
 
 /* Tak-siden */
