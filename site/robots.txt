@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://inspiring-lollipop-f4a186.netlify.app/sitemap.xml
+Sitemap: https://heyotto.dk/sitemap.xml
