@@ -40,9 +40,9 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 6. Værktøjer: de værktøjer, Kasper bygger med
 7. Workshops og oplæring
 8. Book et møde: formularen eller booking
-9. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40), LinkedIn og link til privatlivspolitikken. CVR tilføjes, når Kasper har et.
+9. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40), LinkedIn og links til privatlivspolitik og vilkår. CVR tilføjes, når Kasper har et.
 
-Undersider: site/tak.html (efter formularen) og site/privatlivspolitik.html. Privatlivspolitikken skal opdateres, hvis der kommer nye værktøjer, cookies eller måder at behandle data på.
+Undersider: site/tak.html (efter formularen), site/privatlivspolitik.html og site/vilkaar.html (vilkår for brug, bruges også som "Terms of Service"-link ved app-registreringer). Privatlivspolitikken skal opdateres, hvis der kommer nye værktøjer, cookies eller måder at behandle data på.
 
 Teksten til hver sektion ligger i docs/copy.md.
 
