@@ -69,6 +69,8 @@ Tekst: Jeg holder workshops for teams og giver individuel oplæring, så I selv 
 Overskrift: Hvilken opgave vil I slippe for først?
 Skift mellem to muligheder: Send en forespørgsel, Book en tid
 
+Tegning ved siden af formularen, alt-tekst: Tegning af Kasper med armene over kors og robotten Otto, der svæver ved siden af og vinker
+
 Send en forespørgsel
 Tekst: Skriv lidt om jer, så vender jeg tilbage inden for en arbejdsdag.
 Felter: Navn, Virksomhed, E-mail, Telefon (valgfrit), Hey Otto, hjælp os med … (hjælpetekst i feltet: Fx ugerapporten eller opfølgning på nye leads)

@@ -449,6 +449,21 @@ h1 {
 .form input:focus-visible, .form textarea:focus-visible { border-color: var(--accent); outline: 3px solid rgb(244 114 182 / .3); outline-offset: 0; }
 .form .btn { justify-self: start; margin-top: .25rem; }
 
+/* Tegningen af Kasper og Otto ved siden af formularen, med en grå skygge bag rillet glas under fødderne */
+.contact-grid { display: grid; gap: 2rem; }
+.contact-figure { position: relative; isolation: isolate; width: min(11rem, 48%); margin: 0 auto; }
+.contact-art { display: block; width: 100%; height: auto; }
+.contact-floor { width: 140%; left: -20%; top: 50%; filter: var(--logo-filter); opacity: .3; }
+.contact-boble { width: 22%; right: -10%; top: -6%; }
+.contact-main { min-width: 0; }
+@media (min-width: 60rem) {
+  .contact-grid {
+    grid-template-columns: minmax(14rem, 19rem) minmax(0, 44rem);
+    justify-content: center; align-items: center; gap: 3.5rem;
+  }
+  .contact-figure { width: 100%; margin: 0; }
+}
+
 /* Skift mellem forespørgsel og booking */
 .switch {
   display: flex; width: fit-content; max-width: 100%; margin: 0 auto 1.75rem; padding: .3rem; gap: .25rem;

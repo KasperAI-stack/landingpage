@@ -12,7 +12,7 @@ En enkelt landingpage for Hey Otto, som drives af Kasper Schrøder Asmussen, der
 - Logo: vektorgrafikken site/assets/logo.svg ("hey" i en tynd serif og "otto" i en fed, rund skrift) med gennemsigtig baggrund. Den er mørk i lyst tema og bliver vendt til lys i mørkt tema. Står ved siden af Ottos hoved (favicon) i toppen og i footeren med "v/ Kasper Schrøder Asmussen".
 - Tagline: AI og marketing uden raketvidenskab.
 - Koncept: En moderne konsulentside i sort, grå og lilla, med lyst og mørkt tema. Ordene er jordnære, og alt, hvad der står, er let at forstå.
-- Maskot: Otto, en venlig, hvid rumrobot med antenne og mørkt visir (site/assets/robot.svg). Den bruges i hero og på tak-siden, og hans hoved (site/assets/favicon.svg) er ikon. Et rigtigt foto af Kasper bruges i "Om mig" og i chatvinduet i hero, hvor Kasper spørger Otto: "Hey Otto, byg mig en Landing Page med fokus på [indsæt produkt]", og Otto er ved at svare.
+- Maskot: Otto, en venlig, hvid rumrobot med antenne og mørkt visir (site/assets/robot.svg). Den bruges i hero og på tak-siden, og hans hoved (site/assets/favicon.svg) er ikon. Ved formularen står en tegning af Kasper med Otto ved siden af (site/assets/kasper-og-otto.webp, fritlagt), som Kasper selv har leveret. Et rigtigt foto af Kasper bruges i "Om mig" og i chatvinduet i hero, hvor Kasper spørger Otto: "Hey Otto, byg mig en Landing Page med fokus på [indsæt produkt]", og Otto er ved at svare.
 
 ## Sprog og tone
 
@@ -39,7 +39,7 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 5. Om mig
 6. Værktøjer: de værktøjer, Kasper bygger med
 7. Workshops og oplæring
-8. Book et møde: formularen eller booking
+8. Book et møde: formularen eller booking, med tegningen af Kasper og Otto ved siden af
 9. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40), LinkedIn og links til privatlivspolitik og vilkår. CVR tilføjes, når Kasper har et.
 
 Undersider: site/tak.html (efter formularen), site/privatlivspolitik.html og site/vilkaar.html (vilkår for brug, bruges også som "Terms of Service"-link ved app-registreringer). Privatlivspolitikken skal opdateres, hvis der kommer nye værktøjer, cookies eller måder at behandle data på.
@@ -75,7 +75,7 @@ Regler:
 - Brand-elementer: farvede felter bag rillet glas (riller-*.svg og panel.svg) og glasbobler (boble-*.svg) i site/assets/brand. De er rene SVG'er med gennemsigtig baggrund, bygget af scripts/brand-svg.py ud fra Kaspers moodboard. Lilla felter bruges kun de steder, hvor lilla er tilladt. Sorte og grå felter vendes til lyse i mørkt tema, og boblerne har deres egen version til mørkt tema (CSS-variablerne --boble-1 og --boble-2). De er kun pynt og står aldrig bag tekst.
 - Temakontakten i toppen viser sol og måne side om side, og det aktive tema er markeret.
 - Værktøjssektionen er en prikket flade med en stablet flise i midten (site/assets/stack.svg) og værktøjernes logoer i lyse app-ikoner rundt om. Logoerne ligger i site/assets/tools og kommer fra Iconify Logos og Simple Icons (CC0).
-- Illustrationer er rene vektorgrafikker (SVG) i samme stil som robotten. Ingen pixel-art og ingen detaljerede AI-genererede billeder.
+- Illustrationer er rene vektorgrafikker (SVG) i samme stil som robotten. Ingen pixel-art og ingen detaljerede AI-genererede billeder. Den eneste undtagelse er tegningen af Kasper og Otto ved formularen, som Kasper selv har valgt.
 - Rummet må gerne ses i robotten, men ikke i teksten.
 - Mobil først. Kontrast mindst WCAG AA. Synligt fokus på alle knapper og felter.
 - Hold animation på et minimum, og slå den fra ved prefers-reduced-motion.
