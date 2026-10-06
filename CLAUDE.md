@@ -32,7 +32,7 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 
 ## Sidens opbygning
 
-1. Hero: tagline, én sætning om tilbuddet, knap til booking og robotten.
+1. Hero: taglinen som lille linje, en overskrift om forandringen ("Slip for de marketingopgaver, I løser i hånden hver uge."), én sætning om tilbuddet, knap til booking og robotten.
 2. Problemet
 3. De tre produkter
 4. Sådan foregår det: de fire trin med priser

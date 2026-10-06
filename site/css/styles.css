@@ -138,9 +138,11 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 .btn-small { font-size: .9rem; padding: .6rem 1.1rem; white-space: nowrap; }
 .top-actions { display: flex; align-items: center; gap: .5rem; }
 @media (max-width: 26rem) {
-  .brand .logo { height: 1.35rem; }
+  .brand .logo { height: 1.1rem; }
+  .brand { gap: .4rem; }
   .brand-mark { width: 24px; height: 24px; }
-  .btn-small { font-size: .85rem; padding: .55rem .85rem; }
+  .btn-small { font-size: .8rem; padding: .5rem .75rem; }
+  .t-opt { width: 1.7rem; height: 1.7rem; }
 }
 @media (max-width: 22rem) {
   .brand .logo { display: none; }
@@ -176,6 +178,8 @@ h1 {
   font-size: clamp(2.4rem, 8vw, 5rem); font-weight: 600; line-height: 1.02; letter-spacing: -.045em;
   margin: 0 0 1.25rem; max-width: 14ch;
 }
+.hero h1 { font-size: clamp(2.2rem, 6.2vw, 4.25rem); max-width: 17ch; }
+.hero-tagline { margin: 0 0 1rem; font-size: .95rem; font-weight: 500; color: var(--muted); letter-spacing: .01em; }
 .lede { font-size: clamp(1.1rem, 2.2vw, 1.25rem); color: var(--muted); max-width: 36rem; margin: 0 0 2rem; }
 .lede-small { color: var(--muted); max-width: 32rem; margin-bottom: 2rem; }
 
@@ -226,6 +230,8 @@ h1 {
 .split { display: grid; gap: 1rem 4rem; }
 .split h2 { margin: 0; }
 .split-text { color: var(--muted); font-size: 1.15rem; margin: 0; max-width: var(--read); }
+.split-text p { margin: 0 0 1rem; }
+.split-text p:last-child { margin-bottom: 0; }
 @media (min-width: 56rem) {
   .split { grid-template-columns: 1fr 1fr; align-items: start; }
   .split-text { margin-top: .5rem; }
@@ -310,6 +316,7 @@ h1 {
 
 /* Trin: kolonner adskilt af gridlinjer, som går helt ud til rammen */
 .process { padding-bottom: 0; }
+.process-intro { color: var(--muted); font-size: 1.15rem; max-width: var(--read); margin: -.25rem 0 0; }
 .steps {
   list-style: none; padding: 0; display: grid;
   margin: 3rem calc(var(--gutter) * -1) 0; border-top: 1px solid var(--line);
