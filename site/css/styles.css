@@ -175,8 +175,7 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 .g2 { background: linear-gradient(160deg, var(--p-violet), var(--p-orchid)); }
 .g3 { background: linear-gradient(160deg, var(--p-orchid), var(--p-rose)); }
 
-/* Brand-elementer (site/assets/brand): farvede felter bag rillet glas og glasbobler. Kun pynt, ingen tekst. */
-.deco { position: absolute; z-index: -1; max-width: none; height: auto; pointer-events: none; user-select: none; }
+/* Glasbobler (site/assets/brand). Kun pynt, ingen tekst. */
 .boble {
   position: absolute; z-index: 2; aspect-ratio: 1; pointer-events: none;
   background: var(--boble-1) center / contain no-repeat;
@@ -185,7 +184,6 @@ h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 
 
 /* Hero */
 .hero {
-  overflow: clip;
   padding: 3.5rem var(--gutter) 5rem;
   display: flex; flex-direction: column; align-items: center; text-align: center;
 }
@@ -204,14 +202,11 @@ h1 {
 @media (min-width: 40rem) { .mascot { width: 240px; margin-bottom: -72px; } }
 .frame-hero {
   position: relative; z-index: 1; width: 100%; padding: .75rem; text-align: left;
-  box-shadow: 0 24px 56px rgb(124 58 237 / .3);
+  box-shadow: 0 30px 90px rgb(124 58 237 / .35);
 }
-/* Lilla felt bag rillet glas, som stikker frem rundt om chatvinduet */
-.hero-glow { width: 210%; left: -55%; top: 26%; }
 .hero-boble-1 { width: clamp(3.5rem, 11vw, 6.5rem); left: 2%; top: 6%; }
 .hero-boble-2 { width: clamp(2.25rem, 6vw, 3.75rem); right: 8%; top: -2%; }
 @media (min-width: 40rem) {
-  .hero-glow { width: 140%; left: -20%; top: 22%; }
   .hero-boble-1 { left: 10%; top: 4%; }
   .hero-boble-2 { right: 16%; top: 0; }
 }
@@ -285,7 +280,6 @@ h1 {
   position: relative; overflow: hidden; border-radius: 26px;
   padding: clamp(1.25rem, 5vw, 4rem) clamp(1rem, 6vw, 5.5rem);
   background:
-    url("/assets/brand/panel.svg") center / cover no-repeat,
     radial-gradient(60% 70% at 0% 100%, rgb(192 38 211 / .8), transparent 70%),
     radial-gradient(55% 60% at 100% 0%, rgb(124 58 237 / .95), transparent 70%),
     radial-gradient(45% 55% at 95% 95%, rgb(244 114 182 / .55), transparent 70%),
@@ -374,12 +368,14 @@ h1 {
 
 /* Om */
 .about { display: grid; gap: 2.5rem; align-items: center; }
-.frame-photo { width: min(100%, 22rem); padding: .6rem; background: var(--soft); border: 1px solid var(--line); }
-.photo { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 16px; }
+/* Tegning af Kasper med gennemsigtig baggrund */
+.about-figure { width: min(12rem, 55%); margin: 0 auto; }
+.about-art { display: block; width: 100%; height: auto; }
 .about-text { max-width: var(--read); min-width: 0; }
 .about-text p { color: var(--muted); }
 @media (min-width: 52rem) {
   .about { grid-template-columns: 22rem 1fr; gap: 4rem; }
+  .about-figure { width: 15rem; }
 }
 
 /* Værktøjer: prikket flade med en stablet flise i midten og værktøjerne spredt rundt om */
@@ -389,10 +385,7 @@ h1 {
   background-image: radial-gradient(color-mix(in srgb, var(--plus) 55%, transparent) 1px, transparent 1.6px);
   background-size: 18px 18px;
 }
-.tools-figure { position: relative; isolation: isolate; width: min(100%, 240px); }
-.tools-stack { display: block; width: 100%; height: auto; }
-/* Lilla ring bag rillet glas omkring figuren */
-.tools-ring { width: 150%; left: -25%; top: 50%; transform: translateY(-50%); }
+.tools-stack { width: min(100%, 240px); height: auto; }
 .tool-list {
   list-style: none; margin: 0; padding: 0; width: 100%;
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem .5rem;
@@ -412,7 +405,7 @@ h1 {
 
 @media (min-width: 52rem) {
   .tools-stage { min-height: 32rem; justify-content: center; padding: 3rem 2rem; }
-  .tools-figure { width: 300px; }
+  .tools-stack { width: 300px; }
   .tool-list { position: absolute; inset: 0; display: block; }
   .tool { position: absolute; }
   .tool-tile { width: 4.25rem; height: 4.25rem; border-radius: 18px; }
@@ -449,11 +442,10 @@ h1 {
 .form input:focus-visible, .form textarea:focus-visible { border-color: var(--accent); outline: 3px solid rgb(244 114 182 / .3); outline-offset: 0; }
 .form .btn { justify-self: start; margin-top: .25rem; }
 
-/* Tegningen af Kasper og Otto ved siden af formularen, med en grå skygge bag rillet glas under fødderne */
+/* Tegningen af Kasper og Otto ved siden af formularen */
 .contact-grid { display: grid; gap: 2rem; }
 .contact-figure { position: relative; isolation: isolate; width: min(11rem, 48%); margin: 0 auto; }
 .contact-art { display: block; width: 100%; height: auto; }
-.contact-floor { width: 140%; left: -20%; top: 50%; filter: var(--logo-filter); opacity: .3; }
 .contact-boble { width: 22%; right: -10%; top: -6%; }
 .contact-main { min-width: 0; }
 @media (min-width: 60rem) {

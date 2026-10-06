@@ -50,6 +50,7 @@ Lille tekst: Værktøjerne oprettes på jeres egne konti, så I ejer det hele og
 ## Om mig
 
 Overskrift: Hvem bygger det?
+Tegning ved teksten, alt-tekst: Tegning af Kasper Schrøder Asmussen, der smiler, blinker og peger på jer
 Tekst: Jeg hedder Kasper Schrøder Asmussen og har en kandidat i Marketing & Brand Management. Jeg har bygget AI-drevne marketingsystemer, SEO og automatiseringer i både B2B og B2C.
 Tekst: Det vigtigste for mig er, at løsningen stadig bliver brugt, når jeg er gået hjem. Derfor starter jeg altid med noget lille, som I kan se virke, og bygger kun videre, når I har mærket, at det hjælper.
 
