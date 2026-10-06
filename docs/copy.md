@@ -23,7 +23,7 @@ Tekst: Så tallene til mandagens rapport bliver stadig hentet i hånden, og henv
 
 ## Produkterne
 
-Overskrift: Tre ting, jeg kan bygge for jer
+Overskrift: Tre opgaver, I kan holde op med at løse i hånden
 
 Analyse og rapportering
 En agent, der samler jeres data og fortæller jer, hvad der virker, hvad der ikke gør, og hvor I skal sætte ind. I starter ugen med svaret i stedet for et regneark, der skal fyldes ud.
@@ -49,13 +49,13 @@ Lille tekst: Værktøjerne oprettes på jeres egne konti, så I ejer det hele og
 
 ## Om mig
 
-Overskrift: Hvem er jeg?
+Overskrift: Hvem bygger det?
 Tekst: Jeg hedder Kasper Schrøder Asmussen og har en kandidat i Marketing & Brand Management. Jeg har bygget AI-drevne marketingsystemer, SEO og automatiseringer i både B2B og B2C.
 Tekst: Det vigtigste for mig er, at løsningen stadig bliver brugt, når jeg er gået hjem. Derfor starter jeg altid med noget lille, som I kan se virke, og bygger kun videre, når I har mærket, at det hjælper.
 
 ## Værktøjer
 
-Overskrift: De værktøjer, jeg bygger med
+Overskrift: Bygget på værktøjer, I selv ejer
 Tekst: Jeg vælger værktøjerne efter opgaven, og alt bliver oprettet på jeres egne konti. Hvis I en dag vil stoppe samarbejdet, beholder I det hele og skal ikke starte forfra.
 Værktøjer: Claude, n8n, VS Code, Lovable, Google Cloud, GitHub, Netlify, Google Sheets
 
@@ -66,8 +66,10 @@ Tekst: Jeg holder workshops for teams og giver individuel oplæring, så I selv 
 
 ## Book et møde
 
-Overskrift: Lad os tage en snak
+Overskrift: Hvilken opgave vil I slippe for først?
 Skift mellem to muligheder: Send en forespørgsel, Book en tid
+
+Tegning ved siden af formularen, alt-tekst: Tegning af Kasper med armene over kors og robotten Otto, der svæver ved siden af og vinker
 
 Send en forespørgsel
 Tekst: Skriv lidt om jer, så vender jeg tilbage inden for en arbejdsdag.
