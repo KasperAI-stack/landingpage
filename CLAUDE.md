@@ -88,6 +88,7 @@ Regler:
 - Kontaktsektionen har en knap, der skifter mellem "Send en forespørgsel" (formularen) og "Book en tid" (link til Kaspers gratis bookingside i Google Kalender). Bookingsiden linkes og indlejres ikke, så Google ikke sætter cookies på siden.
 - Automatisering: Netlify sender hver formular videre til et Google Apps Script (automatisering/henvendelser.gs), som gemmer den i et Google Sheet, mailer Kasper, sender et automatisk svar og sender en daglig påmindelse om ubesvarede henvendelser. Opsætningen står i docs/automatisering.md. Mappen automatisering/ kommer ikke online.
 - Google Tag Manager (GTM-N7M37V72) er installeret på forsiden og tak-siden, efter aftale med Kasper. Google Consent Mode står som standard på "denied" for alle cookies til statistik og annoncer, så ingen tags sætter cookies, før der er et cookiebanner, som giver samtykke.
+- Siden sender to events til GTM: `henvendelse_sendt` (når tak-siden vises) og `booking_klik` (klik på "Åbn min kalender", markeret med data-track="booking"). Opsætning af Google Ads-konvertering står i docs/sporing.md.
 - Ingen andre trackingscripts eller cookies uden samtykke. Spørg Kasper, før der tilføjes flere.
 - Billeder komprimeres og får altid en alt-tekst.
 
