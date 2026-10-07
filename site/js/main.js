@@ -92,3 +92,33 @@ document.querySelectorAll('[data-track="booking"]').forEach(function (link) {
     window.dataLayer.push({ event: "booking_klik" });
   });
 });
+
+// Booking-klik til Meta, hvis pixlen er indlæst (kun med samtykke til marketing).
+document.querySelectorAll('[data-track="booking"]').forEach(function (link) {
+  link.addEventListener("click", function () {
+    if (typeof window.fbq === "function") window.fbq("trackCustom", "BookingKlik");
+  });
+});
+
+// "Cookieindstillinger" i footeren genåbner Cookiebot-banneret. Linket vises kun, når Cookiebot er indlæst.
+(function () {
+  var holders = document.querySelectorAll(".cookie-link");
+  if (!holders.length) return;
+  var show = function () {
+    if (window.Cookiebot && typeof window.Cookiebot.renew === "function") {
+      holders.forEach(function (h) { h.hidden = false; });
+      return true;
+    }
+    return false;
+  };
+  if (!show()) {
+    window.addEventListener("CookiebotOnLoad", show);
+    window.addEventListener("load", function () { setTimeout(show, 1500); });
+  }
+  document.querySelectorAll("[data-cookie-settings]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      if (window.Cookiebot && typeof window.Cookiebot.renew === "function") window.Cookiebot.renew();
+    });
+  });
+})();
+

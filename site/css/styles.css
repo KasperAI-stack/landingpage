@@ -495,6 +495,9 @@ h1 {
 .legal a { color: var(--ink); }
 .legal-date { font-size: .9rem; margin-bottom: .75rem !important; }
 
+/* Knap, der ligner et link (fx "Cookieindstillinger" i footeren) */
+.linklike { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
 /* Footer */
 .footer {
   padding: 2rem var(--gutter) 3rem;

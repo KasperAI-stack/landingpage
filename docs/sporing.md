@@ -44,5 +44,19 @@ Lav en trigger på samme måde med hændelsesnavnet `booking_klik`. Skal booking
 
 Siden sætter Consent Mode til "denied" som standard, og Cookiebot slår samtykke til, når den besøgende siger ja. Google Ads-tagget respekterer det af sig selv. Uden samtykke sender det kun cookiefrie signaler, som Google bruger til at estimere konverteringer.
 
-## Meta (senere)
-Når der er et Meta-pixel-ID, laves et tag til pixlen på All Pages og et `Lead`-event på triggeren "Event – henvendelse_sendt". Pixlen skal kræve samtykke til marketing.
+## Meta-pixel
+
+- Pixel-ID: `1616440676548347`
+- Pixlen ligger direkte i koden på alle fire sider, ikke i GTM. Den er markeret med `type="text/plain" data-cookieconsent="marketing"`, så Cookiebot først starter den, når den besøgende har sagt ja til marketing.
+- Den sender `PageView` på alle sider, `Lead` på tak-siden og `BookingKlik` (tilpasset hændelse), når man klikker "Åbn min kalender".
+- Meta's `<noscript>`-billede er udeladt, fordi det ville sende data uden samtykke.
+- Der skal ikke laves et Meta-tag i GTM, ellers tælles alt to gange.
+
+### Test
+1. Installér udvidelsen Meta Pixel Helper i Chrome.
+2. Åbn heyotto.dk og sig ja til marketing i cookiebanneret.
+3. Pixel Helper skal vise `PageView`. Send en testhenvendelse, og tjek, at `Lead` kommer på tak-siden.
+4. I Meta Events Manager kan hændelserne også ses under **Test events**.
+
+## Cookieindstillinger
+Footeren på alle sider har knappen "Cookieindstillinger", som genåbner Cookiebot-banneret, så man kan ændre sit samtykke. Knappen vises kun, når Cookiebot er indlæst.

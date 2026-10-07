@@ -89,6 +89,8 @@ Regler:
 - Automatisering: Netlify sender hver formular videre til et Google Apps Script (automatisering/henvendelser.gs), som gemmer den i et Google Sheet, mailer Kasper, sender et automatisk svar og sender en daglig påmindelse om ubesvarede henvendelser. Opsætningen står i docs/automatisering.md. Mappen automatisering/ kommer ikke online.
 - Google Tag Manager (GTM-N7M37V72) er installeret på forsiden og tak-siden, efter aftale med Kasper. Google Consent Mode står som standard på "denied" for alle cookies til statistik og annoncer, så ingen tags sætter cookies, før der er et cookiebanner, som giver samtykke.
 - Siden sender to events til GTM: `henvendelse_sendt` (når tak-siden vises) og `booking_klik` (klik på "Åbn min kalender", markeret med data-track="booking"). Opsætning af Google Ads-konvertering står i docs/sporing.md.
+- Cookiebot (indlæst via GTM) er cookiebanneret. Footeren på alle sider har knappen "Cookieindstillinger", som kalder `Cookiebot.renew()` og kun vises, når Cookiebot er indlæst.
+- Meta-pixel (ID 1616440676548347) ligger i koden på alle sider med `type="text/plain" data-cookieconsent="marketing"`, så den først kører efter samtykke til marketing. Den sender `PageView`, `Lead` på tak-siden og `BookingKlik`. Meta's noscript-billede bruges ikke, fordi det sender data uden samtykke.
 - Ingen andre trackingscripts eller cookies uden samtykke. Spørg Kasper, før der tilføjes flere.
 - Billeder komprimeres og får altid en alt-tekst.
 
