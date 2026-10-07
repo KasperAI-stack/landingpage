@@ -522,6 +522,7 @@ h1 {
 #CybotCookiebotDialog #CybotCookiebotDialogBody,
 #CybotCookiebotDialog .CybotCookiebotDialogBody { padding: 16px !important; }
 #CybotCookiebotDialog .CybotCookiebotDialogBodyButton { padding: 8px 14px !important; font-size: 14px !important; }
+div#CybotCookiebotDialog { scale: 65%; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
