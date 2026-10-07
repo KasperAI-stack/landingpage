@@ -535,7 +535,8 @@ h1 {
 #CybotCookiebotDialog #CybotCookiebotDialogBody,
 #CybotCookiebotDialog .CybotCookiebotDialogBody { padding: 16px !important; }
 #CybotCookiebotDialog .CybotCookiebotDialogBodyButton { padding: 8px 14px !important; font-size: 14px !important; }
-div#CybotCookiebotDialog { scale: 65%; }
+/* Formindskes om midten forneden, så banneret bliver stående midt på skærmen */
+div#CybotCookiebotDialog { scale: 65%; transform-origin: 50% 100% !important; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
