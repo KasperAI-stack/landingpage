@@ -12,3 +12,23 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Adresser uden .html. Netlify viser /privatlivspolitik ud fra privatlivspolitik.html af sig selv,
+# og de gamle adresser med .html sendes videre, så ingen links går i stykker.
+[[redirects]]
+  from = "/privatlivspolitik.html"
+  to = "/privatlivspolitik"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vilkaar.html"
+  to = "/vilkaar"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tak.html"
+  to = "/tak"
+  status = 301
+  force = true

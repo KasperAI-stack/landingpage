@@ -12,7 +12,7 @@ En enkelt landingpage for Hey Otto, som drives af Kasper Schrøder Asmussen, der
 - Logo: vektorgrafikken site/assets/logo.svg ("hey" i en tynd serif og "otto" i en fed, rund skrift) med gennemsigtig baggrund. Den er mørk i lyst tema og bliver vendt til lys i mørkt tema. Står ved siden af Ottos hoved (favicon) i toppen og i footeren med "v/ Kasper Schrøder Asmussen".
 - Tagline: AI og marketing uden raketvidenskab.
 - Koncept: En moderne konsulentside i sort, grå og lilla, med lyst og mørkt tema. Ordene er jordnære, og alt, hvad der står, er let at forstå.
-- Maskot: Otto, en venlig, hvid rumrobot med antenne og mørkt visir (site/assets/robot.svg). Den bruges i hero og på tak-siden, og hans hoved (site/assets/favicon.svg) er ikon. Ved formularen står en tegning af Kasper med Otto ved siden af (site/assets/kasper-og-otto.webp), og i "Om mig" står en tegning af Kasper, der peger og blinker (site/assets/kasper-peger.webp). Begge er fritlagt, og Kasper har selv leveret dem. Et rigtigt foto af Kasper bruges i chatvinduet i hero, hvor Kasper spørger Otto: "Hey Otto, byg mig en Landing Page med fokus på [indsæt produkt]", og Otto er ved at svare.
+- Maskot: Otto, en venlig, hvid rumrobot med antenne og mørkt visir (site/assets/robot.svg). Den bruges i hero og på tak-siden, og hans hoved (site/assets/favicon.svg) er ikon. Ved formularen står en tegning af Kasper med Otto ved siden af (site/assets/kasper-og-otto.webp), og i "Om mig" står en tegning af Kasper, der peger og blinker (site/assets/kasper-peger.webp). Begge er fritlagt, og Kasper har selv leveret dem. Et rigtigt foto af Kasper bruges i chatvinduet i hero, hvor Kasper spørger Otto: "Hey Otto, byg mig en landingpage med fokus på [indsæt produkt]", og Otto er ved at svare.
 
 ## Sprog og tone
 
@@ -42,7 +42,7 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 8. Book et møde: formularen eller booking, med tegningen af Kasper og Otto ved siden af
 9. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40), LinkedIn og links til privatlivspolitik og vilkår. CVR tilføjes, når Kasper har et.
 
-Undersider: site/tak.html (efter formularen), site/privatlivspolitik.html og site/vilkaar.html (vilkår for brug, bruges også som "Terms of Service"-link ved app-registreringer). Privatlivspolitikken skal opdateres, hvis der kommer nye værktøjer, cookies eller måder at behandle data på.
+Undersider: site/tak.html (efter formularen), site/privatlivspolitik.html, site/vilkaar.html (vilkår for brug, bruges også som "Terms of Service"-link ved app-registreringer) og site/404.html (når en side ikke findes). Siderne vises uden .html i adressen, fx heyotto.dk/privatlivspolitik. Links, canonical og sitemap bruger adresserne uden .html, og netlify.toml sender de gamle adresser med .html videre. Privatlivspolitikken skal opdateres, hvis der kommer nye værktøjer, cookies eller måder at behandle data på.
 
 Teksten til hver sektion ligger i docs/copy.md.
 
@@ -68,7 +68,7 @@ Lilla accenter:
 
 Regler:
 
-- Skrift: Geist fra Google Fonts til både overskrifter og brødtekst. Fredoka bruges kun til Ottos navn i chatvinduet. Store overskrifter med stram afstand mellem bogstaverne.
+- Skrift: Geist til både overskrifter og brødtekst, også Ottos navn i chatvinduet. Skriften ligger på siden selv (site/assets/fonts/geist-latin.woff2, OFL-licens) og hentes ikke fra Google Fonts. Store overskrifter med stram afstand mellem bogstaverne.
 - Grid: Siden står i en ramme af tynde lodrette linjer, og sektionerne er adskilt af vandrette linjer med små plus-mærker, hvor linjerne mødes. De fire trin står i kolonner adskilt af gridlinjer, hver med et lille lysende ikon og en titel, hvor trinnets navn er fedt og prisen dæmpet.
 - Produkterne vises som tre faner over et farvet panel med et app-vindue. Den valgte fane er udfyldt med lilla gradient, og vinduet skifter illustration efter fanen. Illustrationerne er abstrakte, uden tal eller tekst.
 - Sort, grå og hvid bærer siden. Knapper, valgte faner og vælgere er i tekstfarven (sort i lyst tema, lys i mørkt tema) og helt runde i enderne. Lilla er en accent, der kun bruges i rammen om chatvinduet i toppen, i produktpanelet, i ikonerne ved de fire trin og i figuren i værktøjssektionen.
@@ -84,7 +84,7 @@ Regler:
 
 - Ren HTML, CSS og JavaScript. Intet framework og intet build-step.
 - Alt, der skal online, ligger i mappen site/, som Netlify publicerer (se netlify.toml).
-- Formularen bruger Netlify Forms (data-netlify="true") med et honeypot-felt mod spam. Efter afsendelse sendes brugeren til /tak.html.
+- Formularen bruger Netlify Forms (data-netlify="true") med et honeypot-felt mod spam. Efter afsendelse sendes brugeren til /tak.
 - Kontaktsektionen har en knap, der skifter mellem "Send en forespørgsel" (formularen) og "Book en tid" (link til Kaspers gratis bookingside i Google Kalender). Bookingsiden linkes og indlejres ikke, så Google ikke sætter cookies på siden.
 - Automatisering: Netlify sender hver formular videre til et Google Apps Script (automatisering/henvendelser.gs), som gemmer den i et Google Sheet, mailer Kasper, sender et automatisk svar og sender en daglig påmindelse om ubesvarede henvendelser. Opsætningen står i docs/automatisering.md. Mappen automatisering/ kommer ikke online.
 - Google Tag Manager (GTM-N7M37V72) er installeret på forsiden og tak-siden, efter aftale med Kasper. Google Consent Mode står som standard på "denied" for alle cookies til statistik og annoncer, så ingen tags sætter cookies, før der er et cookiebanner, som giver samtykke.
@@ -93,6 +93,8 @@ Regler:
 - Meta-pixel (ID 1616440676548347) ligger i koden på alle sider med `type="text/plain" data-cookieconsent="marketing"`, så den først kører efter samtykke til marketing. Den sender `PageView`, `Lead` på tak-siden og `BookingKlik`. Meta's noscript-billede bruges ikke, fordi det sender data uden samtykke.
 - Ingen andre trackingscripts eller cookies uden samtykke. Spørg Kasper, før der tilføjes flere.
 - Billeder komprimeres og får altid en alt-tekst.
+- Delingsbilledet (site/assets/deling.png, 1200 × 630) vises, når siden deles på LinkedIn og Facebook. Forsiden har strukturerede data (JSON-LD) med navn og kontakt. CVR tilføjes der, når det findes.
+- Skriv "landingpage" i ét ord, også i flertal (landingpages).
 
 ## Arbejdsgang
 

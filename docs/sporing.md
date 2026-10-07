@@ -4,7 +4,7 @@ Siden sender to signaler (events) til Google Tag Manager:
 
 | Event | Hvornår | Hvor i koden |
 |---|---|---|
-| `henvendelse_sendt` | Når tak-siden vises, altså efter en sendt formular | `site/tak.html` |
+| `henvendelse_sendt` | Når tak-siden vises, altså efter en sendt formular | `site/tak.html` (vises på heyotto.dk/tak) |
 | `booking_klik` | Når man klikker "Åbn min kalender" | `site/js/main.js` |
 
 Signalerne afhænger ikke af sidernes adresser, så målingen virker, selv om en URL ændrer sig.

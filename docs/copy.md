@@ -12,7 +12,7 @@ Knap: Book en snak på 30 minutter
 ## Chatvinduet i hero
 
 Afsender: Kasper Schrøder Asmussen (med foto)
-Besked: Hey Otto, byg mig en Landing Page med fokus på [indsæt produkt]
+Besked: Hey Otto, byg mig en landingpage med fokus på [indsæt produkt]
 Svar: Otto (med sit ikon) er ved at skrive, vist som tre prikker.
 
 ## Problemet
@@ -105,3 +105,21 @@ Forside, titel: Hey Otto | AI og marketing uden raketvidenskab
 Forside, beskrivelse: Slip for de marketingopgaver, I løser i hånden hver uge. I får en gratis prototype på jeres egne data, så I ser AI virke, før I beslutter noget.
 Tak-siden, titel: Tak for jeres besked | Hey Otto
 Tak-siden, beskrivelse: Tak for jeres besked til Hey Otto. Jeg vender tilbage inden for en arbejdsdag, så vi kan finde et tidspunkt, der passer jer.
+
+## 404-siden
+
+Overskrift: Den side findes ikke
+Tekst: Adressen er måske stavet forkert, eller også er siden flyttet. Gå til forsiden, så finder I resten derfra.
+Knap: Gå til forsiden
+
+## Cookiebanner (sættes ind i Cookiebot under Content, sprog dansk)
+
+Overskrift: Må jeg bruge cookies?
+Tekst: Jeg bruger cookies til at se, hvordan siden bliver brugt, og til at måle, om mine annoncer hos Google og Meta fører til henvendelser. Det sker kun, hvis I siger ja. Siden virker lige godt, hvis I siger nej, og I kan altid ændre jeres valg under "Cookieindstillinger" nederst på siden.
+Knapper: Tillad alle, Tillad valgte, Afvis
+
+Kategorier:
+- Nødvendige: Får siden til at virke, fx ved at huske jeres valg om cookies.
+- Statistik: Viser mig samlet, hvilke sider der bliver besøgt, og hvordan de bliver brugt, så jeg kan gøre siden bedre.
+- Marketing: Lader Google og Meta måle, om mine annoncer fører til henvendelser, og gør det muligt at vise annoncer til folk, der har besøgt siden før.
+- Præferencer: bruges ikke og kan slås fra.

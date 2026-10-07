@@ -1,4 +1,14 @@
 /* Roligt konsulentdesign i sort, grå og lilla, med lyst og mørkt tema. */
+
+/* Geist ligger på siden selv (variabel skrift, latinske tegn). Licens: assets/fonts/OFL.txt */
+@font-face {
+  font-family: "Geist";
+  src: url("/assets/fonts/geist-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Neutrale: Onyx, Grafit, Skifer, Sølvgrå og Tåge. Lyst tema er standard. */
   --bg: #FFFFFF;
@@ -229,7 +239,7 @@ h1 {
 .avatar { width: 44px; height: 44px; border-radius: 10px; object-fit: cover; flex: none; }
 .chat-body { min-width: 0; }
 .chat-name { font-weight: 600; font-size: .95rem; margin: 0 0 .15rem; }
-.otto-name { font-family: "Fredoka", var(--font); font-size: 1.05rem; }
+.otto-name { font-weight: 600; font-size: 1.05rem; }
 .chat-text { margin: 0; font-size: clamp(1rem, 2.4vw, 1.15rem); line-height: 1.5; }
 .typing {
   display: inline-flex; gap: .3rem; margin-top: .35rem; padding: .6rem .75rem;
@@ -433,7 +443,7 @@ h1 {
 @media (min-width: 36rem) { .form-row { grid-template-columns: 1fr 1fr; } }
 .form label { display: grid; gap: .4rem; font-weight: 500; font-size: .95rem; }
 .form input, .form textarea {
-  font: inherit; color: var(--ink); background: var(--soft); width: 100%;
+  font: inherit; font-size: 1rem; color: var(--ink); background: var(--soft); width: 100%;
   border: 1.5px solid var(--rail); border-radius: 10px; padding: .75rem .9rem;
   transition: border-color .15s;
 }
