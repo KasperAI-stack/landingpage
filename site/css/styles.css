@@ -535,9 +535,11 @@ h1 {
 #CybotCookiebotDialog #CybotCookiebotDialogBody,
 #CybotCookiebotDialog .CybotCookiebotDialogBody { padding: 16px !important; }
 #CybotCookiebotDialog .CybotCookiebotDialogBodyButton { padding: 8px 14px !important; font-size: 14px !important; }
-/* Cookiebot centrerer banneret med left: 50% og translateX(-50%). Formindskes det om midten,
-   bliver forskydningen også mindre, og banneret glider mod højre. Derfor formindskes det fra venstre kant forneden. */
-div#CybotCookiebotDialog { scale: 65%; transform-origin: 0 100% !important; }
+/* Kun på mobil gøres banneret 65 % mindre. zoom (i stedet for scale) bevarer Cookiebots egen placering,
+   så banneret står præcis, hvor Cookiebot sætter det, både i midten og forneden. */
+@media (max-width: 40rem) {
+  div#CybotCookiebotDialog { zoom: .65; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
