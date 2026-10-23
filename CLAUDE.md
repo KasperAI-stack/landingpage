@@ -32,15 +32,22 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 
 ## Sidens opbygning
 
-1. Hero: taglinen som lille linje, en overskrift om forandringen ("Slip for de marketingopgaver, I løser i hånden hver uge."), én sætning om tilbuddet, knap til booking og robotten.
-2. Problemet
-3. De tre produkter
-4. Sådan foregår det: de fire trin med priser
-5. Om mig
-6. Værktøjer: de værktøjer, Kasper bygger med
-7. Workshops og oplæring
-8. Book et møde: formularen eller booking, med tegningen af Kasper og Otto ved siden af
-9. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40), LinkedIn og links til privatlivspolitik og vilkår. CVR tilføjes, når Kasper har et.
+Siden fortæller om Hey Otto, Kaspers AI-agent-værktøj til marketingteams: Otto tager imod opgaven og fordeler den til et hold af agenter, der kender kundens brand, arbejder på kundens egne konti og lægger alt i en godkendelseskø. Fundamentet bag teksten står i docs/copy-heyotto.md.
+
+1. Hero: taglinen som lille linje, overskriften ("Giv marketingopgaven til Otto, og få den tilbage i jeres egen tone, klar til godkendelse."), én sætning om Hey Otto, knap til booking, robotten og chatvinduet, hvor Otto fordeler en opgave til holdene.
+2. Problemet: AI blev endnu en ting at passe
+3. Fra spørgsmål til opgaver: Otto og holdene bag ham og de tre trin
+4. Sådan ser mandagen ud: to bokse over for hinanden, før med en liste og efter med en godkendelseskø, man kan klikke i
+5. I bestemmer: godkendelse, brand og konti
+6. Forskellen på en AI-chat og Hey Otto
+7. Sådan kommer I i gang: de fire trin med priser
+8. Om mig
+9. Værktøjer: de værktøjer, Kasper bygger med
+10. Spørgsmål og svar (workshops og oplæring nævnes her)
+11. Book et møde: formularen eller booking, med tegningen af Kasper og Otto ved siden af
+12. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40), LinkedIn og links til privatlivspolitik og vilkår. CVR tilføjes, når Kasper har et.
+
+Teksten er kort: hver tekst siger påstanden, belægget og hvorfor det holder, med få ord. Lange afsnit bliver til lister eller visuelle elementer.
 
 Undersider: site/tak.html (efter formularen), site/privatlivspolitik.html, site/vilkaar.html (vilkår for brug, bruges også som "Terms of Service"-link ved app-registreringer) og site/404.html (når en side ikke findes). Siderne vises uden .html i adressen, fx heyotto.dk/privatlivspolitik. Links, canonical og sitemap bruger adresserne uden .html, og netlify.toml sender de gamle adresser med .html videre. Privatlivspolitikken skal opdateres, hvis der kommer nye værktøjer, cookies eller måder at behandle data på.
 
@@ -68,9 +75,10 @@ Lilla accenter:
 
 Regler:
 
-- Skrift: Geist til både overskrifter og brødtekst, også Ottos navn i chatvinduet. Skriften ligger på siden selv (site/assets/fonts/geist-latin.woff2, OFL-licens) og hentes ikke fra Google Fonts. Store overskrifter med stram afstand mellem bogstaverne.
-- Grid: Siden står i en ramme af tynde lodrette linjer, og sektionerne er adskilt af vandrette linjer med små plus-mærker, hvor linjerne mødes. De fire trin står i kolonner adskilt af gridlinjer, hver med et lille lysende ikon og en titel, hvor trinnets navn er fedt og prisen dæmpet.
-- Produkterne vises som tre faner over et farvet panel med et app-vindue. Den valgte fane er udfyldt med lilla gradient, og vinduet skifter illustration efter fanen. Illustrationerne er abstrakte, uden tal eller tekst.
+- Designsystemet står i docs/design-system.md (farver, typografi, radier, skygger og logoer). Hvis det og denne fil er uenige, gælder denne fil.
+- Skrift: Geist til både overskrifter og brødtekst. Fredoka (vægt 600) kun til Ottos navn i chatvinduet. Begge ligger på siden selv (site/assets/fonts, OFL-licens) og hentes ikke fra Google Fonts. Store overskrifter med stram afstand mellem bogstaverne.
+- Layout: Siden står frit uden ramme- og gitterlinjer, også i toppen. Sektionerne adskilles af luft. De fire trin står i kolonner adskilt af luft, hver med et lille lysende ikon og en titel, hvor trinnets navn er fedt og prisen dæmpet.
+- Animation: Chatvinduet i hero spiller én gang, når siden åbner, i ren CSS. Ellers bevæger siden sig kun, når den besøgende gør noget (godkendelseskøen, spørgsmål og svar). Alt står færdigt ved prefers-reduced-motion.
 - Sort, grå og hvid bærer siden. Knapper, valgte faner og vælgere er i tekstfarven (sort i lyst tema, lys i mørkt tema) og helt runde i enderne. Lilla er en accent, der kun bruges i rammen om chatvinduet i toppen, i produktpanelet, i ikonerne ved de fire trin og i figuren i værktøjssektionen.
 - Glasbobler (site/assets/brand/boble-*.svg) svæver ved Otto i hero, på tak-siden og ved tegningen ved formularen. De er rene SVG'er med gennemsigtig baggrund, bygget af scripts/brand-svg.py, og har deres egen version til mørkt tema (CSS-variablerne --boble-1 og --boble-2). De er kun pynt og står aldrig bag tekst. Rillet glas er prøvet og valgt fra, så det skal ikke bruges.
 - Temakontakten i toppen viser sol og måne side om side, og det aktive tema er markeret.

@@ -1,80 +1,150 @@
 # Tekst til siden
 
-Tekst i firkantede parenteser er pladsholdere, som Kasper skal udfylde.
+Tekst i firkantede parenteser er pladsholdere, som Kasper skal udfylde. Fundamentet bag teksten (læser, problemer, kerneantagelse og værdiligning) står i docs/copy-heyotto.md.
+
+Teksten er kort med vilje. Hver tekst siger påstanden, belægget og hvorfor det holder, med så få ord som muligt, fordi de besøgende scroller og ikke læser lange afsnit.
 
 ## Hero
 
 Lille linje over overskriften (taglinen): AI og marketing uden raketvidenskab
-Overskrift: Slip for de marketingopgaver, I løser i hånden hver uge.
-Undertekst: Jeg bygger den første løsning gratis på jeres egne data, så I ser den virke, før I betaler noget.
+Overskrift: Giv marketingopgaven til Otto, og få den tilbage i jeres egen tone, klar til godkendelse.
+Undertekst: Hey Otto er over 40 AI-agenter, der kender jeres brand og arbejder på jeres egne konti.
 Knap: Book en snak på 30 minutter
+Tekst under knappen: Prototypen på jeres egne data er gratis, så I ser det virke, før I betaler noget.
 
 ## Chatvinduet i hero
 
+Faner over vinduet (links til "Fra spørgsmål til opgaver"): Annoncer, Sociale medier, Hjemmeside og SEO
 Afsender: Kasper Schrøder Asmussen (med foto)
-Besked: Hey Otto, byg mig en landingpage med fokus på [indsæt produkt]
-Svar: Otto (med sit ikon) er ved at skrive, vist som tre prikker.
+Besked: Hey Otto, lav en kampagne til vores Black Friday med annoncer, landingpage og opslag til Instagram.
+Svar fra Otto: Klart. Jeg har fordelt opgaven til holdet, og du får udkastene i godkendelseskøen.
+Holdene, der går i gang: Ads-holdet (Annoncetekster og visuals), Web-holdet (Landingpage til kampagnen), SoMe-holdet (Opslag til Instagram)
+Afslutning: Tre udkast venter i godkendelseskøen
+
+Samtalen spiller én gang, når siden åbner: Otto skriver, svarer, holdene går i gang ét ad gangen og får et flueben, og til sidst lander udkastene i køen. Ved prefers-reduced-motion står samtalen færdig fra start.
 
 ## Problemet
 
-Overskrift: I ved godt, at AI kan spare jer tid
-Tekst: Men I har ikke folkene til at bygge det, og I har ikke lyst til at binde jer til et stort projekt, der måske er forældet om et år.
-Tekst: Så tallene til mandagens rapport bliver stadig hentet i hånden, og henvendelsen fra hjemmesiden ligger og venter, til nogen får tid. Produktteksterne venter på en uge med bedre tid, som aldrig rigtig kommer.
+Overskrift: I har fået AI. Har I også fået tiden tilbage?
+Tekst: AI-chatten skriver hurtigt, men I skal stadig forklare jeres brand, rette tonen og kopiere teksten videre i hånden.
+Tekst (fremhævet): Så længe I styrer hvert trin, sparer AI'en jer ikke tid.
 
-## Produkterne
+## Fra spørgsmål til opgaver
 
-Overskrift: Tre opgaver, I kan holde op med at løse i hånden
+Overskrift: En chat svarer på spørgsmål, men Otto tager imod hele opgaver.
+Tekst: Én besked til Otto er nok. Han fordeler opgaven, og I får alle delene tilbage.
 
-Analyse og rapportering
-En agent, der samler jeres data og fortæller jer, hvad der virker, hvad der ikke gør, og hvor I skal sætte ind. I starter ugen med svaret i stedet for et regneark, der skal fyldes ud.
+Diagram (som agentoverblikket i værktøjet): Otto, Tager imod opgaven og fordeler den
+- Ads-teamleder: Analytiker, Tekstforfatter, Visuals
+- SoMe-teamleder: Analytiker, Tekstforfatter, Opsætning
+- Web-teamleder: SEO-leder, On-page, Teknisk SEO
 
-Landingpages og leadforms
-En side bygget til at konvertere, med automatisering bagved, så leads bliver sorteret og fulgt op uden manuelt arbejde. Så bliver ingen henvendelse glemt i en indbakke, mens I sidder til møde.
+1. I skriver til Otto. Skriv opgaven, som I ville skrive den til en kollega.
+2. Otto fordeler arbejdet. Han giver hver del til det hold, der har ansvaret for den.
+3. I godkender. Udkastene lander i jeres godkendelseskø, før noget bliver udgivet.
 
-Content-agent
-Produkttekster, SEO-indhold og opslag skrevet i jeres tone, så I kan producere mere uden at ansætte flere. I får et udkast at rette til, så ingen skal starte på en tom side.
+Lille tekst: Faste opgaver kan gemmes som et flow, som Otto kører igen hver uge.
 
-Afslutning: Ved I ikke, hvad I skal starte med? Det finder vi ud af sammen på det første møde.
+## Sådan ser mandagen ud
 
-## Sådan foregår det
+To bokse over for hinanden med en pil imellem. Pilen peger ned på mobil.
 
-Indledning: I betaler først, når I har set løsningen virke. Prototypen arbejder med jeres egne data, så det, I ser, er det, I får.
+Overskrift: Sådan ser mandagen ud
 
-1. Afklaring, gratis. Vi tager en snak på 30 minutter og finder den opgave, hvor AI gør størst forskel hos jer. Inden for 48 timer får I et konkret forslag.
-2. Prototype, gratis. Jeg bygger en fungerende løsning på en lille del af jeres egne data, så I kan se den virke.
-3. Færdiggørelse, 2.500 kr. Jeg bygger løsningen færdig og kobler den på de systemer, I allerede bruger.
-4. Drift, 4.000 kr. om måneden. Jeg holder løsningen kørende og forbedrer den løbende. Hvis noget driller, er det min opgave at fikse det, og der er ingen binding ud over den løbende måned.
+Før (dæmpet boks med en liste):
+- Hente tal fra annoncekontoen
+- Skrive ugens opslag
+- Rette tonen i AI-teksten
+- Kopiere teksten ind i systemerne
+Bund: Kampagnen venter til torsdag.
+
+Med Hey Otto (boks med godkendelseskøen, man kan selv klikke "Godkend"):
+- Opslag til Instagram, Fra SoMe-holdet
+- Produkttekster til nye varer, Fra Web-holdet
+- Annoncerne i sidste uge, Fra Ads-holdet
+- Landingpage til Black Friday, Fra Web-holdet
+Tæller: [antal] venter, og når alt er godkendt: Alt er godkendt
+Knap: Godkend. Efter klik: Godkendt
+Bund: I godkender, og resten af formiddagen er jeres. Prøv selv.
+
+## I bestemmer
+
+Overskrift: Intet bliver udgivet, før en af jer har sagt ja
+Tekst: Det er jeres navn på annoncen, så det er jer, der har det sidste ord.
+
+Godkendelse: Alt lander i en fælles kø, hvor I ser, hvad der er på vej ud.
+Jeres brand: Tone og designsystem ligger i værktøjet, så alle agenter følger de samme regler.
+Jeres konti: Agenterne arbejder i jeres egne systemer, og I ejer det hele.
+
+[Et fjerde punkt om data tilføjes, når Kasper har bekræftet, hvor Hey Otto kører, og hvem der behandler data.]
+
+## Forskellen på en AI-chat og Hey Otto
+
+Overskrift: Hvorfor ikke bare bruge den AI-chat, I allerede har?
+Tekst: En chat er god til ét spørgsmål. Et team, der skal levere hver uge, har brug for mere.
+
+| | En almindelig AI-chat | Hey Otto |
+|---|---|---|
+| Opgaven | I stiller ét spørgsmål ad gangen og styrer hvert trin. | I giver en hel opgave, og Otto fordeler den. |
+| Jeres brand | I forklarer tonen og reglerne i hver ny samtale. | Brand og designsystem ligger i værktøjet fra start. |
+| Jeres systemer | I kopierer teksten over i hånden. | Agenterne arbejder i jeres egne konti. |
+| Teamet | Hver person har sin egen chat. | Én fælles historik og én godkendelseskø. |
+| Gentagne opgaver | I skriver den samme prompt igen. | I gemmer opgaven som et flow og kører den igen. |
+| Kontrol | Det er op til den enkelte, hvad der bliver brugt. | Intet udgives uden godkendelse. |
+
+## Sådan kommer I i gang
+
+Overskrift: I ser Hey Otto arbejde på jeres egne data, før I betaler noget
+
+1. Afklaring, gratis. Vi finder de rigtige opgaver på 30 minutter. I får et forslag inden for 48 timer.
+2. Prototype, gratis. I ser agenterne løse en rigtig opgave på jeres egne data.
+3. Færdiggørelse, 2.500 kr. Jeg kobler Hey Otto på jeres konti og viser teamet, hvordan det bruges.
+4. Drift, 4.000 kr. om måneden. Jeg holder agenterne kørende og forbedrer dem. Der er ingen binding ud over løbende måned.
 
 Lille tekst: Værktøjerne oprettes på jeres egne konti, så I ejer det hele og betaler dem direkte. Alle priser er ekskl. moms.
 
 ## Om mig
 
-Overskrift: Hvem bygger det?
+Overskrift: Hvem står bag Otto?
 Tegning ved teksten, alt-tekst: Tegning af Kasper Schrøder Asmussen, der smiler, blinker og peger på jer
-Tekst: Jeg hedder Kasper Schrøder Asmussen og har en kandidat i Marketing & Brand Management. Jeg har bygget AI-drevne marketingsystemer, SEO og automatiseringer i både B2B og B2C.
-Tekst: Det vigtigste for mig er, at løsningen stadig bliver brugt, når jeg er gået hjem. Derfor starter jeg altid med noget lille, som I kan se virke, og bygger kun videre, når I har mærket, at det hjælper.
+Tekst: Jeg hedder Kasper Schrøder Asmussen, har en kandidat i Marketing & Brand Management og har bygget AI-drevne marketingsystemer i både B2B og B2C.
+Tekst: Jeg byggede Hey Otto, så marketingfolk kan give opgaven fra sig og bruge tiden på det, der kræver et menneske.
 
 ## Værktøjer
 
 Overskrift: Bygget på værktøjer, I selv ejer
-Tekst: Jeg vælger værktøjerne efter opgaven, og alt bliver oprettet på jeres egne konti. Hvis I en dag vil stoppe samarbejdet, beholder I det hele og skal ikke starte forfra.
+Tekst: Alt oprettes på jeres egne konti, så I beholder det hele, hvis I stopper.
 Værktøjer: Claude, n8n, VS Code, Lovable, Google Cloud, GitHub, Netlify, Google Sheets
 
-## Workshops og oplæring
+## Spørgsmål og svar
 
-Overskrift: Vil I hellere lære det selv?
-Tekst: Jeg holder workshops for teams og giver individuel oplæring, så I selv kan bruge AI i jeres hverdag og ikke skal vente på, at nogen udefra gør det for jer. Prisen aftaler vi ud fra jeres behov.
+Overskrift: Spørgsmål I nok sidder med
+
+Vi bruger allerede ChatGPT eller Claude. Hvorfor skulle vi skifte?
+I behøver ikke at opgive noget. Prototypen kører ved siden af det, I bruger i dag, så I kan sammenligne på en rigtig opgave.
+
+Tør vi lade en AI lave noget i vores navn?
+Intet bliver udgivet, før en af jer har godkendt det.
+
+Hvor meget tid skal vi selv bruge på at komme i gang?
+I bruger 30 minutter på det første møde og lidt tid på prototypen. Jeg sætter resten op.
+
+Bliver vi låst fast?
+Nej. Alt ligger på jeres egne konti, og driften kan opsiges fra måned til måned.
+
+Kan I lære vores team at bruge AI generelt?
+Ja. Jeg holder workshops for teams og giver individuel oplæring, og prisen aftaler vi ud fra jeres behov.
 
 ## Book et møde
 
-Overskrift: Hvilken opgave vil I slippe for først?
+Overskrift: Hvilken opgave skal Otto løse først?
 Skift mellem to muligheder: Send en forespørgsel, Book en tid
 
 Tegning ved siden af formularen, alt-tekst: Tegning af Kasper med armene over kors og robotten Otto, der svæver ved siden af og vinker
 
 Send en forespørgsel
-Tekst: Skriv lidt om jer, så vender jeg tilbage inden for en arbejdsdag.
-Felter: Navn, Virksomhed, E-mail, Telefon (valgfrit), Hey Otto, hjælp os med … (hjælpetekst i feltet: Fx ugerapporten eller opfølgning på nye leads)
+Tekst: Skriv lidt om jer, og om den opgave I helst vil give fra jer, så vender jeg tilbage inden for en arbejdsdag.
+Felter: Navn, Virksomhed, E-mail, Telefon (valgfrit), Hey Otto, hjælp os med … (hjælpetekst i feltet: Fx ugens opslag, annoncerapporten eller opfølgning på nye leads)
 Knap: Send forespørgsel
 
 Book en tid
@@ -101,8 +171,8 @@ Hey Otto v/ Kasper Schrøder Asmussen, kasper@heyotto.dk, +45 22 46 38 40, Linke
 
 ## Meta (vises i Google og ved deling)
 
-Forside, titel: Hey Otto | AI og marketing uden raketvidenskab
-Forside, beskrivelse: Slip for de marketingopgaver, I løser i hånden hver uge. I får en gratis prototype på jeres egne data, så I ser AI virke, før I beslutter noget.
+Forside, titel: Hey Otto | AI-agenter til jeres marketingteam
+Forside, beskrivelse: Giv marketingopgaven til Otto, og få den tilbage i jeres egen tone, klar til godkendelse. Se agenterne arbejde på jeres egne data i en gratis prototype.
 Tak-siden, titel: Tak for jeres besked | Hey Otto
 Tak-siden, beskrivelse: Tak for jeres besked til Hey Otto. Jeg vender tilbage inden for en arbejdsdag, så vi kan finde et tidspunkt, der passer jer.
 
