@@ -21,18 +21,39 @@ document.querySelectorAll("[data-focus]").forEach(function (link) {
   });
 });
 
-// Produktfanerne skifter illustrationen i det farvede panel.
-var tabs = document.querySelectorAll(".tab[data-show]");
-tabs.forEach(function (tab) {
-  tab.addEventListener("click", function () {
-    tabs.forEach(function (other) {
-      var active = other === tab;
-      other.setAttribute("aria-pressed", active ? "true" : "false");
-      var view = document.getElementById(other.getAttribute("data-show"));
-      if (view) view.hidden = !active;
+// Godkendelseskøen i "En uge med Hey Otto": man kan selv godkende udkastene.
+(function () {
+  var queue = document.querySelector("[data-queue]");
+  if (!queue) return;
+  var count = queue.querySelector("[data-queue-count]");
+  var items = queue.querySelectorAll(".queue-item");
+  var update = function () {
+    var waiting = queue.querySelectorAll(".queue-item:not(.is-done)").length;
+    count.textContent = waiting ? waiting + " venter" : "Alt er godkendt";
+  };
+  items.forEach(function (item) {
+    var btn = item.querySelector("[data-approve]");
+    var state = item.querySelector(".queue-state");
+    btn.hidden = false;
+    btn.setAttribute("aria-label", "Godkend " + item.querySelector("strong").textContent.toLowerCase());
+    btn.addEventListener("click", function () {
+      item.classList.add("is-done");
+      state.textContent = "Godkendt";
+      var next = queue.querySelector(".queue-item:not(.is-done) [data-approve]");
+      update();
+      // Fokus flytter til næste udkast, så tastaturbrugere ikke mister deres plads.
+      if (next) {
+        next.focus();
+      } else {
+        count.setAttribute("tabindex", "-1");
+        count.focus();
+      }
     });
   });
-});
+  queue.classList.add("js-queue");
+  var hint = document.querySelector("[data-queue-hint]");
+  if (hint) hint.hidden = false;
+})();
 
 // Knappen i toppen skifter mellem lyst og mørkt tema og husker valget i browseren.
 var toggle = document.querySelector("[data-theme-toggle]");
