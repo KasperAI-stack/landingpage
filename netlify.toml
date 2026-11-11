@@ -1,5 +1,9 @@
 [build]
   publish = "site"
+  # Spring over, når et push kun ændrer blogindlæggenes kildefiler i site/_blog/. GitHub bygger så bloggen
+  # og pusher den færdige HTML, og først det push bliver udgivet. Det giver ét deploy pr. indlæg.
+  # Er de to commits ens (fx et nyt deploy af samme commit), bygges der altid.
+  ignore = "[ \"$CACHED_COMMIT_REF\" != \"$COMMIT_REF\" ] && git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)site/_blog'"
 
 [[headers]]
   for = "/*"
@@ -12,6 +16,13 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Blogindlæggenes kildefiler ligger i site/_blog/, så Studio kan udgive dem, men de skal ikke kunne ses online.
+[[redirects]]
+  from = "/_blog/*"
+  to = "/404.html"
+  status = 404
+  force = true
 
 # Adresser uden .html. Netlify viser /privatlivspolitik ud fra privatlivspolitik.html af sig selv,
 # og de gamle adresser med .html sendes videre, så ingen links går i stykker.

@@ -1,0 +1,46 @@
+# Bygger bloggen, når et indlæg i site/_blog/ er nyt eller ændret, og committer den færdige HTML.
+# Det gør, at Studio kan udgive et indlæg alene: Studio pusher kun .txt-filen, og GitHub bygger resten.
+# Netlify springer pushet med kildefilen over (se ignore i netlify.toml) og udgiver først den byggede commit.
+name: Byg bloggen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/_blog/**"
+      - "scripts/byg-blog.mjs"
+      - "templates/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: byg-blog
+  cancel-in-progress: false
+
+jobs:
+  byg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Byg bloggen
+        run: node scripts/byg-blog.mjs
+
+      - name: Commit den færdige blog
+        run: |
+          git add -A -- site/blog site/sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Intet nyt at udgive."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Blog bygget"
+          git pull --rebase origin main
+          git push origin HEAD:main
