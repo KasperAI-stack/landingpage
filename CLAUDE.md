@@ -51,6 +51,8 @@ Teksten er kort: hver tekst siger påstanden, belægget og hvorfor det holder, m
 
 Undersider: site/tak.html (efter formularen), site/privatlivspolitik.html, site/vilkaar.html (vilkår for brug, bruges også som "Terms of Service"-link ved app-registreringer) og site/404.html (når en side ikke findes). Siderne vises uden .html i adressen, fx heyotto.dk/privatlivspolitik. Links, canonical og sitemap bruger adresserne uden .html, og netlify.toml sender de gamle adresser med .html videre. Privatlivspolitikken skal opdateres, hvis der kommer nye værktøjer, cookies eller måder at behandle data på.
 
+Blog: heyotto.dk/blog. Indlæggene skrives i Markdown som .txt-filer i site/_blog/ (så Studio kan udgive dem) og bygges til site/blog/ af scripts/byg-blog.mjs, med emnesider (tags), RSS og sitemap. GitHub bygger af sig selv, når en indlægsfil pushes til main. Linket står kun i footeren, og forsiden har ingen sektion med indlæg. Hvert indlæg slutter med en boks, der leder til booking. Indlæggene følger de samme regler for sprog og tone som resten af siden. Hvert indlæg har forfatter, opsummeringsboks øverst, indholdsfortegnelse og tabeller. Brug skillet blogindlaeg (.claude/skills/blogindlaeg), når der skal skrives, opdateres eller tjekkes et indlæg. Retningslinjerne står der, og teknikken står i docs/blog.md.
+
 Teksten til hver sektion ligger i docs/copy.md.
 
 ## Design
@@ -90,7 +92,7 @@ Regler:
 
 ## Teknik
 
-- Ren HTML, CSS og JavaScript. Intet framework og intet build-step.
+- Ren HTML, CSS og JavaScript. Intet framework og intet build-step på Netlify. Den eneste undtagelse er bloggen: scripts/byg-blog.mjs (Node, ingen pakker) køres af en GitHub Action (.github/workflows/byg-blog.yml), som committer resultatet i site/blog/. Netlify springer push over, der kun ændrer site/_blog/ (ignore i netlify.toml), så Netlify ikke bygger og kun udgiver én gang pr. indlæg. Filerne i site/blog/ rettes aldrig i hånden.
 - Alt, der skal online, ligger i mappen site/, som Netlify publicerer (se netlify.toml).
 - Formularen bruger Netlify Forms (data-netlify="true") med et honeypot-felt mod spam. Efter afsendelse sendes brugeren til /tak.
 - Kontaktsektionen har en knap, der skifter mellem "Send en forespørgsel" (formularen) og "Book en tid" (link til Kaspers gratis bookingside i Google Kalender). Bookingsiden linkes og indlejres ikke, så Google ikke sætter cookies på siden.
@@ -107,6 +109,7 @@ Regler:
 ## Arbejdsgang
 
 - Kør siden lokalt med `npx serve site` eller `netlify dev`.
+- Når et blogindlæg er nyt eller rettet: commit .txt-filen i site/_blog/ og push. GitHub bygger bloggen. Kør `node scripts/byg-blog.mjs --udkast` lokalt for at se et indlæg først.
 - Tjek al ny eller ændret tekst mod reglerne ovenfor. Kommandoen /copy-review gør det.
 - Lav små commits med korte danske beskeder.
 - Deploy sker automatisk, når der pushes til main på GitHub.
