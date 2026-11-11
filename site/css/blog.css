@@ -1,0 +1,137 @@
+/* Blog. Indlæses kun på blogsiderne, så forsiden ikke bliver tungere.
+   Farver, radier og skrift kommer fra styles.css. */
+
+.blog-list, .post {
+  max-width: calc(var(--read) + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-top: clamp(2rem, 6vw, 3.5rem);
+}
+.blog-list h1, .post h1 {
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+.blog-lead { color: var(--muted); font-size: 1.15rem; margin: 0 0 2.5rem; }
+.post-meta { color: var(--muted); font-size: .9rem; margin: 0 0 .5rem; }
+.post-back { margin: 0 0 2rem; font-size: .95rem; }
+.post-back a { color: var(--muted); }
+.post-back a:hover { color: var(--ink); }
+
+/* Emner: runde mærker i tekstfarven, ikke i lilla */
+.tags { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+.tag {
+  display: inline-block; font-size: .85rem; line-height: 1.3;
+  padding: .35rem .8rem; border-radius: var(--radius-pill);
+  background: var(--soft); color: var(--ink); text-decoration: none;
+  transition: background-color .15s;
+}
+.tag:hover { background: var(--line); }
+.tag[aria-current="page"] { background: var(--ink); color: var(--bg); }
+.blog-tags { margin: 0 0 3rem; }
+.blog-tags .tags { margin: 0; }
+
+/* Oversigten: indlæggene adskilles af luft */
+.posts { list-style: none; padding: 0; margin: 0; display: grid; gap: 3rem; }
+.posts h2 { font-size: clamp(1.4rem, 3.5vw, 1.75rem); line-height: 1.2; letter-spacing: -.02em; margin: 0 0 .5rem; }
+.posts h2 a { text-decoration: none; }
+.posts h2 a:hover { text-decoration: underline; }
+.posts p:not(.post-meta) { color: var(--muted); margin: 0; }
+.posts .tags { margin-top: .9rem; }
+
+.udkast {
+  display: inline-block; vertical-align: middle;
+  font-size: .8rem; font-weight: 600; letter-spacing: 0;
+  padding: .2rem .7rem; border-radius: var(--radius-pill);
+  background: var(--ink); color: var(--bg); margin: 0 0 1rem;
+}
+.posts .udkast { margin: 0 0 0 .4rem; }
+
+/* Selve indlægget */
+.post-head { margin-bottom: 2.5rem; }
+.post-figure { margin: 0 0 2.5rem; }
+.post-figure img, .prose img { display: block; width: 100%; height: auto; border-radius: var(--radius-window); }
+
+.prose { font-size: 1.125rem; line-height: 1.7; }
+.prose > :first-child { margin-top: 0; }
+.prose h2 { font-size: clamp(1.5rem, 4vw, 1.9rem); line-height: 1.15; letter-spacing: -.025em; margin: 2.75rem 0 .75rem; scroll-margin-top: 1.5rem; }
+.prose h3 { font-size: 1.25rem; margin: 2rem 0 .5rem; scroll-margin-top: 1.5rem; }
+.prose h4 { font-size: 1.05rem; margin: 1.75rem 0 .4rem; }
+.prose p { margin: 0 0 1.25rem; }
+.prose ul, .prose ol { margin: 0 0 1.25rem; padding-left: 1.4rem; display: grid; gap: .45rem; }
+.prose li::marker { color: var(--muted); }
+.prose strong { font-weight: 600; }
+.prose a { text-decoration-thickness: 1px; }
+.prose a:hover { text-decoration-thickness: 2px; }
+.prose figure { margin: 2.25rem 0; }
+.prose figcaption { color: var(--muted); font-size: .9rem; margin-top: .6rem; }
+.prose blockquote {
+  margin: 2rem 0; padding: 1.25rem 1.5rem;
+  background: var(--soft); border-radius: var(--radius-window);
+}
+.prose blockquote > :last-child { margin-bottom: 0; }
+.prose code { font-size: .88em; background: var(--soft); padding: .1em .35em; border-radius: 6px; }
+.prose pre {
+  background: var(--soft); border-radius: var(--radius-window);
+  padding: 1rem 1.25rem; margin: 0 0 1.5rem; overflow-x: auto;
+  font-size: .9rem; line-height: 1.5;
+}
+.prose pre code { background: none; padding: 0; font-size: inherit; }
+/* Skift af emne vises som tre prikker i stedet for en streg */
+.prose hr { border: 0; margin: 3rem 0; text-align: center; overflow: visible; }
+.prose hr::after { content: "\2022\2002\2022\2002\2022"; color: var(--plus); }
+
+/* Bookingboksen sidst i hvert indlæg */
+.post-cta {
+  margin-top: 4rem; padding: clamp(1.5rem, 5vw, 2.5rem);
+  background: var(--soft); border-radius: var(--radius);
+}
+.post-cta h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 0 .6rem; }
+.post-cta p { color: var(--muted); margin: 0 0 1.5rem; }
+
+/* Type, byline og forfatter */
+.post-type { font-size: .85rem; font-weight: 600; color: var(--muted); margin: 0 0 .6rem; }
+.byline { display: flex; align-items: center; gap: .75rem; margin: 1.25rem 0 0; }
+.byline p { margin: 0; line-height: 1.4; font-weight: 600; }
+.byline a { text-decoration: none; }
+.byline a:hover { text-decoration: underline; }
+.byline .post-meta { font-weight: 400; margin: 0; }
+.avatar-img { border-radius: 50%; flex: none; object-fit: cover; }
+
+/* Bokse: opsummering, metode og tip. Lyse flader uden streger. */
+.box { background: var(--soft); border-radius: var(--radius-window); padding: 1.25rem 1.5rem; margin: 0 0 2rem; }
+.box-title { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 .6rem; line-height: 1.3; }
+.box > :last-child, .box ul:last-child, .box ol:last-child { margin-bottom: 0; }
+.box ul, .box ol { margin: 0 0 1rem; padding-left: 1.25rem; display: grid; gap: .4rem; }
+.box-kort { font-size: 1.1rem; line-height: 1.6; }
+.box-kort li::marker { color: var(--muted); }
+.prose .box { margin: 2rem 0; font-size: 1rem; line-height: 1.6; }
+.prose .box p:last-child { margin-bottom: 0; }
+
+/* Indholdsfortegnelse */
+.toc { margin: 0 0 2.5rem; padding: 0 0 0 .1rem; }
+.toc ol { margin: 0; padding-left: 1.4rem; display: grid; gap: .35rem; }
+.toc li::marker { color: var(--muted); font-variant-numeric: tabular-nums; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+/* Tabeller: rækkerne adskilles af skiftende flader i stedet for streger, og brede tabeller kan rulles på mobil */
+.table-wrap { margin: 2rem 0; overflow-x: auto; border-radius: var(--radius-window); }
+.table-wrap:focus-visible { outline-offset: 2px; }
+.prose table { width: 100%; border-collapse: collapse; font-size: .95rem; line-height: 1.45; font-variant-numeric: tabular-nums; }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: .95rem; padding: 0 0 .6rem; }
+.prose th, .prose td { padding: .7rem .9rem; text-align: left; vertical-align: top; }
+.prose thead th { background: var(--ink); color: var(--bg); font-weight: 600; white-space: nowrap; }
+.prose tbody th { font-weight: 600; }
+.prose tbody tr:nth-child(odd) { background: var(--soft); }
+.prose .align-right { text-align: right; }
+.prose .align-center { text-align: center; }
+@media (max-width: 40rem) { .prose table { min-width: 34rem; } }
+
+/* Forfatterboksen sidst i indlægget */
+.author { display: flex; gap: 1.25rem; align-items: flex-start; margin-top: 4rem; }
+.author h2 { font-size: 1.35rem; letter-spacing: -.02em; margin: 0; }
+.author p { margin: 0 0 .75rem; color: var(--muted); }
+.author .author-label { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin-bottom: .3rem; }
+.author .author-role { margin-bottom: .75rem; }
+.author a { color: var(--ink); }
+.author + .post-cta { margin-top: 2.5rem; }
