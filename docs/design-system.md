@@ -64,8 +64,8 @@ Eksempler fra siden:
 
 ## Billeder og ikoner
 
-- Det fulde logo (Logos/heyotto-logo.png) består af Ottos hoved i det lilla app-ikon og ordmærket "heyotto". Det har hvid baggrund og bruges kun på hvide eller lyse flader.
-- App-ikonet (Logos/heyotto-favicon.png) er Ottos hoved på brandgradienten og bruges som fane-ikon, app-ikon og profilbillede.
+- Det fulde logo (Logos/heyotto-logo.png) består af Ottos hoved (den hvide robot med mørkt visir og lilla øjne) og ordmærket "heyotto". Det har hvid baggrund og bruges kun på hvide eller lyse flader.
+- App-ikonet (Logos/heyotto-favicon.png) er Ottos hoved uden baggrund, som han ser ud på robotten, og bruges som fane-ikon, app-ikon og profilbillede.
 - På mørke baggrunde bruges ordmærket alene (Logos/logo.svg), som er mørkt (#0F0E13) med gennemsigtig baggrund og vendes til lyst med `filter: invert(1)`.
 - Otto (Illustrations/robot.svg) er en venlig, hvid rumrobot med antenne og mørkt visir. Han bruges i hero og på tak-siden.
 - Illustrationer er rene vektorgrafikker i samme stil som robotten. Ingen pixel-art og ingen detaljerede AI-genererede billeder.
@@ -89,7 +89,7 @@ Hey Otto har fire logovariationer. Vælg den efter baggrunden og pladsen, og bru
 
 ### Fuldt logo
 
-Fil: Logos/heyotto-logo.png. Ottos hoved i det lilla app-ikon til venstre og ordmærket "heyotto" til højre. Det er førstevalget, når logoet skal stå alene, fx i præsentationer, dokumenter og på sociale medier. Filen har hvid baggrund, så den kun bruges på hvide eller lyse flader (`bg` i lyst tema). På mørke baggrunde bruges ordmærket i lys udgave sammen med app-ikonet.
+Fil: Logos/heyotto-logo.png. Ottos hoved til venstre og ordmærket "heyotto" til højre. Det er førstevalget, når logoet skal stå alene, fx i præsentationer, dokumenter og på sociale medier. Filen har hvid baggrund, så den kun bruges på hvide eller lyse flader (`bg` i lyst tema). På mørke baggrunde bruges ordmærket i lys udgave sammen med app-ikonet.
 
 ### Ordmærke, mørkt
 
@@ -101,7 +101,7 @@ Samme fil som det mørke ordmærke, vendt til lyst med `filter: invert(1)` (vari
 
 ### App-ikon
 
-Fil: Logos/heyotto-favicon.png (1024 × 1024 px, gennemsigtig baggrund). Ottos hoved med mørkt visir og lyselilla øjne på en gradient fra `p-deep` over `p-violet` til `p-orchid`. Bruges som fane-ikon, app-ikon og profilbillede, og ved siden af ordmærket i toppen af hjemmesiden. Det virker på både lyse og mørke baggrunde. Hjemmesiden bruger stadig den ældre vektorversion, Logos/favicon.svg.
+Fil: Logos/heyotto-favicon.png (1024 × 1024 px, gennemsigtig baggrund). Ottos hoved, den hvide robot med antenne, mørkt visir og lilla øjne, uden baggrund. Bruges som fane-ikon, app-ikon og profilbillede, og ved siden af ordmærket i toppen af hjemmesiden. Det virker på både lyse og mørke baggrunde. Hjemmesiden (site/assets/favicon.svg) og Studio (web/public/brand/otto-hoved.png) bruger det samme hoved.
 
 ### Små skærme
 
@@ -193,10 +193,10 @@ Brandgradient: `linear-gradient(135deg, #4C1D95 0%, #7C3AED 38%, #C026D3 72%, #F
 
 Logo og ikon for Hey Otto. De to PNG-filer er de nyeste versioner og bruges som standard.
 
-- heyotto-logo.png: det fulde logo med Ottos hoved i det lilla app-ikon til venstre og ordmærket "heyotto" ("hey" i tynd serif, "otto" i fed, rund skrift) i Onyx. 400 × 75 px på hvid baggrund, så det kun bruges på hvid eller lyse flader (`bg` i lyst tema). Brug ordmærket logo.svg på mørke baggrunde.
-- heyotto-favicon.png: app-ikonet, Ottos hoved med mørkt visir og lyselilla øjne på en gradient fra `p-deep` over `p-violet` til `p-orchid`, med afrundede hjørner og gennemsigtig baggrund. 1024 × 1024 px. Bruges som fane-ikon, app-ikon og profilbillede.
+- heyotto-logo.png: det fulde logo med Ottos hoved til venstre og ordmærket "heyotto" ("hey" i tynd serif, "otto" i fed, rund skrift) i Onyx. 400 × 75 px på hvid baggrund, så det kun bruges på hvid eller lyse flader (`bg` i lyst tema). Brug ordmærket logo.svg på mørke baggrunde.
+- heyotto-favicon.png: app-ikonet, Ottos hoved, den hvide robot med mørkt visir og lilla øjne, på gennemsigtig baggrund. 1024 × 1024 px. Bruges som fane-ikon, app-ikon og profilbillede.
 - logo.svg: ordmærket alene, uden ikon. Én farve, Onyx (#0F0E13), på gennemsigtig baggrund. I mørkt tema vendes det til lyst med `filter: invert(1)`. Højde 1.8rem i toppen og 1.35rem i footeren.
-- favicon.svg: den ældre vektorversion af ikonet fra hjemmesiden (28px ved navnet i toppen).
+- favicon.svg: hjemmesidens ikon, det samme Otto-hoved som app-ikonet (28px ved navnet i toppen).
 
 ### Illustrations
 

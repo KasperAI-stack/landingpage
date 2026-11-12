@@ -1,7 +1,7 @@
 Billederne til siden:
 
 - robot.svg: maskotten, en venlig rumrobot (bruges i hero og på tak-siden)
-- favicon.svg: robottens hoved på gradient, bruges som ikon i fanen og ved navnet i toppen
+- favicon.svg: Ottos hoved (hvid robot med mørkt visir og lilla øjne) uden baggrund, bruges som ikon i fanen og ved navnet i toppen
 - kasper.jpg: rigtigt foto i chatvinduet i hero
 - kasper-og-otto.webp: tegning af Kasper og Otto med gennemsigtig baggrund, ved siden af formularen (fritlagt fra Kaspers billede og komprimeret til 660 px bred)
 - kasper-peger.webp: tegning af Kasper, der peger og blinker, med gennemsigtig baggrund, i "Om mig" (fritlagt og komprimeret til 560 px bred)
