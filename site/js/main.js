@@ -21,6 +21,20 @@ document.querySelectorAll("[data-focus]").forEach(function (link) {
   });
 });
 
+// Chatten i toppen venter med at spille, til den besøgende kan se den.
+(function () {
+  var demo = document.querySelector(".demo");
+  if (!demo || !("IntersectionObserver" in window)) return;
+  demo.classList.add("venter");
+  var observer = new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting) {
+      demo.classList.remove("venter");
+      observer.disconnect();
+    }
+  }, { threshold: 0.4 });
+  observer.observe(demo);
+})();
+
 // Godkendelseskøen i "En uge med Hey Otto": man kan selv godkende udkastene.
 (function () {
   var queue = document.querySelector("[data-queue]");

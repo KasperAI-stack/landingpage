@@ -14,7 +14,6 @@ Tekst under knappen: Prototypen på jeres egne data er gratis, så I ser det vir
 
 ## Chatvinduet i hero
 
-Faner over vinduet (links til "Fra spørgsmål til opgaver"): Annoncer, Sociale medier, Hjemmeside og SEO
 Afsender: Kasper Schrøder Asmussen (med foto)
 Besked: Hey Otto, lav en kampagne til vores Black Friday med annoncer, landingpage og opslag til Instagram.
 Svar fra Otto: Klart. Jeg har fordelt opgaven til holdet, og du får udkastene i godkendelseskøen.

@@ -28,7 +28,7 @@ Eksempler fra siden:
 
 - Sort, grå og hvid bærer siden. Brug `bg` som baggrund, `soft` til flader og `ink` til tekst. Dæmpet tekst står i `muted`.
 - Knapper, valgte faner og vælgere fyldes med `ink`, og teksten på dem er `bg`. Ved hover skifter fyldet til `btn-hover`.
-- Lilla er en accent. Brug `p-deep`, `p-violet`, `p-orchid` og `p-rose` kun i rammen om chatvinduet i hero, i produktpanelet, i ikonerne ved de fire trin (`s1` til `s4`) og i figuren i værktøjssektionen.
+- Lilla er en accent. Brug `p-deep`, `p-violet`, `p-orchid` og `p-rose` kun i produktpanelet, i ikonerne ved de fire trin (`s1` til `s4`) og i figuren i værktøjssektionen.
 - Brandgradienten går i 135 grader fra `p-deep` (0 %) over `p-violet` (38 %) og `p-orchid` (72 %) til `p-rose` (100 %). De tre produktfarver er kortere gradienter i 160 grader: `p-deep` til `p-violet`, `p-violet` til `p-orchid` og `p-orchid` til `p-rose`.
 - `p-rose` må kun bruges som tekst eller tynd streg i mørkt tema. Den er for lys på hvid.
 - Linjer: `line` til kanter og til linjerne mellem rækkerne i tabellen og spørgsmål og svar, `rail` til kanten på formularfelter og stregerne i agentdiagrammet, `plus` til prikkerne i værktøjsfladen og hover-kant på felter.
