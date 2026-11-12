@@ -35,17 +35,16 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 Siden fortæller om Hey Otto, Kaspers AI-agent-værktøj til marketingteams: Otto tager imod opgaven og fordeler den til et hold af agenter, der kender kundens brand, arbejder på kundens egne konti og lægger alt i en godkendelseskø. Fundamentet bag teksten står i docs/copy-heyotto.md.
 
 1. Hero: taglinen som lille linje, overskriften ("Giv marketingopgaven til Otto, og få den tilbage i jeres egen tone, klar til godkendelse."), én sætning om Hey Otto, knap til booking, robotten og chatvinduet, hvor Otto fordeler en opgave til holdene.
-2. Problemet: AI blev endnu en ting at passe
-3. Fra spørgsmål til opgaver: Otto og holdene bag ham og de tre trin
-4. Sådan ser mandagen ud: to bokse over for hinanden, før med en liste og efter med en godkendelseskø, man kan klikke i
-5. I bestemmer: godkendelse, brand og konti
-6. Forskellen på en AI-chat og Hey Otto
-7. Sådan kommer I i gang: de fire trin med priser
-8. Om mig
-9. Værktøjer: de værktøjer, Kasper bygger med
-10. Spørgsmål og svar (workshops og oplæring nævnes her)
-11. Book et møde: formularen eller booking, med tegningen af Kasper og Otto ved siden af
-12. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40), LinkedIn og links til privatlivspolitik og vilkår. CVR tilføjes, når Kasper har et.
+2. Problemet og løsningen: AI blev endnu en ting at passe, og Otto og holdene bag ham tager hele opgaven, med de tre trin
+3. Sådan ser mandagen ud: to bokse over for hinanden, før med en liste og efter med en godkendelseskø, man kan klikke i
+4. I bestemmer: godkendelse, brand og konti
+5. Forskellen på en AI-chat og Hey Otto
+6. Sådan kommer I i gang: de fire trin med priser
+7. Om mig
+8. Værktøjer: de værktøjer, Kasper bygger med
+9. Spørgsmål og svar (workshops og oplæring nævnes her)
+10. Book et møde: formularen eller booking, med tegningen af Kasper og Otto ved siden af
+11. Footer: e-mail (kasper@heyotto.dk), telefon (+45 22 46 38 40), LinkedIn og links til privatlivspolitik og vilkår. CVR tilføjes, når Kasper har et.
 
 Teksten er kort: hver tekst siger påstanden, belægget og hvorfor det holder, med få ord. Lange afsnit bliver til lister eller visuelle elementer.
 

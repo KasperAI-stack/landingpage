@@ -22,16 +22,11 @@ Afslutning: Tre udkast venter i godkendelseskøen
 
 Samtalen spiller én gang, når siden åbner: Otto skriver, svarer, holdene går i gang ét ad gangen og får et flueben, og til sidst lander udkastene i køen. Ved prefers-reduced-motion står samtalen færdig fra start.
 
-## Problemet
+## Problemet og løsningen
 
 Overskrift: I har fået AI. Har I også fået tiden tilbage?
-Tekst: AI-chatten skriver hurtigt, men I skal stadig forklare jeres brand, rette tonen og kopiere teksten videre i hånden.
-Tekst (fremhævet): Så længe I styrer hvert trin, sparer AI'en jer ikke tid.
-
-## Fra spørgsmål til opgaver
-
-Overskrift: En chat svarer på spørgsmål, men Otto tager imod hele opgaver.
-Tekst: Én besked til Otto er nok. Han fordeler opgaven, og I får alle delene tilbage.
+Tekst: AI-chatten skriver hurtigt, men I skal stadig forklare jeres brand, rette tonen og kopiere teksten videre i hånden. Så længe I styrer hvert trin, sparer AI'en jer ikke tid.
+Tekst (fremhævet): Med Otto er én besked nok. Han fordeler opgaven til holdene, og I får alle delene tilbage.
 
 Diagram (som agentoverblikket i værktøjet): Otto, Tager imod opgaven og fordeler den
 - Ads-teamleder: Analytiker, Tekstforfatter, Visuals
