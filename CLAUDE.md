@@ -35,7 +35,7 @@ Se docs/tilbud.md. Priser, trin og produkter skal stå præcis som der.
 Siden fortæller om Hey Otto, Kaspers AI-agent-værktøj til marketingteams: Otto tager imod opgaven og fordeler den til et hold af agenter, der kender kundens brand, arbejder på kundens egne konti og lægger alt i en godkendelseskø. Fundamentet bag teksten står i docs/copy-heyotto.md.
 
 1. Hero: taglinen som lille linje, overskriften ("Giv marketingopgaven til Otto, og få den tilbage i jeres egen tone, klar til godkendelse."), én sætning om Hey Otto, knap til booking, robotten og chatvinduet, hvor Otto fordeler en opgave til holdene.
-2. Problemet og løsningen: AI blev endnu en ting at passe, og Otto og holdene bag ham tager hele opgaven, med de tre trin
+2. Problemet og løsningen: AI blev endnu en ting at passe, og Otto og holdene bag ham tager hele opgaven. Under diagrammet står en terminal, der viser, hvordan Otto tænker, fordeler og har opgaver i kø. Den står stille, så al tekst kan læses af søgemaskiner og AI.
 3. Sådan ser mandagen ud: to bokse over for hinanden, før med en liste og efter med en godkendelseskø, man kan klikke i
 4. I bestemmer: godkendelse, brand og konti
 5. Forskellen på en AI-chat og Hey Otto

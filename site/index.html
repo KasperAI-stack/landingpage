@@ -173,21 +173,46 @@
         </ul>
       </div>
 
-      <ol class="flow">
-        <li>
-          <h3><span class="flow-n" aria-hidden="true">1</span>I skriver til Otto</h3>
-          <p>Skriv opgaven, som I ville skrive den til en kollega.</p>
-        </li>
-        <li>
-          <h3><span class="flow-n" aria-hidden="true">2</span>Otto fordeler arbejdet</h3>
-          <p>Han giver hver del til det hold, der har ansvaret for den.</p>
-        </li>
-        <li>
-          <h3><span class="flow-n" aria-hidden="true">3</span>I godkender</h3>
-          <p>Udkastene lander i jeres godkendelseskø, før noget bliver udgivet.</p>
-        </li>
-      </ol>
-      <p class="muted small flow-note">Faste opgaver kan gemmes som et flow, som Otto kører igen hver uge.</p>
+      <!-- Terminalen viser, hvad Otto gør med en opgave. Den står stille, så al tekst kan læses af alle, også søgemaskiner og AI. -->
+      <figure class="term" aria-labelledby="term-titel">
+        <div class="term-bar">
+          <span class="term-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <p id="term-titel">Otto arbejder på en opgave</p>
+        </div>
+        <ol class="term-log">
+          <li>
+            <h3 class="term-head"><span class="term-sym" aria-hidden="true">›</span> Opgave modtaget fra Kasper</h3>
+            <p class="term-quote">"Lav en kampagne til vores Black Friday med annoncer, landingpage og opslag til Instagram."</p>
+          </li>
+          <li>
+            <h3 class="term-head"><span class="term-sym" aria-hidden="true">◆</span> Otto tænker</h3>
+            <ul class="term-lines">
+              <li><span>Læser jeres brandguide og tone</span><b class="is-done">færdig</b></li>
+              <li><span>Henter sidste års tal fra jeres annoncekonto</span><b class="is-done">færdig</b></li>
+              <li><span>Deler opgaven op i tre dele</span><b class="is-done">færdig</b></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="term-head"><span class="term-sym" aria-hidden="true">→</span> Otto fordeler til holdene</h3>
+            <ul class="term-lines">
+              <li><span>Ads-teamleder: annoncer og målgrupper</span><b class="is-busy">arbejder</b></li>
+              <li><span>Web-teamleder: landingpage og SEO</span><b class="is-busy">arbejder</b></li>
+              <li><span>SoMe-teamleder: opslag til Instagram</span><b>i kø</b></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="term-head"><span class="term-sym" aria-hidden="true">⧗</span> I kø bagefter</h3>
+            <ul class="term-lines">
+              <li><span>Nyhedsbrev til eksisterende kunder</span><b>venter</b></li>
+              <li><span>Ugens rapport, et fast flow, som Otto kører hver fredag</span><b>venter</b></li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="term-head term-ok"><span class="term-sym" aria-hidden="true">✓</span> Klar til godkendelse</h3>
+            <p>Udkastene lander i jeres godkendelseskø. Intet bliver udgivet, før I har godkendt det.<span class="term-cursor" aria-hidden="true"></span></p>
+          </li>
+        </ol>
+      </figure>
     </section>
 
     <!-- 3. En uge med Hey Otto: før og efter i to bokse -->

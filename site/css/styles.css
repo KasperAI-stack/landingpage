@@ -367,16 +367,46 @@ h1 {
   .org-team::before { content: ""; position: absolute; left: 50%; top: -1.5rem; height: 1.5rem; border-left: 1px solid var(--rail); }
 }
 
-/* Tre trin i rækkefølge, i kolonner adskilt af luft */
-.flow { list-style: none; padding: 0; margin: 3.5rem 0 0; display: grid; gap: 2rem; }
-.flow h3 { display: flex; align-items: center; gap: .65rem; font-size: 1.15rem; margin-bottom: .6rem; }
-.flow p { color: var(--muted); margin: 0; }
-.flow-n {
-  display: grid; place-items: center; width: 1.75rem; height: 1.75rem; flex: none;
-  border-radius: 50%; border: 1px solid var(--rail); font-size: .85rem; font-weight: 600;
+/* Terminalen: hvad Otto gør med en opgave. Altid mørk, som en klassisk terminal, og den står stille.
+   Computerens egen monospace-skrift, så der ikke hentes en ekstra skrift. */
+.term {
+  --t-bg: #0F0E13; --t-bar: #1E1C24; --t-ink: #F4F2F8; --t-muted: #A7A3B2; --t-dim: #6B6778; --t-ok: #4ADE80;
+  margin: 3.5rem auto 0; max-width: 50rem;
+  background: var(--t-bg); color: var(--t-ink);
+  border-radius: var(--radius-window); overflow: hidden;
+  box-shadow: var(--shadow-tile);
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  font-size: .82rem; line-height: 1.6;
 }
-@media (min-width: 52rem) { .flow { grid-template-columns: repeat(3, 1fr); gap: 3rem; } }
-.flow-note { margin: 2.5rem 0 0; }
+/* I mørkt tema er siden selv onyx, så terminalen bliver en anelse lysere for at stå frem */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .term { --t-bg: #16151B; } }
+:root[data-theme="dark"] .term { --t-bg: #16151B; }
+.term-bar { display: flex; align-items: center; gap: 1rem; padding: .7rem 1rem; background: var(--t-bar); }
+.term-bar p { margin: 0; color: var(--t-muted); font-size: .78rem; }
+.term-dots { display: flex; gap: .4rem; }
+.term-dots i { width: .6rem; height: .6rem; border-radius: 50%; background: #3B3845; }
+.term-log { list-style: none; margin: 0; padding: 1.25rem 1.1rem 1.4rem; display: grid; gap: 1.1rem; }
+.term-head { display: flex; gap: .6rem; font: inherit; font-weight: 700; letter-spacing: 0; margin: 0 0 .3rem; color: var(--t-ink); }
+.term-sym { color: var(--t-muted); width: 1ch; flex: none; }
+.term-ok, .term-ok .term-sym { color: var(--t-ok); }
+.term-log p { margin: 0 0 0 1.6ch; color: var(--t-muted); }
+.term-quote { color: var(--t-ink) !important; }
+.term-lines { list-style: none; margin: 0 0 0 1.6ch; padding: 0; display: grid; gap: .15rem; }
+/* Hver linje: opgaven til venstre og status i en fast kolonne til højre. Fra 40rem med en prikket linje imellem. */
+.term-lines li { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 0 1rem; color: var(--t-muted); }
+.term-lines span { min-width: 0; }
+.term-lines b { font-weight: 400; color: var(--t-muted); white-space: nowrap; }
+.term-lines b.is-done { color: var(--t-ok); }
+.term-lines b.is-busy { color: var(--t-ink); }
+.term-lines b.is-done::before { content: "✓ "; }
+.term-cursor { display: inline-block; width: .55em; height: 1.05em; margin-left: .35em; vertical-align: text-bottom; background: var(--t-muted); }
+@media (min-width: 40rem) {
+  .term { font-size: .9rem; }
+  .term-log { padding: 1.5rem 1.6rem 1.75rem; gap: 1.25rem; }
+  .term-lines li { gap: 0 .6rem; }
+  .term-lines span { display: flex; gap: .6rem; align-items: baseline; }
+  .term-lines span::after { content: ""; flex: 1 1 2ch; min-width: 2ch; border-bottom: 1px dotted var(--t-dim); transform: translateY(-.3em); }
+}
 
 /* Trin: fire kolonner adskilt af luft. Én kolonne på mobil, to fra 40rem og fire fra 64rem. */
 .process-intro { color: var(--muted); font-size: 1.15rem; max-width: var(--read); margin: -.25rem 0 0; }

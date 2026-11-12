@@ -33,11 +33,12 @@ Diagram (som agentoverblikket i værktøjet): Otto, Tager imod opgaven og fordel
 - SoMe-teamleder: Analytiker, Tekstforfatter, Opsætning
 - Web-teamleder: SEO-leder, On-page, Teknisk SEO
 
-1. I skriver til Otto. Skriv opgaven, som I ville skrive den til en kollega.
-2. Otto fordeler arbejdet. Han giver hver del til det hold, der har ansvaret for den.
-3. I godkender. Udkastene lander i jeres godkendelseskø, før noget bliver udgivet.
-
-Lille tekst: Faste opgaver kan gemmes som et flow, som Otto kører igen hver uge.
+Terminal (står stille, så al tekst kan læses af søgemaskiner og AI). Titel: Otto arbejder på en opgave
+- › Opgave modtaget fra Kasper: "Lav en kampagne til vores Black Friday med annoncer, landingpage og opslag til Instagram."
+- ◆ Otto tænker: Læser jeres brandguide og tone (færdig). Henter sidste års tal fra jeres annoncekonto (færdig). Deler opgaven op i tre dele (færdig).
+- → Otto fordeler til holdene: Ads-teamleder, annoncer og målgrupper (arbejder). Web-teamleder, landingpage og SEO (arbejder). SoMe-teamleder, opslag til Instagram (i kø).
+- ⧗ I kø bagefter: Nyhedsbrev til eksisterende kunder (venter). Ugens rapport, et fast flow, som Otto kører hver fredag (venter).
+- ✓ Klar til godkendelse: Udkastene lander i jeres godkendelseskø. Intet bliver udgivet, før I har godkendt det.
 
 ## Sådan ser mandagen ud
 
