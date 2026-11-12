@@ -649,10 +649,11 @@ main > section.section:not(.blog-list) { padding-block: clamp(5.5rem, 10vw, 8rem
 .contact-main { min-width: 0; }
 @media (min-width: 60rem) {
   .contact-grid {
-    grid-template-columns: minmax(14rem, 19rem) minmax(0, 44rem);
-    justify-content: center; align-items: center; gap: 3.5rem;
+    /* Tom kolonne til højre, så formularen står midt under overskriften */
+    grid-template-columns: minmax(11rem, 1fr) minmax(0, 40rem) minmax(11rem, 1fr);
+    align-items: center; gap: 3rem;
   }
-  .contact-figure { width: 100%; margin: 0; }
+  .contact-figure { width: 100%; max-width: 19rem; margin: 0; justify-self: end; }
 }
 
 /* Skift mellem forespørgsel og booking */
