@@ -756,42 +756,34 @@ main > section.section:not(.blog-list) { padding-block: clamp(5.5rem, 10vw, 8rem
 .thanks .mascot { width: 160px; margin: 0 0 1.5rem; }
 .thanks h1 { font-size: clamp(2.25rem, 6vw, 4rem); }
 
-/* Cookiebot-banneret (hentes via Google Tag Manager) gøres lidt mindre, så det dækker mindre af siden.
-   Cookiebot lægger sin egen CSS ind efter vores, derfor !important. */
-#CybotCookiebotDialog { font-size: 14px !important; }
-#CybotCookiebotDialog #CybotCookiebotDialogBody,
-#CybotCookiebotDialog .CybotCookiebotDialogBody { padding: 16px !important; }
-#CybotCookiebotDialog .CybotCookiebotDialogBodyButton { padding: 8px 14px !important; font-size: 14px !important; }
-/* Kun på mobil gøres banneret 65 % mindre. zoom (i stedet for scale) bevarer Cookiebots egen placering,
-   så banneret står præcis, hvor Cookiebot sætter det, både i midten og forneden. */
-@media (max-width: 40rem) {
-  div#CybotCookiebotDialog { zoom: .65; }
+/* CookieScript-banneret (hentes via Google Tag Manager) gøres kompakt, så det ikke dækker siden
+   og ikke bliver LCP-elementet. CookieScript lægger sin egen CSS ind efter vores, derfor !important.
+   Valg pr. kategori ligger stadig under "Vis detaljer"; Afvis og Accepter er lige store (GDPR). */
+#cookiescript_injected {
+  font-family: inherit !important;
+  font-size: 13px !important;
+  top: auto !important;
+  bottom: 12px !important;
+  left: 12px !important;
+  right: auto !important;
+  transform: none !important;
+  width: 380px !important;
+  max-width: calc(100vw - 24px) !important;
+  max-height: 60vh !important;
+  overflow-y: auto !important;
+  padding: 14px 16px !important;
 }
-/* På større skærme: en kompakt boks (380px) nederst til venstre i stedet for et bredt banner eller en popup
-   midt på siden. Den er mindre end forsidens hero, så den ikke bliver LCP-elementet, og den bruger sidens skrift.
-   Knapperne stables, så Afvis og Accepter er lige store og lige synlige (GDPR). */
-@media (min-width: 40.01rem) {
-  div#CybotCookiebotDialog {
-    width: 380px !important;
-    max-width: calc(100vw - 32px) !important;
-    min-width: 0 !important;
-    top: auto !important;
-    right: auto !important;
-    bottom: 16px !important;
-    left: 16px !important;
-    transform: none !important;
-    font-family: inherit !important;
-    font-size: 13px !important;
-    max-height: 70vh !important;
-  }
-  div#CybotCookiebotDialog .CybotCookiebotDialogContentWrapper,
-  div#CybotCookiebotDialog #CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButtonsWrapper {
-    flex-direction: column !important;
-  }
-  div#CybotCookiebotDialog .CybotCookiebotDialogBodyButton {
-    width: 100% !important;
-    margin: 4px 0 !important;
-  }
+#cookiescript_injected #cookiescript_checkboxs { display: none !important; }
+#cookiescript_injected #cookiescript_description { font-size: 12px !important; line-height: 1.45 !important; margin: 6px 0 10px !important; }
+#cookiescript_injected #cookiescript_header { font-size: 15px !important; padding: 0 !important; }
+#cookiescript_injected #cookiescript_buttons { gap: 6px !important; margin: 0 !important; }
+#cookiescript_injected #cookiescript_accept,
+#cookiescript_injected #cookiescript_reject,
+#cookiescript_injected #cookiescript_save { padding: 7px 12px !important; margin: 0 !important; font-size: 13px !important; min-height: 0 !important; }
+#cookiescript_injected #cookiescript_manage_wrap { margin: 6px 0 0 !important; }
+@media (max-width: 40rem) {
+  #cookiescript_injected { left: 12px !important; right: 12px !important; width: auto !important; max-height: 50vh !important; }
+  #cookiescript_injected #cookiescript_description { display: -webkit-box !important; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden !important; }
 }
 
 @media (prefers-reduced-motion: reduce) {
