@@ -5,6 +5,8 @@ dato: 2026-11-12
 type: guide
 forfatter: kasper
 tags: [Kom i gang med AI, Tekst og indhold]
+billede: /assets/blog/tidsbesparelse-ai-marketing/forside.webp
+billedtekst: "Et regneark, hvor et nyhedsbrev tager 60 minutter uden AI og 40 minutter med AI inklusive review, hvilket giver 33 procent sparet tid."
 udkast: false
 ---
 

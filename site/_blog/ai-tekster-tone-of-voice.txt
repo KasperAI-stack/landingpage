@@ -5,6 +5,8 @@ dato: 2026-11-12
 type: guide
 forfatter: kasper
 tags: [Tekst og indhold]
+billede: /assets/blog/ai-tekster-tone-of-voice/forside.webp
+billedtekst: "To versioner af samme nyhedsbrev om te: en generisk AI-tekst med floskler streget ud og en konkret tekst skrevet efter en tone of voice-guide."
 udkast: false
 ---
 

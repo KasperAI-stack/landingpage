@@ -5,6 +5,8 @@ dato: 2026-11-12
 type: guide
 forfatter: kasper
 tags: [Kom i gang med AI]
+billede: /assets/blog/kom-i-gang-med-ai-i-virksomheden/forside.webp
+billedtekst: "En terminal med de seks trin til at komme i gang med AI. De tre første er færdige, piloten er i gang, og måling og udbredelse står i kø."
 udkast: false
 ---
 

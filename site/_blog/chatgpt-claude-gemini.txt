@@ -5,6 +5,8 @@ dato: 2026-11-12
 type: guide
 forfatter: kasper
 tags: [AI-værktøjer]
+billede: /assets/blog/chatgpt-claude-gemini/forside.webp
+billedtekst: "En tabel, der sammenligner ChatGPT, Claude og Gemini på pris for teams, billeder, lange dokumenter, data i EU og træning på data."
 udkast: false
 ---
 

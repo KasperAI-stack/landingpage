@@ -5,6 +5,8 @@ dato: 2026-11-12
 type: guide
 forfatter: kasper
 tags: [Tekst og indhold, Kom i gang med AI]
+billede: /assets/blog/ai-prompts-marketing/forside.webp
+billedtekst: "En prompt til tre LinkedIn-opslag, hvor hver del er farvet efter byggeklodserne rolle, opgave, kontekst, målgruppe, format og tone."
 udkast: false
 ---
 

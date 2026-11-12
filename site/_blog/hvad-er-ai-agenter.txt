@@ -5,6 +5,8 @@ dato: 2026-11-12
 type: guide
 forfatter: kasper
 tags: [Automatisering, Kom i gang med AI]
+billede: /assets/blog/hvad-er-ai-agenter/forside.webp
+billedtekst: "Otto fordeler en opgave til fem AI-agenter for research, SEO, annoncer, tekst og review, og et menneske godkender, før noget sendes."
 udkast: false
 ---
 
