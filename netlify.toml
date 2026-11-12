@@ -17,6 +17,17 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# CSS og JS caches i et år. Linkene har ?v=<n>: hæv tallet på alle sider og i templates/blog-side.html, når filen ændres.
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
 # Blogindlæggenes kildefiler ligger i site/_blog/, så Studio kan udgive dem, men de skal ikke kunne ses online.
 [[redirects]]
   from = "/_blog/*"

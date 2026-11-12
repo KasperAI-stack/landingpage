@@ -3,8 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://cdn.cookie-script.com">
   <!-- Denne side er lavet af scripts/byg-blog.mjs. Ret i blog/ eller templates/, ikke her. -->
   <!-- Samtykke: alt starter som "nej", indtil et cookiebanner giver samtykke -->
   <script>
@@ -20,12 +18,11 @@
       wait_for_update: 500
     });
   </script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N7M37V72');</script>
+  <!-- Google Tag Manager: hentes først efter load, så det ikke konkurrerer med siden om båndbredden. Køen i dataLayer (samtykke, events) læses, når GTM starter. -->
+  <script>(function(w,d,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  function g(){var j=d.createElement('script');j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;d.head.appendChild(j);}
+  if(d.readyState==='complete')g();else w.addEventListener('load',g);
+  })(window,document,'dataLayer','GTM-N7M37V72');</script>
   <!-- End Google Tag Manager -->
   <!-- Meta Pixel: kører først, når den besøgende har givet samtykke til marketing (targeting) i CookieScript -->
   <script type="text/plain" data-cookiescript="accepted" data-cookiecategory="targeting">
@@ -62,8 +59,8 @@
   <link rel="alternate" type="application/rss+xml" title="Hey Otto, blog" href="/blog/feed.xml">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/styles.css?v=2">
+  <link rel="stylesheet" href="/css/blog.css?v=2">
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -136,6 +133,6 @@
     <p class="footer-contact"><a href="mailto:kasper@heyotto.dk">kasper@heyotto.dk</a>, <a href="tel:+4522463840">+45 22 46 38 40</a>, <a href="https://www.linkedin.com/in/kasperasmussen/" target="_blank" rel="noopener">LinkedIn</a>, <a href="/blog/">Blog</a>, <a href="/privatlivspolitik">Privatlivspolitik</a>, <a href="/vilkaar">Vilkår</a><span class="cookie-link" hidden>, <button type="button" class="linklike" data-cookie-settings>Cookieindstillinger</button></span></p>
   </footer>
   </div>
-  <script src="/js/main.js" defer></script>
+  <script src="/js/main.js?v=2" defer></script>
 </body>
 </html>
