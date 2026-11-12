@@ -201,7 +201,7 @@ Overskrift: Den side findes ikke
 Tekst: Adressen er måske stavet forkert, eller også er siden flyttet. Gå til forsiden, så finder I resten derfra.
 Knap: Gå til forsiden
 
-## Cookiebanner (sættes ind i Cookiebot under Content, sprog dansk)
+## Cookiebanner (sættes ind i CookieScript under banner-teksterne, sprog dansk)
 
 Overskrift: Må jeg bruge cookies?
 Tekst: Jeg bruger cookies til at se, hvordan siden bliver brugt, og til at måle, om mine annoncer hos Google og Meta fører til henvendelser. Det sker kun, hvis I siger ja. Siden virker lige godt, hvis I siger nej, og I kan altid ændre jeres valg under "Cookieindstillinger" nederst på siden.

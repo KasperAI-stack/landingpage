@@ -166,24 +166,25 @@ document.querySelectorAll('[data-track="booking"]').forEach(function (link) {
   });
 });
 
-// "Cookieindstillinger" i footeren genåbner Cookiebot-banneret. Linket vises kun, når Cookiebot er indlæst.
+// "Cookieindstillinger" i footeren genåbner CookieScript-banneret. Linket vises kun, når CookieScript er indlæst.
 (function () {
   var holders = document.querySelectorAll(".cookie-link");
   if (!holders.length) return;
+  var ready = function () {
+    return window.CookieScript && window.CookieScript.instance && typeof window.CookieScript.instance.show === "function";
+  };
   var show = function () {
-    if (window.Cookiebot && typeof window.Cookiebot.renew === "function") {
-      holders.forEach(function (h) { h.hidden = false; });
-      return true;
-    }
-    return false;
+    if (!ready()) return false;
+    holders.forEach(function (h) { h.hidden = false; });
+    return true;
   };
   if (!show()) {
-    window.addEventListener("CookiebotOnLoad", show);
+    window.addEventListener("CookieScriptLoaded", show);
     window.addEventListener("load", function () { setTimeout(show, 1500); });
   }
   document.querySelectorAll("[data-cookie-settings]").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      if (window.Cookiebot && typeof window.Cookiebot.renew === "function") window.Cookiebot.renew();
+      if (ready()) window.CookieScript.instance.show();
     });
   });
 })();
