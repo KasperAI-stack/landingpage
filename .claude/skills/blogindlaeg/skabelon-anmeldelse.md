@@ -5,6 +5,7 @@ dato: [ÅÅÅÅ-MM-DD]
 type: anmeldelse
 forfatter: kasper
 tags: [AI-værktøjer]
+fremhaevet: false
 udkast: true
 ---
 

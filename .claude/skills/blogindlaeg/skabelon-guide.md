@@ -5,6 +5,7 @@ dato: [ÅÅÅÅ-MM-DD]
 type: guide
 forfatter: kasper
 tags: [Kom i gang med AI]
+fremhaevet: false
 udkast: true
 ---
 

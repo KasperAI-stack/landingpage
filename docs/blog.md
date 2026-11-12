@@ -6,7 +6,7 @@ Bloggen ligger på heyotto.dk/blog. Hvert indlæg er én fil i `site/_blog/`, sk
 
 1. En indlægsfil i `site/_blog/` bliver pushet til main, enten af Studio eller fra din computer.
 2. Netlify springer det push over, fordi det kun ændrer `site/_blog/` (`ignore` i netlify.toml).
-3. GitHub kører `scripts/byg-blog.mjs` (`.github/workflows/byg-blog.yml`) og committer den færdige HTML i `site/blog/` og sitemap.
+3. GitHub kører `scripts/byg-blog.mjs` (`.github/workflows/byg-blog.yml`) og committer den færdige HTML i `site/blog/`, sitemap og sektionen på forsiden.
 4. Netlify udgiver den commit. Det giver ét deploy pr. indlæg, og Netlify bygger ikke selv.
 
 Fejler bygget, kommer der intet online, og GitHub sender en mail. Fejlen står under Actions på GitHub. Kildefilerne i `/_blog/` giver 404 online, så de kan ikke ses af andre. Kommer der billeder med i samme push, laver Netlify et ekstra deploy, men det skader ikke noget.
@@ -36,6 +36,7 @@ forfatter: kasper
 tags: [Kom i gang med AI, Tekst og indhold]
 billede: /assets/blog/tone/forside.webp
 billedtekst: "Hvad der er på billedet, til dem der ikke kan se det"
+fremhaevet: false
 udkast: true
 ---
 ```
@@ -46,6 +47,7 @@ udkast: true
 - `forfatter` er en nøgle fra `site/_blog/forfattere.json` (standard `kasper`). Navn, foto, bio og LinkedIn hentes derfra til byline, forfatterboks og strukturerede data.
 - `tags` er emnerne. Hvert emne får sin egen side på /blog/tag/navn. Brug få, faste emner og stav dem ens hver gang.
 - `billede` er valgfri. Det står øverst i indlægget og bruges, når indlægget deles. Uden billede bruges sidens delingsbillede.
+- `fremhaevet: true` sætter indlægget i sektionen "Fra bloggen" på forsiden (se nedenfor).
 - `udkast: true` holder indlægget væk fra siden, sitemap og RSS.
 
 ## Det kan du skrive i teksten
@@ -77,6 +79,17 @@ Indholdsfortegnelsen laves af alle `##`-overskrifter, og forfatterboksen og book
 
 Linjer, der starter med `<`, sendes videre som HTML, hvis du har brug for noget særligt.
 
+## Sektionen på forsiden
+
+Forsiden har sektionen "Fra bloggen" mellem Værktøjer og Spørgsmål og svar. Den ser ud som en lille nyhedssektion med ét stort indlæg og op til tre mindre ved siden af.
+
+- Indlæg med `fremhaevet: true` står først, det nyeste af dem stort. Er der færre end fire fremhævede, fyldes der op med de nyeste indlæg.
+- Emnefanerne er de fem tags, der bruges i flest indlæg. De linker til emnesiderne.
+- Er der ingen indlæg online, står sektionen slet ikke på forsiden.
+- Udkast kommer aldrig på forsiden, heller ikke med `--udkast`.
+- Scriptet skriver sektionen ind i `site/index.html` mellem markeringerne `forside-blog:start` og `forside-blog:slut`. Ret ikke i hånden mellem dem. Teksten til overskriften står i scriptet, og stylingen står i `site/css/styles.css` under "Fra bloggen".
+- Har indlægget et `billede`, bruges det på kortet. Ellers står Ottos hoved på en grå flade.
+
 ## Billeder
 
 - Læg dem i `site/assets/blog/<indlæggets-navn>/`.
@@ -86,7 +99,7 @@ Linjer, der starter med `<`, sendes videre som HTML, hvis du har brug for noget 
 
 ## Hvorfor bloggen ikke gør siden langsommere
 
-- Forsiden er uændret, bortset fra linket i footeren.
+- Kortene på forsiden er færdig HTML uden ekstra JavaScript, og deres billeder hentes først, når den besøgende kommer til dem.
 - Blogsiderne er statiske HTML-filer og bruger ingen ekstra JavaScript. Deres egen styling ligger i `site/css/blog.css` og hentes kun på blogsiderne.
 - Skrift, `styles.css` og logo ligger allerede i browserens cache fra forsiden.
 
@@ -96,6 +109,7 @@ Linjer, der starter med `<`, sendes videre som HTML, hvis du har brug for noget 
 - `site/blog/<navn>.html`: hvert indlæg, med canonical, delingsbillede og strukturerede data (BlogPosting)
 - `site/blog/tag/<emne>.html`: en side pr. emne. De har `noindex`, fordi de er for tynde til Google.
 - `site/blog/feed.xml`: RSS
+- Sektionen "Fra bloggen" i `site/index.html` mellem markeringerne `forside-blog:start` og `forside-blog:slut`
 - Blogdelen af `site/sitemap.xml` mellem markeringerne `blog:start` og `blog:slut`. Resten af sitemap skrives stadig i hånden.
 
 Scriptet sletter og laver `site/blog/` forfra hver gang, så ret aldrig i de filer i hånden. Toppen, footeren og tracking ligger i `templates/blog-side.html` og skal holdes ens med de andre sider. Bookingboksen sidst i hvert indlæg står i scriptet.

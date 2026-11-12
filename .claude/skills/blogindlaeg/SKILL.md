@@ -54,6 +54,8 @@ Når filen bliver pushet til main, bygger GitHub selv bloggen (`.github/workflow
 
 `udkast: true` holder et indlæg væk fra siden, også selvom filen er udgivet. Det kan bruges til at gemme et halvfærdigt indlæg.
 
+`fremhaevet: true` sætter indlægget i sektionen "Fra bloggen" på forsiden. Der står højst fire indlæg: de fremhævede først, med det nyeste stort, og resten fyldes op med de nyeste indlæg. Spørg Kasper, før et indlæg bliver fremhævet eller ikke længere skal være det. Emnefanerne i sektionen er de fem mest brugte tags, så stav tags ens hver gang.
+
 ## Opdatere et indlæg
 
 1. Tjek alle priser, udgaver og funktioner igen på producentens sider.

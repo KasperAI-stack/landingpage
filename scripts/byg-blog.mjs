@@ -485,6 +485,73 @@ function opdaterSitemap(indlaeg) {
   if (ny !== xml) writeFileSync(fil, ny);
 }
 
+// Sektionen "Fra bloggen" på forsiden, mellem to markeringer i site/index.html.
+// Indlæg med "fremhaevet: true" står først, og resten fyldes op med de nyeste, så der højst står fire.
+// Er der ingen indlæg online, bliver sektionen tom, og der står intet på forsiden.
+const PIL = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>`;
+
+function forsideKort(p, stor) {
+  const billede = p.billede
+    ? `<span class="nyt-billede">${billedTag(p.billede, "", p.fil)}</span>`
+    : `<span class="nyt-billede nyt-tom"><img src="/assets/favicon.svg" alt="" width="44" height="44" loading="lazy"></span>`;
+  const f = p.forfatter;
+  const forfatter = stor ? `<span class="nyt-forfatter">${f.billede ? `<img src="${esc(f.billede)}" alt="" width="24" height="24" loading="lazy" decoding="async">` : ""}${esc(f.navn)}</span><span class="prik"></span>` : "";
+  const tags = p.tags.length ? `<ul class="nyt-tags">${p.tags.map((t) => `<li>${esc(t.navn)}</li>`).join("")}</ul>` : "";
+  const tekst = `<p class="nyt-meta"><span class="nyt-type">${TYPER[p.type]}</span><span class="prik"></span>${forfatter}<time datetime="${p.dato}">${datoTekst(p.dato)}</time></p>
+            <h3><a class="nyt-link" href="${p.sti}">${inline(p.titel)}</a>${stor ? PIL : ""}</h3>
+            <p class="nyt-tekst">${esc(p.beskrivelse)}</p>
+            ${tags}`;
+  return stor
+    ? `<article class="nyt nyt-hoved">
+          ${billede}
+          ${tekst}
+        </article>`
+    : `<li class="nyt nyt-lille">
+            ${billede}
+            <div>
+            ${tekst}
+            </div>
+          </li>`;
+}
+
+function opdaterForside(indlaeg, tags) {
+  const fil = join(SITE, "index.html");
+  const html = readFileSync(fil, "utf8");
+  const start = "    <!-- forside-blog:start, lavet af scripts/byg-blog.mjs ud fra indlæg med fremhaevet: true -->";
+  const slut = "    <!-- forside-blog:slut -->";
+  if (!html.includes(start) || !html.includes(slut)) fejl("site/index.html", "markeringerne forside-blog:start og forside-blog:slut mangler");
+  const valgte = [...indlaeg.filter((p) => p.fremhaevet === true), ...indlaeg.filter((p) => p.fremhaevet !== true)].slice(0, 4);
+  let blok = "";
+  if (valgte.length) {
+    const [hoved, ...resten] = valgte;
+    // De mest brugte emner først
+    const emner = [...tags].sort((a, b) => b.indlaeg.length - a.indlaeg.length).slice(0, 5);
+    blok = `
+    <section class="section nyheder" aria-labelledby="blog-titel">
+      <div class="nyt-top">
+        <div>
+          <h2 id="blog-titel">Fra bloggen</h2>
+          <p>Guides og anmeldelser til jer, der vil i gang med AI i marketing uden at skulle ansætte en AI-specialist.</p>
+        </div>
+        <a class="nyt-alle" href="/blog/">Se alle indlæg ${PIL}</a>
+      </div>
+${emner.length ? `      <ul class="nyt-emner" aria-label="Emner">
+        <li><a href="/blog/">Nyeste</a></li>
+${emner.map((t) => `        <li><a href="/blog/tag/${t.slug}">${esc(t.navn)}</a></li>`).join("\n")}
+      </ul>
+` : ""}      <div class="nyt-grid${resten.length ? "" : " nyt-alene"}">
+        ${forsideKort(hoved, true)}
+${resten.length ? `        <ul class="nyt-liste">
+          ${resten.map((p) => forsideKort(p, false)).join("\n          ")}
+        </ul>
+` : ""}      </div>
+    </section>
+`;
+  }
+  const ny = html.replace(new RegExp(`${start.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?${slut.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`), `${start}${blok}\n${slut}`);
+  if (ny !== html) writeFileSync(fil, ny);
+}
+
 // ---------- Byg ----------
 
 const alle = laesIndlaeg();
@@ -527,6 +594,9 @@ for (const t of alleTags) {
 
 writeFileSync(join(UD, "feed.xml"), feed(online));
 opdaterSitemap(online);
+// Forsiden får kun indlæg, der er online, også når scriptet køres med --udkast.
+const onlineTags = alleTags.filter((t) => t.indlaeg.some((p) => !p.udkast));
+opdaterForside(online, onlineTags);
 
 console.log(`Bloggen er bygget: ${online.length} indlæg online, ${alleTags.length} emner.`);
 if (MED_UDKAST) console.log(`Udkast er taget med (${alle.length - online.length}). Kør uden --udkast, før du committer.`);

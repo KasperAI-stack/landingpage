@@ -114,6 +114,15 @@ Overskrift: Bygget på værktøjer, I selv ejer
 Tekst: Alt oprettes på jeres egne konti, så I beholder det hele, hvis I stopper.
 Værktøjer: Claude, n8n, VS Code, Lovable, Google Cloud, GitHub, Netlify, Google Sheets
 
+## Fra bloggen
+
+Vises kun, når der er indlæg online. Kortene bygges af scripts/byg-blog.mjs ud fra indlæggene, og teksten herunder står i scriptet.
+
+Overskrift: Fra bloggen
+Tekst: Guides og anmeldelser til jer, der vil i gang med AI i marketing uden at skulle ansætte en AI-specialist.
+Link: Se alle indlæg
+Første emnefane: Nyeste
+
 ## Spørgsmål og svar
 
 Overskrift: Spørgsmål I nok sidder med

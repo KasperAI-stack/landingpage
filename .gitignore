@@ -6,3 +6,6 @@ node_modules/
 .env
 .env.*
 !.env.example
+
+# Lokale udkast, kommer ikke online
+site/_udkast*

@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit den færdige blog
         run: |
-          git add -A -- site/blog site/sitemap.xml
+          git add -A -- site/blog site/sitemap.xml site/index.html
           if git diff --cached --quiet; then
             echo "Intet nyt at udgive."
             exit 0
