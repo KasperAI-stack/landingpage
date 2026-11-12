@@ -767,6 +767,32 @@ main > section.section:not(.blog-list) { padding-block: clamp(5.5rem, 10vw, 8rem
 @media (max-width: 40rem) {
   div#CybotCookiebotDialog { zoom: .65; }
 }
+/* På større skærme: en kompakt boks (380px) nederst til venstre i stedet for et bredt banner eller en popup
+   midt på siden. Den er mindre end forsidens hero, så den ikke bliver LCP-elementet, og den bruger sidens skrift.
+   Knapperne stables, så Afvis og Accepter er lige store og lige synlige (GDPR). */
+@media (min-width: 40.01rem) {
+  div#CybotCookiebotDialog {
+    width: 380px !important;
+    max-width: calc(100vw - 32px) !important;
+    min-width: 0 !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: 16px !important;
+    left: 16px !important;
+    transform: none !important;
+    font-family: inherit !important;
+    font-size: 13px !important;
+    max-height: 70vh !important;
+  }
+  div#CybotCookiebotDialog .CybotCookiebotDialogContentWrapper,
+  div#CybotCookiebotDialog #CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButtonsWrapper {
+    flex-direction: column !important;
+  }
+  div#CybotCookiebotDialog .CybotCookiebotDialogBodyButton {
+    width: 100% !important;
+    margin: 4px 0 !important;
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
