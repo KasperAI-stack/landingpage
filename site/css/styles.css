@@ -321,6 +321,8 @@ h1 {
 
 /* Sektioner */
 .section { padding: 5rem var(--gutter); }
+/* Forsidens sektioner får mere luft imellem sig. Undersider og blog beholder den mindre afstand. */
+main > section.section:not(.blog-list) { padding-block: clamp(5.5rem, 10vw, 8rem); }
 
 /* Problemet: overskrift og tekst side om side på desktop */
 .split { display: grid; gap: 1rem 4rem; }
@@ -369,6 +371,12 @@ h1 {
 
 /* Terminalen: hvad Otto gør med en opgave. Altid mørk, som en klassisk terminal, og den står stille.
    Computerens egen monospace-skrift, så der ikke hentes en ekstra skrift. */
+/* Overskriften over terminalen, så man kan se, hvad den viser */
+.term-intro { text-align: center; max-width: 40rem; margin: clamp(4.5rem, 9vw, 6.5rem) auto 0; }
+.term-intro h3 { font-size: clamp(1.5rem, 3.2vw, 2.1rem); line-height: 1.15; letter-spacing: -.025em; margin: 0 0 .75rem; }
+.term-intro p { color: var(--muted); font-size: 1.05rem; margin: 0; }
+.term-intro + .term { margin-top: 2rem; }
+
 .term {
   --t-bg: #0F0E13; --t-bar: #1E1C24; --t-ink: #F4F2F8; --t-muted: #A7A3B2; --t-dim: #6B6778; --t-ok: #4ADE80;
   margin: 3.5rem auto 0; max-width: 50rem;

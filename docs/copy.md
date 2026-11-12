@@ -33,6 +33,9 @@ Diagram (som agentoverblikket i værktøjet): Otto, Tager imod opgaven og fordel
 - SoMe-teamleder: Analytiker, Tekstforfatter, Opsætning
 - Web-teamleder: SEO-leder, On-page, Teknisk SEO
 
+Overskrift over terminalen: Sådan løser Otto en opgave, fra besked til godkendelse
+Tekst: Her kan I følge en opgave, fra den kommer ind, til udkastene ligger klar til jer.
+
 Terminal (står stille, så al tekst kan læses af søgemaskiner og AI). Titel: Otto arbejder på en opgave
 - › Opgave modtaget fra Kasper: "Lav en kampagne til vores Black Friday med annoncer, landingpage og opslag til Instagram."
 - ◆ Otto tænker: Læser jeres brandguide og tone (færdig). Henter sidste års tal fra jeres annoncekonto (færdig). Deler opgaven op i tre dele (færdig).
