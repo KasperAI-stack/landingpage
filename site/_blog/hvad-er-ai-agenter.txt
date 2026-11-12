@@ -1,0 +1,188 @@
+---
+titel: "Hvad er AI-agenter? En guide til mindre virksomheder"
+beskrivelse: "En AI-agent er et program, der selv vælger trin og værktøjer for at nå et mål. Se forskellen på chatbot og agent, og hvordan I starter i det små."
+dato: 2026-11-12
+type: guide
+forfatter: kasper
+tags: [Automatisering, Kom i gang med AI]
+udkast: false
+---
+
+:::kort
+- En AI-agent er et program, der bruger en sprogmodel til selv at planlægge trinene og vælge værktøjer for at nå et mål, som et menneske har sat.
+- Forskellen på en chatbot og en agent er, at chatbotten svarer, mens agenten handler: den søger, henter data, laver udkast og kan bruge jeres systemer.
+- I kan prøve agenter fra 0 kr. hos fx Zapier Agents og Make, eller for omkring 20 dollar om måneden med ChatGPT Plus eller Claude Pro (november 2026).
+- Den typiske fejl er at give agenten for meget frihed for tidligt. Start med én opgave, der kun læser og laver udkast, og lad et menneske godkende resten.
+:::
+
+Ordet "AI-agent" bliver brugt om alt fra en almindelig chatbot til systemer, der arbejder selv i timevis. Denne guide er til jer, der arbejder i en mindre virksomhed og vil forstå, hvad en agent faktisk er, hvad den kan bruges til i marketing, og hvordan I prøver det af uden at løbe en stor risiko.
+
+## Hvad er en AI-agent?
+
+En AI-agent er et program, der bruger en sprogmodel til at nå et mål ved selv at beslutte, hvilke trin det tager, og hvilke værktøjer det bruger undervejs. I giver agenten en opgave, fx "find ud af, hvad vores tre største konkurrenter har skrevet om på LinkedIn den seneste måned", og agenten finder selv ud af, hvordan den løser den.
+
+En sprogmodel er den AI, der ligger bag fx ChatGPT, Claude og Gemini. Den kan forstå og skrive tekst. Det nye ved en agent er, at sprogmodellen ikke kun skriver et svar, men også bruger værktøjer: den kan søge på nettet, læse et regneark, hente tal fra en annoncekonto eller lægge et udkast i en mappe.
+
+Producenterne beskriver det næsten ens:
+
+- **Anthropic**, der laver Claude, skelner mellem workflows, hvor sprogmodellen og værktøjerne følger "forudbestemte kodestier", og agenter, hvor sprogmodellen "dynamisk styrer sin egen proces og brug af værktøjer" (december 2024).
+- **OpenAI** skriver, at en agent bruger en sprogmodel til at styre arbejdet og træffe beslutninger, og at den vælger værktøjer ud fra, hvor langt den er nået, "altid inden for klart definerede rammer".
+- **Google Cloud** definerer AI-agenter som "softwaresystemer, der bruger AI til at forfølge mål og løse opgaver på vegne af brugere".
+
+## Hvad er forskellen på en chatbot, en automatisering og en AI-agent?
+
+Forskellen ligger i, hvem der bestemmer næste skridt. I en chatbot gør I det selv, i en automatisering har I bestemt det på forhånd, og i en AI-agent bestemmer sprogmodellen det inden for de rammer, I har sat.
+
+Tabel: Chatbot, automatisering, AI-workflow og AI-agent
+
+| Type | Hvad den gør | Hvem styrer næste skridt | Eksempel fra marketing | Største risiko |
+|---|---|---|---|---|
+| Chatbot | Svarer på det, I skriver | I selv, én besked ad gangen | I beder ChatGPT om fem overskrifter til et nyhedsbrev | Forkerte svar, der ser rigtige ud |
+| Automatisering | Udfører faste trin, når noget sker | Reglerne, I har bygget | Nye leads fra en formular lægges automatisk i CRM-systemet | Går i stå, når virkeligheden ikke passer til reglerne |
+| AI-workflow | Faste trin, hvor nogle af trinene bruger AI | Reglerne, I har bygget | Hver mandag hentes annoncetal, og AI skriver et kort resumé | Fejl i AI-trinnet bliver sendt videre uden kontrol |
+| AI-agent | Planlægger selv trinene og vælger værktøjer | Sprogmodellen, inden for jeres rammer | "Gennemgå vores Google Ads-konto, og foreslå tre ting, vi bør ændre" | Gør noget, I ikke havde forudset, og kan være svær at følge |
+
+Mange produkter, der kaldes agenter, er i virkeligheden chatbots eller automatiseringer med et nyt navn. Analysefirmaet Gartner kalder det "agent washing" og anslog i juni 2025, at kun omkring 130 af de tusindvis af leverandører, der sælger agentisk AI, er ægte.
+
+Min vurdering er, at et AI-workflow ofte er det bedste valg for en mindre virksomhed. Det er mere forudsigeligt end en agent og billigere at drive. Anthropic giver samme råd: find den enkleste løsning, og gør den kun mere kompleks, når det er nødvendigt.
+
+## Hvordan virker en AI-agent?
+
+En AI-agent arbejder i et loop: den læser målet, vælger et værktøj, ser på resultatet og beslutter næste skridt, indtil opgaven er løst eller den skal bruge hjælp. Anthropic beskriver agenter som "typisk bare sprogmodeller, der bruger værktøjer ud fra feedback fra omgivelserne i et loop".
+
+Tabel: En AI-agents byggeklodser
+
+| Byggeklods | Hvad det er | Eksempel |
+|---|---|---|
+| Mål | Opgaven og hvornår den er løst | "Lav et udkast til næste måneds SoMe-kalender med 12 opslag" |
+| Sprogmodel | Den AI, der tænker og beslutter | Claude, GPT eller Gemini |
+| Instruktioner | Regler for, hvordan agenten må arbejde | Tone, målgruppe, hvad den aldrig må gøre |
+| Værktøjer | Det, agenten kan bruge til at hente data og handle | Websøgning, Google Drive, annoncekontoen, kalenderen |
+| Hukommelse | Det, agenten kan huske i og mellem opgaver | Tidligere opslag, brandguide, sidste måneds rapport |
+| Loop | Gentagelsen af planlæg, handl, tjek | Agenten søger, læser, ser at noget mangler, søger igen |
+| Menneske i loopet | Steder, hvor et menneske skal godkende | Intet bliver udgivet eller sendt, før I har sagt ja |
+
+### Hvad er MCP?
+
+MCP (Model Context Protocol) er en åben standard, der forbinder AI-programmer med andre systemer. Projektet selv sammenligner MCP med et USB-C-stik: én fælles måde at koble fx Claude eller ChatGPT til jeres data og værktøjer. For jer betyder det, at flere og flere værktøjer kan sættes til en agent uden, at nogen skal skrive kode til hver enkelt forbindelse.
+
+## Hvad kan AI-agenter bruges til i marketing?
+
+AI-agenter egner sig bedst til opgaver, hvor der skal hentes og samles information fra flere steder, og hvor resultatet er et udkast, som et menneske ser igennem. De egner sig dårligst til opgaver, hvor én fejl rammer kunder, budgetter eller jeres omdømme direkte.
+
+Tabel: Marketingopgaver, der passer og ikke passer til en AI-agent
+
+| Opgave | Egnet til en agent? | Hvorfor |
+|---|---|---|
+| Research af konkurrenter | Ja | Agenten kan søge, læse sider og samle et overblik, som I bagefter tjekker |
+| Ugentlig rapport på annoncer | Ja, gerne som AI-workflow | Tallene hentes fra kontoen, og AI skriver resuméet. Tallene skal kunne tjekkes |
+| Udkast til SoMe-kalender | Ja | Agenten kan bruge jeres tidligere opslag og brandguide og lave et udkast |
+| SEO-tjek af hjemmesiden | Ja | Agenten kan gennemgå sider for titler, beskrivelser og døde links og lave en liste |
+| Udgive opslag af sig selv | Nej | Én forkert tone eller forkert fakta rammer jeres omdømme med det samme |
+| Ændre budgetter i annoncekonti | Nej, ikke uden godkendelse | Fejl koster penge, og nogle ændringer kan ikke gøres om |
+| Sende mails til kunder | Nej, ikke uden godkendelse | Kræver samtykke, korrekte data og den rigtige tone |
+
+### Et eksempel: konkurrentresearch
+
+En agent til konkurrentresearch kan fx få denne opgave: "Gennemgå hjemmesiden og de seneste LinkedIn-opslag fra disse tre virksomheder. Lav en tabel med deres budskaber, tilbud og priser, og skriv, hvor de adskiller sig fra os." Agenten søger, læser siderne, samler tabellen og stopper der. I læser tabellen og beslutter, hvad I gør.
+
+### Hvordan bruger Hey Otto selv AI-agenter?
+
+Hey Otto arbejder selv med et hold af AI-agenter, hvor hver agent har sit fag (fx research, SEO, annoncer og tekst), og hvor en hovedagent fordeler opgaverne. Alt med konsekvenser udadtil, som at publicere eller ændre i annoncekonti, godkendes af et menneske først.
+
+## Hvilke værktøjer kan I bruge til AI-agenter?
+
+I kan komme i gang med AI-agenter uden at skrive kode. De store AI-assistenter har agentfunktioner indbygget, og automatiseringsværktøjerne lader jer bygge agenter ved at trække klodser sammen.
+
+Tabel: Værktøjer til AI-agenter (priser tjekket 12. november 2026)
+
+| Værktøj | Hvad det er | Kræver kode? | Pris (november 2026) |
+|---|---|---|---|
+| ChatGPT | AI-assistent fra OpenAI. Agenten "ChatGPT Work" løser længere opgaver med apps og browser | Nej | Plus 20 dollar om måneden. Work indgår i betalte abonnementer |
+| Claude | AI-assistent fra Anthropic. Claude Code og Claude Cowork kan arbejde selvstændigt med filer og værktøjer | Nej til Cowork, lidt teknisk forståelse til Claude Code | Pro 20 dollar om måneden (17 dollar ved årlig betaling). Team 20 dollar pr. bruger om måneden ved årlig betaling, 25 dollar månedligt |
+| Gemini | AI-assistent fra Google. Agentfunktionerne afhænger af abonnement og land (se Googles side) | Nej | Google AI Pro 19,99 dollar om måneden |
+| Microsoft Copilot Studio | Bygger agenter til Microsoft 365, Teams og jeres hjemmeside | Nej, men kræver opsætning | 200 dollar om måneden for 25.000 Copilot Credits. Microsoft 365 Copilot koster fra 30 dollar pr. bruger om måneden ved årlig betaling |
+| n8n | Automatiseringsværktøj med agent-klodser, MCP og godkendelse af handlinger | Nej, men teknisk | Starter 20 dollar om måneden ved årlig betaling. Gratis at hoste selv (Community Edition) |
+| Zapier Agents | Agenter bygget oven på Zapiers mange integrationer | Nej | Gratis med 400 aktiviteter om måneden. Pro 33,33 dollar om måneden ved årlig betaling |
+| Make | Automatiseringsværktøj, hvor Make AI Agents indgår | Nej | Gratis med 1.000 credits om måneden. Core fra 12 dollar om måneden |
+
+Priserne er uden moms og fra producenternes egne prissider. De ændrer sig ofte, så tjek dem, før I køber. Vil I vide mere om forskellen på de tre store assistenter, så læs [sammenligningen af ChatGPT, Claude og Gemini](/blog/chatgpt-claude-gemini).
+
+Min vurdering er, at de fleste mindre virksomheder bør starte i den AI-assistent, de allerede betaler for, før de bygger noget i n8n, Zapier eller Make.
+
+## Hvad er risikoen ved AI-agenter?
+
+Den største risiko ved AI-agenter er, at de laver fejl, som ingen opdager, fordi agenten arbejder selv. Dertil kommer data, der havner forkert, udgifter, der løber løbsk, og angreb, hvor agenten bliver narret af det, den læser.
+
+Gartner forudsagde i juni 2025, at over 40 procent af alle projekter med agentisk AI bliver stoppet inden udgangen af 2027 på grund af stigende omkostninger, uklar forretningsværdi eller mangelfuld styring af risici.
+
+:::tip
+Lad aldrig en agent gøre noget med konsekvenser udadtil uden et menneskes ja. Det gælder udgivelse, mails til kunder, ændringer i annoncebudgetter og alt, der ikke kan gøres om. OpenAI anbefaler selv, at handlinger, der er følsomme, ikke kan gøres om eller har meget på spil, skal have menneskeligt opsyn, indtil man stoler på agenten.
+:::
+
+### Fejl, der ser rigtige ud
+
+En sprogmodel kan skrive noget forkert med stor sikkerhed, og når agenten bygger videre på sit eget resultat, vokser fejlen. Bed derfor agenten om at vise sine kilder, og tjek tallene.
+
+### Jeres data
+
+En agent med adgang til mail, drev og kundedata kan også dele dem. Giv kun agenten adgang til det, opgaven kræver, og helst kun læseadgang. Tjek også, hvor data behandles, og om de bruges til at træne modellen.
+
+### Omkostninger
+
+Agenter bruger mange flere kald til sprogmodellen end en chat, fordi de arbejder i et loop. Anthropic skriver, at agentiske systemer ofte bytter hastighed og pris for bedre resultater. Sæt et loft over forbruget, og se på regningen efter den første måned.
+
+### Prompt injection
+
+Prompt injection er et angreb, hvor der står skjulte instruktioner i en tekst, som agenten læser, fx på en hjemmeside eller i en mail. OpenAI giver selv et eksempel, hvor en ondsindet kommentar på en side får agenten til at hente en kode til nulstilling af adgangskode fra Gmail og sende den videre. Jo flere værktøjer agenten har, og jo mere den læser fra nettet, jo større er risikoen.
+
+:::tip
+EU's AI-forordning (AI Act) har regler om gennemsigtighed i artikel 50, som gælder fra 2. august 2026. Lader I en agent tale direkte med kunder, fx i en chat på hjemmesiden, skal det som udgangspunkt være tydeligt, at de taler med en AI. Det gælder ikke, når det er indlysende.
+:::
+
+## Sådan kommer I i gang med AI-agenter, trin for trin
+
+I kan prøve jeres første AI-agent på en til to uger med fem trin. Start med en opgave, der kun læser og laver udkast, så I lærer agenten at kende, før den får lov til mere.
+
+Tabel: Trinene til jeres første AI-agent
+
+| Trin | Hvad I gør | Vejledende tid | Pris |
+|---|---|---|---|
+| 1. Vælg én opgave | Find en opgave, I gør hver uge, som består af at samle information, fx konkurrentresearch eller en annoncerapport | 1 time | 0 kr. |
+| 2. Vælg værktøj | Brug den AI-assistent, I allerede har, eller en gratis plan hos Zapier Agents eller Make | 1 time | 0 til ca. 20 dollar om måneden (november 2026) |
+| 3. Skriv instruktionen | Beskriv målet, kilderne, formatet på resultatet og hvad agenten ikke må | 1 til 2 timer | 0 kr. |
+| 4. Kør den i hånden | Kør agenten 3 til 5 gange, og tjek hvert resultat mod det, I selv ville have lavet | 2 til 4 timer fordelt på 1 til 2 uger | Indgår i abonnementet |
+| 5. Beslut næste skridt | Lad den køre fast, ret instruktionen, eller drop opgaven | 1 time | 0 kr. |
+
+Er I helt nye inden for AI, så start med [guiden til at komme i gang med AI i virksomheden](/blog/kom-i-gang-med-ai-i-virksomheden), før I går i gang med agenter. Og vil I vide, hvor meget tid AI realistisk kan spare jer, så læs [indlægget om tidsbesparelse med AI i marketing](/blog/tidsbesparelse-ai-marketing).
+
+## Hvilke fejl skal I undgå med AI-agenter?
+
+De fleste fejl med AI-agenter handler om at give agenten for meget frihed, for mange værktøjer eller for vage opgaver for tidligt.
+
+Tabel: Typiske fejl med AI-agenter
+
+| Fejl | Hvad sker der | Gør i stedet |
+|---|---|---|
+| For bred opgave, fx "styr vores SoMe" | Agenten gætter på, hvad I mener, og resultatet bliver ujævnt | Giv én afgrænset opgave med et klart resultat |
+| Adgang til alt fra dag ét | Større risiko for datalæk og prompt injection | Giv kun adgang til det, opgaven kræver, og helst kun læseadgang |
+| Ingen godkendelse | Fejl når ud til kunder, før nogen ser dem | Lad agenten lave udkast, og lad et menneske trykke "send" |
+| Agent, hvor en automatisering var nok | Højere pris og mindre forudsigelige resultater | Brug faste trin, når opgaven er den samme hver gang |
+| Køb af et produkt, der bare hedder "agent" | I betaler for en chatbot med et nyt navn | Spørg, hvad produktet selv beslutter, og hvilke værktøjer det kan bruge |
+
+## Hvad gør I, når den første agent kører?
+
+Når jeres første agent løser én opgave stabilt, kan I gradvist give den mere at lave: en ekstra kilde, et værktøj mere eller en opgave mere. Gør det ét skridt ad gangen, og hold godkendelsen, indtil I har set den løse opgaven rigtigt mange gange.
+
+Det næste skridt er ofte at lade flere agenter arbejde sammen, fx én der researcher, og én der skriver.
+
+## Kilder
+
+- Anthropic: [Building effective agents](https://www.anthropic.com/research/building-effective-agents), udgivet 19. december 2024, læst 12. november 2026
+- OpenAI: [A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf), læst 12. november 2026
+- OpenAI Help Center: [ChatGPT agent](https://help.openai.com/en/articles/11752874-chatgpt-agent) og [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex), læst 12. november 2026
+- Google Cloud: [What are AI agents?](https://cloud.google.com/discover/what-are-ai-agents), læst 12. november 2026
+- Gartner: [Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027), 25. juni 2025
+- Model Context Protocol: [What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/getting-started/intro), læst 12. november 2026
+- Europa-Kommissionen: [Transparency obligations under Article 50 of the AI Act](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act), opdateret 24. juli 2026
+- Priser: [ChatGPT](https://chatgpt.com/pricing), [Claude](https://claude.com/pricing), [Google AI-abonnementer](https://one.google.com/about/google-ai-plans/), [Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/copilot-studio), [n8n](https://n8n.io/pricing/), [Zapier](https://zapier.com/pricing) og [Make](https://www.make.com/en/pricing), alle tjekket 12. november 2026

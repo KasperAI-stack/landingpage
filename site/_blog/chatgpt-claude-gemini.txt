@@ -1,0 +1,239 @@
+---
+titel: "ChatGPT vs Claude vs Gemini: hvilken AI til marketing?"
+beskrivelse: "ChatGPT, Claude og Gemini koster næsten det samme for et team. Forskellen er integrationer, data og EU. Her er priser, funktioner og vores anbefaling."
+dato: 2026-11-12
+type: guide
+forfatter: kasper
+tags: [AI-værktøjer]
+udkast: false
+---
+
+:::kort
+- ChatGPT, Claude og Gemini kan alle skrive, søge på nettet og læse filer. Forskellen er integrationer, billeder, data og pris.
+- ChatGPT Business og Claude Team koster fra 20 dollar pr. bruger om måneden ved årlig betaling, Gemini Enterprise Business fra 21 dollar (november 2026).
+- I privatudgaverne kan samtaler bruges til træning, medmindre I slår det fra. I business-udgaverne sker det ikke som standard.
+- Vælg Gemini til Google Workspace, ChatGPT for flest funktioner og Claude til lange tekster og dokumenter.
+:::
+
+ChatGPT, Claude og Gemini er de tre AI-assistenter, de fleste mindre virksomheder vælger imellem. En AI-assistent er et program, I skriver til på almindeligt dansk, og som svarer med tekst, billeder, analyser eller færdige filer. Her er de tre sammenlignet på det, der betyder noget for marketing og daglig drift: pris, funktioner, integrationer og hvad der sker med jeres data.
+
+**Sådan har vi sammenlignet.** Sammenligningen bygger på producenternes egne pris-, funktions- og privatlivssider, tjekket den 12. november 2026. Vi har ikke selv testet værktøjerne mod hinanden, så der står ingen vurderinger af, hvem der skriver bedst. Hey Otto bruger selv Claude i det daglige arbejde og får ikke betaling for at nævne nogen af værktøjerne.
+
+## Hvad er forskellen på ChatGPT, Claude og Gemini?
+
+De tre minder meget om hinanden på det grundlæggende. Alle kan skrive, søge på nettet, læse filer og lave dybdegående research. Den største forskel er, hvilke programmer de spiller bedst sammen med, om de kan lave billeder, og hvad der sker med jeres data.
+
+- **ChatGPT** er lavet af OpenAI og har flest funktioner samlet i ét produkt, blandt andet billeder, stemme, planlagte opgaver og udvidelser til Word, Excel, PowerPoint og Google Sheets.
+- **Claude** er lavet af Anthropic. Claude har kontekstvinduer på op til 1 million tokens (afhænger af modellen) og forbindelser til Gmail, Google Drive, Google Kalender, Slack og Microsoft 365. Claude laver ikke fotos eller illustrationer.
+- **Gemini** er lavet af Google og er bygget ind i Gmail, Docs og resten af Google Workspace. Gemini er den eneste af de tre, der er med i et almindeligt Workspace-abonnement.
+
+Tabel: ChatGPT, Claude og Gemini sammenlignet, tjekket 12. november 2026
+
+| Værktøj | Pris fra (betalt) | Gratis udgave | Bedst til | Data og EU |
+|---|---|---|---|---|
+| ChatGPT | 64 kr. om måneden (Go), 179 kr. (Plus) | Ja, med grænser | Mange forskellige opgaver i ét værktøj | Business: ingen træning som standard. EU-dataopbevaring kun i Enterprise og Edu |
+| Claude | 20 dollar om måneden (Pro, månedlig betaling) | Ja, med grænser | Lange tekster og arbejde med store dokumenter | Team: ingen træning som standard. Data opbevares i USA |
+| Gemini | 40 kr. om måneden (Google AI Plus) | Ja, med grænser | Virksomheder i Google Workspace | Workspace: ingen træning uden tilladelse. EU-dataregion fra Business Standard |
+
+## Hvad koster ChatGPT, Claude og Gemini for en lille virksomhed?
+
+En lille virksomhed med flere ansatte betaler cirka det samme for de tre: fra 20 til 21 dollar pr. bruger om måneden ved årlig betaling (november 2026). Er I kun én person, er privatudgaverne billigere. Gemini er desuden med i Google Workspace fra Business Starter til 6,80 euro pr. bruger om måneden.
+
+OpenAI og Google viser priserne for privatudgaverne i kroner. Anthropic viser dem i dollar uden moms.
+
+Tabel: Priser pr. abonnement, tjekket 12. november 2026
+
+| Abonnement | ChatGPT | Claude | Gemini |
+|---|---|---|---|
+| Gratis | 0 kr. | 0 dollar | 0 kr. |
+| Billigste betalte | Go: 64 kr. om måneden (kan have reklamer) | Pro: 17 dollar om måneden årligt, 20 dollar månedligt | Google AI Plus: 40 kr. om måneden |
+| Mellem | Plus: 179 kr. om måneden | Max: 100 dollar om måneden | Google AI Pro: 169 kr. om måneden |
+| Største private | Pro: fra 789 kr. om måneden | Ultra: 200 dollar om måneden | Google AI Ultra: fra 799 kr. om måneden |
+| Team | Business: 20 dollar pr. bruger årligt, 25 dollar månedligt, mindst 2 brugere | Team: 20 dollar pr. bruger årligt, 25 dollar månedligt, 2 til 150 brugere | Gemini Enterprise Business: fra 21 dollar pr. bruger, op til 300 brugere |
+| Større virksomheder | Enterprise: pris efter aftale | Enterprise: 20 dollar pr. bruger plus forbrug, mindst 20 brugere | Gemini Enterprise Standard og Plus: fra 30 dollar pr. bruger |
+
+Både ChatGPT Business og Claude Team har også en dyrere plads til folk, der bruger værktøjet meget: 100 dollar pr. bruger om måneden ved årlig betaling eller 125 dollar månedligt.
+
+Tabel: Gemini i Google Workspace, tjekket 12. november 2026
+
+| Workspace-abonnement | Pris pr. bruger om måneden (årlig binding) | Gemini indeholdt |
+|---|---|---|
+| Business Starter | 6,80 euro | Gemini i Gmail, chat med Gemini, grundlæggende Gemini Notebook |
+| Business Standard | 13,60 euro | Gemini i Gmail, Docs, Meet med flere, udvidet Gemini Notebook |
+| Business Plus | 21,10 euro | Som Business Standard |
+| Enterprise | Pris efter aftale | Fuld adgang til Gemini i Workspace |
+
+## Hvilke funktioner har ChatGPT, Claude og Gemini?
+
+Alle tre kan søge på nettet, læse filer, lave dyb research og samle arbejdet i projekter. ChatGPT og Gemini kan lave billeder direkte i chatten, og Gemini kan også lave video. Claude laver ikke fotos eller illustrationer, men kan lave grafik i HTML og SVG og færdige filer med Claude Design, Slides og Docs.
+
+Et kontekstvindue er den mængde tekst, værktøjet kan holde styr på i én samtale. Det måles i tokens, hvor et token svarer til et ord eller en del af et ord.
+
+Tabel: Funktioner i de betalte privatudgaver, tjekket 12. november 2026
+
+| Funktion | ChatGPT (Plus) | Claude (Pro) | Gemini (Google AI Pro) |
+|---|---|---|---|
+| Nyeste modeller | GPT-6.1 Sol, GPT-6 Astra, GPT-6 Luna | Opus, Sonnet og Haiku. Fable mod forbrugskreditter | Gemini 4 Argon og Pro-modellen |
+| Kontekstvindue | Op til 256.000 tokens (ræsonnerende model) | Op til 1 million tokens, afhænger af model | 1 million tokens |
+| Billeder | Ja | Nej, kun grafik i HTML og SVG | Ja (Nano Banana) |
+| Video | Ikke oplyst | Nej | Ja (Veo og Google Flow) |
+| Websøgning | Ja | Ja | Ja |
+| Dyb research | Ja (deep research) | Ja (Research) | Ja (Deep Research) |
+| Filer og projekter | Ja | Ja | Ja, op til 1.500 sider upload |
+| Agenter og planlagte opgaver | ChatGPT Work og planlagte opgaver | Overdrag og planlæg opgaver, Claude in Chrome | Agentfunktioner i Google Søg |
+| Integrationer | Udvidelser til Word, Excel, PowerPoint og Google Sheets | Gmail, Google Drive, Google Kalender, Slack, Microsoft 365 | Gemini i Gmail, Docs, Vids med mere |
+| Dansk brugerflade | Ja | Nej, men svarer på det sprog, I skriver på | Ja |
+
+I team-udgaverne kan ChatGPT Business forbindes til Google Workspace, Slack, GitHub og Microsoft 365. Gemini Enterprise Business kan forbindes til blandt andet Microsoft 365, Google Workspace, HubSpot og Jira, og I kan bygge egne agenter uden kode med Workflow Builder.
+
+## Hvilket værktøj passer til hvilken marketingopgave?
+
+Til ren tekst kan alle tre bruges. Forskellen viser sig, når opgaven kræver billeder, video, meget lange dokumenter eller arbejde direkte i jeres mail og dokumenter. Tabellen viser, hvad funktionerne understøtter, ikke hvem der skriver bedst.
+
+Tabel: Marketingopgaver og de funktioner, der understøtter dem, tjekket 12. november 2026
+
+| Opgave | ChatGPT | Claude | Gemini |
+|---|---|---|---|
+| Opslag, nyhedsbreve og annoncetekster i jeres tone | Ja. Tonen kan gemmes i projekter og egne GPT'er | Ja. Tonen kan gemmes i projekter og skills | Ja. Tonen kan gemmes i Gems |
+| Billeder til SoMe og annoncer | Ja, billedgenerering i chatten | Nej, laver ikke fotos eller illustrationer | Ja, med Nano Banana |
+| Korte videoer | Ikke oplyst | Nej | Ja, med Veo og Google Flow fra Google AI Plus |
+| Konkurrentanalyse og markedsresearch | Ja, deep research. Begrænset i gratisudgaven | Ja, Research. Kun i betalte udgaver | Ja, Deep Research. Også i gratisudgaven |
+| Læse lange rapporter og undersøgelser | Op til 256.000 tokens i Plus | Op til 1 million tokens | 1 million tokens og op til 1.500 sider |
+| Arbejde direkte i mail og dokumenter | Udvidelser til Word, Excel, PowerPoint og Google Sheets | Forbindelser til Gmail, Google Drive og Microsoft 365 | Bygget ind i Gmail og Docs |
+| Faste opgaver, der kører af sig selv | Ja, planlagte opgaver fra Go | Ja, planlagte opgaver fra Pro | Workflow Builder i Gemini Enterprise. Ikke oplyst for privatudgaverne |
+
+Uanset værktøj bliver teksterne bedre, når I giver det en god prompt og jeres egen tone at arbejde ud fra. Se [skabeloner til AI-prompts i marketing](/blog/ai-prompts-marketing) og guiden til [AI-tekster, der lyder som jer](/blog/ai-tekster-tone-of-voice).
+
+## Træner ChatGPT, Claude og Gemini på jeres data?
+
+Ja, i gratis- og privatudgaverne kan alle tre bruge jeres samtaler til at forbedre deres modeller, men I kan slå det fra. I business-udgaverne bliver jeres data ikke brugt til træning som standard. Det gælder ChatGPT Business, Claude Team og Gemini i Google Workspace.
+
+Tabel: Træning og dataopbevaring, tjekket 12. november 2026
+
+| Værktøj | Privatudgaver | Business-udgaver | Data i EU | Databehandleraftale (DPA) |
+|---|---|---|---|---|
+| ChatGPT | Bruges til træning, kan fravælges | Ingen træning som standard | Kun Enterprise og Edu (nye workspaces). Ikke Business | Ikke oplyst for Business. Enterprise har egne juridiske vilkår |
+| Claude | Bruges, hvis I tillader det. Prissiden angiver fravalg | Ingen træning som standard | Nej, data opbevares i USA. EU-behandling kun via AWS, Google Cloud og Microsoft | Ja, Anthropics DPA |
+| Gemini | Bruges til træning, når "Behold aktivitet" er slået til | Ingen træning uden tilladelse | Ja, EU-dataregion i Workspace fra Business Standard | Ja, Googles Cloud Data Processing Addendum |
+
+:::tip
+**Brug ikke privatudgaverne til kundedata.** I Gemini kan menneskelige bedømmere læse et udsnit af samtalerne, og de gemmes i op til tre år, selvom I sletter jeres aktivitet. Slå træning fra i indstillingerne, eller brug en business-udgave, hvis I arbejder med persondata, kundelister eller fortrolige planer.
+:::
+
+Dataopbevaring i EU (data residency) betyder, at jeres data gemmes i EU. Det er ikke et krav i GDPR, men nogle kunder og brancher forlanger det. For de fleste mindre virksomheder er det vigtigste at have en databehandleraftale og at bruge en udgave, hvor data ikke bruges til træning.
+
+## Hvad er fordele og ulemper ved ChatGPT, Claude og Gemini?
+
+ChatGPT har flest funktioner, Claude har de største kontekstvinduer og mange forbindelser, og Gemini er billigst, hvis I allerede betaler for Google Workspace. Ulemperne handler mest om data, EU og hvad der mangler.
+
+Tabel: Fordele og ulemper ved ChatGPT
+
+| Type | Punkt | Begrundelse |
+|---|---|---|
+| Fordel | Mange funktioner i ét værktøj | Billeder, stemme, research, planlagte opgaver og agenter i Plus |
+| Fordel | Udvidelser til Office og Google Sheets | Kan bruges direkte i Word, Excel, PowerPoint og Google Sheets |
+| Fordel | Dansk brugerflade og priser i kroner | Let at komme i gang for alle i virksomheden |
+| Ulempe | EU-dataopbevaring kun i Enterprise | Business har ikke dataopbevaring i EU |
+| Ulempe | DPA for Business ikke oplyst | OpenAI nævner ikke en databehandleraftale på siderne for Business |
+| Ulempe | Billigste abonnement kan have reklamer | Gælder ChatGPT Go |
+| Ulempe | Mindre kontekstvindue | Op til 256.000 tokens i Plus mod 1 million hos Claude og Gemini |
+
+Tabel: Fordele og ulemper ved Claude
+
+| Type | Punkt | Begrundelse |
+|---|---|---|
+| Fordel | Store kontekstvinduer | Op til 1 million tokens, så lange dokumenter kan læses i én samtale |
+| Fordel | Mange forbindelser | Gmail, Google Drive, Google Kalender, Slack og Microsoft 365 |
+| Fordel | Claude Code med i alle betalte abonnementer | Kan bygge små værktøjer og automatiseringer |
+| Ulempe | Laver ikke billeder | Billeder til SoMe og annoncer kræver et andet værktøj |
+| Ulempe | Data opbevares i USA | Ingen EU-dataopbevaring i Claude Team |
+| Ulempe | Ingen dansk brugerflade | Menuerne er på engelsk, men Claude svarer på dansk |
+| Ulempe | Research kun i betalte udgaver | Gratisudgaven har ikke Research |
+
+Tabel: Fordele og ulemper ved Gemini
+
+| Type | Punkt | Begrundelse |
+|---|---|---|
+| Fordel | Bygget ind i Google Workspace | Gemini er med i Gmail fra Business Starter til 6,80 euro pr. bruger |
+| Fordel | Billig privatudgave | Google AI Plus koster 40 kr. om måneden |
+| Fordel | Billeder og video | Nano Banana til billeder og Veo og Google Flow til video |
+| Fordel | EU-dataregion i Workspace | Kan vælges fra Business Standard |
+| Ulempe | Menneskelig gennemgang i privatudgaven | Gennemgåede samtaler gemmes i op til tre år |
+| Ulempe | Ingen EU-dataregion i Business Starter | Kræver Business Standard eller dyrere |
+| Ulempe | Bedst for Google-brugere | Bruger I Microsoft 365, får I mindre ud af de indbyggede funktioner |
+
+## Hvilke alternativer findes der til ChatGPT, Claude og Gemini?
+
+De mest oplagte alternativer er Microsoft Copilot til virksomheder i Microsoft 365, Perplexity til research med kilder og Mistral Le Chat fra en europæisk udbyder. Perplexity og Mistral viser kun priser i dollar, også for besøgende fra Danmark.
+
+Tabel: Alternativer, tjekket 12. november 2026
+
+| Værktøj | Bedst til | Pris (november 2026) |
+|---|---|---|
+| Microsoft 365 Copilot Business | Virksomheder, der arbejder i Word, Excel, Outlook og Teams | Tilkøb fra 116,40 kr. pr. bruger om måneden ved årsabonnement, uden moms |
+| Perplexity | Research og søgning med kildehenvisninger | Pro: 17 dollar om måneden. Max: 167 dollar om måneden |
+| Mistral Le Chat | Virksomheder, der foretrækker en europæisk udbyder | Pro: 14,99 dollar om måneden. Team: 24,99 dollar pr. bruger om måneden |
+
+Microsoft sælger også Copilot Business samlet med Microsoft 365 Business Standard til 151,97 kr. pr. bruger om måneden ved årsabonnement, uden moms.
+
+## Hvilket værktøj skal jeres virksomhed vælge?
+
+Vælg det værktøj, der passer til de programmer, I allerede bruger, og vælg en business-udgave, hvis I arbejder med kundedata. Har I brug for billeder, falder Claude fra. Skal data ligge i EU, er Gemini i Workspace den billigste vej.
+
+Tabel: Sådan vælger I trin for trin
+
+| Trin | Hvad I gør | Pris |
+|---|---|---|
+| 1 | Find ud af, om I bruger Google Workspace eller Microsoft 365 | Gratis |
+| 2 | Afgør, om I skal lave billeder, og om data skal ligge i EU | Gratis |
+| 3 | Prøv de gratis udgaver med en rigtig opgave uden kundedata | 0 kr. |
+| 4 | Vælg en business-udgave, før I deler kundedata med værktøjet | Fra 20 dollar pr. bruger om måneden |
+| 5 | Underskriv databehandleraftalen og slå unødvendige forbindelser fra | Gratis |
+
+Tabel: Anbefaling pr. behov
+
+| Behov | Vælg | Hvorfor |
+|---|---|---|
+| I bruger Google Workspace | Gemini | Er med i jeres abonnement og bygget ind i Gmail og Docs |
+| I bruger Microsoft 365 | ChatGPT Business eller Microsoft 365 Copilot | Udvidelser til Office, eller Copilot direkte i programmerne |
+| I skriver mange lange tekster og arbejder med store dokumenter | Claude | Op til 1 million tokens og mange forbindelser |
+| I laver mange billeder og videoer | Gemini eller ChatGPT | Begge laver billeder, og Gemini laver også video |
+| Data skal opbevares i EU | Gemini i Workspace Business Standard | EU-dataregion til en lavere pris end ChatGPT Enterprise |
+| I er én person med et lille budget | Google AI Plus eller ChatGPT Go | 40 kr. og 64 kr. om måneden |
+
+Min vurdering er, at virksomheder i Google Workspace skal starte med Gemini, fordi det allerede er med i abonnementet og kan få data i EU fra Business Standard.
+
+Min vurdering er, at virksomheder i Microsoft 365 skal vælge mellem ChatGPT Business og Microsoft 365 Copilot. ChatGPT har flest funktioner, men Business har ikke EU-dataopbevaring.
+
+Min vurdering er, at Claude passer bedst til jer, der skriver meget, arbejder med lange dokumenter og vil koble AI på flere værktøjer, så længe I ikke har brug for billeder, og det er i orden, at data ligger i USA.
+
+Er I helt nye med AI, så start med guiden [kom i gang med AI i virksomheden](/blog/kom-i-gang-med-ai-i-virksomheden), før I vælger abonnement.
+
+:::tip
+**Test gratis, før I betaler.** Alle tre har en gratis udgave. Giv dem den samme opgave fra jeres egen hverdag, og vælg det værktøj, hvis svar I retter mindst i. Brug ikke kundedata i testen.
+:::
+
+## Kilder
+
+- [ChatGPT: priser (dansk)](https://chatgpt.com/da-DK/pricing), tjekket 12. november 2026
+- [ChatGPT: priser og funktioner (engelsk)](https://chatgpt.com/pricing), tjekket 12. november 2026
+- [OpenAI: Business-priser](https://openai.com/business/pricing/), tjekket 12. november 2026
+- [OpenAI: data og privatliv i ChatGPT Business](https://help.openai.com/en/articles/8798634-managing-data-sharing-and-privacy-in-chatgpt-business), tjekket 12. november 2026
+- [OpenAI: dataopbevaring for ChatGPT](https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt), tjekket 12. november 2026
+- [Claude: priser](https://claude.com/pricing), tjekket 12. november 2026
+- [Claude: kan Claude lave billeder?](https://support.claude.com/en/articles/9002504-can-claude-produce-images), tjekket 12. november 2026
+- [Anthropic: bruges mine data til træning? (privatudgaver)](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training), tjekket 12. november 2026
+- [Anthropic: bruges mine data til træning? (business)](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training), tjekket 12. november 2026
+- [Anthropic: hvor står jeres servere?](https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers), tjekket 12. november 2026
+- [Claude: regional compliance og DPA](https://claude.com/regional-compliance), tjekket 12. november 2026
+- [Claude: sprog i brugerfladen](https://support.claude.com/en/articles/10769299-how-to-use-claude-in-your-preferred-language), tjekket 12. november 2026
+- [Claude: Google Workspace-forbindelser](https://support.claude.com/en/articles/10166901-use-google-workspace-connectors), tjekket 12. november 2026
+- [Gemini: abonnementer i Danmark](https://gemini.google/dk/subscriptions/?hl=da), tjekket 12. november 2026
+- [Google: Gemini Apps Privacy Hub](https://support.google.com/gemini/answer/13594961?hl=en), tjekket 12. november 2026
+- [Google: Generative AI in Google Workspace Privacy Hub](https://support.google.com/a/answer/15706919), tjekket 12. november 2026
+- [Google Workspace: vælg hvor jeres data ligger](https://knowledge.workspace.google.com/admin/compliance/choose-a-geographic-location-for-your-data), tjekket 12. november 2026
+- [Google Workspace: data omfattet af dataregioner](https://knowledge.workspace.google.com/admin/compliance/data-covered-by-data-regions), tjekket 12. november 2026
+- [Google Workspace: priser](https://workspace.google.com/intl/da/pricing.html), tjekket 12. november 2026
+- [Microsoft: Copilot-priser for virksomheder](https://www.microsoft.com/da-dk/microsoft-365-copilot/pricing), tjekket 12. november 2026
+- [Perplexity: Pro](https://www.perplexity.ai/pro), tjekket 12. november 2026
+- [Mistral: priser](https://mistral.ai/pricing), tjekket 12. november 2026

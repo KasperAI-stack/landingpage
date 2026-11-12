@@ -13,5 +13,33 @@
     <lastmod>2026-10-07</lastmod>
   </url>
   <!-- blog:start, lavet af scripts/byg-blog.mjs -->
+  <url>
+    <loc>https://heyotto.dk/blog/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://heyotto.dk/blog/ai-prompts-marketing</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://heyotto.dk/blog/ai-tekster-tone-of-voice</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://heyotto.dk/blog/chatgpt-claude-gemini</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://heyotto.dk/blog/hvad-er-ai-agenter</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://heyotto.dk/blog/tidsbesparelse-ai-marketing</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://heyotto.dk/blog/kom-i-gang-med-ai-i-virksomheden</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
   <!-- blog:slut -->
 </urlset>

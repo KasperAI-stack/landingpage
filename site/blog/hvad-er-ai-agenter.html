@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Denne side er lavet af scripts/byg-blog.mjs. Ret i blog/ eller templates/, ikke her. -->
+  <!-- Samtykke: alt starter som "nej", indtil et cookiebanner giver samtykke -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      functionality_storage: 'granted',
+      security_storage: 'granted',
+      wait_for_update: 500
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N7M37V72');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel: kører først, når den besøgende har givet samtykke til marketing i Cookiebot -->
+  <script type="text/plain" data-cookieconsent="marketing">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1616440676548347');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel -->
+  <title>Hvad er AI-agenter? En guide til mindre virksomheder | Hey Otto</title>
+  <meta name="description" content="En AI-agent er et program, der selv vælger trin og værktøjer for at nå et mål. Se forskellen på chatbot og agent, og hvordan I starter i det små.">
+  <link rel="canonical" href="https://heyotto.dk/blog/hvad-er-ai-agenter">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F0E13" media="(prefers-color-scheme: dark)">
+  <script>try { var t = localStorage.getItem("tema"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:site_name" content="Hey Otto">
+  <meta property="og:title" content="Hvad er AI-agenter? En guide til mindre virksomheder">
+  <meta property="og:description" content="En AI-agent er et program, der selv vælger trin og værktøjer for at nå et mål. Se forskellen på chatbot og agent, og hvordan I starter i det små.">
+  <meta property="og:url" content="https://heyotto.dk/blog/hvad-er-ai-agenter">
+  <meta property="og:image" content="https://heyotto.dk/assets/deling.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Robotten Otto ved siden af overskriften: Slip for de marketingopgaver, I løser i hånden hver uge.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" type="application/rss+xml" title="Hey Otto, blog" href="/blog/feed.xml">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hvad er AI-agenter? En guide til mindre virksomheder",
+  "description": "En AI-agent er et program, der selv vælger trin og værktøjer for at nå et mål. Se forskellen på chatbot og agent, og hvordan I starter i det små.",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "inLanguage": "da-DK",
+  "url": "https://heyotto.dk/blog/hvad-er-ai-agenter",
+  "mainEntityOfPage": "https://heyotto.dk/blog/hvad-er-ai-agenter",
+  "image": "https://heyotto.dk/assets/deling.png",
+  "keywords": "Automatisering, Kom i gang med AI",
+  "articleSection": "Guide",
+  "wordCount": 2607,
+  "author": {
+    "@type": "Person",
+    "name": "Kasper Schrøder Asmussen",
+    "description": "Jeg hedder Kasper Schrøder Asmussen, har en kandidat i Marketing & Brand Management og har bygget AI-drevne marketingsystemer i både B2B og B2C. Jeg byggede Hey Otto, så marketingfolk kan give opgaven fra sig og bruge tiden på det, der kræver et menneske.",
+    "image": "https://heyotto.dk/assets/kasper.jpg",
+    "url": "https://www.linkedin.com/in/kasperasmussen/",
+    "sameAs": [
+      "https://www.linkedin.com/in/kasperasmussen/"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hey Otto",
+      "url": "https://heyotto.dk/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://heyotto.dk/assets/favicon.svg"
+      }
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hey Otto",
+    "url": "https://heyotto.dk/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://heyotto.dk/assets/favicon.svg"
+    }
+  }
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7M37V72"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="page">
+  <a class="skip" href="#indhold">Spring til indholdet</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Hey Otto, til forsiden">
+      <img class="brand-mark" src="/assets/favicon.svg" alt="" width="28" height="28">
+      <img class="logo" src="/assets/logo.svg" alt="" width="399" height="101">
+    </a>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle hidden aria-label="Skift tema">
+        <span class="t-opt t-sun"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></span>
+        <span class="t-opt t-moon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span>
+      </button>
+    </div>
+  </header>
+  <main id="indhold">
+    <article class="section post">
+      <p class="post-back"><a href="/blog/">Alle indlæg</a></p>
+      <header class="post-head">
+        <p class="post-type">Guide</p>
+        <h1>Hvad er AI-agenter? En guide til mindre virksomheder</h1>
+        <div class="byline">
+          <img class="avatar-img" src="/assets/kasper.jpg" alt="" width="44" height="44" loading="lazy" decoding="async">
+          <p>Af <a href="#forfatter" rel="author">Kasper Schrøder Asmussen</a><br><span class="post-meta"><time datetime="2026-11-12">12. november 2026</time>, 13 min. at læse</span></p>
+        </div>
+        <ul class="tags" aria-label="Emner"><li><a class="tag" href="/blog/tag/automatisering">Automatisering</a></li><li><a class="tag" href="/blog/tag/kom-i-gang-med-ai">Kom i gang med AI</a></li></ul>
+      </header>
+      <section class="box box-kort" aria-labelledby="kort-titel">
+        <h2 id="kort-titel" class="box-title">Kort fortalt</h2>
+<ul>
+  <li>En AI-agent er et program, der bruger en sprogmodel til selv at planlægge trinene og vælge værktøjer for at nå et mål, som et menneske har sat.</li>
+  <li>Forskellen på en chatbot og en agent er, at chatbotten svarer, mens agenten handler: den søger, henter data, laver udkast og kan bruge jeres systemer.</li>
+  <li>I kan prøve agenter fra 0 kr. hos fx Zapier Agents og Make, eller for omkring 20 dollar om måneden med ChatGPT Plus eller Claude Pro (november 2026).</li>
+  <li>Den typiske fejl er at give agenten for meget frihed for tidligt. Start med én opgave, der kun læser og laver udkast, og lad et menneske godkende resten.</li>
+</ul>
+      </section>
+      <nav class="toc" aria-labelledby="toc-titel">
+        <h2 id="toc-titel" class="box-title">Indhold</h2>
+        <ol>
+          <li><a href="#hvad-er-en-ai-agent">Hvad er en AI-agent?</a></li>
+          <li><a href="#hvad-er-forskellen-paa-en-chatbot-en-automatisering-og-en-ai-agent">Hvad er forskellen på en chatbot, en automatisering og en AI-agent?</a></li>
+          <li><a href="#hvordan-virker-en-ai-agent">Hvordan virker en AI-agent?</a></li>
+          <li><a href="#hvad-kan-ai-agenter-bruges-til-i-marketing">Hvad kan AI-agenter bruges til i marketing?</a></li>
+          <li><a href="#hvilke-vaerktoejer-kan-i-bruge-til-ai-agenter">Hvilke værktøjer kan I bruge til AI-agenter?</a></li>
+          <li><a href="#hvad-er-risikoen-ved-ai-agenter">Hvad er risikoen ved AI-agenter?</a></li>
+          <li><a href="#saadan-kommer-i-i-gang-med-ai-agenter-trin-for-trin">Sådan kommer I i gang med AI-agenter, trin for trin</a></li>
+          <li><a href="#hvilke-fejl-skal-i-undgaa-med-ai-agenter">Hvilke fejl skal I undgå med AI-agenter?</a></li>
+          <li><a href="#hvad-goer-i-naar-den-foerste-agent-koerer">Hvad gør I, når den første agent kører?</a></li>
+          <li><a href="#kilder">Kilder</a></li>
+        </ol>
+      </nav>
+      <div class="prose">
+<p>Ordet &quot;AI-agent&quot; bliver brugt om alt fra en almindelig chatbot til systemer, der arbejder selv i timevis. Denne guide er til jer, der arbejder i en mindre virksomhed og vil forstå, hvad en agent faktisk er, hvad den kan bruges til i marketing, og hvordan I prøver det af uden at løbe en stor risiko.</p>
+<h2 id="hvad-er-en-ai-agent">Hvad er en AI-agent?</h2>
+<p>En AI-agent er et program, der bruger en sprogmodel til at nå et mål ved selv at beslutte, hvilke trin det tager, og hvilke værktøjer det bruger undervejs. I giver agenten en opgave, fx &quot;find ud af, hvad vores tre største konkurrenter har skrevet om på LinkedIn den seneste måned&quot;, og agenten finder selv ud af, hvordan den løser den.</p>
+<p>En sprogmodel er den AI, der ligger bag fx ChatGPT, Claude og Gemini. Den kan forstå og skrive tekst. Det nye ved en agent er, at sprogmodellen ikke kun skriver et svar, men også bruger værktøjer: den kan søge på nettet, læse et regneark, hente tal fra en annoncekonto eller lægge et udkast i en mappe.</p>
+<p>Producenterne beskriver det næsten ens:</p>
+<ul>
+  <li><strong>Anthropic</strong>, der laver Claude, skelner mellem workflows, hvor sprogmodellen og værktøjerne følger &quot;forudbestemte kodestier&quot;, og agenter, hvor sprogmodellen &quot;dynamisk styrer sin egen proces og brug af værktøjer&quot; (december 2024).</li>
+  <li><strong>OpenAI</strong> skriver, at en agent bruger en sprogmodel til at styre arbejdet og træffe beslutninger, og at den vælger værktøjer ud fra, hvor langt den er nået, &quot;altid inden for klart definerede rammer&quot;.</li>
+  <li><strong>Google Cloud</strong> definerer AI-agenter som &quot;softwaresystemer, der bruger AI til at forfølge mål og løse opgaver på vegne af brugere&quot;.</li>
+</ul>
+<h2 id="hvad-er-forskellen-paa-en-chatbot-en-automatisering-og-en-ai-agent">Hvad er forskellen på en chatbot, en automatisering og en AI-agent?</h2>
+<p>Forskellen ligger i, hvem der bestemmer næste skridt. I en chatbot gør I det selv, i en automatisering har I bestemt det på forhånd, og i en AI-agent bestemmer sprogmodellen det inden for de rammer, I har sat.</p>
+<div class="table-wrap" role="region" aria-label="Chatbot, automatisering, AI-workflow og AI-agent" tabindex="0">
+<table>
+<caption>Chatbot, automatisering, AI-workflow og AI-agent</caption>
+<thead><tr><th scope="col">Type</th><th scope="col">Hvad den gør</th><th scope="col">Hvem styrer næste skridt</th><th scope="col">Eksempel fra marketing</th><th scope="col">Største risiko</th></tr></thead>
+<tbody>
+<tr><th scope="row">Chatbot</th><td>Svarer på det, I skriver</td><td>I selv, én besked ad gangen</td><td>I beder ChatGPT om fem overskrifter til et nyhedsbrev</td><td>Forkerte svar, der ser rigtige ud</td></tr>
+<tr><th scope="row">Automatisering</th><td>Udfører faste trin, når noget sker</td><td>Reglerne, I har bygget</td><td>Nye leads fra en formular lægges automatisk i CRM-systemet</td><td>Går i stå, når virkeligheden ikke passer til reglerne</td></tr>
+<tr><th scope="row">AI-workflow</th><td>Faste trin, hvor nogle af trinene bruger AI</td><td>Reglerne, I har bygget</td><td>Hver mandag hentes annoncetal, og AI skriver et kort resumé</td><td>Fejl i AI-trinnet bliver sendt videre uden kontrol</td></tr>
+<tr><th scope="row">AI-agent</th><td>Planlægger selv trinene og vælger værktøjer</td><td>Sprogmodellen, inden for jeres rammer</td><td>&quot;Gennemgå vores Google Ads-konto, og foreslå tre ting, vi bør ændre&quot;</td><td>Gør noget, I ikke havde forudset, og kan være svær at følge</td></tr>
+</tbody>
+</table>
+</div>
+<p>Mange produkter, der kaldes agenter, er i virkeligheden chatbots eller automatiseringer med et nyt navn. Analysefirmaet Gartner kalder det &quot;agent washing&quot; og anslog i juni 2025, at kun omkring 130 af de tusindvis af leverandører, der sælger agentisk AI, er ægte.</p>
+<p>Min vurdering er, at et AI-workflow ofte er det bedste valg for en mindre virksomhed. Det er mere forudsigeligt end en agent og billigere at drive. Anthropic giver samme råd: find den enkleste løsning, og gør den kun mere kompleks, når det er nødvendigt.</p>
+<h2 id="hvordan-virker-en-ai-agent">Hvordan virker en AI-agent?</h2>
+<p>En AI-agent arbejder i et loop: den læser målet, vælger et værktøj, ser på resultatet og beslutter næste skridt, indtil opgaven er løst eller den skal bruge hjælp. Anthropic beskriver agenter som &quot;typisk bare sprogmodeller, der bruger værktøjer ud fra feedback fra omgivelserne i et loop&quot;.</p>
+<div class="table-wrap" role="region" aria-label="En AI-agents byggeklodser" tabindex="0">
+<table>
+<caption>En AI-agents byggeklodser</caption>
+<thead><tr><th scope="col">Byggeklods</th><th scope="col">Hvad det er</th><th scope="col">Eksempel</th></tr></thead>
+<tbody>
+<tr><th scope="row">Mål</th><td>Opgaven og hvornår den er løst</td><td>&quot;Lav et udkast til næste måneds SoMe-kalender med 12 opslag&quot;</td></tr>
+<tr><th scope="row">Sprogmodel</th><td>Den AI, der tænker og beslutter</td><td>Claude, GPT eller Gemini</td></tr>
+<tr><th scope="row">Instruktioner</th><td>Regler for, hvordan agenten må arbejde</td><td>Tone, målgruppe, hvad den aldrig må gøre</td></tr>
+<tr><th scope="row">Værktøjer</th><td>Det, agenten kan bruge til at hente data og handle</td><td>Websøgning, Google Drive, annoncekontoen, kalenderen</td></tr>
+<tr><th scope="row">Hukommelse</th><td>Det, agenten kan huske i og mellem opgaver</td><td>Tidligere opslag, brandguide, sidste måneds rapport</td></tr>
+<tr><th scope="row">Loop</th><td>Gentagelsen af planlæg, handl, tjek</td><td>Agenten søger, læser, ser at noget mangler, søger igen</td></tr>
+<tr><th scope="row">Menneske i loopet</th><td>Steder, hvor et menneske skal godkende</td><td>Intet bliver udgivet eller sendt, før I har sagt ja</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="hvad-er-mcp">Hvad er MCP?</h3>
+<p>MCP (Model Context Protocol) er en åben standard, der forbinder AI-programmer med andre systemer. Projektet selv sammenligner MCP med et USB-C-stik: én fælles måde at koble fx Claude eller ChatGPT til jeres data og værktøjer. For jer betyder det, at flere og flere værktøjer kan sættes til en agent uden, at nogen skal skrive kode til hver enkelt forbindelse.</p>
+<h2 id="hvad-kan-ai-agenter-bruges-til-i-marketing">Hvad kan AI-agenter bruges til i marketing?</h2>
+<p>AI-agenter egner sig bedst til opgaver, hvor der skal hentes og samles information fra flere steder, og hvor resultatet er et udkast, som et menneske ser igennem. De egner sig dårligst til opgaver, hvor én fejl rammer kunder, budgetter eller jeres omdømme direkte.</p>
+<div class="table-wrap" role="region" aria-label="Marketingopgaver, der passer og ikke passer til en AI-agent" tabindex="0">
+<table>
+<caption>Marketingopgaver, der passer og ikke passer til en AI-agent</caption>
+<thead><tr><th scope="col">Opgave</th><th scope="col">Egnet til en agent?</th><th scope="col">Hvorfor</th></tr></thead>
+<tbody>
+<tr><th scope="row">Research af konkurrenter</th><td>Ja</td><td>Agenten kan søge, læse sider og samle et overblik, som I bagefter tjekker</td></tr>
+<tr><th scope="row">Ugentlig rapport på annoncer</th><td>Ja, gerne som AI-workflow</td><td>Tallene hentes fra kontoen, og AI skriver resuméet. Tallene skal kunne tjekkes</td></tr>
+<tr><th scope="row">Udkast til SoMe-kalender</th><td>Ja</td><td>Agenten kan bruge jeres tidligere opslag og brandguide og lave et udkast</td></tr>
+<tr><th scope="row">SEO-tjek af hjemmesiden</th><td>Ja</td><td>Agenten kan gennemgå sider for titler, beskrivelser og døde links og lave en liste</td></tr>
+<tr><th scope="row">Udgive opslag af sig selv</th><td>Nej</td><td>Én forkert tone eller forkert fakta rammer jeres omdømme med det samme</td></tr>
+<tr><th scope="row">Ændre budgetter i annoncekonti</th><td>Nej, ikke uden godkendelse</td><td>Fejl koster penge, og nogle ændringer kan ikke gøres om</td></tr>
+<tr><th scope="row">Sende mails til kunder</th><td>Nej, ikke uden godkendelse</td><td>Kræver samtykke, korrekte data og den rigtige tone</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="et-eksempel-konkurrentresearch">Et eksempel: konkurrentresearch</h3>
+<p>En agent til konkurrentresearch kan fx få denne opgave: &quot;Gennemgå hjemmesiden og de seneste LinkedIn-opslag fra disse tre virksomheder. Lav en tabel med deres budskaber, tilbud og priser, og skriv, hvor de adskiller sig fra os.&quot; Agenten søger, læser siderne, samler tabellen og stopper der. I læser tabellen og beslutter, hvad I gør.</p>
+<h3 id="hvordan-bruger-hey-otto-selv-ai-agenter">Hvordan bruger Hey Otto selv AI-agenter?</h3>
+<p>Hey Otto arbejder selv med et hold af AI-agenter, hvor hver agent har sit fag (fx research, SEO, annoncer og tekst), og hvor en hovedagent fordeler opgaverne. Alt med konsekvenser udadtil, som at publicere eller ændre i annoncekonti, godkendes af et menneske først.</p>
+<h2 id="hvilke-vaerktoejer-kan-i-bruge-til-ai-agenter">Hvilke værktøjer kan I bruge til AI-agenter?</h2>
+<p>I kan komme i gang med AI-agenter uden at skrive kode. De store AI-assistenter har agentfunktioner indbygget, og automatiseringsværktøjerne lader jer bygge agenter ved at trække klodser sammen.</p>
+<div class="table-wrap" role="region" aria-label="Værktøjer til AI-agenter (priser tjekket 12. november 2026)" tabindex="0">
+<table>
+<caption>Værktøjer til AI-agenter (priser tjekket 12. november 2026)</caption>
+<thead><tr><th scope="col">Værktøj</th><th scope="col">Hvad det er</th><th scope="col">Kræver kode?</th><th scope="col">Pris (november 2026)</th></tr></thead>
+<tbody>
+<tr><th scope="row">ChatGPT</th><td>AI-assistent fra OpenAI. Agenten &quot;ChatGPT Work&quot; løser længere opgaver med apps og browser</td><td>Nej</td><td>Plus 20 dollar om måneden. Work indgår i betalte abonnementer</td></tr>
+<tr><th scope="row">Claude</th><td>AI-assistent fra Anthropic. Claude Code og Claude Cowork kan arbejde selvstændigt med filer og værktøjer</td><td>Nej til Cowork, lidt teknisk forståelse til Claude Code</td><td>Pro 20 dollar om måneden (17 dollar ved årlig betaling). Team 20 dollar pr. bruger om måneden ved årlig betaling, 25 dollar månedligt</td></tr>
+<tr><th scope="row">Gemini</th><td>AI-assistent fra Google. Agentfunktionerne afhænger af abonnement og land (se Googles side)</td><td>Nej</td><td>Google AI Pro 19,99 dollar om måneden</td></tr>
+<tr><th scope="row">Microsoft Copilot Studio</th><td>Bygger agenter til Microsoft 365, Teams og jeres hjemmeside</td><td>Nej, men kræver opsætning</td><td>200 dollar om måneden for 25.000 Copilot Credits. Microsoft 365 Copilot koster fra 30 dollar pr. bruger om måneden ved årlig betaling</td></tr>
+<tr><th scope="row">n8n</th><td>Automatiseringsværktøj med agent-klodser, MCP og godkendelse af handlinger</td><td>Nej, men teknisk</td><td>Starter 20 dollar om måneden ved årlig betaling. Gratis at hoste selv (Community Edition)</td></tr>
+<tr><th scope="row">Zapier Agents</th><td>Agenter bygget oven på Zapiers mange integrationer</td><td>Nej</td><td>Gratis med 400 aktiviteter om måneden. Pro 33,33 dollar om måneden ved årlig betaling</td></tr>
+<tr><th scope="row">Make</th><td>Automatiseringsværktøj, hvor Make AI Agents indgår</td><td>Nej</td><td>Gratis med 1.000 credits om måneden. Core fra 12 dollar om måneden</td></tr>
+</tbody>
+</table>
+</div>
+<p>Priserne er uden moms og fra producenternes egne prissider. De ændrer sig ofte, så tjek dem, før I køber. Vil I vide mere om forskellen på de tre store assistenter, så læs <a href="/blog/chatgpt-claude-gemini">sammenligningen af ChatGPT, Claude og Gemini</a>.</p>
+<p>Min vurdering er, at de fleste mindre virksomheder bør starte i den AI-assistent, de allerede betaler for, før de bygger noget i n8n, Zapier eller Make.</p>
+<h2 id="hvad-er-risikoen-ved-ai-agenter">Hvad er risikoen ved AI-agenter?</h2>
+<p>Den største risiko ved AI-agenter er, at de laver fejl, som ingen opdager, fordi agenten arbejder selv. Dertil kommer data, der havner forkert, udgifter, der løber løbsk, og angreb, hvor agenten bliver narret af det, den læser.</p>
+<p>Gartner forudsagde i juni 2025, at over 40 procent af alle projekter med agentisk AI bliver stoppet inden udgangen af 2027 på grund af stigende omkostninger, uklar forretningsværdi eller mangelfuld styring af risici.</p>
+<aside class="box box-tip"><p class="box-title">Godt at vide</p>
+<p>Lad aldrig en agent gøre noget med konsekvenser udadtil uden et menneskes ja. Det gælder udgivelse, mails til kunder, ændringer i annoncebudgetter og alt, der ikke kan gøres om. OpenAI anbefaler selv, at handlinger, der er følsomme, ikke kan gøres om eller har meget på spil, skal have menneskeligt opsyn, indtil man stoler på agenten.</p>
+</aside>
+<h3 id="fejl-der-ser-rigtige-ud">Fejl, der ser rigtige ud</h3>
+<p>En sprogmodel kan skrive noget forkert med stor sikkerhed, og når agenten bygger videre på sit eget resultat, vokser fejlen. Bed derfor agenten om at vise sine kilder, og tjek tallene.</p>
+<h3 id="jeres-data">Jeres data</h3>
+<p>En agent med adgang til mail, drev og kundedata kan også dele dem. Giv kun agenten adgang til det, opgaven kræver, og helst kun læseadgang. Tjek også, hvor data behandles, og om de bruges til at træne modellen.</p>
+<h3 id="omkostninger">Omkostninger</h3>
+<p>Agenter bruger mange flere kald til sprogmodellen end en chat, fordi de arbejder i et loop. Anthropic skriver, at agentiske systemer ofte bytter hastighed og pris for bedre resultater. Sæt et loft over forbruget, og se på regningen efter den første måned.</p>
+<h3 id="prompt-injection">Prompt injection</h3>
+<p>Prompt injection er et angreb, hvor der står skjulte instruktioner i en tekst, som agenten læser, fx på en hjemmeside eller i en mail. OpenAI giver selv et eksempel, hvor en ondsindet kommentar på en side får agenten til at hente en kode til nulstilling af adgangskode fra Gmail og sende den videre. Jo flere værktøjer agenten har, og jo mere den læser fra nettet, jo større er risikoen.</p>
+<aside class="box box-tip"><p class="box-title">Godt at vide</p>
+<p>EU's AI-forordning (AI Act) har regler om gennemsigtighed i artikel 50, som gælder fra 2. august 2026. Lader I en agent tale direkte med kunder, fx i en chat på hjemmesiden, skal det som udgangspunkt være tydeligt, at de taler med en AI. Det gælder ikke, når det er indlysende.</p>
+</aside>
+<h2 id="saadan-kommer-i-i-gang-med-ai-agenter-trin-for-trin">Sådan kommer I i gang med AI-agenter, trin for trin</h2>
+<p>I kan prøve jeres første AI-agent på en til to uger med fem trin. Start med en opgave, der kun læser og laver udkast, så I lærer agenten at kende, før den får lov til mere.</p>
+<div class="table-wrap" role="region" aria-label="Trinene til jeres første AI-agent" tabindex="0">
+<table>
+<caption>Trinene til jeres første AI-agent</caption>
+<thead><tr><th scope="col">Trin</th><th scope="col">Hvad I gør</th><th scope="col">Vejledende tid</th><th scope="col">Pris</th></tr></thead>
+<tbody>
+<tr><th scope="row">1. Vælg én opgave</th><td>Find en opgave, I gør hver uge, som består af at samle information, fx konkurrentresearch eller en annoncerapport</td><td>1 time</td><td>0 kr.</td></tr>
+<tr><th scope="row">2. Vælg værktøj</th><td>Brug den AI-assistent, I allerede har, eller en gratis plan hos Zapier Agents eller Make</td><td>1 time</td><td>0 til ca. 20 dollar om måneden (november 2026)</td></tr>
+<tr><th scope="row">3. Skriv instruktionen</th><td>Beskriv målet, kilderne, formatet på resultatet og hvad agenten ikke må</td><td>1 til 2 timer</td><td>0 kr.</td></tr>
+<tr><th scope="row">4. Kør den i hånden</th><td>Kør agenten 3 til 5 gange, og tjek hvert resultat mod det, I selv ville have lavet</td><td>2 til 4 timer fordelt på 1 til 2 uger</td><td>Indgår i abonnementet</td></tr>
+<tr><th scope="row">5. Beslut næste skridt</th><td>Lad den køre fast, ret instruktionen, eller drop opgaven</td><td>1 time</td><td>0 kr.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Er I helt nye inden for AI, så start med <a href="/blog/kom-i-gang-med-ai-i-virksomheden">guiden til at komme i gang med AI i virksomheden</a>, før I går i gang med agenter. Og vil I vide, hvor meget tid AI realistisk kan spare jer, så læs <a href="/blog/tidsbesparelse-ai-marketing">indlægget om tidsbesparelse med AI i marketing</a>.</p>
+<h2 id="hvilke-fejl-skal-i-undgaa-med-ai-agenter">Hvilke fejl skal I undgå med AI-agenter?</h2>
+<p>De fleste fejl med AI-agenter handler om at give agenten for meget frihed, for mange værktøjer eller for vage opgaver for tidligt.</p>
+<div class="table-wrap" role="region" aria-label="Typiske fejl med AI-agenter" tabindex="0">
+<table>
+<caption>Typiske fejl med AI-agenter</caption>
+<thead><tr><th scope="col">Fejl</th><th scope="col">Hvad sker der</th><th scope="col">Gør i stedet</th></tr></thead>
+<tbody>
+<tr><th scope="row">For bred opgave, fx &quot;styr vores SoMe&quot;</th><td>Agenten gætter på, hvad I mener, og resultatet bliver ujævnt</td><td>Giv én afgrænset opgave med et klart resultat</td></tr>
+<tr><th scope="row">Adgang til alt fra dag ét</th><td>Større risiko for datalæk og prompt injection</td><td>Giv kun adgang til det, opgaven kræver, og helst kun læseadgang</td></tr>
+<tr><th scope="row">Ingen godkendelse</th><td>Fejl når ud til kunder, før nogen ser dem</td><td>Lad agenten lave udkast, og lad et menneske trykke &quot;send&quot;</td></tr>
+<tr><th scope="row">Agent, hvor en automatisering var nok</th><td>Højere pris og mindre forudsigelige resultater</td><td>Brug faste trin, når opgaven er den samme hver gang</td></tr>
+<tr><th scope="row">Køb af et produkt, der bare hedder &quot;agent&quot;</th><td>I betaler for en chatbot med et nyt navn</td><td>Spørg, hvad produktet selv beslutter, og hvilke værktøjer det kan bruge</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="hvad-goer-i-naar-den-foerste-agent-koerer">Hvad gør I, når den første agent kører?</h2>
+<p>Når jeres første agent løser én opgave stabilt, kan I gradvist give den mere at lave: en ekstra kilde, et værktøj mere eller en opgave mere. Gør det ét skridt ad gangen, og hold godkendelsen, indtil I har set den løse opgaven rigtigt mange gange.</p>
+<p>Det næste skridt er ofte at lade flere agenter arbejde sammen, fx én der researcher, og én der skriver.</p>
+<h2 id="kilder">Kilder</h2>
+<ul>
+  <li>Anthropic: <a href="https://www.anthropic.com/research/building-effective-agents">Building effective agents</a>, udgivet 19. december 2024, læst 12. november 2026</li>
+  <li>OpenAI: <a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf">A practical guide to building agents</a>, læst 12. november 2026</li>
+  <li>OpenAI Help Center: <a href="https://help.openai.com/en/articles/11752874-chatgpt-agent">ChatGPT agent</a> og <a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex">ChatGPT Work and Codex</a>, læst 12. november 2026</li>
+  <li>Google Cloud: <a href="https://cloud.google.com/discover/what-are-ai-agents">What are AI agents?</a>, læst 12. november 2026</li>
+  <li>Gartner: <a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027">Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027</a>, 25. juni 2025</li>
+  <li>Model Context Protocol: <a href="https://modelcontextprotocol.io/docs/getting-started/intro">What is the Model Context Protocol (MCP)?</a>, læst 12. november 2026</li>
+  <li>Europa-Kommissionen: <a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act">Transparency obligations under Article 50 of the AI Act</a>, opdateret 24. juli 2026</li>
+  <li>Priser: <a href="https://chatgpt.com/pricing">ChatGPT</a>, <a href="https://claude.com/pricing">Claude</a>, <a href="https://one.google.com/about/google-ai-plans/">Google AI-abonnementer</a>, <a href="https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/copilot-studio">Microsoft Copilot Studio</a>, <a href="https://n8n.io/pricing/">n8n</a>, <a href="https://zapier.com/pricing">Zapier</a> og <a href="https://www.make.com/en/pricing">Make</a>, alle tjekket 12. november 2026</li>
+</ul>
+      </div>
+      <aside class="author" id="forfatter" aria-labelledby="forfatter-titel">
+        <img class="avatar-img" src="/assets/kasper.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+        <div>
+          <p class="author-label">Skrevet af</p>
+          <h2 id="forfatter-titel">Kasper Schrøder Asmussen</h2>
+          <p class="author-role">Står bag Hey Otto</p>
+          <p>Jeg hedder Kasper Schrøder Asmussen, har en kandidat i Marketing &amp; Brand Management og har bygget AI-drevne marketingsystemer i både B2B og B2C. Jeg byggede Hey Otto, så marketingfolk kan give opgaven fra sig og bruge tiden på det, der kræver et menneske.</p>
+          <p><a href="https://www.linkedin.com/in/kasperasmussen/" target="_blank" rel="noopener">Kasper på LinkedIn</a></p>
+        </div>
+      </aside>
+      <aside class="post-cta" aria-labelledby="cta-titel">
+        <h2 id="cta-titel">Skal vi se på jeres opgaver?</h2>
+        <p>På 30 minutter finder vi ud af, hvilke af jeres marketingopgaver Otto kan tage, og hvad det vil kræve. Mødet er gratis.</p>
+        <a class="btn" href="/#book">Book en snak på 30 minutter</a>
+      </aside>
+    </article>
+  </main>
+  <footer class="footer">
+    <p class="footer-name"><img class="logo" src="/assets/logo.svg" alt="Hey Otto" width="399" height="101"> <span class="footer-by">v/ Kasper Schrøder Asmussen</span></p>
+    <p class="footer-contact"><a href="mailto:kasper@heyotto.dk">kasper@heyotto.dk</a>, <a href="tel:+4522463840">+45 22 46 38 40</a>, <a href="https://www.linkedin.com/in/kasperasmussen/" target="_blank" rel="noopener">LinkedIn</a>, <a href="/blog/">Blog</a>, <a href="/privatlivspolitik">Privatlivspolitik</a>, <a href="/vilkaar">Vilkår</a><span class="cookie-link" hidden>, <button type="button" class="linklike" data-cookie-settings>Cookieindstillinger</button></span></p>
+  </footer>
+  </div>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Denne side er lavet af scripts/byg-blog.mjs. Ret i blog/ eller templates/, ikke her. -->
+  <!-- Samtykke: alt starter som "nej", indtil et cookiebanner giver samtykke -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      functionality_storage: 'granted',
+      security_storage: 'granted',
+      wait_for_update: 500
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N7M37V72');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel: kører først, når den besøgende har givet samtykke til marketing i Cookiebot -->
+  <script type="text/plain" data-cookieconsent="marketing">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1616440676548347');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel -->
+  <title>Kom i gang med AI i virksomheden: hvor starter man? | Hey Otto</title>
+  <meta name="description" content="Start med 1 til 3 konkrete opgaver, en kort AI-politik og ét betalt værktøj til en lille gruppe. Her er de seks trin, priserne og de typiske fejl.">
+  <link rel="canonical" href="https://heyotto.dk/blog/kom-i-gang-med-ai-i-virksomheden">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F0E13" media="(prefers-color-scheme: dark)">
+  <script>try { var t = localStorage.getItem("tema"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:site_name" content="Hey Otto">
+  <meta property="og:title" content="Kom i gang med AI i virksomheden: hvor starter man?">
+  <meta property="og:description" content="Start med 1 til 3 konkrete opgaver, en kort AI-politik og ét betalt værktøj til en lille gruppe. Her er de seks trin, priserne og de typiske fejl.">
+  <meta property="og:url" content="https://heyotto.dk/blog/kom-i-gang-med-ai-i-virksomheden">
+  <meta property="og:image" content="https://heyotto.dk/assets/deling.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Robotten Otto ved siden af overskriften: Slip for de marketingopgaver, I løser i hånden hver uge.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" type="application/rss+xml" title="Hey Otto, blog" href="/blog/feed.xml">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Kom i gang med AI i virksomheden: hvor starter man?",
+  "description": "Start med 1 til 3 konkrete opgaver, en kort AI-politik og ét betalt værktøj til en lille gruppe. Her er de seks trin, priserne og de typiske fejl.",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "inLanguage": "da-DK",
+  "url": "https://heyotto.dk/blog/kom-i-gang-med-ai-i-virksomheden",
+  "mainEntityOfPage": "https://heyotto.dk/blog/kom-i-gang-med-ai-i-virksomheden",
+  "image": "https://heyotto.dk/assets/deling.png",
+  "keywords": "Kom i gang med AI",
+  "articleSection": "Guide",
+  "wordCount": 2245,
+  "author": {
+    "@type": "Person",
+    "name": "Kasper Schrøder Asmussen",
+    "description": "Jeg hedder Kasper Schrøder Asmussen, har en kandidat i Marketing & Brand Management og har bygget AI-drevne marketingsystemer i både B2B og B2C. Jeg byggede Hey Otto, så marketingfolk kan give opgaven fra sig og bruge tiden på det, der kræver et menneske.",
+    "image": "https://heyotto.dk/assets/kasper.jpg",
+    "url": "https://www.linkedin.com/in/kasperasmussen/",
+    "sameAs": [
+      "https://www.linkedin.com/in/kasperasmussen/"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hey Otto",
+      "url": "https://heyotto.dk/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://heyotto.dk/assets/favicon.svg"
+      }
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hey Otto",
+    "url": "https://heyotto.dk/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://heyotto.dk/assets/favicon.svg"
+    }
+  }
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7M37V72"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="page">
+  <a class="skip" href="#indhold">Spring til indholdet</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Hey Otto, til forsiden">
+      <img class="brand-mark" src="/assets/favicon.svg" alt="" width="28" height="28">
+      <img class="logo" src="/assets/logo.svg" alt="" width="399" height="101">
+    </a>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle hidden aria-label="Skift tema">
+        <span class="t-opt t-sun"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></span>
+        <span class="t-opt t-moon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span>
+      </button>
+    </div>
+  </header>
+  <main id="indhold">
+    <article class="section post">
+      <p class="post-back"><a href="/blog/">Alle indlæg</a></p>
+      <header class="post-head">
+        <p class="post-type">Guide</p>
+        <h1>Kom i gang med AI i virksomheden: hvor starter man?</h1>
+        <div class="byline">
+          <img class="avatar-img" src="/assets/kasper.jpg" alt="" width="44" height="44" loading="lazy" decoding="async">
+          <p>Af <a href="#forfatter" rel="author">Kasper Schrøder Asmussen</a><br><span class="post-meta"><time datetime="2026-11-12">12. november 2026</time>, 11 min. at læse</span></p>
+        </div>
+        <ul class="tags" aria-label="Emner"><li><a class="tag" href="/blog/tag/kom-i-gang-med-ai">Kom i gang med AI</a></li></ul>
+      </header>
+      <section class="box box-kort" aria-labelledby="kort-titel">
+        <h2 id="kort-titel" class="box-title">Kort fortalt</h2>
+<ul>
+  <li>Start med 1 til 3 konkrete opgaver, der går igen hver uge, og vælg først værktøj bagefter.</li>
+  <li>Lav en kort AI-politik om godkendte værktøjer og data, der aldrig må indtastes.</li>
+  <li>ChatGPT Business og Claude Team koster 20 til 25 dollar pr. bruger om måneden (november 2026).</li>
+  <li>Kør en pilot med 3 til 5 personer i 4 til 6 uger, og mål tiden før og efter.</li>
+  <li>Den typiske fejl er at give alle adgang uden opgaver, regler eller oplæring.</li>
+</ul>
+      </section>
+      <nav class="toc" aria-labelledby="toc-titel">
+        <h2 id="toc-titel" class="box-title">Indhold</h2>
+        <ol>
+          <li><a href="#hvor-starter-man-med-ai-i-en-virksomhed">Hvor starter man med AI i en virksomhed?</a></li>
+          <li><a href="#hvad-er-de-seks-trin-og-hvad-koster-de">Hvad er de seks trin, og hvad koster de?</a></li>
+          <li><a href="#hvilke-opgaver-skal-man-starte-med">Hvilke opgaver skal man starte med?</a></li>
+          <li><a href="#hvad-skal-der-staa-i-en-ai-politik">Hvad skal der stå i en AI-politik?</a></li>
+          <li><a href="#hvilket-ai-vaerktoej-skal-en-virksomhed-vaelge">Hvilket AI-værktøj skal en virksomhed vælge?</a></li>
+          <li><a href="#hvordan-koerer-man-en-ai-pilot">Hvordan kører man en AI-pilot?</a></li>
+          <li><a href="#hvordan-maaler-man-om-ai-virker">Hvordan måler man, om AI virker?</a></li>
+          <li><a href="#hvilke-fejl-skal-man-undgaa">Hvilke fejl skal man undgå?</a></li>
+          <li><a href="#hvad-goer-man-naar-piloten-er-faerdig">Hvad gør man, når piloten er færdig?</a></li>
+          <li><a href="#kilder">Kilder</a></li>
+        </ol>
+      </nav>
+      <div class="prose">
+<p>Denne guide er til ledere og medarbejdere i små og mellemstore virksomheder, der vil i gang med AI uden egne AI-folk. Bagefter kender I de seks trin fra første idé til fast brug, hvad det koster, og hvilke regler I skal kende.</p>
+<h2 id="hvor-starter-man-med-ai-i-en-virksomhed">Hvor starter man med AI i en virksomhed?</h2>
+<p>Man starter med opgaverne. Find 1 til 3 opgaver, som I laver ofte, som mest består af tekst, og hvor et forkert første udkast ikke gør skade, fordi et menneske altid retter det. Først derefter vælger I værktøj.</p>
+<p>Generativ AI er AI, der laver nyt indhold som tekst, billeder eller kode ud fra en instruktion, også kaldet en prompt. Det er den type, de fleste virksomheder starter med, fordi den kan bruges med det samme i et program som ChatGPT, Claude, Microsoft 365 Copilot eller Gemini.</p>
+<p>Digitaliseringsstyrelsens guide til virksomheder anbefaler samme rækkefølge: først tilgangen og formålet, så retningslinjer og til sidst de organisatoriske rammer.</p>
+<aside class="box box-tip"><p class="box-title">Godt at vide</p>
+<p><strong>Danske virksomheder er allerede godt i gang.</strong> 59 procent af danske virksomheder med mindst 10 ansatte brugte kunstig intelligens i januar 2026, mod 15 procent i 2023. Blandt virksomheder med 10 til 49 ansatte var andelen 55 procent (Danmarks Statistik, tabel ITAV28, opdateret 15. september 2026). Danmark havde i 2025 den højeste andel i EU med 42,0 procent mod et EU-gennemsnit på 20,0 procent (Eurostat, 11. december 2025).</p>
+</aside>
+<h2 id="hvad-er-de-seks-trin-og-hvad-koster-de">Hvad er de seks trin, og hvad koster de?</h2>
+<p>Der er seks trin, og de første fem tager typisk 6 til 10 uger i alt. Det meste koster kun tid. Den eneste faste udgift er licenser til de medarbejdere, der er med i piloten.</p>
+<div class="table-wrap" role="region" aria-label="De seks trin til at komme i gang med AI" tabindex="0">
+<table>
+<caption>De seks trin til at komme i gang med AI</caption>
+<thead><tr><th scope="col">Trin</th><th scope="col">Hvad I gør</th><th scope="col">Vejledende tid</th><th scope="col">Pris (november 2026)</th></tr></thead>
+<tbody>
+<tr><th scope="row">1. Vælg opgaver</th><td>Find 1 til 3 opgaver, der går igen og mest er tekst</td><td>1 til 2 timer</td><td>0 kr.</td></tr>
+<tr><th scope="row">2. Lav en AI-politik</th><td>Skriv én side om godkendte værktøjer, data og ansvar</td><td>2 til 4 timer</td><td>0 kr.</td></tr>
+<tr><th scope="row">3. Vælg værktøj</th><td>Vælg ét værktøj ud fra de systemer, I allerede bruger</td><td>1 til 2 timer</td><td>0 kr. at prøve gratis udgaver</td></tr>
+<tr><th scope="row">4. Kør en pilot</th><td>3 til 5 personer bruger værktøjet på de valgte opgaver</td><td>4 til 6 uger</td><td>Ca. 20 til 25 dollar pr. bruger om måneden</td></tr>
+<tr><th scope="row">5. Mål</th><td>Sammenlign tidsforbrug og kvalitet før og efter</td><td>1 til 2 timer</td><td>0 kr.</td></tr>
+<tr><th scope="row">6. Udbred</th><td>Giv flere adgang, del gode prompts, opdater politikken</td><td>Løbende</td><td>Licenser til flere brugere</td></tr>
+</tbody>
+</table>
+</div>
+<p>Tiderne er vejledende og ikke målte tal. De afhænger af, hvor mange opgaver og medarbejdere I tager med. En pilot på 4 til 6 uger er som regel nok til at se, om en opgave egner sig til AI, fordi opgaven så er løst flere gange, og de første forsøg ikke fylder det hele.</p>
+<h2 id="hvilke-opgaver-skal-man-starte-med">Hvilke opgaver skal man starte med?</h2>
+<p>Start med opgaver, der er hyppige, tekstbaserede og lette at kontrollere. Gode eksempler er første udkast til nyhedsbreve, opslag på sociale medier, produkttekster, svar på typiske kundemails og referater af møder.</p>
+<p>Undgå at starte med opgaver, hvor fejl er dyre, eller hvor der indgår følsomme persondata, fx sundhedsoplysninger eller lønsager.</p>
+<p>Tre spørgsmål hjælper med at vælge:</p>
+<ul>
+  <li>Laver vi opgaven mindst én gang om ugen?</li>
+  <li>Kan en kollega se på et minut, om resultatet er godt nok?</li>
+  <li>Kan opgaven løses uden at give AI-værktøjet persondata eller fortrolige oplysninger?</li>
+</ul>
+<p>Er svaret ja til alle tre, er opgaven et godt sted at starte. Det passer med Danmarks Statistiks tal: den mest udbredte brug af AI i danske virksomheder er at skrive tekst eller tale, som 44 procent af virksomhederne med mindst 10 ansatte gjorde i januar 2026.</p>
+<p>Vil I vide, hvor meget tid AI kan spare på marketingopgaver, så læs <a href="/blog/tidsbesparelse-ai-marketing">hvor meget tid AI sparer i marketing</a>.</p>
+<h2 id="hvad-skal-der-staa-i-en-ai-politik">Hvad skal der stå i en AI-politik?</h2>
+<p>En AI-politik er en kort intern regel for, hvordan medarbejderne må bruge AI. Den skal mindst sige, hvilke værktøjer der er godkendt, hvilke data der aldrig må indtastes, og at et menneske altid kontrollerer resultatet, før det bruges.</p>
+<p>Digitaliseringsstyrelsen foreslår blandt andet en positivliste over godkendte værktøjer og eksempler på brug, der er i orden og ikke i orden.</p>
+<p>Tabellen herunder er en kort skabelon, som I kan kopiere og tilpasse jeres virksomhed.</p>
+<div class="table-wrap" role="region" aria-label="Skabelon til en AI-politik på én side" tabindex="0">
+<table>
+<caption>Skabelon til en AI-politik på én side</caption>
+<thead><tr><th scope="col">Punkt</th><th scope="col">Formulering, I kan bruge</th></tr></thead>
+<tbody>
+<tr><th scope="row">Formål</th><td>Vi bruger AI til første udkast på faste opgaver, så vi bruger mindre tid på dem</td></tr>
+<tr><th scope="row">Godkendte værktøjer</th><td>Vi bruger kun virksomhedens konto i det værktøj, ledelsen har godkendt, ikke private konti</td></tr>
+<tr><th scope="row">Data, der aldrig må ind</th><td>Persondata om kunder og ansatte, adgangskoder, kontrakter, priser og andre fortrolige oplysninger</td></tr>
+<tr><th scope="row">Kontrol</th><td>Alt, AI har lavet, læses og rettes af en medarbejder, før det sendes eller udgives</td></tr>
+<tr><th scope="row">Ansvar</th><td>Den medarbejder, der bruger resultatet, står inde for det</td></tr>
+<tr><th scope="row">Oplæring</th><td>Alle får en kort, nedskrevet introduktion, før de får adgang</td></tr>
+<tr><th scope="row">Kontakt</th><td>Spørgsmål om AI går til en navngiven person i virksomheden</td></tr>
+<tr><th scope="row">Opdatering</th><td>Politikken gennemgås hvert halve år</td></tr>
+</tbody>
+</table>
+</div>
+<aside class="box box-tip"><p class="box-title">Godt at vide</p>
+<p><strong>AI-forordningen stiller krav om AI-færdigheder.</strong> Siden 2. februar 2025 skal virksomheder, der bruger AI-systemer, sørge for, at medarbejderne har tilstrækkelige AI-færdigheder (AI-forordningens artikel 4). Kravet gælder også, når medarbejderne bruger værktøjer som ChatGPT eller Copilot. En kort intern oplæring, der er skrevet ned, er en god start. Indtaster I persondata, gælder GDPR som altid, og I skal have en databehandleraftale med leverandøren. Datatilsynet og Digitaliseringsstyrelsen har en regulatorisk sandkasse for AI, hvor virksomheder kan få gratis vejledning.</p>
+</aside>
+<h2 id="hvilket-ai-vaerktoej-skal-en-virksomhed-vaelge">Hvilket AI-værktøj skal en virksomhed vælge?</h2>
+<p>Vælg det værktøj, der passer til de systemer, I allerede bruger. Bruger I Microsoft 365, er Microsoft 365 Copilot det oplagte at undersøge. Bruger I Google Workspace, er Gemini allerede med i abonnementet. Ellers er ChatGPT Business og Claude Team de mest udbredte selvstændige værktøjer.</p>
+<p>Brug en erhvervsudgave og ikke private gratis konti. Erhvervsudgaverne giver administration af brugere, og leverandørerne lover, at virksomhedens data ikke bruges til at træne deres modeller.</p>
+<div class="table-wrap" role="region" aria-label="De store AI-værktøjer til virksomheder (priser set 12. november 2026)" tabindex="0">
+<table>
+<caption>De store AI-værktøjer til virksomheder (priser set 12. november 2026)</caption>
+<thead><tr><th scope="col">Værktøj</th><th scope="col">Pris pr. bruger om måneden</th><th scope="col">Dansk</th><th scope="col">Hvor data ligger</th><th scope="col">Bedst til</th></tr></thead>
+<tbody>
+<tr><th scope="row">ChatGPT Business</th><td>20 dollar ved årlig betaling, 25 dollar ved månedlig betaling</td><td>Ja, på OpenAIs sprogliste</td><td>EU-dataopbevaring kun for ChatGPT Enterprise og Edu</td><td>Bred brug af tekst, analyse og billeder</td></tr>
+<tr><th scope="row">Claude Team</th><td>20 dollar ved årlig betaling, 25 dollar ved månedlig betaling, ekskl. moms, 2 til 150 brugere</td><td>Ja, Claude svarer på dansk. Brugerfladen findes ikke på dansk</td><td>Data opbevares i USA</td><td>Lange tekster, dokumenter og tone</td></tr>
+<tr><th scope="row">Microsoft 365 Copilot Business</th><td>Fra ca. 116 kr. ekskl. moms ved årsabonnement, 162,96 kr. ved månedsabonnement, kræver Microsoft 365</td><td>Ja, på Microsofts sprogliste</td><td>EU Data Boundary for EU-kunder</td><td>Virksomheder, der arbejder i Word, Outlook, Excel og Teams</td></tr>
+<tr><th scope="row">Gemini i Google Workspace</th><td>Med i Workspace fra 6,80 euro (Business Starter, årlig binding)</td><td>Ja, på Googles sprogliste</td><td>EU kan vælges i Business Standard og Plus</td><td>Virksomheder, der arbejder i Gmail og Google Docs</td></tr>
+</tbody>
+</table>
+</div>
+<p>Priserne kommer fra producenternes egne sider og kan ændre sig. Microsoft oplyser prisen ekskl. moms og viste 116,40 kr. som nedsat pris med 135,80 kr. som førpris. &quot;Dansk&quot; angiver, om værktøjet arbejder på dansk ifølge producentens egne sider. Vil I sammenligne de tre store chatværktøjer mere grundigt, så læs <a href="/blog/chatgpt-claude-gemini">ChatGPT, Claude eller Gemini</a>.</p>
+<p>Min vurdering er, at valget af værktøj betyder mindre end valget af opgaver. Test derfor de værktøjer, I overvejer, på jeres egne danske tekster i piloten, før I binder jer til et årsabonnement.</p>
+<p>Hey Otto bruger selv Claude i det daglige arbejde og får ikke betaling for at nævne nogen af værktøjerne.</p>
+<h2 id="hvordan-koerer-man-en-ai-pilot">Hvordan kører man en AI-pilot?</h2>
+<p>En pilot er en kort, afgrænset test, hvor få medarbejdere bruger værktøjet på de valgte opgaver. Vælg 3 til 5 personer, der har lyst, giv dem 4 til 6 uger, og aftal på forhånd, hvad der skal måles.</p>
+<p>Sådan kan piloten bygges op:</p>
+<ol>
+  <li><strong>Uge 1:</strong> Opsæt værktøjet, gennemgå AI-politikken og vis, hvordan man skriver en god prompt.</li>
+  <li><strong>Uge 2 til 5:</strong> Deltagerne bruger værktøjet på de valgte opgaver og gemmer de prompts, der virker.</li>
+  <li><strong>Uge 6:</strong> Hold et møde, og gennemgå, hvad der virkede, hvad der ikke virkede, og hvad tallene viser.</li>
+</ol>
+<p>Gode prompts er det vigtigste, piloten efterlader sig. Saml dem i et fælles dokument, så de næste brugere ikke starter forfra. Læs mere i <a href="/blog/ai-prompts-marketing">AI-prompts til marketing</a>, og se, hvordan I får teksterne til at lyde som jer selv, i <a href="/blog/ai-tekster-tone-of-voice">AI-tekster med jeres tone of voice</a>.</p>
+<h2 id="hvordan-maaler-man-om-ai-virker">Hvordan måler man, om AI virker?</h2>
+<p>Mål tidsforbrug og kvalitet på de samme opgaver før og efter. Notér i to uger før piloten, hvor lang tid opgaverne tager, og gør det samme i piloten. Bed samtidig den, der godkender teksterne, om at vurdere kvaliteten på en skala fra 1 til 5.</p>
+<div class="table-wrap" role="region" aria-label="Det skal I måle i piloten" tabindex="0">
+<table>
+<caption>Det skal I måle i piloten</caption>
+<thead><tr><th scope="col">Målepunkt</th><th scope="col">Sådan måler I</th><th scope="col">Hvorfor</th></tr></thead>
+<tbody>
+<tr><th scope="row">Tid pr. opgave</th><td>Minutter fra start til færdig, før og efter</td><td>Viser, om AI faktisk sparer tid</td></tr>
+<tr><th scope="row">Kvalitet</th><td>Vurdering fra 1 til 5 af den, der godkender</td><td>Viser, om tiden spares på bekostning af kvaliteten</td></tr>
+<tr><th scope="row">Rettelser</th><td>Hvor meget af AI-udkastet der skrives om</td><td>Viser, om prompts og opsætning skal forbedres</td></tr>
+<tr><th scope="row">Brug</th><td>Hvor mange gange om ugen værktøjet bruges</td><td>Viser, om medarbejderne har taget det til sig</td></tr>
+</tbody>
+</table>
+</div>
+<p>Måles der ikke før piloten, kan I ikke sige bagefter, om den virkede. Det er den del, flest springer over.</p>
+<h2 id="hvilke-fejl-skal-man-undgaa">Hvilke fejl skal man undgå?</h2>
+<p>De fleste fejl handler om rækkefølgen: værktøjet kommer før opgaverne, og adgangen kommer før reglerne.</p>
+<div class="table-wrap" role="region" aria-label="Typiske fejl, når virksomheder starter med AI" tabindex="0">
+<table>
+<caption>Typiske fejl, når virksomheder starter med AI</caption>
+<thead><tr><th scope="col">Fejl</th><th scope="col">Hvad sker der</th><th scope="col">Gør i stedet</th></tr></thead>
+<tbody>
+<tr><th scope="row">Alle får adgang på én gang</th><td>Ingen ved, hvad de skal bruge det til, og brugen stopper efter få uger</td><td>Start med en pilot på 3 til 5 personer og faste opgaver</td></tr>
+<tr><th scope="row">Ingen AI-politik</th><td>Medarbejdere indtaster persondata eller bruger private konti</td><td>Skriv en politik på én side, før nogen får adgang</td></tr>
+<tr><th scope="row">Private gratis konti</th><td>Virksomheden har ingen kontrol med data og brugere</td><td>Brug en erhvervsudgave med administration</td></tr>
+<tr><th scope="row">Resultatet bruges uden kontrol</th><td>Fejl og opdigtede fakta ender hos kunderne</td><td>Et menneske læser og retter alt, før det bruges</td></tr>
+<tr><th scope="row">Ingen måling</th><td>Ingen kan sige, om pengene er givet godt ud</td><td>Mål tid og kvalitet før og efter</td></tr>
+<tr><th scope="row">For store opgaver først</th><td>Projektet bliver dyrt og trækker ud</td><td>Start med små, hyppige tekstopgaver</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="hvad-goer-man-naar-piloten-er-faerdig">Hvad gør man, når piloten er færdig?</h2>
+<p>Når piloten viser, at opgaverne går hurtigere uden at kvaliteten falder, giver I flere medarbejdere adgang. Tag én afdeling ad gangen, lad deltagerne fra piloten vise de andre, hvordan de gør, og del samlingen af prompts.</p>
+<p>Gennemgå AI-politikken igen med de erfaringer, I har fået, og vælg de næste 1 til 3 opgaver. Når de enkle opgaver kører, kan I se på opgaver, hvor AI arbejder mere selvstændigt. Læs om det i <a href="/blog/hvad-er-ai-agenter">hvad AI-agenter er</a>.</p>
+<p>Små og mellemstore virksomheder kan søge tilskud til rådgivning om digitalisering gennem SMV:Digital, som drives af Digitaliseringsstyrelsen og Erhvervshus Midtjylland. Puljerne åbner på bestemte datoer, så tjek smvdigital.dk for, hvornår der næste gang kan søges.</p>
+<h2 id="kilder">Kilder</h2>
+<ul>
+  <li>Danmarks Statistik: <a href="https://www.statistikbanken.dk/ITAV28">Virksomhedernes brug af kunstig intelligens (10+ ansatte), tabel ITAV28</a>, opdateret 15. september 2026, set 12. november 2026</li>
+  <li>Eurostat: <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251211-2">20% of EU enterprises use AI technologies</a>, 11. december 2025</li>
+  <li>Digitaliseringsstyrelsen: <a href="https://digst.dk/kunstig-intelligens/guides-til-brug-af-kunstig-intelligens/guide-til-virksomheder/">Guide til virksomheder om ansvarlig anvendelse af generativ kunstig intelligens</a>, set 12. november 2026</li>
+  <li>EU: <a href="https://eur-lex.europa.eu/legal-content/DA/TXT/?uri=CELEX:32024R1689">AI-forordningen, forordning (EU) 2024/1689, artikel 4</a>, og Europa-Kommissionen: <a href="https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers">AI Literacy, Questions &amp; Answers</a>, set 12. november 2026</li>
+  <li>Datatilsynet: <a href="https://www.datatilsynet.dk/regler-og-vejledning/kunstig-intelligens">Kunstig intelligens og databeskyttelse</a>, set 12. november 2026</li>
+  <li>OpenAI: <a href="https://help.openai.com/en/articles/8792828-chatgpt-business-overview">ChatGPT Business overview</a> og <a href="https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt">Data residency for ChatGPT</a>, set 12. november 2026</li>
+  <li>Anthropic: <a href="https://claude.com/pricing">Claude, Plans &amp; pricing</a> og <a href="https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers">Where are your servers located?</a>, set 12. november 2026</li>
+  <li>Microsoft: <a href="https://www.microsoft.com/da-dk/microsoft-365/copilot/business">Microsoft 365 Copilot til virksomheder</a> og <a href="https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn">What is the EU Data Boundary?</a>, set 12. november 2026</li>
+  <li>Google: <a href="https://workspace.google.com/pricing">Google Workspace, priser</a> og <a href="https://knowledge.workspace.google.com/admin/compliance/choose-a-geographic-location-for-your-data">Choose a geographic location for your data</a>, set 12. november 2026</li>
+  <li>Sproglister: <a href="https://help.openai.com/en/articles/8357869-how-to-change-your-language-setting-in-chatgpt">OpenAI, What languages do you support?</a>, <a href="https://support.claude.com/en/articles/10769299-how-to-use-claude-in-your-preferred-language">Anthropic, Supported languages</a>, <a href="https://support.microsoft.com/en-us/microsoft-365-copilot/supported-languages-for-microsoft-365-copilot">Microsoft, Supported languages for Microsoft Copilot</a> og <a href="https://support.google.com/mail/answer/14925782?hl=en">Google, Supported languages for Google Workspace with Gemini</a>, set 12. november 2026</li>
+  <li>SMV:Digital: <a href="https://smvdigital.dk/content/">smvdigital.dk</a>, set 12. november 2026</li>
+</ul>
+      </div>
+      <aside class="author" id="forfatter" aria-labelledby="forfatter-titel">
+        <img class="avatar-img" src="/assets/kasper.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+        <div>
+          <p class="author-label">Skrevet af</p>
+          <h2 id="forfatter-titel">Kasper Schrøder Asmussen</h2>
+          <p class="author-role">Står bag Hey Otto</p>
+          <p>Jeg hedder Kasper Schrøder Asmussen, har en kandidat i Marketing &amp; Brand Management og har bygget AI-drevne marketingsystemer i både B2B og B2C. Jeg byggede Hey Otto, så marketingfolk kan give opgaven fra sig og bruge tiden på det, der kræver et menneske.</p>
+          <p><a href="https://www.linkedin.com/in/kasperasmussen/" target="_blank" rel="noopener">Kasper på LinkedIn</a></p>
+        </div>
+      </aside>
+      <aside class="post-cta" aria-labelledby="cta-titel">
+        <h2 id="cta-titel">Skal vi se på jeres opgaver?</h2>
+        <p>På 30 minutter finder vi ud af, hvilke af jeres marketingopgaver Otto kan tage, og hvad det vil kræve. Mødet er gratis.</p>
+        <a class="btn" href="/#book">Book en snak på 30 minutter</a>
+      </aside>
+    </article>
+  </main>
+  <footer class="footer">
+    <p class="footer-name"><img class="logo" src="/assets/logo.svg" alt="Hey Otto" width="399" height="101"> <span class="footer-by">v/ Kasper Schrøder Asmussen</span></p>
+    <p class="footer-contact"><a href="mailto:kasper@heyotto.dk">kasper@heyotto.dk</a>, <a href="tel:+4522463840">+45 22 46 38 40</a>, <a href="https://www.linkedin.com/in/kasperasmussen/" target="_blank" rel="noopener">LinkedIn</a>, <a href="/blog/">Blog</a>, <a href="/privatlivspolitik">Privatlivspolitik</a>, <a href="/vilkaar">Vilkår</a><span class="cookie-link" hidden>, <button type="button" class="linklike" data-cookie-settings>Cookieindstillinger</button></span></p>
+  </footer>
+  </div>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

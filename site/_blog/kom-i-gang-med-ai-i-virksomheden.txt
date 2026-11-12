@@ -1,0 +1,174 @@
+---
+titel: "Kom i gang med AI i virksomheden: hvor starter man?"
+beskrivelse: "Start med 1 til 3 konkrete opgaver, en kort AI-politik og ét betalt værktøj til en lille gruppe. Her er de seks trin, priserne og de typiske fejl."
+dato: 2026-11-12
+type: guide
+forfatter: kasper
+tags: [Kom i gang med AI]
+udkast: false
+---
+
+:::kort
+- Start med 1 til 3 konkrete opgaver, der går igen hver uge, og vælg først værktøj bagefter.
+- Lav en kort AI-politik om godkendte værktøjer og data, der aldrig må indtastes.
+- ChatGPT Business og Claude Team koster 20 til 25 dollar pr. bruger om måneden (november 2026).
+- Kør en pilot med 3 til 5 personer i 4 til 6 uger, og mål tiden før og efter.
+- Den typiske fejl er at give alle adgang uden opgaver, regler eller oplæring.
+:::
+
+Denne guide er til ledere og medarbejdere i små og mellemstore virksomheder, der vil i gang med AI uden egne AI-folk. Bagefter kender I de seks trin fra første idé til fast brug, hvad det koster, og hvilke regler I skal kende.
+
+## Hvor starter man med AI i en virksomhed?
+
+Man starter med opgaverne. Find 1 til 3 opgaver, som I laver ofte, som mest består af tekst, og hvor et forkert første udkast ikke gør skade, fordi et menneske altid retter det. Først derefter vælger I værktøj.
+
+Generativ AI er AI, der laver nyt indhold som tekst, billeder eller kode ud fra en instruktion, også kaldet en prompt. Det er den type, de fleste virksomheder starter med, fordi den kan bruges med det samme i et program som ChatGPT, Claude, Microsoft 365 Copilot eller Gemini.
+
+Digitaliseringsstyrelsens guide til virksomheder anbefaler samme rækkefølge: først tilgangen og formålet, så retningslinjer og til sidst de organisatoriske rammer.
+
+:::tip
+**Danske virksomheder er allerede godt i gang.** 59 procent af danske virksomheder med mindst 10 ansatte brugte kunstig intelligens i januar 2026, mod 15 procent i 2023. Blandt virksomheder med 10 til 49 ansatte var andelen 55 procent (Danmarks Statistik, tabel ITAV28, opdateret 15. september 2026). Danmark havde i 2025 den højeste andel i EU med 42,0 procent mod et EU-gennemsnit på 20,0 procent (Eurostat, 11. december 2025).
+:::
+
+## Hvad er de seks trin, og hvad koster de?
+
+Der er seks trin, og de første fem tager typisk 6 til 10 uger i alt. Det meste koster kun tid. Den eneste faste udgift er licenser til de medarbejdere, der er med i piloten.
+
+Tabel: De seks trin til at komme i gang med AI
+
+| Trin | Hvad I gør | Vejledende tid | Pris (november 2026) |
+|---|---|---|---|
+| 1. Vælg opgaver | Find 1 til 3 opgaver, der går igen og mest er tekst | 1 til 2 timer | 0 kr. |
+| 2. Lav en AI-politik | Skriv én side om godkendte værktøjer, data og ansvar | 2 til 4 timer | 0 kr. |
+| 3. Vælg værktøj | Vælg ét værktøj ud fra de systemer, I allerede bruger | 1 til 2 timer | 0 kr. at prøve gratis udgaver |
+| 4. Kør en pilot | 3 til 5 personer bruger værktøjet på de valgte opgaver | 4 til 6 uger | Ca. 20 til 25 dollar pr. bruger om måneden |
+| 5. Mål | Sammenlign tidsforbrug og kvalitet før og efter | 1 til 2 timer | 0 kr. |
+| 6. Udbred | Giv flere adgang, del gode prompts, opdater politikken | Løbende | Licenser til flere brugere |
+
+Tiderne er vejledende og ikke målte tal. De afhænger af, hvor mange opgaver og medarbejdere I tager med. En pilot på 4 til 6 uger er som regel nok til at se, om en opgave egner sig til AI, fordi opgaven så er løst flere gange, og de første forsøg ikke fylder det hele.
+
+## Hvilke opgaver skal man starte med?
+
+Start med opgaver, der er hyppige, tekstbaserede og lette at kontrollere. Gode eksempler er første udkast til nyhedsbreve, opslag på sociale medier, produkttekster, svar på typiske kundemails og referater af møder.
+
+Undgå at starte med opgaver, hvor fejl er dyre, eller hvor der indgår følsomme persondata, fx sundhedsoplysninger eller lønsager.
+
+Tre spørgsmål hjælper med at vælge:
+
+- Laver vi opgaven mindst én gang om ugen?
+- Kan en kollega se på et minut, om resultatet er godt nok?
+- Kan opgaven løses uden at give AI-værktøjet persondata eller fortrolige oplysninger?
+
+Er svaret ja til alle tre, er opgaven et godt sted at starte. Det passer med Danmarks Statistiks tal: den mest udbredte brug af AI i danske virksomheder er at skrive tekst eller tale, som 44 procent af virksomhederne med mindst 10 ansatte gjorde i januar 2026.
+
+Vil I vide, hvor meget tid AI kan spare på marketingopgaver, så læs [hvor meget tid AI sparer i marketing](/blog/tidsbesparelse-ai-marketing).
+
+## Hvad skal der stå i en AI-politik?
+
+En AI-politik er en kort intern regel for, hvordan medarbejderne må bruge AI. Den skal mindst sige, hvilke værktøjer der er godkendt, hvilke data der aldrig må indtastes, og at et menneske altid kontrollerer resultatet, før det bruges.
+
+Digitaliseringsstyrelsen foreslår blandt andet en positivliste over godkendte værktøjer og eksempler på brug, der er i orden og ikke i orden.
+
+Tabellen herunder er en kort skabelon, som I kan kopiere og tilpasse jeres virksomhed.
+
+Tabel: Skabelon til en AI-politik på én side
+
+| Punkt | Formulering, I kan bruge |
+|---|---|
+| Formål | Vi bruger AI til første udkast på faste opgaver, så vi bruger mindre tid på dem |
+| Godkendte værktøjer | Vi bruger kun virksomhedens konto i det værktøj, ledelsen har godkendt, ikke private konti |
+| Data, der aldrig må ind | Persondata om kunder og ansatte, adgangskoder, kontrakter, priser og andre fortrolige oplysninger |
+| Kontrol | Alt, AI har lavet, læses og rettes af en medarbejder, før det sendes eller udgives |
+| Ansvar | Den medarbejder, der bruger resultatet, står inde for det |
+| Oplæring | Alle får en kort, nedskrevet introduktion, før de får adgang |
+| Kontakt | Spørgsmål om AI går til en navngiven person i virksomheden |
+| Opdatering | Politikken gennemgås hvert halve år |
+
+:::tip
+**AI-forordningen stiller krav om AI-færdigheder.** Siden 2. februar 2025 skal virksomheder, der bruger AI-systemer, sørge for, at medarbejderne har tilstrækkelige AI-færdigheder (AI-forordningens artikel 4). Kravet gælder også, når medarbejderne bruger værktøjer som ChatGPT eller Copilot. En kort intern oplæring, der er skrevet ned, er en god start. Indtaster I persondata, gælder GDPR som altid, og I skal have en databehandleraftale med leverandøren. Datatilsynet og Digitaliseringsstyrelsen har en regulatorisk sandkasse for AI, hvor virksomheder kan få gratis vejledning.
+:::
+
+## Hvilket AI-værktøj skal en virksomhed vælge?
+
+Vælg det værktøj, der passer til de systemer, I allerede bruger. Bruger I Microsoft 365, er Microsoft 365 Copilot det oplagte at undersøge. Bruger I Google Workspace, er Gemini allerede med i abonnementet. Ellers er ChatGPT Business og Claude Team de mest udbredte selvstændige værktøjer.
+
+Brug en erhvervsudgave og ikke private gratis konti. Erhvervsudgaverne giver administration af brugere, og leverandørerne lover, at virksomhedens data ikke bruges til at træne deres modeller.
+
+Tabel: De store AI-værktøjer til virksomheder (priser set 12. november 2026)
+
+| Værktøj | Pris pr. bruger om måneden | Dansk | Hvor data ligger | Bedst til |
+|---|---|---|---|---|
+| ChatGPT Business | 20 dollar ved årlig betaling, 25 dollar ved månedlig betaling | Ja, på OpenAIs sprogliste | EU-dataopbevaring kun for ChatGPT Enterprise og Edu | Bred brug af tekst, analyse og billeder |
+| Claude Team | 20 dollar ved årlig betaling, 25 dollar ved månedlig betaling, ekskl. moms, 2 til 150 brugere | Ja, Claude svarer på dansk. Brugerfladen findes ikke på dansk | Data opbevares i USA | Lange tekster, dokumenter og tone |
+| Microsoft 365 Copilot Business | Fra ca. 116 kr. ekskl. moms ved årsabonnement, 162,96 kr. ved månedsabonnement, kræver Microsoft 365 | Ja, på Microsofts sprogliste | EU Data Boundary for EU-kunder | Virksomheder, der arbejder i Word, Outlook, Excel og Teams |
+| Gemini i Google Workspace | Med i Workspace fra 6,80 euro (Business Starter, årlig binding) | Ja, på Googles sprogliste | EU kan vælges i Business Standard og Plus | Virksomheder, der arbejder i Gmail og Google Docs |
+
+Priserne kommer fra producenternes egne sider og kan ændre sig. Microsoft oplyser prisen ekskl. moms og viste 116,40 kr. som nedsat pris med 135,80 kr. som førpris. "Dansk" angiver, om værktøjet arbejder på dansk ifølge producentens egne sider. Vil I sammenligne de tre store chatværktøjer mere grundigt, så læs [ChatGPT, Claude eller Gemini](/blog/chatgpt-claude-gemini).
+
+Min vurdering er, at valget af værktøj betyder mindre end valget af opgaver. Test derfor de værktøjer, I overvejer, på jeres egne danske tekster i piloten, før I binder jer til et årsabonnement.
+
+Hey Otto bruger selv Claude i det daglige arbejde og får ikke betaling for at nævne nogen af værktøjerne.
+
+## Hvordan kører man en AI-pilot?
+
+En pilot er en kort, afgrænset test, hvor få medarbejdere bruger værktøjet på de valgte opgaver. Vælg 3 til 5 personer, der har lyst, giv dem 4 til 6 uger, og aftal på forhånd, hvad der skal måles.
+
+Sådan kan piloten bygges op:
+
+1. **Uge 1:** Opsæt værktøjet, gennemgå AI-politikken og vis, hvordan man skriver en god prompt.
+2. **Uge 2 til 5:** Deltagerne bruger værktøjet på de valgte opgaver og gemmer de prompts, der virker.
+3. **Uge 6:** Hold et møde, og gennemgå, hvad der virkede, hvad der ikke virkede, og hvad tallene viser.
+
+Gode prompts er det vigtigste, piloten efterlader sig. Saml dem i et fælles dokument, så de næste brugere ikke starter forfra. Læs mere i [AI-prompts til marketing](/blog/ai-prompts-marketing), og se, hvordan I får teksterne til at lyde som jer selv, i [AI-tekster med jeres tone of voice](/blog/ai-tekster-tone-of-voice).
+
+## Hvordan måler man, om AI virker?
+
+Mål tidsforbrug og kvalitet på de samme opgaver før og efter. Notér i to uger før piloten, hvor lang tid opgaverne tager, og gør det samme i piloten. Bed samtidig den, der godkender teksterne, om at vurdere kvaliteten på en skala fra 1 til 5.
+
+Tabel: Det skal I måle i piloten
+
+| Målepunkt | Sådan måler I | Hvorfor |
+|---|---|---|
+| Tid pr. opgave | Minutter fra start til færdig, før og efter | Viser, om AI faktisk sparer tid |
+| Kvalitet | Vurdering fra 1 til 5 af den, der godkender | Viser, om tiden spares på bekostning af kvaliteten |
+| Rettelser | Hvor meget af AI-udkastet der skrives om | Viser, om prompts og opsætning skal forbedres |
+| Brug | Hvor mange gange om ugen værktøjet bruges | Viser, om medarbejderne har taget det til sig |
+
+Måles der ikke før piloten, kan I ikke sige bagefter, om den virkede. Det er den del, flest springer over.
+
+## Hvilke fejl skal man undgå?
+
+De fleste fejl handler om rækkefølgen: værktøjet kommer før opgaverne, og adgangen kommer før reglerne.
+
+Tabel: Typiske fejl, når virksomheder starter med AI
+
+| Fejl | Hvad sker der | Gør i stedet |
+|---|---|---|
+| Alle får adgang på én gang | Ingen ved, hvad de skal bruge det til, og brugen stopper efter få uger | Start med en pilot på 3 til 5 personer og faste opgaver |
+| Ingen AI-politik | Medarbejdere indtaster persondata eller bruger private konti | Skriv en politik på én side, før nogen får adgang |
+| Private gratis konti | Virksomheden har ingen kontrol med data og brugere | Brug en erhvervsudgave med administration |
+| Resultatet bruges uden kontrol | Fejl og opdigtede fakta ender hos kunderne | Et menneske læser og retter alt, før det bruges |
+| Ingen måling | Ingen kan sige, om pengene er givet godt ud | Mål tid og kvalitet før og efter |
+| For store opgaver først | Projektet bliver dyrt og trækker ud | Start med små, hyppige tekstopgaver |
+
+## Hvad gør man, når piloten er færdig?
+
+Når piloten viser, at opgaverne går hurtigere uden at kvaliteten falder, giver I flere medarbejdere adgang. Tag én afdeling ad gangen, lad deltagerne fra piloten vise de andre, hvordan de gør, og del samlingen af prompts.
+
+Gennemgå AI-politikken igen med de erfaringer, I har fået, og vælg de næste 1 til 3 opgaver. Når de enkle opgaver kører, kan I se på opgaver, hvor AI arbejder mere selvstændigt. Læs om det i [hvad AI-agenter er](/blog/hvad-er-ai-agenter).
+
+Små og mellemstore virksomheder kan søge tilskud til rådgivning om digitalisering gennem SMV:Digital, som drives af Digitaliseringsstyrelsen og Erhvervshus Midtjylland. Puljerne åbner på bestemte datoer, så tjek smvdigital.dk for, hvornår der næste gang kan søges.
+
+## Kilder
+
+- Danmarks Statistik: [Virksomhedernes brug af kunstig intelligens (10+ ansatte), tabel ITAV28](https://www.statistikbanken.dk/ITAV28), opdateret 15. september 2026, set 12. november 2026
+- Eurostat: [20% of EU enterprises use AI technologies](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251211-2), 11. december 2025
+- Digitaliseringsstyrelsen: [Guide til virksomheder om ansvarlig anvendelse af generativ kunstig intelligens](https://digst.dk/kunstig-intelligens/guides-til-brug-af-kunstig-intelligens/guide-til-virksomheder/), set 12. november 2026
+- EU: [AI-forordningen, forordning (EU) 2024/1689, artikel 4](https://eur-lex.europa.eu/legal-content/DA/TXT/?uri=CELEX:32024R1689), og Europa-Kommissionen: [AI Literacy, Questions & Answers](https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers), set 12. november 2026
+- Datatilsynet: [Kunstig intelligens og databeskyttelse](https://www.datatilsynet.dk/regler-og-vejledning/kunstig-intelligens), set 12. november 2026
+- OpenAI: [ChatGPT Business overview](https://help.openai.com/en/articles/8792828-chatgpt-business-overview) og [Data residency for ChatGPT](https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt), set 12. november 2026
+- Anthropic: [Claude, Plans & pricing](https://claude.com/pricing) og [Where are your servers located?](https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers), set 12. november 2026
+- Microsoft: [Microsoft 365 Copilot til virksomheder](https://www.microsoft.com/da-dk/microsoft-365/copilot/business) og [What is the EU Data Boundary?](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn), set 12. november 2026
+- Google: [Google Workspace, priser](https://workspace.google.com/pricing) og [Choose a geographic location for your data](https://knowledge.workspace.google.com/admin/compliance/choose-a-geographic-location-for-your-data), set 12. november 2026
+- Sproglister: [OpenAI, What languages do you support?](https://help.openai.com/en/articles/8357869-how-to-change-your-language-setting-in-chatgpt), [Anthropic, Supported languages](https://support.claude.com/en/articles/10769299-how-to-use-claude-in-your-preferred-language), [Microsoft, Supported languages for Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/supported-languages-for-microsoft-365-copilot) og [Google, Supported languages for Google Workspace with Gemini](https://support.google.com/mail/answer/14925782?hl=en), set 12. november 2026
+- SMV:Digital: [smvdigital.dk](https://smvdigital.dk/content/), set 12. november 2026

@@ -1,0 +1,202 @@
+---
+titel: "AI-tekster er ikke fy: sådan rammer I jeres tone of voice"
+beskrivelse: "AI-tekst er ikke problemet, generisk tekst er. Sådan bygger I en tone of voice-guide, som ChatGPT, Claude og Gemini kan skrive efter."
+dato: 2026-11-12
+type: guide
+forfatter: kasper
+tags: [Tekst og indhold]
+udkast: false
+---
+
+:::kort
+- AI-tekster er ikke dårlige, fordi en maskine har skrevet dem. De er dårlige, når de er generiske, og det løser I med en skriftlig tone of voice-guide, som værktøjet får hver gang.
+- En brugbar guide har fire dele: jeres værdier, ord I bruger og ikke bruger, eksempeltekster og en liste med gør og gør ikke.
+- Google straffer ikke AI-indhold i sig selv, men belønner nyttigt indhold (Google Search Central, februar 2023).
+- Gem guiden fast i et projekt i ChatGPT eller Claude eller i en Gem i Gemini, og redigér altid selv til sidst.
+:::
+
+Mange virksomheder holder igen med AI til tekster, fordi de er bange for, at det kan ses. Denne guide er til jer, der selv skriver til hjemmeside, nyhedsbrev og sociale medier. Bagefter har I en tone of voice-guide, som AI kan bruge, og en fast måde at redigere på.
+
+## Er det et problem at bruge AI til at skrive tekster?
+
+Nej, ikke i sig selv. Problemet er tekst, der kunne stå på hvilken som helst virksomheds hjemmeside, og den slags tekst skrev mennesker også længe før ChatGPT. AI gør det bare hurtigere at lave meget af den.
+
+En tone of voice er den måde, en virksomhed lyder på, når den skriver: hvilke ord den bruger, hvor tæt den går på læseren, og hvor meget humor der er plads til. En sprogmodel som ChatGPT kender ikke jeres tone of voice. Får den ingen retning, skriver den gennemsnittet af alt det, den har læst, og gennemsnittet lyder som ingen.
+
+Min vurdering er, at mange opgiver for tidligt. De prøver én gang uden retning, får en glat tekst og konkluderer, at AI ikke kan skrive.
+
+En AI-tekst falder typisk igennem af tre grunde: den åbner med en floskel i stedet for pointen, den indeholder ingen detaljer, som kun virksomheden kender, og den lover mere, end den beviser. Alle tre skyldes, at værktøjet manglede input.
+
+:::tip
+**Google og AI-indhold.** Google skrev i februar 2023, at virksomheden belønner indhold af høj kvalitet, "however it is produced", altså uanset hvordan det er lavet. Det, Google slår ned på, er automatisk indhold, hvis primære formål er at manipulere placeringen i søgeresultaterne. Google anbefaler at oplyse om AI, hvor læseren med rimelighed kunne spørge "hvordan er det her lavet?", og fraråder at angive AI som forfatter.
+:::
+
+## Hvordan kan man se, at en tekst er skrevet af AI?
+
+Man ser det på de samme vendinger igen og igen. Sprogmodeller har yndlingsformuleringer, og på dansk kommer der desuden mange direkte oversættelser fra engelsk. Hver enkelt er harmløs, men fem af dem i samme afsnit får læseren til at stoppe med at læse.
+
+Tabellen er lavet ud fra de vendinger, der går igen i dansk AI-tekst. Den er ikke en måling, men en tjekliste, I kan redigere efter.
+
+Tabel: Typiske AI-kendetegn i dansk tekst, og hvad I skriver i stedet
+
+| Kendetegn | Eksempel | Hvorfor det falder igennem | Gør i stedet |
+|---|---|---|---|
+| Store indledninger | "I en verden, hvor digitaliseringen tager fart ..." | Læseren venter på pointen og får en floskel | Start med pointen eller det konkrete problem |
+| Tomme overgange | "Lad os dykke ned i ..." og "Lad os se nærmere på ..." | Siger, at noget kommer, i stedet for at sige det | Slet sætningen, og begynd på næste |
+| Tankestreger som pause | En lang streg mellem "Det er enkelt" og "og det virker" | Bruges langt oftere end i almindelig dansk prosa | Brug punktum, komma eller kolon |
+| Tre led i rækkefølge | "hurtigt, enkelt og effektivt" | Rytmen bliver forudsigelig, og ordene siger intet | Vælg det ene ord, der er sandt, og bevis det |
+| Tomme superlativer | "revolutionerende", "banebrydende", "ultimativ" | Påstand uden belæg, som læseren ikke tror på | Skriv, hvad produktet gør, med tal eller eksempel |
+| Anglicismer | "løfte jeres brand", "rejse", "skræddersyet", "sømløs" | Lyder oversat og ikke som en dansk kollega | Brug det ord, I ville sige højt i telefonen |
+| Modsætningsformel | "Det handler ikke om X, det handler om Y" | Kendes med det samme som skabelon | Sig bare Y |
+| Afrunding med moral | "I sidste ende handler det om ..." | Gentager det, læseren lige har læst | Slut med næste skridt eller et spørgsmål |
+
+## Hvad skal en tone of voice-guide til AI indeholde?
+
+En tone of voice-guide til AI skal være konkret nok til, at en fremmed kunne skrive som jer efter at have læst den. Fire dele er nok: værdier, ordliste, eksempeltekster og gør og gør ikke. Hold den på én til to sider, så den passer ind i værktøjernes faste instruktioner.
+
+En brandmanual med ord som "troværdig" hjælper ikke AI meget, for alle virksomheder vil være troværdige. Oversæt i stedet hver værdi til noget, man kan se i en sætning.
+
+Tabel: De fire dele i en tone of voice-guide til AI
+
+| Del | Hvad den indeholder | Eksempel (opfundet) |
+|---|---|---|
+| Værdier, oversat til sprog | 3 til 4 værdier, hver med en forklaring af, hvordan den ses i teksten | "Ærlige: vi nævner også, hvad produktet ikke kan" |
+| Ord vi bruger og ikke bruger | To kolonner med jeres egne ord og de ord, I aldrig vil se | "Vi skriver 'pris', ikke 'investering'" |
+| Eksempeltekster | 3 til 5 rigtige tekster, I er stolte af, fra forskellige kanaler | Et nyhedsbrev, et LinkedIn-opslag og en produkttekst |
+| Gør og gør ikke | Korte regler for form og stil | "Skriv 'I' til kunden. Ingen udråbstegn i overskrifter." |
+
+Eksempeltekster er den vigtigste del. En sprogmodel er bedre til at efterligne et eksempel end til at følge en beskrivelse af et eksempel. Vælg tekster, der lyder som jer på en god dag, og ikke de mest polerede.
+
+Skriv også, hvem I skriver til. "Ejere af små håndværksvirksomheder, der læser på telefonen mellem to opgaver" giver en helt anden tekst end "vores målgruppe".
+
+Byg guiden op, så det vigtigste står først: målgruppen og de tre vigtigste regler øverst, ordlisten i midten og eksempelteksterne til sidst eller som separate filer.
+
+## Hvordan ser forskellen ud i praksis?
+
+Forskellen er størst i de første sætninger. Uden guide åbner AI med en generel indledning. Med guide går teksten direkte til læserens situation og bruger virksomhedens egne ord.
+
+Eksemplerne herunder er opfundet til denne guide for at vise forskellen. De er ikke fra en kunde.
+
+Tabel: Før og efter, opfundne eksempler
+
+| Tekst | Før, uden tone of voice-guide | Efter, med tone of voice-guide |
+|---|---|---|
+| LinkedIn-opslag, VVS-firma | "I en verden, hvor bæredygtighed er vigtigere end nogensinde, er vi stolte af at præsentere vores innovative, effektive og fremtidssikrede varmepumpeløsninger." | "Jeres gasfyr er 18 år gammelt, og I har overvejet en varmepumpe i tre vintre. Vi kommer forbi og regner på, om det kan betale sig hos jer." |
+| Nyhedsbrev, webshop med te | "Lad os dykke ned i efterårets mest spændende nyheder, der vil løfte din teoplevelse til nye højder!" | "Der er kommet tre nye teer hjem. Den røgede fra Taiwan er den, vi selv drikker på kontoret lige nu." |
+| Produkttekst, revisor | "Vores skræddersyede og sømløse løsninger revolutionerer din bogføring." | "Send jeres bilag til os en gang om måneden. Så har I et overblik over moms og likviditet, inden I skal betale." |
+
+"Efter"-teksterne indeholder detaljer, som AI ikke selv kan vide, fx hvor gammelt fyret er. Dem skal I give værktøjet.
+
+## Hvor gemmer man sin tone of voice i ChatGPT, Claude, Gemini og Copilot?
+
+Alle fire værktøjer har et sted, hvor I kan gemme faste instruktioner og filer, så I ikke skal indsætte guiden i hver samtale. Det mest praktiske er et projekt eller en assistent, der kun bruges til tekster, så guiden ikke påvirker alt andet, I bruger værktøjet til.
+
+Vil I vide mere om forskellen på værktøjerne, så læs [vores sammenligning af ChatGPT, Claude og Gemini](/blog/chatgpt-claude-gemini).
+
+Tabel: Hvor I gemmer tone of voice i AI-værktøjerne (tjekket november 2026)
+
+| Værktøj | Funktion | Hvad den gør | Kræver betalt udgave? |
+|---|---|---|---|
+| ChatGPT | Custom instructions | Faste instruktioner til alle samtaler | Nej. Gratis og Go: op til 1.500 tegn. Plus og opefter: op til 5.000 tegn |
+| ChatGPT | Projekter | Instruktioner og filer, der kun gælder i projektet | Nej. Gratis: 5 filer pr. projekt. Go og Plus: 25. Pro og Business: 40 |
+| ChatGPT | GPTs | En egen assistent med instruktioner og filer | Ja. Personlige konti (Free, Go, Plus og Pro) kan ikke oprette nye GPTs |
+| Claude | Instruktioner | Faste instruktioner til alle samtaler | Nej |
+| Claude | Projekter | Instruktioner og filer, der kun gælder i projektet | Projekter: nej, gratis konti kan have op til 5. Projektinstruktioner: ikke entydigt oplyst |
+| Claude | Skills | Gemte instruktioner, fx til tone og format ud fra jeres egne tekster | Nej, også på gratis konti |
+| Gemini | Gems | En egen assistent med instruktioner og uploadede filer | Nej, gratis for alle siden marts 2025 |
+| Microsoft Copilot | Copilot Notebooks | En notesbog med jeres filer og egne instruktioner til Copilot | Ja. Kræver Microsoft 365 Copilot, Copilot Chat eller Microsoft 365 Personal, Family eller Premium |
+
+Funktionerne skifter ofte navn og pris, så tjek producentens side, før I vælger. Kilderne står nederst.
+
+## Hvordan bygger I en tone of voice-guide, trin for trin?
+
+Det tager seks trin fra tom side til en guide, der virker i værktøjet. Det meste kan laves på en eftermiddag, og det kan gøres med de gratis udgaver af ChatGPT, Claude og Gemini.
+
+Tabel: Trinene (tid er mit skøn)
+
+| Trin | Hvad I gør | Tid | Pris |
+|---|---|---|---|
+| 1. Saml eksempler | Find 3 til 5 tekster, der lyder som jer | 30 minutter | 0 kr. |
+| 2. Skriv guiden | Værdier, ordliste, eksempler og gør og gør ikke på én til to sider | 1 til 2 timer | 0 kr. |
+| 3. Gem den i værktøjet | Opret et projekt eller en Gem, og indsæt guide og eksempler | 15 minutter | 0 kr. med gratis udgaver |
+| 4. Test på en rigtig opgave | Bed om en tekst, I alligevel skulle skrive | 15 minutter | 0 kr. |
+| 5. Redigér | Gå teksten igennem med tabellen over AI-kendetegn | 10 til 20 minutter pr. tekst | 0 kr. |
+| 6. Opdatér guiden | Skriv de rettelser, I laver igen og igen, ind i guiden | 10 minutter om måneden | 0 kr. |
+
+### 1. Saml eksempler
+
+Start med de tekster, I allerede har, fx mails til kunder, som fik svar, og opslag, der fik kommentarer. Tag gerne én tekst med, der viser, hvordan I ikke vil lyde.
+
+### 2. Skriv guiden
+
+Brug de fire dele fra tabellen ovenfor. Lad gerne AI hjælpe: indsæt eksempelteksterne, og bed værktøjet beskrive, hvad der kendetegner dem. Det giver et udkast, som I så retter, for AI vil typisk beskrive jer pænere og mere generelt, end I er.
+
+### 3. Gem den i værktøjet
+
+Indsæt de vigtigste regler i projektets eller Gem'ens instruktioner, og upload eksempelteksterne som filer. Skriv i instruktionen, at teksterne er eksempler på tonen og ikke indhold, der skal genbruges. Ellers begynder værktøjet at kopiere sætninger fra dem.
+
+### 4. Test på en rigtig opgave
+
+Giv værktøjet en opgave med de fakta, kun I kender: hvem teksten er til, hvad de skal gøre bagefter, og et konkret eksempel. Guiden styrer tonen, men den kan ikke opfinde jeres viden. Har I brug for hjælp til selve opgaven, så se [vores guide til AI-prompts til marketing](/blog/ai-prompts-marketing).
+
+### 5. Redigér
+
+Redigér i fire gennemløb, et ad gangen:
+
+1. **Pointen.** Står det vigtigste i første sætning? Ellers slet indledningen.
+2. **Fakta.** Er alle tal, navne og løfter sande? AI kan finde på detaljer, der lyder rigtige.
+3. **Kendetegn.** Gå tabellen over AI-kendetegn igennem, og ret tankestreger, tomme overgange og superlativer.
+4. **Højtlæsning.** Læs teksten højt. Det, der lyder forkert, når I siger det, skal rettes.
+
+### 6. Opdatér guiden
+
+Når I retter det samme for tredje gang, hører rettelsen hjemme i guiden. Så bliver værktøjet bedre for hver måned, og I bruger mindre tid på at redigere.
+
+:::tip
+**AI-forordningens mærkningskrav.** EU's AI-forordning, artikel 50, gælder fra 2. august 2026. Udbyderne af værktøjerne, fx OpenAI og Google, skal mærke AI-genereret indhold maskinlæsbart. Virksomheder, der udgiver AI-genereret tekst for at informere offentligheden om sager af offentlig interesse, skal oplyse det, men ikke hvis teksten har været gennem menneskelig redigering, og en person eller virksomhed har det redaktionelle ansvar. En produkttekst, I selv har redigeret, er dermed som udgangspunkt ikke omfattet. Det er ikke juridisk rådgivning, så spørg en jurist, hvis I er i tvivl.
+:::
+
+## Skal man fortælle, at en tekst er skrevet med AI?
+
+Det afhænger af teksten og af loven. Til almindelige marketingtekster, som I selv har redigeret og står inde for, kræver AI-forordningen ikke en mærkning. Forskningen viser samtidig, at en mærkning kan koste tillid.
+
+I artiklen "The transparency dilemma" (2025) fandt forskerne Oliver Schilke og Martin Reimann på tværs af 13 eksperimenter, at folk, der fortæller, at de har brugt AI til en opgave, bliver mødt med mindre tillid. Det gjaldt også, når de skrev, at et menneske havde gennemgået teksten. En anden undersøgelse viste, at overskrifter mærket "AI-genereret" blev opfattet som mindre troværdige, også når de var sande eller skrevet af mennesker, fordi læserne gik ud fra, at AI havde lavet det hele alene (Altay og Gilardi, PNAS Nexus, 2024).
+
+Min vurdering er, at det vigtigste er at tage ansvar for teksten. Står der en navngiven person bag, og er indholdet sandt og nyttigt, er det det, læseren bedømmer jer på. Hvor læseren med rimelighed vil spørge, hvordan noget er lavet, er det fint at fortælle det kort og konkret.
+
+## Hvilke fejl skal I undgå?
+
+De fleste fejl handler om at give AI for lidt at arbejde med eller at stole for meget på resultatet. Tabellen viser de mest almindelige.
+
+Tabel: Typiske fejl med AI og tone of voice
+
+| Fejl | Hvad sker der | Gør i stedet |
+|---|---|---|
+| Ingen guide, kun "skriv i vores tone" | AI gætter og skriver gennemsnitligt | Giv guiden og 3 til 5 eksempeltekster |
+| Guiden er for abstrakt | "Troværdig og nærværende" ændrer intet i teksten | Oversæt hver værdi til en regel, man kan se i en sætning |
+| Ingen fakta i opgaven | Teksten bliver pæn, men tom | Giv tal, eksempler og det, kun I ved |
+| Udgiver uden at redigere | AI-kendetegn og fejl går videre til kunderne | Læs højt, og gå tjeklisten igennem |
+| Guiden i alle samtaler | Også interne noter og analyser får marketingtone | Gem guiden i et projekt eller en Gem kun til tekster |
+| Guiden bliver aldrig opdateret | I retter de samme ting igen og igen | Skriv faste rettelser ind en gang om måneden |
+
+## Hvad gør I, når det kører?
+
+Når guiden virker på én type tekst, så udvid den til de næste. Start fx med LinkedIn-opslag, og tilføj derefter nyhedsbreve og produkttekster med hver deres eksempler. Del projektet eller Gem'en med kollegerne, så alle skriver ud fra samme guide.
+
+Er I ikke kommet i gang med AI i virksomheden endnu, så begynd med [vores guide til at komme i gang med AI i virksomheden](/blog/kom-i-gang-med-ai-i-virksomheden).
+
+## Kilder
+
+- Google Search Central: [Google Search's guidance about AI-generated content](https://developers.google.com/search/blog/2023/02/google-search-and-ai-content), 8. februar 2023, læst 12. november 2026
+- Google Search Central: [Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), læst 12. november 2026
+- EU's AI-forordning, [artikel 50 om gennemsigtighed](https://artificialintelligenceact.eu/article/50/), gælder fra 2. august 2026, læst 12. november 2026
+- Europa-Kommissionen: [Code of Practice on AI-generated content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content), læst 12. november 2026
+- Schilke, O. og Reimann, M.: [The transparency dilemma: How AI disclosure erodes trust](https://www.sciencedirect.com/science/article/pii/S0749597825000172), Organizational Behavior and Human Decision Processes, 2025
+- Altay, S. og Gilardi, F.: People are skeptical of headlines labeled as AI-generated, even if true or human-made, because they assume full AI automation, PNAS Nexus 3 (10), 2024
+- OpenAI: [ChatGPT Custom Instructions](https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions), læst 12. november 2026
+- OpenAI: [Projects in ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt), læst 12. november 2026
+- OpenAI: [Creating and editing GPTs](https://help.openai.com/en/articles/8554397-creating-and-editing-gpts), læst 12. november 2026
+- Anthropic: [Understanding Claude's personalization features](https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features), læst 12. november 2026
+- Anthropic: [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude), læst 12. november 2026
+- Google: [New Gemini app features, available to try at no cost](https://blog.google/products-and-platforms/products/gemini/new-gemini-app-features-march-2025/), marts 2025, læst 12. november 2026
+- Microsoft: [Provide custom instructions for your Microsoft Copilot Notebook](https://support.microsoft.com/en-us/microsoft-365-copilot/provide-custom-instructions-for-your-microsoft-365-copilot-notebook), læst 12. november 2026

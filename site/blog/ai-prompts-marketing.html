@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Denne side er lavet af scripts/byg-blog.mjs. Ret i blog/ eller templates/, ikke her. -->
+  <!-- Samtykke: alt starter som "nej", indtil et cookiebanner giver samtykke -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      functionality_storage: 'granted',
+      security_storage: 'granted',
+      wait_for_update: 500
+    });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N7M37V72');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel: kører først, når den besøgende har givet samtykke til marketing i Cookiebot -->
+  <script type="text/plain" data-cookieconsent="marketing">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1616440676548347');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel -->
+  <title>AI-prompts til marketing: opskrift og 16 danske prompts | Hey Otto</title>
+  <meta name="description" content="En god AI-prompt til marketing har rolle, opgave, kontekst, målgruppe, format og tone. Her er opskriften og 16 danske prompts, I kan kopiere.">
+  <link rel="canonical" href="https://heyotto.dk/blog/ai-prompts-marketing">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F0E13" media="(prefers-color-scheme: dark)">
+  <script>try { var t = localStorage.getItem("tema"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:site_name" content="Hey Otto">
+  <meta property="og:title" content="AI-prompts til marketing: opskrift og 16 danske prompts">
+  <meta property="og:description" content="En god AI-prompt til marketing har rolle, opgave, kontekst, målgruppe, format og tone. Her er opskriften og 16 danske prompts, I kan kopiere.">
+  <meta property="og:url" content="https://heyotto.dk/blog/ai-prompts-marketing">
+  <meta property="og:image" content="https://heyotto.dk/assets/deling.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Robotten Otto ved siden af overskriften: Slip for de marketingopgaver, I løser i hånden hver uge.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" type="application/rss+xml" title="Hey Otto, blog" href="/blog/feed.xml">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI-prompts til marketing: opskrift og 16 danske prompts",
+  "description": "En god AI-prompt til marketing har rolle, opgave, kontekst, målgruppe, format og tone. Her er opskriften og 16 danske prompts, I kan kopiere.",
+  "datePublished": "2026-11-12",
+  "dateModified": "2026-11-12",
+  "inLanguage": "da-DK",
+  "url": "https://heyotto.dk/blog/ai-prompts-marketing",
+  "mainEntityOfPage": "https://heyotto.dk/blog/ai-prompts-marketing",
+  "image": "https://heyotto.dk/assets/deling.png",
+  "keywords": "Tekst og indhold, Kom i gang med AI",
+  "articleSection": "Guide",
+  "wordCount": 2726,
+  "author": {
+    "@type": "Person",
+    "name": "Kasper Schrøder Asmussen",
+    "description": "Jeg hedder Kasper Schrøder Asmussen, har en kandidat i Marketing & Brand Management og har bygget AI-drevne marketingsystemer i både B2B og B2C. Jeg byggede Hey Otto, så marketingfolk kan give opgaven fra sig og bruge tiden på det, der kræver et menneske.",
+    "image": "https://heyotto.dk/assets/kasper.jpg",
+    "url": "https://www.linkedin.com/in/kasperasmussen/",
+    "sameAs": [
+      "https://www.linkedin.com/in/kasperasmussen/"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hey Otto",
+      "url": "https://heyotto.dk/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://heyotto.dk/assets/favicon.svg"
+      }
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hey Otto",
+    "url": "https://heyotto.dk/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://heyotto.dk/assets/favicon.svg"
+    }
+  }
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7M37V72"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="page">
+  <a class="skip" href="#indhold">Spring til indholdet</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Hey Otto, til forsiden">
+      <img class="brand-mark" src="/assets/favicon.svg" alt="" width="28" height="28">
+      <img class="logo" src="/assets/logo.svg" alt="" width="399" height="101">
+    </a>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle hidden aria-label="Skift tema">
+        <span class="t-opt t-sun"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></span>
+        <span class="t-opt t-moon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span>
+      </button>
+    </div>
+  </header>
+  <main id="indhold">
+    <article class="section post">
+      <p class="post-back"><a href="/blog/">Alle indlæg</a></p>
+      <header class="post-head">
+        <p class="post-type">Guide</p>
+        <h1>AI-prompts til marketing: opskrift og 16 danske prompts</h1>
+        <div class="byline">
+          <img class="avatar-img" src="/assets/kasper.jpg" alt="" width="44" height="44" loading="lazy" decoding="async">
+          <p>Af <a href="#forfatter" rel="author">Kasper Schrøder Asmussen</a><br><span class="post-meta"><time datetime="2026-11-12">12. november 2026</time>, 14 min. at læse</span></p>
+        </div>
+        <ul class="tags" aria-label="Emner"><li><a class="tag" href="/blog/tag/tekst-og-indhold">Tekst og indhold</a></li><li><a class="tag" href="/blog/tag/kom-i-gang-med-ai">Kom i gang med AI</a></li></ul>
+      </header>
+      <section class="box box-kort" aria-labelledby="kort-titel">
+        <h2 id="kort-titel" class="box-title">Kort fortalt</h2>
+<ul>
+  <li>En god AI-prompt til marketing fortæller AI'en, hvem den skal være, hvad den skal lave, hvem det er til, og hvordan svaret skal se ud.</li>
+  <li>OpenAI, Anthropic og Google anbefaler stort set det samme: vær specifik, giv kontekst, vis eksempler og bed om rettelser.</li>
+  <li>Googles egne brugsdata viser, at de bedste prompts er omkring 21 ord, mens folk typisk skriver under 9 ord (Google, oktober 2024).</li>
+  <li>Indsæt aldrig persondata eller fortrolige kundedata i en gratis udgave.</li>
+</ul>
+      </section>
+      <nav class="toc" aria-labelledby="toc-titel">
+        <h2 id="toc-titel" class="box-title">Indhold</h2>
+        <ol>
+          <li><a href="#hvad-er-en-prompt-og-hvorfor-bliver-svaret-ofte-generisk">Hvad er en prompt, og hvorfor bliver svaret ofte generisk?</a></li>
+          <li><a href="#hvad-skal-en-god-marketingprompt-indeholde">Hvad skal en god marketingprompt indeholde?</a></li>
+          <li><a href="#hvad-anbefaler-openai-anthropic-og-google-selv">Hvad anbefaler OpenAI, Anthropic og Google selv?</a></li>
+          <li><a href="#saadan-bruger-i-prompts-i-praksis-trin-for-trin">Sådan bruger I prompts i praksis, trin for trin</a></li>
+          <li><a href="#16-danske-ai-prompts-til-marketing-i-kan-kopiere">16 danske AI-prompts til marketing, I kan kopiere</a></li>
+          <li><a href="#hvilke-fejl-skal-i-undgaa-med-ai-prompts">Hvilke fejl skal I undgå med AI-prompts?</a></li>
+          <li><a href="#hvad-goer-i-naar-prompterne-virker">Hvad gør I, når prompterne virker?</a></li>
+          <li><a href="#kilder">Kilder</a></li>
+        </ol>
+      </nav>
+      <div class="prose">
+<p>Denne guide er til jer, der bruger ChatGPT, Claude eller Gemini til marketing, men synes, at svarene bliver generiske. Bagefter har I en enkel opskrift på en god prompt og 16 færdige danske prompts til de opgaver, de fleste marketingfolk har hver uge.</p>
+<h2 id="hvad-er-en-prompt-og-hvorfor-bliver-svaret-ofte-generisk">Hvad er en prompt, og hvorfor bliver svaret ofte generisk?</h2>
+<p>En prompt er den besked, I skriver til en AI-assistent som ChatGPT, Claude eller Gemini. Svaret bliver generisk, når prompten er kort og mangler kontekst, for så må AI'en gætte på målgruppe, tone og formål, og den gætter på gennemsnittet.</p>
+<p>Google skriver i sin promptguide til Gemini, at de prompts, der giver de bedste resultater, i gennemsnit er omkring 21 ord med relevant kontekst, mens de prompts, folk prøver, typisk er under 9 ord. Forskellen mellem &quot;Skriv et LinkedIn-opslag om vores nye produkt&quot; og et brugbart opslag er næsten altid den kontekst, I ikke skrev.</p>
+<p>Et eksempel: &quot;Skriv et opslag om vores nye kaffemaskine&quot; giver et pænt, men intetsigende opslag. &quot;Skriv et LinkedIn-opslag på højst 120 ord til kontorchefer i virksomheder med 20 til 50 ansatte om vores nye kaffemaskine, der brygger 40 kopper i timen. Tonen er venlig og direkte, og opslaget slutter med et spørgsmål&quot; giver AI'en det, den skal bruge.</p>
+<h2 id="hvad-skal-en-god-marketingprompt-indeholde">Hvad skal en god marketingprompt indeholde?</h2>
+<p>En god marketingprompt består af op til syv byggeklodser: rolle, opgave, kontekst, målgruppe, format, tone og eksempler. I behøver ikke alle syv hver gang, men opgave, kontekst og målgruppe bør altid være med.</p>
+<div class="table-wrap" role="region" aria-label="Promptens byggeklodser" tabindex="0">
+<table>
+<caption>Promptens byggeklodser</caption>
+<thead><tr><th scope="col">Del</th><th scope="col">Hvad den gør</th><th scope="col">Eksempel</th></tr></thead>
+<tbody>
+<tr><th scope="row">Rolle</th><td>Giver AI'en et perspektiv og et fagligt niveau</td><td>&quot;Du er en erfaren B2B-copywriter.&quot;</td></tr>
+<tr><th scope="row">Opgave</th><td>Siger præcis, hvad der skal laves</td><td>&quot;Skriv tre LinkedIn-opslag.&quot;</td></tr>
+<tr><th scope="row">Kontekst</th><td>Giver baggrunden, AI'en ikke kan vide</td><td>&quot;Vi er et revisionsfirma med 12 ansatte i Aarhus.&quot;</td></tr>
+<tr><th scope="row">Målgruppe</th><td>Fortæller, hvem teksten skal overbevise</td><td>&quot;Ejere af håndværksvirksomheder, der hader papirarbejde.&quot;</td></tr>
+<tr><th scope="row">Format</th><td>Bestemmer længde, opbygning og antal</td><td>&quot;Højst 120 ord, ingen hashtags, slut med et spørgsmål.&quot;</td></tr>
+<tr><th scope="row">Tone</th><td>Styrer stemmen i teksten</td><td>&quot;Venlig og direkte, du-form, ingen superlativer.&quot;</td></tr>
+<tr><th scope="row">Eksempler</th><td>Viser, hvad godt ser ud hos jer</td><td>&quot;Her er et opslag, der virkede godt: ...&quot;</td></tr>
+</tbody>
+</table>
+</div>
+<p>Rækkefølgen er ikke afgørende. Det vigtigste er, at AI'en ikke skal gætte. Google samler det i fire dele, som de kalder Persona, Task, Context og Format, altså rolle, opgave, kontekst og format.</p>
+<p>Et lille trick: Skriv jeres faste kontekst ét sted, fx et dokument med virksomhed, målgruppe og tone, og indsæt den øverst i hver prompt. Så skal I ikke skrive den forfra. Hvordan I beskriver jeres tone, står i guiden om <a href="/blog/ai-tekster-tone-of-voice">at få AI-tekster til at lyde som jer</a>.</p>
+<h2 id="hvad-anbefaler-openai-anthropic-og-google-selv">Hvad anbefaler OpenAI, Anthropic og Google selv?</h2>
+<p>De tre producenter anbefaler næsten det samme: vær tydelig og specifik, giv kontekst og vis eksempler. Forskellene ligger i detaljerne. Anthropic lægger vægt på at forklare, hvorfor en instruktion er vigtig, OpenAI på at sige, hvad AI'en skal gøre i stedet for, hvad den ikke må, og Google på at føre en samtale og rette undervejs.</p>
+<div class="table-wrap" role="region" aria-label="Producenternes egne promptråd (tjekket 12. november 2026)" tabindex="0">
+<table>
+<caption>Producenternes egne promptråd (tjekket 12. november 2026)</caption>
+<thead><tr><th scope="col">Råd</th><th scope="col">OpenAI</th><th scope="col">Anthropic (Claude)</th><th scope="col">Google (Gemini)</th></tr></thead>
+<tbody>
+<tr><th scope="row">Vær specifik</th><td>Ja, om kontekst, resultat, længde, format og stil</td><td>Ja, &quot;clear and direct&quot;</td><td>Ja, sig præcis hvad den skal gøre</td></tr>
+<tr><th scope="row">Giv kontekst</th><td>Ja, så detaljeret som muligt</td><td>Ja, også hvorfor instruktionen er vigtig</td><td>Ja, så meget kontekst som muligt</td></tr>
+<tr><th scope="row">Vis eksempler</th><td>Ja, især for at vise formatet</td><td>Ja, et af de mest pålidelige greb</td><td>Ikke et selvstændigt råd i guiden</td></tr>
+<tr><th scope="row">Adskil instruktion og tekst</th><td>Ja, med ### eller &quot;&quot;&quot;</td><td>Ja, med XML-tags som <code>&lt;tekst&gt;</code></td><td>Ikke nævnt i guiden</td></tr>
+<tr><th scope="row">Giv en rolle</th><td>Ikke et selvstændigt råd i guiden</td><td>Ja, rollen styrer adfærd og tone</td><td>Ja, &quot;Persona&quot; er en af fire dele</td></tr>
+<tr><th scope="row">Sig hvad den skal gøre</th><td>Ja, frem for kun at sige hvad den ikke må</td><td>Ja, i de detaljerede råd</td><td>Ikke nævnt i guiden</td></tr>
+<tr><th scope="row">Ret undervejs</th><td>Start uden eksempler, tilføj dem hvis det ikke virker</td><td>Ikke et selvstændigt råd i oversigten</td><td>Ja, &quot;make it a conversation&quot;</td></tr>
+</tbody>
+</table>
+</div>
+<p>Min vurdering er, at I ikke behøver skrive forskellige prompts til de tre værktøjer. En prompt, der følger byggeklodserne ovenfor, virker i dem alle. Hvilket værktøj der passer bedst til jeres opgaver, står i <a href="/blog/chatgpt-claude-gemini">sammenligningen af ChatGPT, Claude og Gemini</a>.</p>
+<h2 id="saadan-bruger-i-prompts-i-praksis-trin-for-trin">Sådan bruger I prompts i praksis, trin for trin</h2>
+<p>Arbejdet med en prompt tager fire trin: skriv den med byggeklodserne, læs svaret kritisk, ret i samme samtale, og gem prompten, når den virker. Det sidste trin er det, de fleste springer over.</p>
+<div class="table-wrap" role="region" aria-label="Fra første prompt til fast skabelon" tabindex="0">
+<table>
+<caption>Fra første prompt til fast skabelon</caption>
+<thead><tr><th scope="col">Trin</th><th scope="col">Hvad I gør</th><th scope="col">Resultat</th></tr></thead>
+<tbody>
+<tr><th scope="row">1. Skriv</th><td>Brug byggeklodserne, og indsæt jeres faste kontekst</td><td>Et første udkast, der passer til jer</td></tr>
+<tr><th scope="row">2. Læs</th><td>Tjek fakta, tal, navne og tone, før noget bruges</td><td>I fanger fejl og opdigtede påstande</td></tr>
+<tr><th scope="row">3. Ret</th><td>Skriv opfølgninger som &quot;kortere&quot;, &quot;mere konkret&quot; eller &quot;fjern superlativer&quot;</td><td>Et udkast, I kan bruge</td></tr>
+<tr><th scope="row">4. Gem</th><td>Læg prompten i et fælles dokument med jeres faste kontekst</td><td>Hele teamet får samme kvalitet næste gang</td></tr>
+</tbody>
+</table>
+</div>
+<p>Google anbefaler også at lade AI'en forbedre prompten selv. Skriv &quot;Gør det her til en bedre prompt&quot; og indsæt jeres første forsøg. Prompt 16 længere nede gør netop det.</p>
+<p>De tre store værktøjer har hver en funktion til at gemme fast kontekst og instruktioner, så I ikke skal indsætte dem i hver samtale:</p>
+<div class="table-wrap" role="region" aria-label="Her kan I gemme faste prompts (tjekket 12. november 2026)" tabindex="0">
+<table>
+<caption>Her kan I gemme faste prompts (tjekket 12. november 2026)</caption>
+<thead><tr><th scope="col">Værktøj</th><th scope="col">Funktion</th><th scope="col">Hvad den kan</th></tr></thead>
+<tbody>
+<tr><th scope="row">ChatGPT</th><td>Projects</td><td>Samler samtaler, filer og instruktioner ét sted. Findes også i gratis udgaven.</td></tr>
+<tr><th scope="row">Claude</th><td>Projects</td><td>Et arbejdsrum med egne instruktioner, filer og samtaler. Gratis brugere kan oprette op til fem.</td></tr>
+<tr><th scope="row">Gemini</th><td>Gems</td><td>En egen udgave af Gemini med faste instruktioner om rolle, opgave, kontekst og format</td></tr>
+<tr><th scope="row">Alle værktøjer</th><td>Et delt dokument</td><td>Virker uanset værktøj, og hele teamet kan rette i det</td></tr>
+</tbody>
+</table>
+</div>
+<aside class="box box-tip"><p class="box-title">Godt at vide</p>
+<p>Indsæt aldrig persondata, kundelister eller fortrolige oplysninger i en gratis udgave af en AI-assistent. OpenAI skriver, at indhold fra ChatGPT Free, Plus og Pro kan bruges til at træne deres modeller, medmindre I slår &quot;Improve the model for everyone&quot; fra under Indstillinger &gt; Datakontrol. I ChatGPT Business og Enterprise sker det ikke som standard (OpenAI, november 2026). Anonymisér, eller brug en erhvervsudgave.</p>
+</aside>
+<h2 id="16-danske-ai-prompts-til-marketing-i-kan-kopiere">16 danske AI-prompts til marketing, I kan kopiere</h2>
+<p>Her er 16 prompts til typiske marketingopgaver. Kopiér dem, og erstat felterne i krøllede parenteser, fx {jeres produkt}, med jeres egne oplysninger. Parenteserne skal ikke med i den færdige prompt. Jo mere præcist I udfylder felterne, jo bedre bliver svaret.</p>
+<h3 id="1-linkedin-opslag">1. LinkedIn-opslag</h3>
+<pre><code>Du er en erfaren B2B-copywriter, der skriver på dansk til LinkedIn.
+Skriv 3 forskellige LinkedIn-opslag om {emne, fx vores nye serviceaftale}.
+Virksomhed: {kort beskrivelse af virksomheden}.
+Målgruppe: {hvem, fx indkøbschefer i produktionsvirksomheder}.
+Hvert opslag: højst 150 ord, en første linje der får folk til at læse videre, ingen hashtags, ingen emojis, og slut med et spørgsmål til læseren.
+Tone: {fx venlig, direkte og uden superlativer}.</code></pre>
+<h3 id="2-nyhedsbrev">2. Nyhedsbrev</h3>
+<pre><code>Skriv et nyhedsbrev på dansk til {målgruppe}.
+Formål: {fx få læserne til at booke et besøg i butikken}.
+Indhold, der skal med: {punkt 1}, {punkt 2}, {punkt 3}.
+Format: 5 forslag til emnelinje (højst 50 tegn), en preheader (højst 90 tegn), en brødtekst på højst 250 ord og én tydelig knaptekst.
+Tone: {jeres tone}. Skriv i du-form.</code></pre>
+<h3 id="3-annoncetekster-til-meta-facebook-og-instagram">3. Annoncetekster til Meta (Facebook og Instagram)</h3>
+<pre><code>Du er specialist i annoncer på Facebook og Instagram.
+Skriv 5 varianter af en annonce for {produkt eller tilbud}.
+Målgruppe: {hvem, og hvad de har af problemer}.
+Hver variant skal have: en primær tekst (højst 125 tegn), en overskrift (højst 40 tegn) og en knaptekst.
+Brug en ny vinkel i hver variant: problem, fordel, socialt bevis, tilbud og spørgsmål.
+Lov ikke noget, der ikke står her: {fakta om produktet}.</code></pre>
+<h3 id="4-google-ads-soegeannonce">4. Google Ads-søgeannonce</h3>
+<pre><code>Skriv tekster til en responsiv søgeannonce i Google Ads på dansk.
+Produkt: {produkt}. Søgeord: {hovedsøgeord}.
+Lav 15 overskrifter på højst 30 tegn og 4 beskrivelser på højst 90 tegn.
+Mindst 3 overskrifter skal indeholde søgeordet, og mindst 2 skal nævne {fordel, fx gratis levering}.
+Skriv antal tegn i parentes efter hver linje.</code></pre>
+<p>Google Ads tillader op til 15 overskrifter på højst 30 tegn og 4 beskrivelser på højst 90 tegn i en responsiv søgeannonce (Google Ads Hjælp, november 2026). Tjek altid tegnene selv, for AI'en tæller ikke altid rigtigt.</p>
+<h3 id="5-produkttekst-til-webshop">5. Produkttekst til webshop</h3>
+<pre><code>Skriv en produkttekst på dansk til {produktnavn}.
+Fakta: {materiale, mål, pris, levering, garanti}.
+Målgruppe: {hvem køber det, og hvorfor}.
+Format: en indledning på 2 sætninger, 4 punkter med fordele (ikke egenskaber), og en afsluttende sætning om {levering eller garanti}.
+Brug kun de fakta, der står her. Mangler der noget, så skriv MANGLER i stedet for at gætte.</code></pre>
+<h3 id="6-seo-meta-beskrivelse">6. SEO-meta-beskrivelse</h3>
+<pre><code>Skriv 3 forslag til en meta-beskrivelse på dansk til siden {sidens adresse eller emne}.
+Hovedsøgeord: {søgeord}.
+Hver beskrivelse: 120 til 155 tegn, søgeordet tidligt, et konkret svar eller en fordel, og ingen klikagn.
+Skriv antal tegn efter hvert forslag.</code></pre>
+<p>En meta-beskrivelse er den korte tekst under titlen i Googles søgeresultater. Min vurdering er, at 120 til 155 tegn er en sikker længde, fordi længere tekster ofte bliver skåret af.</p>
+<h3 id="7-disposition-til-et-blogindlaeg">7. Disposition til et blogindlæg</h3>
+<pre><code>Du er indholdsstrateg. Lav en disposition til et blogindlæg på dansk.
+Spørgsmål, indlægget skal svare på: {spørgsmålet}.
+Målgruppe: {hvem, og hvad de ved i forvejen}.
+Giv mig: 3 forslag til titel (højst 60 tegn), 5 til 7 mellemrubrikker formuleret som spørgsmål, 2 punkter under hver, og forslag til én tabel.</code></pre>
+<h3 id="8-interviewspoergsmaal-til-en-kundecase">8. Interviewspørgsmål til en kundecase</h3>
+<pre><code>Jeg skal interviewe en kunde til en kundecase.
+Kunde: {branche og størrelse}. Vi har hjulpet med: {opgaven}.
+Lav 12 åbne interviewspørgsmål på dansk i fire grupper: situationen før, hvorfor de valgte os, forløbet og resultatet.
+Spørgsmålene skal få kunden til at nævne konkrete tal og eksempler. Undgå ledende spørgsmål.</code></pre>
+<h3 id="9-omskrivning-til-jeres-tone-of-voice">9. Omskrivning til jeres tone of voice</h3>
+<pre><code>Her er vores tone of voice:
+&lt;tone&gt;
+{indsæt jeres beskrivelse af tonen og 1-2 tekster, der lyder som jer}
+&lt;/tone&gt;
+Omskriv teksten herunder, så den følger tonen. Bevar alle fakta. Fjern fyldord og superlativer.
+&lt;tekst&gt;
+{indsæt teksten}
+&lt;/tekst&gt;
+Vis til sidst de 3 største ændringer, du har lavet, og hvorfor.</code></pre>
+<p>Tags som <code>&lt;tone&gt;</code> og <code>&lt;tekst&gt;</code> holder instruktion og tekst adskilt. Det er Anthropics anbefaling til Claude, men det virker også i ChatGPT og Gemini.</p>
+<h3 id="10-a-b-varianter">10. A/B-varianter</h3>
+<pre><code>Her er vores nuværende {overskrift, emnelinje eller knaptekst}: &quot;{teksten}&quot;.
+Lav 5 alternative varianter til en A/B-test. Hver variant skal teste én bestemt ting: længde, fordel, tal, spørgsmål eller hastværk.
+Skriv for hver variant, hvad den tester, og hvad I forventer at lære.</code></pre>
+<h3 id="11-konkurrentanalyse">11. Konkurrentanalyse</h3>
+<pre><code>Du er marketingrådgiver. Her er tekster fra tre konkurrenters hjemmesider:
+&lt;konkurrent1&gt;{tekst}&lt;/konkurrent1&gt;
+&lt;konkurrent2&gt;{tekst}&lt;/konkurrent2&gt;
+&lt;konkurrent3&gt;{tekst}&lt;/konkurrent3&gt;
+Lav en tabel med: konkurrent, hovedbudskab, målgruppe, løfter og tone.
+Peg derefter på 3 budskaber, som ingen af dem bruger, og som {vores virksomhed} kunne eje.
+Brug kun det, der står i teksterne.</code></pre>
+<h3 id="12-kampagneideer">12. Kampagneidéer</h3>
+<pre><code>Giv mig 10 kampagneidéer til {virksomhed} i {periode, fx januar}.
+Mål: {fx flere tilmeldinger til nyhedsbrevet}. Budget: {ca. beløb}.
+Kanaler: {fx LinkedIn, nyhedsbrev og egen hjemmeside}.
+For hver idé: et navn, én sætning om idéen, hvilken kanal den passer til, og hvad der skal måles.
+Sortér dem efter, hvad der er nemmest at sætte i gang.</code></pre>
+<h3 id="13-svar-paa-en-anmeldelse">13. Svar på en anmeldelse</h3>
+<pre><code>Skriv et svar på dansk til denne anmeldelse på {Google eller Trustpilot}:
+&quot;{anmeldelsen uden kundens fulde navn}&quot;
+Vi vil gerne: {fx sige undskyld og tilbyde en ombytning}.
+Svaret skal være højst 80 ord, personligt og roligt, uden standardfraser, og invitere til at fortsætte samtalen på {mail eller telefon}.</code></pre>
+<h3 id="14-genbrug-et-indhold-i-flere-kanaler">14. Genbrug ét indhold i flere kanaler</h3>
+<pre><code>Her er et blogindlæg, vi har skrevet:
+&lt;indlaeg&gt;{indsæt teksten}&lt;/indlaeg&gt;
+Lav ud fra indholdet: 1 LinkedIn-opslag (højst 150 ord), 1 kort tekst til nyhedsbrevet (højst 80 ord) og 3 forslag til korte opslag på Instagram.
+Brug kun pointer fra indlægget.</code></pre>
+<h3 id="15-maalgruppebeskrivelse-persona">15. Målgruppebeskrivelse (persona)</h3>
+<pre><code>Hjælp mig med at beskrive vores vigtigste målgruppe.
+Det ved vi: {alder, rolle, branche, hvad de køber, typiske spørgsmål fra kunder}.
+Lav en kort beskrivelse med: mål, frustrationer, hvad der får dem til at købe, og hvad der får dem til at sige nej.
+Marker tydeligt, hvad der bygger på mine oplysninger, og hvad der er dine antagelser.</code></pre>
+<h3 id="16-lad-ai-en-forbedre-jeres-prompt">16. Lad AI'en forbedre jeres prompt</h3>
+<pre><code>Gør prompten herunder bedre. Stil mig først de spørgsmål, du har brug for at få svar på, så du ikke skal gætte på målgruppe, formål, format eller tone. Skriv derefter den forbedrede prompt.
+&lt;prompt&gt;{indsæt jeres første forsøg}&lt;/prompt&gt;</code></pre>
+<p>Min vurdering er, at I skal starte med prompt 9 om tone of voice. Når I først har beskrevet jeres tone, kan I sætte den ind i alle de andre prompts.</p>
+<h2 id="hvilke-fejl-skal-i-undgaa-med-ai-prompts">Hvilke fejl skal I undgå med AI-prompts?</h2>
+<p>De fleste fejl skyldes for lidt kontekst eller for meget tillid til svaret. Her er de typiske fejl, og hvad I gør i stedet.</p>
+<div class="table-wrap" role="region" aria-label="Typiske promptfejl" tabindex="0">
+<table>
+<caption>Typiske promptfejl</caption>
+<thead><tr><th scope="col">Fejl</th><th scope="col">Hvad sker der</th><th scope="col">Gør i stedet</th></tr></thead>
+<tbody>
+<tr><th scope="row">Prompten er én kort linje</th><td>Svaret bliver generisk og lyder som alle andres</td><td>Tilføj kontekst, målgruppe og format</td></tr>
+<tr><th scope="row">Ingen målgruppe</th><td>Teksten taler til alle og overbeviser ingen</td><td>Beskriv, hvem der skal læse den, og hvad de bekymrer sig om</td></tr>
+<tr><th scope="row">Vage ord som &quot;fængende&quot; eller &quot;kort&quot;</th><td>AI'en tolker selv, hvad det betyder</td><td>Skriv et antal ord, tegn eller punkter</td></tr>
+<tr><th scope="row">Kun forbud som &quot;skriv ikke formelt&quot;</th><td>AI'en ved ikke, hvad den skal gøre i stedet</td><td>Sig, hvad den skal gøre, fx &quot;skriv som en kollega i du-form&quot;</td></tr>
+<tr><th scope="row">Ingen eksempler</th><td>Tonen rammer ved siden af</td><td>Indsæt 1 til 2 tekster, der lyder som jer</td></tr>
+<tr><th scope="row">Fakta tjekkes ikke</th><td>Opdigtede tal, priser eller løfter kommer med</td><td>Giv AI'en fakta, og læs alt igennem før brug</td></tr>
+<tr><th scope="row">Persondata i prompten</th><td>Kundedata kan ende hos udbyderen</td><td>Anonymisér, eller brug en erhvervsudgave</td></tr>
+<tr><th scope="row">Ny samtale hver gang</th><td>Rettelserne går tabt</td><td>Ret i samme samtale, og gem den prompt, der virker</td></tr>
+</tbody>
+</table>
+</div>
+<aside class="box box-tip"><p class="box-title">Godt at vide</p>
+<p>AI-assistenter kan skrive tal, priser og påstande, der lyder rigtige, men ikke passer. Bed AI'en skrive MANGLER, når den mangler en oplysning, som i prompt 5, og tjek altid tal og løfter, før en tekst bliver udgivet.</p>
+</aside>
+<h2 id="hvad-goer-i-naar-prompterne-virker">Hvad gør I, når prompterne virker?</h2>
+<p>Når I har 3 til 5 prompts, der giver gode svar, så saml dem i ét dokument sammen med jeres faste kontekst om virksomhed, målgruppe og tone. Det er det, der gør AI til et fast værktøj i teamet i stedet for noget, én person eksperimenterer med.</p>
+<p>Næste skridt kan være:</p>
+<ul>
+  <li>Få teksterne til at lyde som jer med <a href="/blog/ai-tekster-tone-of-voice">guiden til AI-tekster og tone of voice</a>.</li>
+  <li>Vælg det rigtige værktøj i <a href="/blog/chatgpt-claude-gemini">sammenligningen af ChatGPT, Claude og Gemini</a>.</li>
+  <li>Se, hvor I kan spare mest tid, i indlægget om <a href="/blog/tidsbesparelse-ai-marketing">tidsbesparelse med AI i marketing</a>.</li>
+</ul>
+<h2 id="kilder">Kilder</h2>
+<ul>
+  <li>Google Workspace: <a href="https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf">Prompting guide 101 (Gemini for Workspace)</a>, oktober 2024, læst 12. november 2026</li>
+  <li>Google Workspace: <a href="https://workspace.google.com/resources/ai/writing-effective-prompts/">Writing effective AI prompts</a>, læst 12. november 2026</li>
+  <li>OpenAI Help Center: <a href="https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api">Best practices for prompt engineering with the OpenAI API</a>, læst 12. november 2026</li>
+  <li>OpenAI: <a href="https://developers.openai.com/api/docs/guides/prompt-engineering">Prompt engineering</a>, læst 12. november 2026</li>
+  <li>OpenAI Help Center: <a href="https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance">How your data is used to improve model performance</a>, læst 12. november 2026</li>
+  <li>OpenAI Help Center: <a href="https://help.openai.com/en/articles/10169521-projects-in-chatgpt">Projects in ChatGPT</a>, læst 12. november 2026</li>
+  <li>Claude Help Center: <a href="https://support.claude.com/en/articles/9517075-what-are-projects">What are projects?</a> og <a href="https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects">How can I create and manage projects?</a>, læst 12. november 2026</li>
+  <li>Gemini Apps Help: <a href="https://support.google.com/gemini/answer/15235603?hl=en">Tips for creating custom Gems</a>, læst 12. november 2026</li>
+  <li>Anthropic: <a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices">Prompting best practices</a>, læst 12. november 2026</li>
+  <li>Google Ads Hjælp: <a href="https://support.google.com/google-ads/answer/7684791?hl=da">Om responsive søgeannoncer</a>, læst 12. november 2026</li>
+</ul>
+      </div>
+      <aside class="author" id="forfatter" aria-labelledby="forfatter-titel">
+        <img class="avatar-img" src="/assets/kasper.jpg" alt="" width="72" height="72" loading="lazy" decoding="async">
+        <div>
+          <p class="author-label">Skrevet af</p>
+          <h2 id="forfatter-titel">Kasper Schrøder Asmussen</h2>
+          <p class="author-role">Står bag Hey Otto</p>
+          <p>Jeg hedder Kasper Schrøder Asmussen, har en kandidat i Marketing &amp; Brand Management og har bygget AI-drevne marketingsystemer i både B2B og B2C. Jeg byggede Hey Otto, så marketingfolk kan give opgaven fra sig og bruge tiden på det, der kræver et menneske.</p>
+          <p><a href="https://www.linkedin.com/in/kasperasmussen/" target="_blank" rel="noopener">Kasper på LinkedIn</a></p>
+        </div>
+      </aside>
+      <aside class="post-cta" aria-labelledby="cta-titel">
+        <h2 id="cta-titel">Skal vi se på jeres opgaver?</h2>
+        <p>På 30 minutter finder vi ud af, hvilke af jeres marketingopgaver Otto kan tage, og hvad det vil kræve. Mødet er gratis.</p>
+        <a class="btn" href="/#book">Book en snak på 30 minutter</a>
+      </aside>
+    </article>
+  </main>
+  <footer class="footer">
+    <p class="footer-name"><img class="logo" src="/assets/logo.svg" alt="Hey Otto" width="399" height="101"> <span class="footer-by">v/ Kasper Schrøder Asmussen</span></p>
+    <p class="footer-contact"><a href="mailto:kasper@heyotto.dk">kasper@heyotto.dk</a>, <a href="tel:+4522463840">+45 22 46 38 40</a>, <a href="https://www.linkedin.com/in/kasperasmussen/" target="_blank" rel="noopener">LinkedIn</a>, <a href="/blog/">Blog</a>, <a href="/privatlivspolitik">Privatlivspolitik</a>, <a href="/vilkaar">Vilkår</a><span class="cookie-link" hidden>, <button type="button" class="linklike" data-cookie-settings>Cookieindstillinger</button></span></p>
+  </footer>
+  </div>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

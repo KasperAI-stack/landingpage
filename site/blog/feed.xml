@@ -6,6 +6,57 @@
     <atom:link href="https://heyotto.dk/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>AI og marketing uden raketvidenskab.</description>
     <language>da</language>
-
+    <lastBuildDate>Thu, 12 Nov 2026 08:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI-prompts til marketing: opskrift og 16 danske prompts</title>
+      <link>https://heyotto.dk/blog/ai-prompts-marketing</link>
+      <guid>https://heyotto.dk/blog/ai-prompts-marketing</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>En god AI-prompt til marketing har rolle, opgave, kontekst, målgruppe, format og tone. Her er opskriften og 16 danske prompts, I kan kopiere.</description>
+      <category>Tekst og indhold</category>
+      <category>Kom i gang med AI</category>
+    </item>
+    <item>
+      <title>AI-tekster er ikke fy: sådan rammer I jeres tone of voice</title>
+      <link>https://heyotto.dk/blog/ai-tekster-tone-of-voice</link>
+      <guid>https://heyotto.dk/blog/ai-tekster-tone-of-voice</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>AI-tekst er ikke problemet, generisk tekst er. Sådan bygger I en tone of voice-guide, som ChatGPT, Claude og Gemini kan skrive efter.</description>
+      <category>Tekst og indhold</category>
+    </item>
+    <item>
+      <title>ChatGPT vs Claude vs Gemini: hvilken AI til marketing?</title>
+      <link>https://heyotto.dk/blog/chatgpt-claude-gemini</link>
+      <guid>https://heyotto.dk/blog/chatgpt-claude-gemini</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>ChatGPT, Claude og Gemini koster næsten det samme for et team. Forskellen er integrationer, data og EU. Her er priser, funktioner og vores anbefaling.</description>
+      <category>AI-værktøjer</category>
+    </item>
+    <item>
+      <title>Hvad er AI-agenter? En guide til mindre virksomheder</title>
+      <link>https://heyotto.dk/blog/hvad-er-ai-agenter</link>
+      <guid>https://heyotto.dk/blog/hvad-er-ai-agenter</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>En AI-agent er et program, der selv vælger trin og værktøjer for at nå et mål. Se forskellen på chatbot og agent, og hvordan I starter i det små.</description>
+      <category>Automatisering</category>
+      <category>Kom i gang med AI</category>
+    </item>
+    <item>
+      <title>Hvor meget tid sparer AI i marketing? Det viser studierne</title>
+      <link>https://heyotto.dk/blog/tidsbesparelse-ai-marketing</link>
+      <guid>https://heyotto.dk/blog/tidsbesparelse-ai-marketing</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Fra få procent til 40 procent, afhængigt af opgaven. Se hvad forskningen har målt, hvor marketing sparer mest, og hvordan I selv måler det.</description>
+      <category>Kom i gang med AI</category>
+      <category>Tekst og indhold</category>
+    </item>
+    <item>
+      <title>Kom i gang med AI i virksomheden: hvor starter man?</title>
+      <link>https://heyotto.dk/blog/kom-i-gang-med-ai-i-virksomheden</link>
+      <guid>https://heyotto.dk/blog/kom-i-gang-med-ai-i-virksomheden</guid>
+      <pubDate>Thu, 12 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Start med 1 til 3 konkrete opgaver, en kort AI-politik og ét betalt værktøj til en lille gruppe. Her er de seks trin, priserne og de typiske fejl.</description>
+      <category>Kom i gang med AI</category>
+    </item>
   </channel>
 </rss>

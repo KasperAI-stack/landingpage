@@ -1,0 +1,175 @@
+---
+titel: "Hvor meget tid sparer AI i marketing? Det viser studierne"
+beskrivelse: "Fra få procent til 40 procent, afhængigt af opgaven. Se hvad forskningen har målt, hvor marketing sparer mest, og hvordan I selv måler det."
+dato: 2026-11-12
+type: guide
+forfatter: kasper
+tags: [Kom i gang med AI, Tekst og indhold]
+udkast: false
+---
+
+:::kort
+- AI gør skriveopgaver 25 til 40 procent hurtigere i forsøg (2023), men danske brugere angiver kun 2,8 procent sparet arbejdstid i alt (2025).
+- Mest sparer AI på udkast, varianter og opsummeringer, mindst på strategi og egne data.
+- Tiden til at tjekke og rette AI's tekst æder en stor del af gevinsten.
+- Mål selv: tag tid på 3 til 5 faste opgaver før og efter i 2 til 4 uger.
+:::
+
+Denne guide er til jer, der arbejder med marketing i en mindre eller mellemstor virksomhed og vil vide, hvad AI realistisk kan spare jer. Bagefter ved I, hvad forskningen faktisk har målt, hvilke opgaver der er værd at starte med, og hvordan I måler jeres egen tidsbesparelse uden et stort projekt.
+
+## Hvor meget tid sparer AI i marketing?
+
+Det korte svar er: mellem næsten ingenting og omkring 40 procent på den enkelte opgave. I kontrollerede forsøg med skriveopgaver blev folk 25 til 40 procent hurtigere. Når man spørger almindelige brugere i Danmark, siger de i gennemsnit, at de sparer 2,8 procent af deres samlede arbejdstid.
+
+De to tal modsiger ikke hinanden. Forsøgene måler én opgave, som AI er god til. Den danske undersøgelse måler hele arbejdsugen, hvor en stor del af tiden går med møder, koordinering og opgaver, AI ikke rører.
+
+Min vurdering er, at et marketingteam, der bruger AI fast på de rigtige opgaver, kan spare mærkbar tid på netop de opgaver, men at besparelsen på hele ugen er langt mindre, end overskrifterne lover. Det eneste tal, der gælder for jer, er det, I selv måler.
+
+## Hvad viser forskningen om AI og tidsbesparelse?
+
+Forskningen viser store gevinster på afgrænsede opgaver og små gevinster i hverdagen. Jo mere kontrolleret forsøget er, og jo bedre opgaven passer til AI, jo større er tallet.
+
+Tabel: Studier af AI og tidsbesparelse (kilder tjekket november 2026)
+
+| Studie | Opgave | Målt effekt | År |
+|---|---|---|---|
+| Noy og Zhang, MIT (Science) | Skriveopgaver for 453 fagfolk, bl.a. marketingfolk | 40 % mindre tid og 18 % højere kvalitet | 2023 |
+| Dell'Acqua m.fl., Harvard og BCG (Organization Science) | 18 realistiske opgaver for 758 konsulenter med GPT-4 | 25,1 % hurtigere og 12,2 % flere opgaver løst inden for AI's evner | 2023 (tidsskrift 2026) |
+| Dell'Acqua m.fl., samme forsøg | Én kompleks ledelsesopgave valgt til at ligge uden for AI's evner | 19 % mindre tilbøjelige til at nå en korrekt løsning end dem uden AI | 2023 (tidsskrift 2026) |
+| Brynjolfsson, Li og Raymond (NBER, QJE) | Kundeservice, 5.179 medarbejdere | 14 % flere sager løst pr. time, 34 % for nye medarbejdere | 2023 (tidsskrift 2025) |
+| Humlum og Vestergaard (BFI/NBER) | Danske arbejdere i 11 erhverv, bl.a. marketing, 25.000 svar | 2,8 % af arbejdstiden sparet i gennemsnit (selvrapporteret) | 2025 |
+| METR | Erfarne softwareudviklere på egne projekter | 19 % langsommere med AI, selvom de troede, de var 20 % hurtigere | 2025 |
+| Anthropic | 100.000 samtaler med Claude, vurderet af Claude | Ca. 80 % kortere tid pr. opgave (estimat, uden tid til at tjekke) | 2025 |
+
+Studierne måler forskellige ting, så tallene kan ikke lægges sammen. Noy og Zhang og Dell'Acqua er forsøg, hvor halvdelen fik AI, og halvdelen ikke gjorde. Humlum og Vestergaard er en spørgeundersøgelse koblet til danske registerdata. Anthropics tal er Claudes egne skøn over samtaler og tager ikke højde for den tid, folk bruger på at rette og tjekke resultatet uden for samtalen. Det skriver Anthropic selv.
+
+Det danske studie er det mest relevante for en dansk virksomhed. Det dækker marketingfolk, og det viser, at AI-chatbots indtil videre ikke har flyttet hverken løn eller arbejdstimer målbart. Forfatterne fandt også, at 8,4 procent af de adspurgte havde fået nye opgaver på grund af AI, fx at tjekke AI's arbejde.
+
+Marketing er samtidig et af de områder, hvor potentialet vurderes størst. McKinsey anslog i juni 2023, at marketing og salg er et af fire områder, der tilsammen står for omkring 75 procent af den værdi, generativ AI kan skabe. Det er et skøn over potentialet, ikke en måling af, hvad virksomheder sparer i dag.
+
+:::tip
+Tal fra leverandørernes egne rapporter er ofte højere end tal fra forsøg. HubSpots State of AI in Marketing 2026 siger, at omkring en tredjedel af 1.754 adspurgte marketingfolk sparer deres team 10 til 14 timer om ugen, og en tredjedel over 15 timer. Det er marketingfolkenes egne skøn, ikke målinger. Brug dem som stemning, ikke som budget.
+:::
+
+## Hvorfor varierer tidsbesparelsen så meget?
+
+Tidsbesparelsen varierer, fordi den afhænger af tre ting: hvor godt opgaven passer til AI, hvor lang tid I bruger på at tjekke resultatet, og hvor erfarne I er i forvejen. Ændrer én af dem sig, ændrer gevinsten sig.
+
+### Opgaven skal ligge inden for det, AI er god til
+
+Forskerne bag Harvard- og BCG-forsøget kalder det "den takkede grænse" (jagged frontier). AI er god til nogle opgaver og dårlig til andre, også selvom opgaverne ligner hinanden. Inden for grænsen blev konsulenterne hurtigere og bedre. På en kompleks opgave uden for grænsen var de, der brugte AI, 19 procent mindre tilbøjelige til at nå en korrekt løsning end dem uden AI.
+
+For marketing betyder det, at AI kan skrive fem varianter af en annonce på et minut, men ikke ved, hvilken af dem der passer til jeres kunder, hvis I ikke fortæller det.
+
+### Review-tiden æder en del af gevinsten
+
+Review er den tid, I bruger på at læse, tjekke fakta, rette tonen og få teksten godkendt. Den tid forsvinder ikke med AI. Ofte bliver den længere, fordi teksten ikke er jeres egen, og fordi AI kan skrive forkerte påstande med stor sikkerhed.
+
+Anthropic skriver direkte, at deres tal på omkring 80 procent ikke medregner den tid, folk bruger på at gøre AI's arbejde færdigt. Det er en af grundene til, at forsøg finder mindre gevinster.
+
+### Erfarne får mindre ud af det end nye
+
+I kundeservicestudiet fik nye medarbejdere 34 procent mere fra hånden, mens de mest erfarne næsten ikke fik noget ud af det. I METR-forsøget blev erfarne udviklere langsommere. Min vurdering er, at det samme gælder i marketing: Den, der i forvejen skriver et nyhedsbrev på 20 minutter, sparer mindre end den, der sidder fast i en time.
+
+### Fornemmelsen snyder
+
+Udviklerne i METR-forsøget troede, at AI havde gjort dem 20 procent hurtigere, men de var i virkeligheden 19 procent langsommere. Det er den vigtigste grund til at måle frem for at gætte.
+
+## Hvilke marketingopgaver sparer mest og mindst tid med AI?
+
+Mest tid sparer I på opgaver, hvor AI laver et første udkast, som I retter til. Mindst sparer I på opgaver, hvor værdien ligger i jeres egne valg, data og kendskab til kunderne.
+
+Kolonnen om, hvor meget AI typisk hjælper, er min vurdering ud fra studierne. Ingen af studierne har målt præcis disse marketingopgaver.
+
+Tabel: Hvor meget AI typisk hjælper på marketingopgaver (vurdering ud fra studierne, november 2026)
+
+| Opgave | Hvor meget AI typisk hjælper | Hvorfor | Hvad studierne viser |
+|---|---|---|---|
+| Første udkast til SoMe-opslag | Stor | Korte tekster, der er lette at rette | Noy og Zhang: 40 % mindre tid på skriveopgaver |
+| Annoncevarianter til test | Stor | AI laver mange varianter på kort tid | Dell'Acqua: kreative opgaver lå inden for AI's evner, 25,1 % hurtigere |
+| Opsummering af rapporter, møder og interviews | Stor | AI læser og trækker ud hurtigere end mennesker | Anthropic: ca. 95 % estimeret besparelse på at samle information fra rapporter, uden tjektid |
+| Nyhedsbrev | Middel | Kræver jeres egne nyheder og tone | Noy og Zhang: skriveopgaver blev hurtigere, men opgaverne krævede ikke virksomhedens egne data |
+| Blogindlæg og guides | Middel | Faktatjek og egne erfaringer tager tid | Anthropic: tid til at tjekke og gøre teksten færdig er ikke medregnet i de høje tal |
+| Analyse af kampagnetal | Lille til middel | AI kan regne forkert og mangler sammenhæng | Dell'Acqua: dårligere resultater, når opgaven ligger uden for AI's evner |
+| Strategi, positionering og budget | Lille | Kræver kendskab til kunder, marked og jeres mål | Dell'Acqua: den komplekse ledelsesopgave gav færre korrekte løsninger med AI |
+
+Gevinsten bliver størst, når AI får gode instruktioner fra start. Se vores [samling af AI-prompts til marketing](/blog/ai-prompts-marketing), og læs, hvordan I [får AI til at skrive i jeres egen tone](/blog/ai-tekster-tone-of-voice), så I bruger mindre tid på at rette.
+
+## Sådan måler I jeres egen tidsbesparelse, trin for trin
+
+I kan måle jeres egen tidsbesparelse med en simpel før og efter-måling på 2 til 4 uger. Det kræver et regneark og fem minutters disciplin om ugen, ikke et værktøj.
+
+Tabel: Trinene i en før og efter-måling
+
+| Trin | Hvad I gør | Tid | Pris |
+|---|---|---|---|
+| 1. Vælg opgaver | Vælg 3 til 5 opgaver, I laver hver uge, fx SoMe-opslag og nyhedsbrev | 15 minutter | Gratis |
+| 2. Mål uden AI | Tag tid på hver opgave 3 til 5 gange uden AI, fra start til godkendt | 1 til 2 uger | Gratis |
+| 3. Mål med AI | Løs de samme opgaver med AI, og tag tid fra start til godkendt, inkl. review | 1 til 2 uger | Prisen på jeres AI-abonnement |
+| 4. Vurder kvaliteten | Lad en kollega bedømme teksterne fra 1 til 5 uden at vide, hvilke der er lavet med AI | 30 minutter | Gratis |
+| 5. Regn ud og beslut | Sammenlign gennemsnittet, og behold AI på de opgaver, hvor både tid og kvalitet holder | 30 minutter | Gratis |
+
+### 1. Vælg opgaver, der gentager sig
+
+Vælg opgaver, I laver mindst én gang om ugen, så I får nok målinger. Én stor kampagne kan ikke sammenlignes med noget.
+
+### 2. Mål tiden uden AI
+
+Tag tid fra I starter, til opgaven er godkendt, ikke kun til første udkast. Skriv minutterne ind i et regneark med dato og opgave. Et stopur på telefonen er nok.
+
+### 3. Mål tiden med AI, inklusive review
+
+Tæl alt med: at skrive prompten, vente, læse, rette, faktatjekke og få godkendelse. Det er her, de fleste snyder sig selv. Er I helt nye, så start med vores guide til at [komme i gang med AI i virksomheden](/blog/kom-i-gang-med-ai-i-virksomheden).
+
+### 4. Hold øje med kvaliteten
+
+En tekst, der er hurtig, men skal skrives om, sparer ingen tid. Lad derfor en kollega give karakter uden at vide, hvilken tekst der er hvilken.
+
+### 5. Regn tidsbesparelsen ud
+
+Regnestykket er: (tid uden AI minus tid med AI) divideret med tid uden AI, gange 100. Tager et nyhedsbrev 60 minutter uden AI og 40 minutter med, er besparelsen 33 procent. Gang derefter op med, hvor ofte opgaven forekommer, så I ser timerne pr. måned.
+
+:::tip
+Indsæt aldrig persondata eller fortrolige kundeoplysninger i en AI-tjeneste for at teste den. Brug opdigtede eller anonymiserede eksempler, indtil I har styr på, hvor data ligger, og hvad jeres aftale med leverandøren siger.
+:::
+
+## Hvilke fejl skal I undgå, når I måler tidsbesparelse?
+
+Den største fejl er at stole på fornemmelsen. Den næststørste er at glemme review-tiden. Begge dele får tidsbesparelsen til at se større ud, end den er.
+
+Tabel: Typiske fejl ved måling af AI's tidsbesparelse
+
+| Fejl | Hvad sker der | Gør i stedet |
+|---|---|---|
+| I gætter i stedet for at måle | I overvurderer gevinsten, som udviklerne i METR-forsøget | Tag tid på opgaverne med et stopur |
+| I måler kun til første udkast | Rettelser og godkendelse glemmes | Mål fra start til godkendt opgave |
+| I måler på opgaver, AI er dårlig til | I konkluderer, at AI ikke virker | Start med udkast, varianter og opsummeringer |
+| I måler kun én gang | Én god eller dårlig dag styrer resultatet | Mål hver opgave 3 til 5 gange |
+| I glemmer kvaliteten | Hurtige, men svage tekster ender hos kunderne | Lad en kollega bedømme uden at vide, hvad der er AI |
+| I regner sparet tid om til sparede penge med det samme | Tiden bliver brugt på noget andet eller går tabt | Beslut på forhånd, hvad den sparede tid skal bruges til |
+
+## Hvad gør I, når I kender jeres tidsbesparelse?
+
+Når I kender tallene, så behold AI på de opgaver, hvor I sparer tid uden at miste kvalitet, og drop det på resten. Beslut, hvad den sparede tid skal bruges til, fx flere test af annoncer eller mere tid til kunderne. Ellers forsvinder den i andre opgaver.
+
+Næste skridt er at lade AI klare flere trin i træk, fx at hente tal, skrive et udkast og lægge det klar til godkendelse. Det kaldes en AI-agent: et program, der selv udfører flere trin mod et mål. Læs mere om [hvad AI-agenter er, og hvad de kan bruges til](/blog/hvad-er-ai-agenter).
+
+Den sparede tid gør mest gavn på det, AI er dårligst til:
+
+- Samtaler med kunder, så teksterne bygger på det, kunderne faktisk siger.
+- Strategi og prioritering, som ligger uden for AI's evner.
+- Test og opfølgning, fx flere annoncevarianter og tid til at læse resultaterne.
+- Faktatjek og kvalitet, så hurtigere tekster ikke bliver dårligere tekster.
+
+Mål igen efter et halvt år. Modellerne ændrer sig, og det gør jeres måde at bruge dem på også.
+
+## Kilder
+
+- Noy, S. og Zhang, W. (2023): "Experimental evidence on the productivity effects of generative artificial intelligence", Science 381, 14. juli 2023. [Læs kilden](https://www.science.org/doi/10.1126/science.adh2586) (tjekket 12. november 2026)
+- Dell'Acqua, F. m.fl. (2026): "Navigating the Jagged Technological Frontier", Organization Science, online 11. marts 2026. Arbejdspapir fra september 2023. [Læs kilden](https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838) (tjekket 12. november 2026)
+- Brynjolfsson, E., Li, D. og Raymond, L. (2025): "Generative AI at Work", The Quarterly Journal of Economics 140(2). NBER-arbejdspapir w31161, april 2023. [Læs kilden](https://www.nber.org/papers/w31161) (tjekket 12. november 2026)
+- Humlum, A. og Vestergaard, E. (2025): "Large Language Models, Small Labor Market Effects", BFI Working Paper 2025-56, april 2025, også NBER w33777. [Læs kilden](https://bfi.uchicago.edu/wp-content/uploads/2025/04/BFI_WP_2025-56-1.pdf) (tjekket 12. november 2026)
+- METR (2025): "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity", 10. juli 2025. [Læs kilden](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) (tjekket 12. november 2026)
+- Tamkin, A. og McCrory, P., Anthropic (2025): "Estimating AI productivity gains from Claude conversations", 25. november 2025. [Læs kilden](https://www.anthropic.com/research/estimating-productivity-gains) (tjekket 12. november 2026)
+- McKinsey & Company (2023): "The economic potential of generative AI: The next productivity frontier", juni 2023. Marketing og salg er et af fire områder, der står for omkring 75 procent af den mulige værdi. [Læs kilden](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) (tjekket 12. november 2026)
+- HubSpot (2026): "The State of AI in Marketing 2026", 1.754 adspurgte marketingfolk, gengivet på HubSpots blog 1. oktober 2026. [Læs kilden](https://blog.hubspot.com/marketing/state-of-generative-ai) (tjekket 12. november 2026)

@@ -1,0 +1,307 @@
+---
+titel: "AI-prompts til marketing: opskrift og 16 danske prompts"
+beskrivelse: "En god AI-prompt til marketing har rolle, opgave, kontekst, målgruppe, format og tone. Her er opskriften og 16 danske prompts, I kan kopiere."
+dato: 2026-11-12
+type: guide
+forfatter: kasper
+tags: [Tekst og indhold, Kom i gang med AI]
+udkast: false
+---
+
+:::kort
+- En god AI-prompt til marketing fortæller AI'en, hvem den skal være, hvad den skal lave, hvem det er til, og hvordan svaret skal se ud.
+- OpenAI, Anthropic og Google anbefaler stort set det samme: vær specifik, giv kontekst, vis eksempler og bed om rettelser.
+- Googles egne brugsdata viser, at de bedste prompts er omkring 21 ord, mens folk typisk skriver under 9 ord (Google, oktober 2024).
+- Indsæt aldrig persondata eller fortrolige kundedata i en gratis udgave.
+:::
+
+Denne guide er til jer, der bruger ChatGPT, Claude eller Gemini til marketing, men synes, at svarene bliver generiske. Bagefter har I en enkel opskrift på en god prompt og 16 færdige danske prompts til de opgaver, de fleste marketingfolk har hver uge.
+
+## Hvad er en prompt, og hvorfor bliver svaret ofte generisk?
+
+En prompt er den besked, I skriver til en AI-assistent som ChatGPT, Claude eller Gemini. Svaret bliver generisk, når prompten er kort og mangler kontekst, for så må AI'en gætte på målgruppe, tone og formål, og den gætter på gennemsnittet.
+
+Google skriver i sin promptguide til Gemini, at de prompts, der giver de bedste resultater, i gennemsnit er omkring 21 ord med relevant kontekst, mens de prompts, folk prøver, typisk er under 9 ord. Forskellen mellem "Skriv et LinkedIn-opslag om vores nye produkt" og et brugbart opslag er næsten altid den kontekst, I ikke skrev.
+
+Et eksempel: "Skriv et opslag om vores nye kaffemaskine" giver et pænt, men intetsigende opslag. "Skriv et LinkedIn-opslag på højst 120 ord til kontorchefer i virksomheder med 20 til 50 ansatte om vores nye kaffemaskine, der brygger 40 kopper i timen. Tonen er venlig og direkte, og opslaget slutter med et spørgsmål" giver AI'en det, den skal bruge.
+
+## Hvad skal en god marketingprompt indeholde?
+
+En god marketingprompt består af op til syv byggeklodser: rolle, opgave, kontekst, målgruppe, format, tone og eksempler. I behøver ikke alle syv hver gang, men opgave, kontekst og målgruppe bør altid være med.
+
+Tabel: Promptens byggeklodser
+
+| Del | Hvad den gør | Eksempel |
+|---|---|---|
+| Rolle | Giver AI'en et perspektiv og et fagligt niveau | "Du er en erfaren B2B-copywriter." |
+| Opgave | Siger præcis, hvad der skal laves | "Skriv tre LinkedIn-opslag." |
+| Kontekst | Giver baggrunden, AI'en ikke kan vide | "Vi er et revisionsfirma med 12 ansatte i Aarhus." |
+| Målgruppe | Fortæller, hvem teksten skal overbevise | "Ejere af håndværksvirksomheder, der hader papirarbejde." |
+| Format | Bestemmer længde, opbygning og antal | "Højst 120 ord, ingen hashtags, slut med et spørgsmål." |
+| Tone | Styrer stemmen i teksten | "Venlig og direkte, du-form, ingen superlativer." |
+| Eksempler | Viser, hvad godt ser ud hos jer | "Her er et opslag, der virkede godt: ..." |
+
+Rækkefølgen er ikke afgørende. Det vigtigste er, at AI'en ikke skal gætte. Google samler det i fire dele, som de kalder Persona, Task, Context og Format, altså rolle, opgave, kontekst og format.
+
+Et lille trick: Skriv jeres faste kontekst ét sted, fx et dokument med virksomhed, målgruppe og tone, og indsæt den øverst i hver prompt. Så skal I ikke skrive den forfra. Hvordan I beskriver jeres tone, står i guiden om [at få AI-tekster til at lyde som jer](/blog/ai-tekster-tone-of-voice).
+
+## Hvad anbefaler OpenAI, Anthropic og Google selv?
+
+De tre producenter anbefaler næsten det samme: vær tydelig og specifik, giv kontekst og vis eksempler. Forskellene ligger i detaljerne. Anthropic lægger vægt på at forklare, hvorfor en instruktion er vigtig, OpenAI på at sige, hvad AI'en skal gøre i stedet for, hvad den ikke må, og Google på at føre en samtale og rette undervejs.
+
+Tabel: Producenternes egne promptråd (tjekket 12. november 2026)
+
+| Råd | OpenAI | Anthropic (Claude) | Google (Gemini) |
+|---|---|---|---|
+| Vær specifik | Ja, om kontekst, resultat, længde, format og stil | Ja, "clear and direct" | Ja, sig præcis hvad den skal gøre |
+| Giv kontekst | Ja, så detaljeret som muligt | Ja, også hvorfor instruktionen er vigtig | Ja, så meget kontekst som muligt |
+| Vis eksempler | Ja, især for at vise formatet | Ja, et af de mest pålidelige greb | Ikke et selvstændigt råd i guiden |
+| Adskil instruktion og tekst | Ja, med ### eller """ | Ja, med XML-tags som `<tekst>` | Ikke nævnt i guiden |
+| Giv en rolle | Ikke et selvstændigt råd i guiden | Ja, rollen styrer adfærd og tone | Ja, "Persona" er en af fire dele |
+| Sig hvad den skal gøre | Ja, frem for kun at sige hvad den ikke må | Ja, i de detaljerede råd | Ikke nævnt i guiden |
+| Ret undervejs | Start uden eksempler, tilføj dem hvis det ikke virker | Ikke et selvstændigt råd i oversigten | Ja, "make it a conversation" |
+
+Min vurdering er, at I ikke behøver skrive forskellige prompts til de tre værktøjer. En prompt, der følger byggeklodserne ovenfor, virker i dem alle. Hvilket værktøj der passer bedst til jeres opgaver, står i [sammenligningen af ChatGPT, Claude og Gemini](/blog/chatgpt-claude-gemini).
+
+## Sådan bruger I prompts i praksis, trin for trin
+
+Arbejdet med en prompt tager fire trin: skriv den med byggeklodserne, læs svaret kritisk, ret i samme samtale, og gem prompten, når den virker. Det sidste trin er det, de fleste springer over.
+
+Tabel: Fra første prompt til fast skabelon
+
+| Trin | Hvad I gør | Resultat |
+|---|---|---|
+| 1. Skriv | Brug byggeklodserne, og indsæt jeres faste kontekst | Et første udkast, der passer til jer |
+| 2. Læs | Tjek fakta, tal, navne og tone, før noget bruges | I fanger fejl og opdigtede påstande |
+| 3. Ret | Skriv opfølgninger som "kortere", "mere konkret" eller "fjern superlativer" | Et udkast, I kan bruge |
+| 4. Gem | Læg prompten i et fælles dokument med jeres faste kontekst | Hele teamet får samme kvalitet næste gang |
+
+Google anbefaler også at lade AI'en forbedre prompten selv. Skriv "Gør det her til en bedre prompt" og indsæt jeres første forsøg. Prompt 16 længere nede gør netop det.
+
+De tre store værktøjer har hver en funktion til at gemme fast kontekst og instruktioner, så I ikke skal indsætte dem i hver samtale:
+
+Tabel: Her kan I gemme faste prompts (tjekket 12. november 2026)
+
+| Værktøj | Funktion | Hvad den kan |
+|---|---|---|
+| ChatGPT | Projects | Samler samtaler, filer og instruktioner ét sted. Findes også i gratis udgaven. |
+| Claude | Projects | Et arbejdsrum med egne instruktioner, filer og samtaler. Gratis brugere kan oprette op til fem. |
+| Gemini | Gems | En egen udgave af Gemini med faste instruktioner om rolle, opgave, kontekst og format |
+| Alle værktøjer | Et delt dokument | Virker uanset værktøj, og hele teamet kan rette i det |
+
+:::tip
+Indsæt aldrig persondata, kundelister eller fortrolige oplysninger i en gratis udgave af en AI-assistent. OpenAI skriver, at indhold fra ChatGPT Free, Plus og Pro kan bruges til at træne deres modeller, medmindre I slår "Improve the model for everyone" fra under Indstillinger > Datakontrol. I ChatGPT Business og Enterprise sker det ikke som standard (OpenAI, november 2026). Anonymisér, eller brug en erhvervsudgave.
+:::
+
+## 16 danske AI-prompts til marketing, I kan kopiere
+
+Her er 16 prompts til typiske marketingopgaver. Kopiér dem, og erstat felterne i krøllede parenteser, fx {jeres produkt}, med jeres egne oplysninger. Parenteserne skal ikke med i den færdige prompt. Jo mere præcist I udfylder felterne, jo bedre bliver svaret.
+
+### 1. LinkedIn-opslag
+
+```
+Du er en erfaren B2B-copywriter, der skriver på dansk til LinkedIn.
+Skriv 3 forskellige LinkedIn-opslag om {emne, fx vores nye serviceaftale}.
+Virksomhed: {kort beskrivelse af virksomheden}.
+Målgruppe: {hvem, fx indkøbschefer i produktionsvirksomheder}.
+Hvert opslag: højst 150 ord, en første linje der får folk til at læse videre, ingen hashtags, ingen emojis, og slut med et spørgsmål til læseren.
+Tone: {fx venlig, direkte og uden superlativer}.
+```
+
+### 2. Nyhedsbrev
+
+```
+Skriv et nyhedsbrev på dansk til {målgruppe}.
+Formål: {fx få læserne til at booke et besøg i butikken}.
+Indhold, der skal med: {punkt 1}, {punkt 2}, {punkt 3}.
+Format: 5 forslag til emnelinje (højst 50 tegn), en preheader (højst 90 tegn), en brødtekst på højst 250 ord og én tydelig knaptekst.
+Tone: {jeres tone}. Skriv i du-form.
+```
+
+### 3. Annoncetekster til Meta (Facebook og Instagram)
+
+```
+Du er specialist i annoncer på Facebook og Instagram.
+Skriv 5 varianter af en annonce for {produkt eller tilbud}.
+Målgruppe: {hvem, og hvad de har af problemer}.
+Hver variant skal have: en primær tekst (højst 125 tegn), en overskrift (højst 40 tegn) og en knaptekst.
+Brug en ny vinkel i hver variant: problem, fordel, socialt bevis, tilbud og spørgsmål.
+Lov ikke noget, der ikke står her: {fakta om produktet}.
+```
+
+### 4. Google Ads-søgeannonce
+
+```
+Skriv tekster til en responsiv søgeannonce i Google Ads på dansk.
+Produkt: {produkt}. Søgeord: {hovedsøgeord}.
+Lav 15 overskrifter på højst 30 tegn og 4 beskrivelser på højst 90 tegn.
+Mindst 3 overskrifter skal indeholde søgeordet, og mindst 2 skal nævne {fordel, fx gratis levering}.
+Skriv antal tegn i parentes efter hver linje.
+```
+
+Google Ads tillader op til 15 overskrifter på højst 30 tegn og 4 beskrivelser på højst 90 tegn i en responsiv søgeannonce (Google Ads Hjælp, november 2026). Tjek altid tegnene selv, for AI'en tæller ikke altid rigtigt.
+
+### 5. Produkttekst til webshop
+
+```
+Skriv en produkttekst på dansk til {produktnavn}.
+Fakta: {materiale, mål, pris, levering, garanti}.
+Målgruppe: {hvem køber det, og hvorfor}.
+Format: en indledning på 2 sætninger, 4 punkter med fordele (ikke egenskaber), og en afsluttende sætning om {levering eller garanti}.
+Brug kun de fakta, der står her. Mangler der noget, så skriv MANGLER i stedet for at gætte.
+```
+
+### 6. SEO-meta-beskrivelse
+
+```
+Skriv 3 forslag til en meta-beskrivelse på dansk til siden {sidens adresse eller emne}.
+Hovedsøgeord: {søgeord}.
+Hver beskrivelse: 120 til 155 tegn, søgeordet tidligt, et konkret svar eller en fordel, og ingen klikagn.
+Skriv antal tegn efter hvert forslag.
+```
+
+En meta-beskrivelse er den korte tekst under titlen i Googles søgeresultater. Min vurdering er, at 120 til 155 tegn er en sikker længde, fordi længere tekster ofte bliver skåret af.
+
+### 7. Disposition til et blogindlæg
+
+```
+Du er indholdsstrateg. Lav en disposition til et blogindlæg på dansk.
+Spørgsmål, indlægget skal svare på: {spørgsmålet}.
+Målgruppe: {hvem, og hvad de ved i forvejen}.
+Giv mig: 3 forslag til titel (højst 60 tegn), 5 til 7 mellemrubrikker formuleret som spørgsmål, 2 punkter under hver, og forslag til én tabel.
+```
+
+### 8. Interviewspørgsmål til en kundecase
+
+```
+Jeg skal interviewe en kunde til en kundecase.
+Kunde: {branche og størrelse}. Vi har hjulpet med: {opgaven}.
+Lav 12 åbne interviewspørgsmål på dansk i fire grupper: situationen før, hvorfor de valgte os, forløbet og resultatet.
+Spørgsmålene skal få kunden til at nævne konkrete tal og eksempler. Undgå ledende spørgsmål.
+```
+
+### 9. Omskrivning til jeres tone of voice
+
+```
+Her er vores tone of voice:
+<tone>
+{indsæt jeres beskrivelse af tonen og 1-2 tekster, der lyder som jer}
+</tone>
+Omskriv teksten herunder, så den følger tonen. Bevar alle fakta. Fjern fyldord og superlativer.
+<tekst>
+{indsæt teksten}
+</tekst>
+Vis til sidst de 3 største ændringer, du har lavet, og hvorfor.
+```
+
+Tags som `<tone>` og `<tekst>` holder instruktion og tekst adskilt. Det er Anthropics anbefaling til Claude, men det virker også i ChatGPT og Gemini.
+
+### 10. A/B-varianter
+
+```
+Her er vores nuværende {overskrift, emnelinje eller knaptekst}: "{teksten}".
+Lav 5 alternative varianter til en A/B-test. Hver variant skal teste én bestemt ting: længde, fordel, tal, spørgsmål eller hastværk.
+Skriv for hver variant, hvad den tester, og hvad I forventer at lære.
+```
+
+### 11. Konkurrentanalyse
+
+```
+Du er marketingrådgiver. Her er tekster fra tre konkurrenters hjemmesider:
+<konkurrent1>{tekst}</konkurrent1>
+<konkurrent2>{tekst}</konkurrent2>
+<konkurrent3>{tekst}</konkurrent3>
+Lav en tabel med: konkurrent, hovedbudskab, målgruppe, løfter og tone.
+Peg derefter på 3 budskaber, som ingen af dem bruger, og som {vores virksomhed} kunne eje.
+Brug kun det, der står i teksterne.
+```
+
+### 12. Kampagneidéer
+
+```
+Giv mig 10 kampagneidéer til {virksomhed} i {periode, fx januar}.
+Mål: {fx flere tilmeldinger til nyhedsbrevet}. Budget: {ca. beløb}.
+Kanaler: {fx LinkedIn, nyhedsbrev og egen hjemmeside}.
+For hver idé: et navn, én sætning om idéen, hvilken kanal den passer til, og hvad der skal måles.
+Sortér dem efter, hvad der er nemmest at sætte i gang.
+```
+
+### 13. Svar på en anmeldelse
+
+```
+Skriv et svar på dansk til denne anmeldelse på {Google eller Trustpilot}:
+"{anmeldelsen uden kundens fulde navn}"
+Vi vil gerne: {fx sige undskyld og tilbyde en ombytning}.
+Svaret skal være højst 80 ord, personligt og roligt, uden standardfraser, og invitere til at fortsætte samtalen på {mail eller telefon}.
+```
+
+### 14. Genbrug ét indhold i flere kanaler
+
+```
+Her er et blogindlæg, vi har skrevet:
+<indlaeg>{indsæt teksten}</indlaeg>
+Lav ud fra indholdet: 1 LinkedIn-opslag (højst 150 ord), 1 kort tekst til nyhedsbrevet (højst 80 ord) og 3 forslag til korte opslag på Instagram.
+Brug kun pointer fra indlægget.
+```
+
+### 15. Målgruppebeskrivelse (persona)
+
+```
+Hjælp mig med at beskrive vores vigtigste målgruppe.
+Det ved vi: {alder, rolle, branche, hvad de køber, typiske spørgsmål fra kunder}.
+Lav en kort beskrivelse med: mål, frustrationer, hvad der får dem til at købe, og hvad der får dem til at sige nej.
+Marker tydeligt, hvad der bygger på mine oplysninger, og hvad der er dine antagelser.
+```
+
+### 16. Lad AI'en forbedre jeres prompt
+
+```
+Gør prompten herunder bedre. Stil mig først de spørgsmål, du har brug for at få svar på, så du ikke skal gætte på målgruppe, formål, format eller tone. Skriv derefter den forbedrede prompt.
+<prompt>{indsæt jeres første forsøg}</prompt>
+```
+
+Min vurdering er, at I skal starte med prompt 9 om tone of voice. Når I først har beskrevet jeres tone, kan I sætte den ind i alle de andre prompts.
+
+## Hvilke fejl skal I undgå med AI-prompts?
+
+De fleste fejl skyldes for lidt kontekst eller for meget tillid til svaret. Her er de typiske fejl, og hvad I gør i stedet.
+
+Tabel: Typiske promptfejl
+
+| Fejl | Hvad sker der | Gør i stedet |
+|---|---|---|
+| Prompten er én kort linje | Svaret bliver generisk og lyder som alle andres | Tilføj kontekst, målgruppe og format |
+| Ingen målgruppe | Teksten taler til alle og overbeviser ingen | Beskriv, hvem der skal læse den, og hvad de bekymrer sig om |
+| Vage ord som "fængende" eller "kort" | AI'en tolker selv, hvad det betyder | Skriv et antal ord, tegn eller punkter |
+| Kun forbud som "skriv ikke formelt" | AI'en ved ikke, hvad den skal gøre i stedet | Sig, hvad den skal gøre, fx "skriv som en kollega i du-form" |
+| Ingen eksempler | Tonen rammer ved siden af | Indsæt 1 til 2 tekster, der lyder som jer |
+| Fakta tjekkes ikke | Opdigtede tal, priser eller løfter kommer med | Giv AI'en fakta, og læs alt igennem før brug |
+| Persondata i prompten | Kundedata kan ende hos udbyderen | Anonymisér, eller brug en erhvervsudgave |
+| Ny samtale hver gang | Rettelserne går tabt | Ret i samme samtale, og gem den prompt, der virker |
+
+:::tip
+AI-assistenter kan skrive tal, priser og påstande, der lyder rigtige, men ikke passer. Bed AI'en skrive MANGLER, når den mangler en oplysning, som i prompt 5, og tjek altid tal og løfter, før en tekst bliver udgivet.
+:::
+
+## Hvad gør I, når prompterne virker?
+
+Når I har 3 til 5 prompts, der giver gode svar, så saml dem i ét dokument sammen med jeres faste kontekst om virksomhed, målgruppe og tone. Det er det, der gør AI til et fast værktøj i teamet i stedet for noget, én person eksperimenterer med.
+
+Næste skridt kan være:
+
+- Få teksterne til at lyde som jer med [guiden til AI-tekster og tone of voice](/blog/ai-tekster-tone-of-voice).
+- Vælg det rigtige værktøj i [sammenligningen af ChatGPT, Claude og Gemini](/blog/chatgpt-claude-gemini).
+- Se, hvor I kan spare mest tid, i indlægget om [tidsbesparelse med AI i marketing](/blog/tidsbesparelse-ai-marketing).
+
+## Kilder
+
+- Google Workspace: [Prompting guide 101 (Gemini for Workspace)](https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf), oktober 2024, læst 12. november 2026
+- Google Workspace: [Writing effective AI prompts](https://workspace.google.com/resources/ai/writing-effective-prompts/), læst 12. november 2026
+- OpenAI Help Center: [Best practices for prompt engineering with the OpenAI API](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api), læst 12. november 2026
+- OpenAI: [Prompt engineering](https://developers.openai.com/api/docs/guides/prompt-engineering), læst 12. november 2026
+- OpenAI Help Center: [How your data is used to improve model performance](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance), læst 12. november 2026
+- OpenAI Help Center: [Projects in ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt), læst 12. november 2026
+- Claude Help Center: [What are projects?](https://support.claude.com/en/articles/9517075-what-are-projects) og [How can I create and manage projects?](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects), læst 12. november 2026
+- Gemini Apps Help: [Tips for creating custom Gems](https://support.google.com/gemini/answer/15235603?hl=en), læst 12. november 2026
+- Anthropic: [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), læst 12. november 2026
+- Google Ads Hjælp: [Om responsive søgeannoncer](https://support.google.com/google-ads/answer/7684791?hl=da), læst 12. november 2026
