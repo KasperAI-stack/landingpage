@@ -35,6 +35,37 @@ document.querySelectorAll("[data-focus]").forEach(function (link) {
   observer.observe(demo);
 })();
 
+// Skærmbillederne fra værktøjet driver lidt rundt, når man scroller, og står lige midt på skærmen.
+// Intet sker ved prefers-reduced-motion, og uden JavaScript står gitteret bare stille.
+(function () {
+  var grid = document.querySelector("[data-shots]");
+  if (!grid || !("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var ticking = false;
+  var update = function () {
+    ticking = false;
+    var box = grid.getBoundingClientRect();
+    var vh = window.innerHeight;
+    var p = (box.top + box.height / 2 - vh / 2) / vh;
+    p = Math.max(-1, Math.min(1, p));
+    grid.style.setProperty("--p", p.toFixed(3));
+  };
+  var onScroll = function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  };
+  new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting) {
+      update();
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onScroll);
+    } else {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    }
+  }).observe(grid);
+  grid.classList.add("is-live");
+})();
+
 // Godkendelseskøen i "En uge med Hey Otto": man kan selv godkende udkastene.
 (function () {
   var queue = document.querySelector("[data-queue]");

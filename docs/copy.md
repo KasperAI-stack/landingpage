@@ -43,6 +43,18 @@ Terminal (står stille, så al tekst kan læses af søgemaskiner og AI). Titel: 
 - ⧗ I kø bagefter: Nyhedsbrev til eksisterende kunder (venter). Ugens rapport, et fast flow, som Otto kører hver fredag (venter).
 - ✓ Klar til godkendelse: Udkastene lander i jeres godkendelseskø. Intet bliver udgivet, før I har godkendt det.
 
+## Sådan ser Hey Otto ud indefra
+
+Overskrift: Sådan ser Hey Otto ud indefra
+Tekst: Billederne er taget fra værktøjet, som jeg selv bruger til at drive Hey Otto. Det er her, I giver Otto opgaver og godkender det, holdene laver.
+
+Skærmbilleder (site/assets/platform) med billedtekst:
+- Chatten. I skriver til Otto, som I skriver til en kollega.
+- Et flow. Hele kampagnen fra research til jeres godkendelse.
+- Agentoverblikket. Otto, holdene og agenterne under dem.
+- Performance. Tallene for SEO, annoncer og hastighed samlet ét sted.
+- Skill-biblioteket. De faste opskrifter, agenterne arbejder efter.
+
 ## Sådan ser mandagen ud
 
 To bokse over for hinanden med en pil imellem. Pilen peger ned på mobil.

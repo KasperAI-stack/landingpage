@@ -490,6 +490,43 @@ main > section.section:not(.blog-list) { padding-block: clamp(5.5rem, 10vw, 8rem
   .t8 { right: 22%; top: 73%; }
 }
 
+/* Skærmbilleder fra værktøjet i et gitter. Én kolonne på mobil. Fra 56rem: chatten og et flow øverst,
+   tre billeder under. Når man scroller, driver billederne lidt ud og ind (--p sættes af main.js, -1 til 1)
+   og står lige, når sektionen er midt på skærmen. */
+.platform { overflow-x: clip; }
+.platform-intro { color: var(--muted); font-size: 1.15rem; max-width: var(--read); margin-top: 0; margin-bottom: 0; }
+.shots { --p: 0; display: grid; gap: 2rem; max-width: var(--max); margin: 3rem auto 0; }
+.shot { margin: 0; display: flex; flex-direction: column; gap: .8rem; min-width: 0; }
+.shot-frame {
+  position: relative; overflow: hidden; background: var(--tile);
+  border: 1px solid var(--line); border-radius: var(--radius-tab); box-shadow: var(--shadow-tile);
+}
+.shot-frame img { display: block; width: 100%; height: auto; }
+.shot figcaption { color: var(--muted); font-size: .95rem; line-height: 1.45; }
+.shot figcaption strong { color: var(--ink); font-weight: 600; }
+.shots.is-live .shot {
+  transform:
+    translate3d(calc(var(--dx) * var(--p)), calc(var(--dy) * var(--p)), 0)
+    rotate(calc(var(--r) * var(--p)));
+  will-change: transform;
+}
+@media (min-width: 56rem) {
+  .shots { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 2.5rem 1.75rem; }
+  .shot-chat { grid-column: span 4; }
+  .shot-flow { grid-column: span 2; }
+  .shot-agents, .shot-perf, .shot-skills { grid-column: span 2; }
+  .shot-chat .shot-frame { aspect-ratio: 2 / 1; }
+  .shot-flow .shot-frame { flex: 1; }
+  .shot-agents .shot-frame, .shot-perf .shot-frame, .shot-skills .shot-frame { aspect-ratio: 3 / 2; }
+  .shot-frame img { position: absolute; inset: 0; height: 100%; object-fit: cover; object-position: left top; }
+  .shot-flow img { object-position: center top; }
+  .shot-perf img { object-position: 70% top; }
+  .shot-skills img { object-position: 60% top; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shots.is-live .shot { transform: none; will-change: auto; }
+}
+
 /* En uge med Hey Otto: før og efter i to bokse over for hinanden, med en pil imellem */
 .ba { position: relative; display: grid; gap: 1.25rem; margin-top: 2.5rem; align-items: stretch; }
 @media (min-width: 52rem) { .ba { grid-template-columns: 1fr 1fr; gap: 3.5rem; } }

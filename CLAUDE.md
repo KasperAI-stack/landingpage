@@ -36,6 +36,7 @@ Siden fortæller om Hey Otto, Kaspers AI-agent-værktøj til marketingteams: Ott
 
 1. Hero: taglinen som lille linje, overskriften ("Giv marketingopgaven til Otto, og få den tilbage i jeres egen tone, klar til godkendelse."), én sætning om Hey Otto, knap til booking, robotten og chatvinduet, hvor Otto fordeler en opgave til holdene.
 2. Problemet og løsningen: AI blev endnu en ting at passe, og Otto og holdene bag ham tager hele opgaven. Under diagrammet står en terminal, der viser, hvordan Otto tænker, fordeler og har opgaver i kø. Den står stille, så al tekst kan læses af søgemaskiner og AI.
+   Derefter "Sådan ser Hey Otto ud indefra": fem skærmbilleder fra værktøjet (site/assets/platform) i et gitter, der driver lidt rundt, når man scroller.
 3. Sådan ser mandagen ud: to bokse over for hinanden, før med en liste og efter med en godkendelseskø, man kan klikke i
 4. I bestemmer: godkendelse, brand og konti
 5. Forskellen på en AI-chat og Hey Otto
@@ -80,7 +81,7 @@ Regler:
 - Designsystemet står i docs/design-system.md (farver, typografi, radier, skygger og logoer). Hvis det og denne fil er uenige, gælder denne fil.
 - Skrift: Geist til både overskrifter og brødtekst. Fredoka (vægt 600) kun til Ottos navn i chatvinduet. Begge ligger på siden selv (site/assets/fonts, OFL-licens) og hentes ikke fra Google Fonts. Store overskrifter med stram afstand mellem bogstaverne.
 - Layout: Siden står frit uden ramme- og gitterlinjer, også i toppen. Sektionerne adskilles af luft. De fire trin står i kolonner adskilt af luft, hver med et lille lysende ikon og en titel, hvor trinnets navn er fedt og prisen dæmpet.
-- Animation: Chatvinduet i hero spiller én gang, når det kommer i syne (CSS, og main.js holder det på pause, til det ses). Det spiller også ved prefers-reduced-motion, men toner så kun frem uden at glide. Ellers bevæger siden sig kun, når den besøgende gør noget (godkendelseskøen, spørgsmål og svar), og det står færdigt ved prefers-reduced-motion.
+- Animation: Chatvinduet i hero spiller én gang, når det kommer i syne (CSS, og main.js holder det på pause, til det ses). Det spiller også ved prefers-reduced-motion, men toner så kun frem uden at glide. Ellers bevæger siden sig kun, når den besøgende gør noget (godkendelseskøen, spørgsmål og svar og skærmbillederne, der driver lidt, når man scroller), og det står færdigt ved prefers-reduced-motion.
 - Sort, grå og hvid bærer siden. Knapper, valgte faner og vælgere er i tekstfarven (sort i lyst tema, lys i mørkt tema) og helt runde i enderne. Lilla er en accent, der kun bruges i produktpanelet, i ikonerne ved de fire trin og i figuren i værktøjssektionen.
 - Glasbobler (site/assets/brand/boble-*.svg) svæver ved Otto i hero, på tak-siden og ved tegningen ved formularen. De er rene SVG'er med gennemsigtig baggrund, bygget af scripts/brand-svg.py, og har deres egen version til mørkt tema (CSS-variablerne --boble-1 og --boble-2). De er kun pynt og står aldrig bag tekst. Rillet glas er prøvet og valgt fra, så det skal ikke bruges.
 - Temakontakten i toppen viser sol og måne side om side, og det aktive tema er markeret.
