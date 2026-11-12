@@ -135,3 +135,13 @@
 .author .author-role { margin-bottom: .75rem; }
 .author a { color: var(--ink); }
 .author + .post-cta { margin-top: 2.5rem; }
+
+/* Oversigten (/blog og emnesiderne) har samme opbygning som "Fra bloggen" på forsiden (styles.css).
+   Her står kun det, der er anderledes: mindre luft foroven, h1 i samme størrelse som forsidens h2,
+   og indlæg ud over de fire første som små kort i to kolonner. */
+main > section.section.blog-oversigt { padding-top: clamp(2rem, 6vw, 3.5rem); }
+.blog-oversigt .nyt-top h1 { font-size: clamp(2.25rem, 6vw, 3.5rem); line-height: 1.05; max-width: none; }
+.blog-oversigt .post-back { margin-bottom: 1.5rem; }
+.nyt-flere { margin-top: 2.5rem; column-gap: 3.5rem; }
+.nyt-flere .nyt-lille, .nyt-flere .nyt-lille:first-child { border-top: 1px solid var(--line); padding: 1.35rem 0; }
+@media (min-width: 56rem) { .nyt-flere { grid-template-columns: 1fr 1fr; } }

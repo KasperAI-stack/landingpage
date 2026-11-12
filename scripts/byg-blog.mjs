@@ -428,23 +428,32 @@ ${p.html}
   });
 }
 
+// /blog og emnesiderne har samme opbygning som "Fra bloggen" på forsiden: emnefaner, det nyeste indlæg stort
+// og de næste tre små ved siden af. Resten står nedenunder som små kort i to kolonner.
 function oversigt(indlaeg, { titel, intro, tags, aktivTag }) {
-  const liste = indlaeg.length
-    ? `<ol class="posts">\n${indlaeg.map((p) => `        <li>
-          <article>
-            ${meta(p)}
-            <h2><a href="${p.sti}">${inline(p.titel)}</a>${p.udkast ? ` <span class="udkast">Udkast</span>` : ""}</h2>
-            <p>${esc(p.beskrivelse)}</p>
-            ${tagListe(p.tags, aktivTag)}
-          </article>
-        </li>`).join("\n")}\n      </ol>`
-    : `<p class="muted">Det første indlæg er på vej.</p>`;
-  return `    <section class="section blog-list" aria-labelledby="blog-titel">
-      ${aktivTag ? `<p class="post-back"><a href="/blog/">Alle indlæg</a></p>\n      ` : ""}<h1 id="blog-titel">${esc(titel)}</h1>
-      <p class="blog-lead">${intro}</p>
-      ${tags.length > 1 ? `<nav class="blog-tags" aria-label="Emner">${tagListe(tags, aktivTag)}</nav>` : ""}
-      ${liste}
-    </section>`;
+  const [hoved, ...resten] = indlaeg;
+  const indhold = hoved
+    ? `      <div class="nyt-grid${resten.length ? "" : " nyt-alene"}">
+        ${nyhedsKort(hoved, true, "h2")}
+${resten.length ? `        <ul class="nyt-liste">
+          ${resten.slice(0, 3).map((p) => nyhedsKort(p, false, "h2")).join("\n          ")}
+        </ul>
+` : ""}      </div>
+${resten.length > 3 ? `      <ul class="nyt-liste nyt-flere">
+        ${resten.slice(3).map((p) => nyhedsKort(p, false, "h2")).join("\n        ")}
+      </ul>
+` : ""}`
+    : `      <p class="muted">Det første indlæg er på vej.</p>
+`;
+  return `    <section class="section nyheder blog-oversigt" aria-labelledby="blog-titel">
+      ${aktivTag ? `<p class="post-back"><a href="/blog/">Alle indlæg</a></p>
+      ` : ""}<div class="nyt-top">
+        <div>
+          <h1 id="blog-titel">${esc(titel)}</h1>
+          <p>${intro}</p>
+        </div>
+      </div>
+${tags.length > 1 ? emneFaner(tags, aktivTag, { aktivMarkering: true }) : ""}${indhold}    </section>`;
 }
 
 function feed(indlaeg) {
@@ -490,7 +499,7 @@ function opdaterSitemap(indlaeg) {
 // Er der ingen indlæg online, bliver sektionen tom, og der står intet på forsiden.
 const PIL = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>`;
 
-function forsideKort(p, stor) {
+function nyhedsKort(p, stor, h = "h3") {
   const billede = p.billede
     ? `<span class="nyt-billede">${billedTag(p.billede, "", p.fil)}</span>`
     : `<span class="nyt-billede nyt-tom"><img src="/assets/favicon.svg" alt="" width="44" height="44" loading="lazy"></span>`;
@@ -498,7 +507,7 @@ function forsideKort(p, stor) {
   const forfatter = stor ? `<span class="nyt-forfatter">${f.billede ? `<img src="${esc(f.billede)}" alt="" width="24" height="24" loading="lazy" decoding="async">` : ""}${esc(f.navn)}</span><span class="prik"></span>` : "";
   const tags = p.tags.length ? `<ul class="nyt-tags">${p.tags.map((t) => `<li>${esc(t.navn)}</li>`).join("")}</ul>` : "";
   const tekst = `<p class="nyt-meta"><span class="nyt-type">${TYPER[p.type]}</span><span class="prik"></span>${forfatter}<time datetime="${p.dato}">${datoTekst(p.dato)}</time></p>
-            <h3><a class="nyt-link" href="${p.sti}">${inline(p.titel)}</a>${stor ? PIL : ""}</h3>
+            <${h}><a class="nyt-link" href="${p.sti}">${inline(p.titel)}</a>${p.udkast ? ` <span class="udkast">Udkast</span>` : ""}${stor ? PIL : ""}</${h}>
             <p class="nyt-tekst">${esc(p.beskrivelse)}</p>
             ${tags}`;
   return stor
@@ -514,6 +523,19 @@ function forsideKort(p, stor) {
           </li>`;
 }
 
+// De mest brugte emner først. Fanen for den side, man står på, er sort.
+// På forsiden er "Nyeste" sort uden at være den side, man står på, så den får kun klassen.
+function emneFaner(tags, aktivTag, { aktivMarkering = false, max = Infinity } = {}) {
+  const emner = [...tags].sort((a, b) => b.indlaeg.length - a.indlaeg.length || a.navn.localeCompare(b.navn, "da")).slice(0, max);
+  if (!emner.length) return "";
+  const faneAttr = (aktiv) => (aktiv ? ` class="aktiv"${aktivMarkering ? ` aria-current="page"` : ""}` : "");
+  return `      <ul class="nyt-emner" aria-label="Emner">
+        <li><a href="/blog/"${faneAttr(!aktivTag)}>Nyeste</a></li>
+${emner.map((t) => `        <li><a href="/blog/tag/${t.slug}"${faneAttr(t.slug === aktivTag)}>${esc(t.navn)}</a></li>`).join("\n")}
+      </ul>
+`;
+}
+
 function opdaterForside(indlaeg, tags) {
   const fil = join(SITE, "index.html");
   const html = readFileSync(fil, "utf8");
@@ -524,8 +546,6 @@ function opdaterForside(indlaeg, tags) {
   let blok = "";
   if (valgte.length) {
     const [hoved, ...resten] = valgte;
-    // De mest brugte emner først
-    const emner = [...tags].sort((a, b) => b.indlaeg.length - a.indlaeg.length).slice(0, 5);
     blok = `
     <section class="section nyheder" aria-labelledby="blog-titel">
       <div class="nyt-top">
@@ -535,14 +555,10 @@ function opdaterForside(indlaeg, tags) {
         </div>
         <a class="nyt-alle" href="/blog/">Se alle indlæg ${PIL}</a>
       </div>
-${emner.length ? `      <ul class="nyt-emner" aria-label="Emner">
-        <li><a href="/blog/">Nyeste</a></li>
-${emner.map((t) => `        <li><a href="/blog/tag/${t.slug}">${esc(t.navn)}</a></li>`).join("\n")}
-      </ul>
-` : ""}      <div class="nyt-grid${resten.length ? "" : " nyt-alene"}">
-        ${forsideKort(hoved, true)}
+${emneFaner(tags, null, { max: 5 })}      <div class="nyt-grid${resten.length ? "" : " nyt-alene"}">
+        ${nyhedsKort(hoved, true)}
 ${resten.length ? `        <ul class="nyt-liste">
-          ${resten.map((p) => forsideKort(p, false)).join("\n          ")}
+          ${resten.map((p) => nyhedsKort(p, false)).join("\n          ")}
         </ul>
 ` : ""}      </div>
     </section>
