@@ -8,15 +8,6 @@
   font-style: normal;
   font-display: swap;
 }
-/* Fredoka bruges kun til Ottos navn i chatvinduet. Ligger også på siden selv. Licens: assets/fonts/OFL-fredoka.txt */
-@font-face {
-  font-family: "Fredoka";
-  src: url("/assets/fonts/fredoka-600-latin.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   /* Neutrale: Onyx, Grafit, Skifer, Sølvgrå og Tåge. Lyst tema er standard. */
   --bg: #FFFFFF;
@@ -61,7 +52,7 @@
   --shadow-tile: 0 1px 2px rgb(15 14 19 / .06), 0 8px 20px rgb(15 14 19 / .08);
   --shadow-app: 0 30px 70px rgb(20 10 60 / .45);
   --shadow-toggle: 0 1px 3px rgb(15 14 19 / .15);
-  --font-otto: "Fredoka", var(--font);
+  --font-otto: var(--font);
 
   /* Bevægelse: kort og rolig, ind med ease-out, som i animate-skillen */
   --ease-out: cubic-bezier(.23, 1, .32, 1);
@@ -618,7 +609,7 @@ main > section.section:not(.blog-list) { padding-block: clamp(5.5rem, 10vw, 8rem
 .compare-table td:last-child { font-weight: 500; }
 .compare-table thead th:last-child::before {
   content: ""; display: inline-block; width: 22px; height: 22px; margin-right: .45rem; vertical-align: -6px;
-  background: url("/assets/favicon.svg") center / contain no-repeat;
+  background: url("/assets/otto-hoved.png") center / contain no-repeat;
 }
 /* Mobil: hver række bliver en lille blok med overskrift over de to svar */
 @media (max-width: 40rem) {

@@ -151,11 +151,12 @@ document.querySelectorAll("[data-focus]").forEach(function (link) {
   link.addEventListener("click", function () { setContactMode("forespoergsel"); });
 });
 
-// Konvertering: klik på "Åbn min kalender". GTM lytter efter eventet "booking_klik".
+// Konvertering: klik på "Åbn min kalender". Går til GA4 (booking_klik) og Google Ads. Venter i dataLayer, til gtag er hentet.
 document.querySelectorAll('[data-track="booking"]').forEach(function (link) {
   link.addEventListener("click", function () {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: "booking_klik" });
+    if (typeof window.gtag !== "function") return;
+    window.gtag("event", "booking_klik");
+    window.gtag("event", "conversion", { send_to: "AW-18496147052/OdDrCNmOn5QdEOyc0_NE" });
   });
 });
 
