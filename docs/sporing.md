@@ -1,62 +1,35 @@
-# Konverteringssporing i Google Tag Manager
+# Konverteringssporing
 
-Siden sender to signaler (events) til Google Tag Manager:
+Siden bruger ikke Google Tag Manager. Google tag (GA4 og Google Ads) og CookieScript ligger direkte i koden på alle sider og i templates/blog-side.html. De hentes først ved første scroll, klik, tast eller tryk eller 4 sekunder efter load, så de ikke sinker siden. På tak-siden hentes de med det samme. Hændelser, der sker før, venter i dataLayer og sendes, når gtag er hentet.
 
-| Event | Hvornår | Hvor i koden |
-|---|---|---|
-| `henvendelse_sendt` | Når tak-siden vises, altså efter en sendt formular | `site/tak.html` (vises på heyotto.dk/tak) |
-| `booking_klik` | Når man klikker "Åbn min kalender" | `site/js/main.js` |
+| Hændelse | Hvornår | GA4 | Google Ads | Hvor i koden |
+|---|---|---|---|---|
+| Henvendelse | Når tak-siden vises | `generate_lead` | `AW-18496147052/dcYRCOTilJQdEOyc0_NE` | `site/tak.html` |
+| Booking-klik | Klik på "Åbn min kalender" | `booking_klik` | `AW-18496147052/OdDrCNmOn5QdEOyc0_NE` | `site/js/main.js` |
 
-Signalerne afhænger ikke af sidernes adresser, så målingen virker, selv om en URL ændrer sig.
+- GA4-måle-id: `G-YRFWXEXL8G`
+- Google Ads-konverterings-id: `18496147052`
+- CookieScript: `https://cdn.cookie-script.com/s/dde4e3943534fc857bebb2ec9cbcad4d.js`
 
-## Google Ads
-
-- Konverterings-ID: `18496147052`
-- Konverteringslabel: `dcYRCOTilJQdEOyc0_NE`
-
-### 1. Conversion Linker (én gang)
-1. I GTM: **Tags**, **Ny**, **Tag-konfiguration**, **Conversion Linker**.
-2. Trigger: **All Pages**.
-3. Gem som "Conversion Linker".
-
-### 2. Trigger for henvendelser
-1. **Triggers**, **Ny**, **Triggerkonfiguration**, **Tilpasset hændelse** (Custom Event).
-2. Hændelsesnavn: `henvendelse_sendt`
-3. Gem som "Event – henvendelse_sendt".
-
-### 3. Google Ads-konvertering for henvendelser
-1. **Tags**, **Ny**, **Google Ads-konverteringssporing**.
-2. Konverterings-ID: `18496147052`
-3. Konverteringslabel: `dcYRCOTilJQdEOyc0_NE`
-4. Trigger: "Event – henvendelse_sendt".
-5. Gem som "Google Ads – henvendelse".
-
-### 4. Booking-klik (valgfrit)
-Lav en trigger på samme måde med hændelsesnavnet `booking_klik`. Skal booking tælle som en konvertering i Google Ads, så opret en ekstra konverteringshandling i Google Ads, fx "Booking-klik", og brug dens label i et nyt tag. Den label, der står ovenfor, bruges til henvendelser.
-
-### 5. Test og udgiv
-1. Klik **Preview** og åbn heyotto.dk.
-2. Klik "Book en tid" og derefter "Åbn min kalender". `booking_klik` skal dukke op i Preview.
-3. Send en testhenvendelse. På tak-siden skal `henvendelse_sendt` dukke op, og tagget "Google Ads – henvendelse" skal stå under **Tags Fired**.
-4. Klik **Indsend** og **Udgiv**.
+Nye tags (fx LinkedIn) skal lægges ind i koden samme sted som Google tag, og i templates/blog-side.html, hvorefter bloggen bygges igen.
 
 ## Samtykke
 
-Siden sætter Consent Mode til "denied" som standard, og CookieScript slår samtykke til, når den besøgende siger ja. Google Ads-tagget respekterer det af sig selv. Uden samtykke sender det kun cookiefrie signaler, som Google bruger til at estimere konverteringer.
+Siden sætter Consent Mode til "denied" som standard, før Google tag starter. CookieScript slår samtykke til, når den besøgende siger ja. Det kræver, at Google Consent Mode v2 er slået til i CookieScript-dashboardet. Uden samtykke sender Google kun cookiefrie signaler, som bruges til at estimere konverteringer.
 
 ## Meta-pixel
 
 - Pixel-ID: `1616440676548347`
-- Pixlen ligger direkte i koden på alle fire sider, ikke i GTM. Den er markeret med `type="text/plain" data-cookiescript="accepted" data-cookiecategory="targeting"`, så CookieScript først starter den, når den besøgende har sagt ja til marketing.
+- Pixlen ligger direkte i koden på alle sider. Den er markeret med `type="text/plain" data-cookiescript="accepted" data-cookiecategory="targeting"`, så CookieScript først starter den, når den besøgende har sagt ja til targeting. Det samme gælder `Lead` på tak-siden.
 - Den sender `PageView` på alle sider, `Lead` på tak-siden og `BookingKlik` (tilpasset hændelse), når man klikker "Åbn min kalender".
 - Meta's `<noscript>`-billede er udeladt, fordi det ville sende data uden samtykke.
-- Der skal ikke laves et Meta-tag i GTM, ellers tælles alt to gange.
 
-### Test
-1. Installér udvidelsen Meta Pixel Helper i Chrome.
-2. Åbn heyotto.dk og sig ja til marketing i cookiebanneret.
-3. Pixel Helper skal vise `PageView`. Send en testhenvendelse, og tjek, at `Lead` kommer på tak-siden.
-4. I Meta Events Manager kan hændelserne også ses under **Test events**.
+## Test
+1. Gå til tagassistant.google.com, og forbind `https://heyotto.dk`.
+2. Scroll, og sig ja i cookiebanneret. G-YRFWXEXL8G og AW-18496147052 skal vises, og samtykket skal stå som granted.
+3. Klik "Åbn min kalender". `booking_klik` og en conversion skal vises.
+4. Send en testhenvendelse. På tak-siden skal `generate_lead` og en conversion vises.
+5. Meta Pixel Helper skal vise `PageView`, `Lead` og `BookingKlik` efter ja til targeting.
 
 ## Cookieindstillinger
-Footeren på alle sider har knappen "Cookieindstillinger", som genåbner CookieScript-banneret, så man kan ændre sit samtykke. Knappen vises kun, når CookieScript er indlæst.
+Footeren på alle sider har knappen "Cookieindstillinger", som genåbner CookieScript-banneret (`CookieScript.instance.show()`). Linket vises, når CookieScript er hentet (hændelsen `CookieScriptLoaded`).
